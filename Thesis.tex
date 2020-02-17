@@ -1,0 +1,212 @@
+\RequirePackage[l2tabu]{nag}		% Warns for incorrect (obsolete) LaTeX usage
+
+% --- Style file for Latex
+% In this template package, it can be found in ./Class/
+\documentclass{Latex/Classes/GenThesis}
+% Adding metadata:
+\usepackage{changepage}
+\usepackage{datetime}
+
+% --- Macro file for Latex
+% Macros help you summarise frequently repeated Latex commands.P
+% Here, they are placed in an external file /Latex/Macros/MacroFile1.tex
+% An macro that you may use frequently is the figuremacro (see introduction.tex)
+\include{Latex/Macros/MacroFile1}
+
+% ----------------------------------------------------------------------
+
+% turn off those nasty overfull and underfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+% --------------------------------------------------------------
+%               PAGE GEOMETRY AND CHAPTER STYLE
+% --------------------------------------------------------------
+% Notes:
+% - Chapter style can bte modified using the fncychap package. The available styles are
+%   listed in the comments. If you don't like any of the styles just comment the line
+\usepackage[Sonny]{fncychap}        % Sonny, Lenny, Glenn, Conny, Rejne and Bjarne
+\usepackage{epigraph}
+\usepackage{subfigmat}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage[bottom]{footmisc}
+\usepackage{multirow}
+ \addtolength{\textheight}{0.0cm}  % add/remove size to vertical text space in the page
+ \addtolength{\voffset}{-0.0cm}    % vertical offset from top AND bottom of the page
+ \addtolength{\textwidth}{0.48cm}  % add/remove size to the width of the text in the page
+ \addtolength{\hoffset}{0 cm}   % horizontal offset from left AND right edges of the page
+ \addtolength{\oddsidemargin}{-0.0cm}   % border size on the odd pages (for bindings)
+ \addtolength{\evensidemargin}{0.0cm}   % border size on the even pages (for bindings)
+%\newcommand{\Neq}{\ensuremath{\,\rm{n}_{\rm{eq}}/cm^2}}
+% --------------------------------------------------------------
+%                   FRONT MATTER: dedications, abstract,..
+% --------------------------------------------------------------
+
+\begin{document}
+
+%\language{english}
+% sets line spacing
+%\renewcommand\baselinestretch{1.2}
+%\baselineskip=18pt plus1pt
+
+
+% ----------------------- FRONT PAGE ----------------------------------
+\fancyend
+%\pagenumbering{roman}
+% --------------------- FRONT MATTER ----------------------------------
+\input{frontmatter/title}
+\thispagestyle{empty}
+\newpage
+
+%\include{Frontmatter/dedication}
+\fancyend
+\include{Frontmatter/acknowledgement}
+\fancyend
+%\setcounter{page}{1}
+
+% ----------------------- ABSTRACT ------------------------------------
+\include{Abstract/abstract}
+\include{Abstract/personal}
+\fancyend
+
+% ----------------------- TABLE OF CONTENTS ---------------------------
+% levels are: 0 - chapter, 1 - section, 2 - subsection, 3 - subsection
+\setcounter{secnumdepth}{3} % organisational level that receives a numbers
+\setcounter{tocdepth}{3}    % print table of ts for level 3
+\tableofcontents            % print the table of contents
+\fancyend
+
+% ----------------------- list of figures/tables ------------------------
+
+%\listoffigures	 % print list of figures
+%\listoftables  % print list of tables
+
+
+% ----------------------- glossary ------------------------
+
+% Tie in external source file for definitions: /0_frontmatter/glossary.tex
+% Glossary entries can also be defined in the main text. See glossary.tex
+% \include{frontmatter/glossary} 
+
+%\begin{multicols}{2} % \begin{multicols}{#columns}[header text][space]
+%\begin{footnotesize} % scriptsize(7) < footnotesize(8) < small (9) < normal (10)
+
+%\printnomenclature[1.5cm] % [] = distance between entry and description
+%\label{nom} % target name for links to glossary
+
+%\end{footnotesize}
+%\end{multicols}
+
+
+% --------------------------------------------------------------
+%                  MAIN DOCUMENT SECTION
+% --------------------------------------------------------------
+% the main text starts here with the introduction, 1st chapter,...
+\mainmatter
+%\renewcommand{\chaptername}{} % uncomment to print only "1" not "Chapter 1"
+\setcounter{page}{1}
+% ----------------------- subdocuments ------------------------
+
+% Parts of the thesis are included below. Rename the files as required.
+% But take care that the paths match.
+
+\selectlanguage{english}
+\addcontentsline{toc}{chapter}{Introduction}
+\include{Chapters/CH0/Introduction}
+\include{Chapters/CH1/SM}
+\include{Chapters/CH2/ATLAS}
+\include{Chapters/CH3/Upgrade}
+\include{Chapters/CH4/SMT}
+\include{Chapters/CH6/ObjectReconstruction}
+\include{Chapters/CH6/Analysis}
+\include{Chapters/CH7/Conclusions}
+
+\appendix
+\include{Appendices/AP1/MassResolution}
+
+
+% the back matter: appendix and references close the thesis
+
+% ----------------------- bibliography ------------------------
+
+% The section below defines how references are listed and formatted
+% The default below is 2 columns, small font, complete author names.
+% Entries are also linked back to the page number in the text and to external URL if provided in the BibTex file.
+
+% PhDbiblio-url2 = names small caps, title bold & hyperlinked, link to page 
+%\begin{multicols}{2} % \begin{multicols}{ # columns}[ header text][ space]
+%\begin{tiny} % tiny(5) < scriptsize(7) < footnotesize(8) < small (9)
+
+%\bibliographystyle{Latex/Classes/PhDbiblio-url2}	% Title is link if provided
+%\renewcommand{\bibname}{References}				% changes the header; default: Bibliography
+%\bibliography{9_backmatter/references}			% adjust this to fit your BibTex file
+
+%%%%%%%%%%%
+
+%\chapter*{Accepted and submitted Papers}
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Accepted and submitted Papers}
+
+
+%{\Large\sffamily{Accepted and submitted Articles}}
+%\bigskip
+%\bigskip
+
+%\begin{itemize}
+%\item[\citepalias{agoritsas_2010_PhysRevB_82_184207}] \bibentry{agoritsas_2010_PhysRevB_82_184207}
+% E. Agoritsas, V. Lecomte, and T. Giamarchi, 
+%\emph{Temperature-induced cross\-overs in the static roughness of a one-dimensional interface},
+%\href{http://dx.doi.org/10.1103/PhysRevB.82.184207}{Phys. Rev. B \textbf{82}, 184207 (2010)}.
+%\medskip
+
+%\item[\citepalias{agoritsas_2012_ECRYS2011}] \bibentry{agoritsas_2012_ECRYS2011}
+% E. Agoritsas, V. Lecomte, and T. Giamarchi, 
+%\emph{Disordered elastic systems and one-dimensional interfaces},
+%\href{http://dx.doi.org/10.1016/j.physb.2012.01.017}{Physica B \textbf{407}, 1725 (2012)}.
+%\medskip
+
+%\end{itemize}
+
+%%%%%%%%%%%
+
+
+%\bibliographystyle{Latex/Classes/GenThesis.cls}   % now defined in Latex/Classes/GenThesis.cls
+
+%\bibliographystyle{Latex/Classes/nature}	 
+%\bibliographystyle{Latex/Classes/GENbiblio-bold}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\renewcommand{\bibname}{References}
+\bibliography{biblio}
+
+
+
+%\end{tiny}
+%\end{multicols}
+
+% --------------------------------------------------------------
+% Various bibliography styles exit. Replace above style as desired.
+
+% in-text refs: (1) (1; 2)
+% ref list: alphabetical; author(s) in small caps; initials last name; page(s)
+%\bibliographystyle{Latex/Classes/GENbiblio-url}
+%\bibliographystyle{Latex/Classes/GENbiblio-case}		% title forced lower case
+%\bibliographystyle{Latex/Classes/GENbiblio-bold}		% title as in bibtex but bold
+%\bibliographystyle{Latex/Classes/GENbiblio-url}		% bold + www link if provided
+%\bibliographystyle{Latex/Classes/nature}	  			% (uses file "plain.bst")
+
+%\bibliographystyle{Latex/Classes/jmb} 				% calls style file jmb.bst
+% in-text refs: author (year) without brackets
+% ref list: alphabetical; author(s) in normal font; last name, initials; page(s)
+
+%\bibliographystyle{plainnat} 							% calls style file plainnat.bst
+% in-text refs: author (year) without brackets
+% (this works with package natbib)
+
+\end{document}

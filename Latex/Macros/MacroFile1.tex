@@ -1,0 +1,156 @@
+% This file contains macros that can be called up from connected TeX files
+% It helps to summarise repeated code, e.g. figure insertion (see below).
+
+% insert a centered figure with caption and description
+% parameters 1:filename, 2:title, 3:description and label
+\newcommand{\figuremacro}[3]{
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{#1}
+		\caption[#2]{\textbf{#2} - #3}
+		\label{#1}
+	\end{figure}
+}
+
+% insert a centered figure with caption and description AND WIDTH
+% parameters 1:filename, 2:title, 3:description and label, 4: textwidth
+% textwidth 1 means as text, 0.5 means half the width of the text
+\newcommand{\figuremacroW}[4]{
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=#4\textwidth]{#1}
+		\caption[#2]{\textbf{#2} - #3}
+		\label{#1}
+	\end{figure}
+}
+
+% inserts a figure with wrapped around text; only suitable for NARROW figs
+% o is for outside on a double paged document; others: l, r, i(inside)
+% text and figure will each be half of the document width
+% note: long captions often crash with adjacent content; take care
+% in general: above 2 macro produce more reliable layout
+\newcommand{\figuremacroN}[3]{
+	\begin{wrapfigure}{o}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.48\textwidth]{#1}
+		\caption[#2]{{\small\textbf{#2} - #3}}
+		\label{#1}
+	\end{wrapfigure}
+}
+
+% predefined commands by Harish
+\newcommand{\PdfPsText}[2]{
+  \ifpdf
+     #1
+  \else
+     #2
+  \fi
+}
+
+\newcommand{\IncludeGraphicsH}[3]{
+  \PdfPsText{\includegraphics[height=#2]{#1}}{\includegraphics[bb = #3, height=#2]{#1}}
+}
+
+\newcommand{\IncludeGraphicsW}[3]{
+  \PdfPsText{\includegraphics[width=#2]{#1}}{\includegraphics[bb = #3, width=#2]{#1}}
+}
+
+\newcommand{\InsertFig}[3]{
+  \begin{figure}[!htbp]
+    \begin{center}
+      \leavevmode
+      #1
+      \caption{#2}
+      \label{#3}
+    \end{center}
+  \end{figure}
+}
+
+
+%----- NEWCOMMANDS ELIA ----------------------------
+
+\newcommand{\sref}[1]{Sec.~\ref{#1}}
+\newcommand{\fref}[1]{Fig.~\ref{#1}}
+\newcommand{\aref}[1]{Appendix~\ref{#1}}
+\newcommand{\figwidth}{0.9\columnwidth}
+
+\newcommand{\argc}[1]{\left[#1\right]}
+\newcommand{\arga}[1]{\left\lbrace #1\right\rbrace }
+\newcommand{\argp}[1]{\left(#1\right)}
+\newcommand{\valabs}[1]{\vert #1\vert}
+\newcommand{\moy}[1]{\left\langle  #1 \right\rangle }
+\newcommand{\moydes}[1]{\overline{#1}}
+
+\newcommand{\Wbar}{ \mathclap{\phantom{W}\overline{\phantom{I}}} W}
+\newcommand{\dbar}{d\mkern-6mu\mathchar'26 \!}
+\newcommand{\deltabar}{\delta \mkern-8mu\mathchar'26}
+\newcommand{\sigc}[1]{\argc{\sigma}(#1)}
+\newcommand{\tho}{{\text{\thorn}} }
+
+\newcommand{\gdD}{\mathcal{D}}
+\newcommand{\gdO}{\mathcal{O}}
+\newcommand{\gdH}{\mathcal{H}}
+\newcommand{\gdR}{\mathbb{R}}
+\newcommand{\gdC}{\mathbb{C}}
+\newcommand{\gdN}{\mathbb{N}}
+\newcommand{\gdF}{\mathcal{F}}
+
+
+\newcommand{\gdHel}{\gdH_{\text{el}}}
+\newcommand{\gdHdis}{\gdH_{\text{dis}}}
+\newcommand{\gdHtil}{\widetilde{\mathcal{H}}}
+\newcommand{\gdHelt}{\widetilde{\gdH}_{\text{el}}}
+\newcommand{\gdHdist}{\widetilde{\gdH}_{\text{dis}}}
+
+
+%---------------------------------
+% For the personal comments
+%\newcommand{\commperso}[1]{\textcolor{magenta}{#1}}
+%\newcommand{\reftoput}[1]{\textcolor{cyan}{#1}}
+\newcommand{\commperso}[1]{\textcolor{black}{#1}}
+\newcommand{\reftoput}[1]{\textcolor{black}{#1}}
+
+%\newcommand{\meevid}[1]{\textcolor{NavyBlue}{#1}}
+\newcommand{\meevid}[1]{\textcolor{black}{#1}}
+%\newcommand{\meevidbf}[1]{\textbf{#1}}
+\newcommand{\meevidbf}[1]{#1}
+
+
+\newcommand{\codecouleurperso}{
+	\textcolor{Emerald}{Emerald}
+	\textcolor{PineGreen}{PineGreen}
+	\textcolor{BlueViolet}{BlueViolet}
+	\textcolor{DarkOrchid}{DarkOrchid}
+	\textcolor{NavyBlue}{NavyBlue}
+	\textcolor{MidnightBlue}{MidnightBlue}
+	\textcolor{OrangeRed}{OrangeRed}
+	\textcolor{RoyalBlue}{RoyalBlue}
+	\textcolor{RoyalPurple}{RoyalPurple}
+	\textcolor{TealBlue}{TealBlue}	
+	\textcolor{Violet}{Violet}	
+	\textcolor{RubineRed}{RubineRed}	
+	\textcolor{RedViolet}{RedViolet}	
+	\textcolor{VioletRed}{VioletRed}	
+	\textcolor{Periwinkle}{Periwinkle}	
+}
+% Emerald, PineGreen, BlueViolet, DarkOrchid, NavyBlue, MidnightBlue, OrangeRed, RoyalBlue, RoyalPurple, TealBlue, Violet, RubineRed, RedViolet, VioletRed, Periwinkle
+
+
+%---------------------------------
+
+
+\newcommand{\footnoteremember}[2]{
+  \footnote{#2}
+  \newcounter{#1}
+  \setcounter{#1}{\value{footnote}}
+}
+\newcommand{\footnoterecall}[1]{
+  \footnotemark[\value{#1}]
+}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "~/Documents/LaTeX/CUEDThesisPSnPDF/thesis"
+%%% End: 
