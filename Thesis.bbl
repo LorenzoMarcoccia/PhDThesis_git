@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{9}%
+\begin{thebibliography}{23}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -92,7 +92,7 @@
   (\bibinfo {year} {1970})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Aguilar-Saavedra}(2004)}]{aguilar}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Aguilar-Saavedra}},\ }\href@noop {} {\enquote {\bibinfo {title} {Top
   flavour-changing neutral interactions: theoretical expectations and
   experimental detection},}\ } (\bibinfo {year} {2004}),\ \Eprint
@@ -127,8 +127,133 @@
   2004): Beijing, China, August 16-22, 2004. Vol. 1+2}}},\ }\href {\doibase
   10.1142/S0217751X05028624} {\bibfield  {journal} {\bibinfo  {journal} {Int.
   J. Mod. Phys.}\ }\textbf {\bibinfo {volume} {A20}},\ \bibinfo {pages} {5105}
-  (\bibinfo {year} {2005})},\ \bibinfo {note} {[,49(2004)]},\ \Eprint
-  {http://arxiv.org/abs/hep-ph/0408267} {arXiv:hep-ph/0408267 [hep-ph]}
-  \BibitemShut {NoStop}%
+  (\bibinfo {year} {2005})},\ \Eprint {http://arxiv.org/abs/hep-ph/0408267}
+  {arXiv:hep-ph/0408267 [hep-ph]} \BibitemShut {NoStop}%
 %%CITATION = HEP-PH/0408267;%%
+\bibitem [{\citenamefont {Abe}\ \emph {et~al.}(1995)\citenamefont {Abe} \emph
+  {et~al.}}]{CDF}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Abe}} \emph {et~al.} (\bibinfo {collaboration} {CDF Collaboration}),\ }\href
+  {\doibase 10.1103/PhysRevLett.74.2626} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {74}},\ \bibinfo
+  {pages} {2626} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Abachi}\ \emph {et~al.}(1995)\citenamefont {Abachi}
+  \emph {et~al.}}]{D0}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Abachi}} \emph {et~al.} (\bibinfo {collaboration} {D0 Collaboration}),\
+  }\href {\doibase 10.1103/PhysRevLett.74.2632} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {74}},\ \bibinfo
+  {pages} {2632} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aaij}\ \emph {et~al.}(2015)\citenamefont {Aaij} \emph
+  {et~al.}}]{LHcb_top}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Aaij}} \emph {et~al.} (\bibinfo {collaboration} {LHCb Collaboration}),\
+  }\href {\doibase 10.1103/PhysRevLett.115.112001} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {115}},\
+  \bibinfo {pages} {112001} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tanabashi}\ \emph {et~al.}(2018)\citenamefont
+  {Tanabashi} \emph {et~al.}}]{pdg}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Tanabashi}} \emph {et~al.} (\bibinfo {collaboration} {Particle Data
+  Group}),\ }\href {\doibase 10.1103/PhysRevD.98.030001} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {98}},\
+  \bibinfo {pages} {030001} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bernreuther}(2008)}]{tdecayBR}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Bernreuther}},\ }\href {\doibase 10.1088/0954-3899/35/8/083001} {\bibfield
+  {journal} {\bibinfo  {journal} {J. Phys.}\ }\textbf {\bibinfo {volume}
+  {G35}},\ \bibinfo {pages} {083001} (\bibinfo {year} {2008})},\ \Eprint
+  {http://arxiv.org/abs/0805.1333} {arXiv:0805.1333 [hep-ph]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:0805.1333;%%
+\bibitem [{ttd()}]{ttdecayBR}%
+  \BibitemOpen
+  \href
+  {https://www-d0.fnal.gov/Run2Physics/top/top_public_web_pages/feynman_diagrams/top_pair_branching_frac.eps}
+  {\enquote {\bibinfo {title} {Useful diagrams of top signals and
+  backgrounds},}\ }\Eprint {http://arxiv.org/abs/D0 Collaboration website} {D0
+  Collaboration website} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aad}\ \emph {et~al.}(2012)\citenamefont {Aad} \emph
+  {et~al.}}]{higgsDiscovery}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Aad}} \emph {et~al.} (\bibinfo {collaboration} {ATLAS}),\ }\href {\doibase
+  10.1016/j.physletb.2012.08.020} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B716}},\ \bibinfo {pages} {1}
+  (\bibinfo {year} {2012})},\ \Eprint {http://arxiv.org/abs/1207.7214}
+  {arXiv:1207.7214 [hep-ex]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1207.7214;%%
+\bibitem [{\citenamefont {{Zwicky}}(2009)}]{zwicky}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {{Zwicky}}},\ }\href {\doibase 10.1007/s10714-008-0707-4} {\bibfield
+  {journal} {\bibinfo  {journal} {General Relativity and Gravitation}\ }\textbf
+  {\bibinfo {volume} {41}},\ \bibinfo {pages} {207} (\bibinfo {year}
+  {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aghanim}\ \emph {et~al.}(2018)\citenamefont {Aghanim}
+  \emph {et~al.}}]{plank}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Aghanim}} \emph {et~al.} (\bibinfo {collaboration} {Planck}),\ }\href@noop
+  {} {\  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1807.06209}
+  {arXiv:1807.06209 [astro-ph.CO]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1807.06209;%%
+\bibitem [{\citenamefont {Glashow}\ and\ \citenamefont
+  {Weinberg}(1977)}]{glash_fcnc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont
+  {Glashow}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Weinberg}},\ }\href {\doibase 10.1103/PhysRevD.15.1958} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume}
+  {15}},\ \bibinfo {pages} {1958} (\bibinfo {year} {1977})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Paschos}(1977)}]{pashos}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~A.}\ \bibnamefont
+  {Paschos}},\ }\href {\doibase 10.1103/PhysRevD.15.1966} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {15}},\
+  \bibinfo {pages} {1966} (\bibinfo {year} {1977})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Barger}\ \emph {et~al.}(1995)\citenamefont {Barger},
+  \citenamefont {Berger},\ and\ \citenamefont {Phillips}}]{barger}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~D.}\ \bibnamefont
+  {Barger}}, \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont {Berger}},
+  \ and\ \bibinfo {author} {\bibfnamefont {R.~J.~N.}\ \bibnamefont
+  {Phillips}},\ }\href {\doibase 10.1103/PhysRevD.52.1663} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
+  {D52}},\ \bibinfo {pages} {1663} (\bibinfo {year} {1995})},\ \Eprint
+  {http://arxiv.org/abs/hep-ph/9503204} {arXiv:hep-ph/9503204 [hep-ph]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-PH/9503204;%%
+\bibitem [{\citenamefont {Maki}\ \emph {et~al.}(1962)\citenamefont {Maki},
+  \citenamefont {Nakagawa},\ and\ \citenamefont {Sakata}}]{pnms}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Maki}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Nakagawa}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Sakata}},\ }\href
+  {\doibase 10.1143/PTP.28.870} {\bibfield  {journal} {\bibinfo  {journal}
+  {Prog. Theor. Phys.}\ }\textbf {\bibinfo {volume} {28}},\ \bibinfo {pages}
+  {870} (\bibinfo {year} {1962})},\ \bibinfo {note} {[,34(1962)]}\BibitemShut
+  {NoStop}%
+%%CITATION = PTPKA,28,870;%%
+\bibitem [{\citenamefont {Branco}\ \emph {et~al.}(2012)\citenamefont {Branco},
+  \citenamefont {Ferreira}, \citenamefont {Lavoura}, \citenamefont {Rebelo},
+  \citenamefont {Sher},\ and\ \citenamefont {Silva}}]{h2dm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~C.}\ \bibnamefont
+  {Branco}}, \bibinfo {author} {\bibfnamefont {P.~M.}\ \bibnamefont
+  {Ferreira}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Lavoura}},
+  \bibinfo {author} {\bibfnamefont {M.~N.}\ \bibnamefont {Rebelo}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Sher}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.~P.}\ \bibnamefont {Silva}},\ }\href {\doibase
+  10.1016/j.physrep.2012.02.002} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rept.}\ }\textbf {\bibinfo {volume} {516}},\ \bibinfo {pages} {1}
+  (\bibinfo {year} {2012})},\ \Eprint {http://arxiv.org/abs/1106.0034}
+  {arXiv:1106.0034 [hep-ph]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1106.0034;%%
 \end{thebibliography}%

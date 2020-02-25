@@ -29,7 +29,7 @@ To search for extensions of the SM is possible postulate a scale of new physics 
 through deviations of known observable, usually at high energies.\\
 In this chapter, a concise description of the SM will be presented, from the gauge
 principle to the description of several theories for physics beyond the Standard Model which are crucial for the search of
-FCNC decay of top-quark.
+FCNC decay of top quark.
 
 % ----------------------------------------------------------------------
 % ----------------------- introduction content -------------------------
@@ -188,12 +188,12 @@ Adding this term gives the total neutral current:
 	& = \; g[ \bar{u} u + \bar{c}c - \bar{d} d  - \bar{s}s ]
 \end{split}						
 \end{align}
-That is, the unwanted terms cancel, leaving a flavour diagonal result.
+That is, the unwanted terms cancel, leaving a flavor diagonal result.
 \vspace{\baselineskip}
 \\The GIM mechanism gives also an estimation of the charmed quark, before the $J/\Psi$ discovery occurred in 1974.\\
-In the three-quarks picture, and according to the Cabibbo mechanism alone, s $\rightarrow$ d transitions via \textit{Flavour Changing Neutral Current} FCNC processes would be possible at all orders of the perturbation expansion. \\
-For example, the process $K^{0}_{L}\rightarrow \mu^{+} \mu^{-}$ FCNC decay could take place, in terms of known quark (u and d-quarks), via the "box-diagram" of Fig.\ref{fig:Kdecay} (a).\\
-The calculated rate is larger then what was observed experimentally. However, including the diagram of Fig. \ref{fig:Kdecay} (b), the total amplitude is:
+In the three-quarks picture, and according to the Cabibbo mechanism alone, s $\rightarrow$ d transitions via \textit{Flavor Changing Neutral Current} FCNC processes would be possible at all orders of the perturbation expansion. \\
+For example, the process $K^{0}_{L}\rightarrow \mu^{+} \mu^{-}$ FCNC decay could take place, in terms of known quark (u and d-quarks), via the "box-diagram" of Figure\ref{fig:Kdecay_u}.\\
+The calculated rate is larger then what was observed experimentally. However, including the diagram of Figure\ref{fig:Kdecay_c}, the total amplitude is:
 \begin{equation} 
 \mathcal{M} = \mathcal{M}_{(a)} +\mathcal{M}_{(b)} \;\sim\;f(m_u)g^{4}\cos\theta_{c}\sin\theta_{c} - f(m_c)g^{4}\cos\theta_{c}\sin\theta_{c}
 \end{equation}
@@ -201,10 +201,11 @@ Thus, the c-quark induces a cancellation, giving a BR compatible with the experi
 c-quark that in the end it is $\sim\; 3$ GeV.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Chapters/CH1/figures/kdecay}
-	\caption{Feynman diagram of $K$ meson decay, a) in CC with BR=,  b) in NC with BR=}
-	\label{fig:Kdecay}
+		\subfigure[]{\label{fig:Kdecay_u}\includegraphics[width=50mm]{Chapters/CH1/figures/kdecay_u}}\qquad
+		\subfigure[]{\label{fig:Kdecay_c}\includegraphics[width=50mm]{Chapters/CH1/figures/kdecay_c}}
+	\caption{Feynman diagrams of $K^{0}_{L}\rightarrow \mu^{+} \mu^{-}$ via ($a$) u-quark exchange and ($b$) c-quark exchange}
 \end{figure}
+
 In addition to this major prediction, the GIM mechanism led to the prediction that FCNC processes are forbidden at tree-level Leading Order. The branching ratios of several FCNC decays of the top quark in the SM are given in Table \ref{tab:SM_BR}
 \begin{table}[h]
 	\begin{adjustbox}{max width=1.\textwidth,center}
@@ -225,6 +226,7 @@ in the (then known)  numbers of quark and leptons.\\
 These ideas were extended by Kobayashi and Maskawa (1973), who introduced a framework of six quarks and it will be described in the next section.
 
 \subsubsection{CKM matrix}
+\label{sec:ckm}
 In 1973 Kobayashi and Maskawa extended the Cabibbo's mechanism allowing to describe the transitions within and in-between 3 generations of quarks
 using the so-called \textit{CKM} $3\times3$ matrix \cite{cabibbo,ckm}, which relates the weak eigenstate of down-type to their mass eigenstate:
 \begin{equation}
@@ -256,25 +258,192 @@ Therefore, partners of the up-type quarks within the weak isospin doublets are t
 The CKM matrix is fully defined by 4 independent parameters, which must be determined experimentally. These parameters are: 3 mixing angles and 1 CP-mixing
 phase, which violates the CP\footnotemark symmetry in the SM \cite{cp_vio}.
 The diagonal elements of the CKM matrix are close to 1, reflecting the fact that transitions are favoured between quarks of the same generation. \\
-The CKM matrix is unitary, i.e. the sum of the transition probabilities for any quark flavour is equal to 1. If this assumption was to be disproved, 
+The CKM matrix is unitary, i.e. the sum of the transition probabilities for any quark flavor is equal to 1. If this assumption was to be disproved, 
 it could imply the existence of a fourth quark generation \textbf{CITARE FORSE PARAGRAFO BDM}.
 \footnotetext{Charge transformation followed by a parity transformation.}
 
+\vspace{1cm}
+\textbf{METTERE Electroweak symmetry breaking ???}
 %\clearpage
 %\subsection{Electroweak symmetry breaking}  METTERE ???
 
-\clearpage
 \section{Top quark physics}
+The heaviest known elementary particle described by the Standard Model is the top quark.\\
+In 1995, the top quark discovery in FERMILAB \cite{CDF,D0} was a great success for the SM predictions e.g. the corroboration of existence  of a weak isospin partner of the top quark.
+Due to its large mass, the predicted lifetime $\mathrm{\tau_{t} \approx 5\times 10^{−25}}$ s (in agreement with theoretical expectations \cite{LHcb_top}) entail that it decays before hadronising.\\
+In the next sections, the production mechanism is reported, as well as a dissertation about the decay channels.
+\subsection{Production}
+The top quark can either be produced as pairs, via strong interaction, or as a single top quark via electroweak interaction that doe not preserve the flavor.\\
+The main parton sub-processes that lead to top-pair production are the quark-antiquark annihilation ($q\bar{q}\rightarrow t\bar{t}$, Figure\ref{fig:top_prod_a}) and the gluon-gluon fusion ($gg\rightarrow t\bar{t}$, \Cref{fig:top_prod_b,fig:top_prod_c}).\\
+\begin{figure}[h]
+	\centering
+	\subfigure[]{\label{fig:top_prod_a}\includegraphics[width=37mm]{Chapters/CH1/figures/top_prod_a}}\quad
+	\subfigure[]{\label{fig:top_prod_b}\includegraphics[width=35mm]{Chapters/CH1/figures/top_prod_b}}\quad
+	\subfigure[]{\label{fig:top_prod_c}\includegraphics[width=33mm]{Chapters/CH1/figures/top_prod_c}}
+	\caption{Feynman diagrams of $t\bar{t}$ production via (a) quark-antiquark annihilation ($q\bar{q}\rightarrow t\bar{t}$) and (b,c) gluon-gluon fusion ($gg\rightarrow t\bar{t}$) }
+\end{figure}
+Since in protons there are not valence antiquark, the quark-antiquark annihilation is suppressed by 
+the parton distribution functions (PDF) of the antiquark in the proton. Therefore, at LHC the dominant process turns out to be the
+gluon-gluon fusion, while in a proton-antiproton collider, such as Tevatron,
+the dominant process is the quark-antiquark annihilation, in fact:
+\begin{itemize}
+	\item Tevatron: $q\bar{q}\rightarrow t\bar{t} \approx 86\%$, $gg\rightarrow t\bar{t} \approx 15\%$
+	\item LHC: $q\bar{q}\rightarrow t\bar{t} \approx 20\%$, $gg\rightarrow t\bar{t} \approx 80\%$
+\end{itemize}
+Top-pairs can be produced also for weak interaction when two quarks exchange $Z^0$ or a $\gamma$; however the cross-section of these
+type of processes is negligible when compared to the production cross-section through strong interaction.\\
+Although at LHC the top quarks are mainly produced in the process described above, a not negligible number of tops 
+are produced singly by weak interaction but with a production cross section equal to approximately 1/3 of the top-pair production
+cross-section, which is, at $\sqrt{13}$ TeV and taking into account a top quark mass of 172.5 \vspace{1mm}{$\mathrm{GeV/c^2}$, $\sigma_{t\bar{t}} = 831.8^{+19.8+35.1}_{-29.2-35.1}$ pb \cite{pdg}.}\\
 
-\clearpage
+\subsection{Decay channels}
+Since the top quark mass is greater than the W boson mass, it decay through weak interaction, mainly in $t\rightarrow W^{+}b$; according to SM is 100\% of the possible cases.\\
+The other channels ($t\rightarrow W^{+}s$, $t\rightarrow W^{+}d$) are strongly suppressed by the CKM matrix elements (see section\ref{sec:ckm}). Exploiting the matrix unitarity 
+and the B meson oscillations it is possible to extract the following BRs\cite{tdecayBR}:
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{l}
+		%\hline
+		BR$(\mathrm{t \rightarrow W^{+} b)\sim 0.998}$\\
+		%\hline
+		BR$(\mathrm{t \rightarrow W^{+} s)\sim 1.9\cdot10^{-3}}$\\
+		%\hline
+		BR$(\mathrm{t \rightarrow W^{+} d)\sim 10^{-4}}$\\
+		%\hline
+	\end{tabular}
+\end{table}
+\newline Therefore, the top decay total width is given by, in good approximation, the decay $(t \rightarrow W^{+} b)$, thus equals to $\Gamma_t = 1.44$~GeV.
+The W boson may decay in only two ways: "leptonically" ($W\rightarrow l\nu$) or "hadronically" ($W\rightarrow q\bar{q}'$). This leads to three different categories
+of $t\bar{t}$ decays: dileptonic, semi-leptonic or hadronic. The Figure \ref{fig:ttBR} summarise the BRs associated to each channel.\\
+At the hadron colliders, the dominant hadronic mode is the hardest to detect due to the large QCD background.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Chapters/CH1/figures/ttBR}
+	\caption{Branching rations associated to each $t\bar{t}$ decay channel\cite{ttdecayBR}.}
+	\label{fig:ttBR}
+\end{figure}
+
+\newpage
 \section{Theories for physics beyond the Standard Model}
 \label{sec:bsm}
-\clearpage
+The previous sections describe the core components of what we call \textit{Standard Model} and report few major successes of many. 
+Its predictive power makes this model the most tested in physics and it reaches the culmination of success on 4 July 2012, when
+the ATLAS and CMS experiments at CERN announced the observation a new particle in the mass region around 125 GeV, the
+Higgs boson \cite{higgsDiscovery}. \\
+But in spite of its important achievements, the SM falls short of explaining several important observations that in this section
+are briefly reported.
+\vspace{\baselineskip}
+\\SM considers neutrinos as massless particles but this is in contradiction with the results of many experiments, which observed,
+in several different contexts, the \textit{neutrino oscillations}. \\
+It is a quantum mechanical phenomenon whereby a neutrino created with a specific lepton family number ($e$, $\mu$, or $\tau$) 
+can later be measured to have a different lepton family number and this mechanism, implies that the neutrino has a non-zero mass 
+since it arises from mixing between the flavor and mass eigenstates of neutrinos. 
+\vspace{\baselineskip}
+\\SM can not describe \textit{dark matter} and \textit{dark energy}. The first evidence of dark matter came with the observation of 
+the rotational speed of galaxies, which suggests the existence of a huge amount of undetected mass \cite{zwicky}.\\
+None of the SM particles could explain this phenomenon and, since a dark matter has never been directly observed implies that
+it interact only weakly with the ordinary matter and radiation or does not interact at all.\\
+Likewise, dark energy is an unknown form of energy that affects the universe on the largest scales.
+The first observational evidence for its existence came from supernovae measurements, which showed that the universe does 
+not expand at a constant rate; rather, the expansion of the universe is accelerating.\\
+The data collected by Planck spacecraft, indicate that dark energy contributes  68\% of the total energy in the present-day observable universe. 
+The mass–energy of dark matter and ordinary (baryonic) matter contributes 27\% and 5\%, respectively, and other components 
+such as neutrinos and photons contribute a very small amount \cite{plank}. 
+\vspace{\baselineskip}
+\\After the Big Bang one could expect that the universe produced the same amount of particles-antiparticles and that the constant annihilation
+of pairs would have constituted a universe of radiation. What we observe actually is large cosmological matter (but not antimatter) structures.
+The mechanism suggested by the SM through the CP-symmetry violation of neutral oscillating hadrons is not sufficient to explain alone this phenomenon.
+\vspace{\baselineskip}
+\\There are also some other strong indications that the SM could be not yet complete. Indeed, it is based on 19 parameters (excluding neutrino masses)
+that must be determined experimentally and no known theoretical origin.  Moreover, gravity could not be included as a gauge theory because, 
+describing graviton (the associated gauge boson) interactions, the classical theory of  Feynman diagrams, and semiclassical corrections with 
+at least two loops lead to \textit{ultraviolet divergences}. These infinite results cannot be removed 
+because quantized general relativity is not perturbatively renormalizable, unlike QED and models such as the Yang–Mills theory. 
+Therefore, when the probability of a particle to emit or absorb gravitons is calculate, the theory loses predictive veracity. 
+Those problems and the complementary approximation framework are grounds to show that a theory more unified than quantized general relativity is 
+required to describe the behavior near the Planck scale. 
+\vspace{\baselineskip}
+The problem of \textit{naturalness} is also much debated in literature. The Higgs boson is very sensitive to loop corrections (involving top quark and himself
+mainly) and if one considers the a theory close to the Planck scale, thus these corrections may explain why the Higgs boson mass is so relatively small compared
+e.g. with the top quark mass. Another problem is, in fact, the mass scale of fermions that it ranges across many orders of magnitude without any clear explanation.\\
+Many are models of "new physics" that attempt to describe and explain the phenomena mentioned above but so far there is no evidence of new physics beyond SM. 
+In this section we will briefly describe some of these interesting theories for the topics of this thesis
+
 \subsection{Quark singlets}
+The need to suppress the FCNC mechanism lead to two dogmas \cite{glash_fcnc,pashos}:
+\begin{itemize}
+	\item they are not mediated by $Z^0$ boson at tree-level
+	\item no FCNC mechanism in the scalar sector at tree-level 
+\end{itemize}
+It is possible to overcome these dogmas using extensions of the SM, like the Quark Singlets (QS) \cite{barger} that introduces a vector-like quark ($\mathrm{Q=\frac{1}{3}}$ or $\mathrm{Q=\frac{2}{3}}$), thus a small violation of the $\mathrm{3 \times 3}$ $V_{CKM}$ unitarity (see Section \ref{sec:ckm}), mediated by $Z^0$ boson and natural 
+FCNC suppression at tree-level.
+\vspace{\baselineskip}
+\\Given $x_L$ and $x_R$, $SU(2)_{L}$ singlets
+\begin{equation}
+\begin{pmatrix}
+d' \\ 
+s' \\ 
+b' \\
+x' 
+\end{pmatrix} 
+=
+\begin{pmatrix}
+|V_{ud}| & |V_{us}| & |V_{ub}|  & |V_{ux}| \\ 
+|V_{cd}| & |V_{cs}| & |V_{cb}|   & |V_{cx}| \\ 
+|V_{td}| & |V_{ts}|  &| V_{tb}|   & |V_{tx}|
+\end{pmatrix} 
+\begin{pmatrix}
+d \\ 
+s \\ 
+b \\
+x
+\end{pmatrix} 
+\end{equation}
+The non orthogonality of the columns leads to terms of the type:
+\begin{equation}
+J_{\mu}= \frac{g}{cos\theta_W}Z_{bd}\bar{b}_{L}\gamma_{\mu}d_{L}Z^{\mu}
+\end{equation}
+where
+\begin{equation}
+Z_{bd}=V_{ud}V^*_{ub}+V_{cd}V^*_{cb}+V_{td}V^*_{tb}
+\end{equation}
+and $Z_{bd}$ is suppressed by $\frac{m_q}{m_x}$.
+\vspace{\baselineskip}
+\\In this way is possible to have deviations from $\mathrm{3 \times 3}$ unitarity.\\
+The PMNS matrix in the leptonic sector, in the context of see-saw mechanism is not  $\mathrm{3 \times 3}$ unitarity \cite{pnms}.
+\\Vector-like quarks provide the simplest model with spontaneous \textit{CP violation} and a framework to have a common origin
+of all CP violation because it is a potential solution of the \textit{strong CP problem} without involving other particles, e.g. axions.
 
-\clearpage
 \subsection{Two Higgs Doublet Model}
-
+The LHC discovery of a Standard-Model-like Higgs H(125) particle in 2012\cite{higgsDiscovery} could be a portal to an extended Higgs sector predicted by several models, one of this is the Two-Higgs-Doublet Model (2HDM) \cite{h2dm}.
+The most natural extension of the Standard Model scalar sector is the addition of an
+extra $SU(2)_{L}$ doublet. 
+\vspace{\baselineskip}
+\\The 2HDM is an \textit{Effective Field Theory} (EFT\footnotemark) 
+\footnotetext{ An EFT corresponds to a low-energy approximation to
+a more fundamental underlying theory, characterized by an energy scale $\Lambda$ (e.g. the mass
+of new particles)}
+consisting of two complex Higgs doublets, which provide masses to both the up-type and the down-type fermions:
+\begin{equation} 
+	\Phi_{1}= \binom{\phi^{+}_{1}}{\phi^{0}_{1}}  \qquad \Phi_{2}= \binom{\phi^{+}_{2}}{\phi^{0}_{2}}
+\end{equation}
+with the minimum of the potential corresponding to
+\begin{equation} 
+	\Phi_{1,0}= \frac{1}{\sqrt{2}}\binom{0}{\nu_1}  \qquad \Phi_{2,0}= \frac{1}{\sqrt{2}}\binom{0}{\nu_2}.
+\end{equation}
+\\After the electroweak symmetry breaking (EWSB),
+there are five physical scalar fields, consisting of neutral bosons $h,H,A$ of which the
+first two bosons are CP-even, opposed to the A-boson which is CP-odd and of two charged Higgs states $H^{\pm}$.
+\\The model is parametrised by the five Higgs masses ($m_H$, $m_h$, $m_{H^{\pm}}$, $m_A$), the ratio of the vacuum expectation 
+values of the two Higgs doublets $\tan{\beta}= \nu_{2}/\nu_{1}$ and the mixing angle $\alpha$ between the CP-even Higgs states.
+\\There exist four types of 2HDM which simultaneously forbid the presence of FCNC and preserve CP symmetry:
+\begin{itemize}
+	\item in Type I all fermions couple to the second doublet $\Phi_2$. It follows that BR are independent of $\tan{\beta}$;
+	\item in Type II or MSSM-like scenario, lepton and down-type quarks couple to the first doublet $\Phi_1$, whilst up-type quarks couple to $\Phi_2$ ;
+	\item in Type III or lepton specific scenario, quarks couple to  $\Phi_2$ while leptons couple to the other doublet;
+	\item in Type IV or flipped model, the coupling of the leptons is reversed with respect to the Type-II model.
+\end{itemize}	
+	
 \clearpage
 \subsection{Minimal Supersymmetric Standard Model}
 

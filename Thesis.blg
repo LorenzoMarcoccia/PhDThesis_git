@@ -32,45 +32,47 @@ Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
 Warning--missing publisher in renton
-You've used 9 entries,
+Warning--empty year in ttdecayBR
+Warning--missing journal in plank
+You've used 23 entries,
             5847 wiz_defined-function locations,
-            1687 strings with 16724 characters,
-and the built_in function-call counts, 7893 in all, are:
-= -- 551
-> -- 146
-< -- 50
-+ -- 52
-- -- 32
-* -- 1187
-:= -- 834
-add.period$ -- 10
-call.type$ -- 9
-change.case$ -- 39
-chr.to.int$ -- 9
-cite$ -- 10
-duplicate$ -- 749
-empty$ -- 590
-format.name$ -- 81
-if$ -- 1517
+            1811 strings with 19358 characters,
+and the built_in function-call counts, 20217 in all, are:
+= -- 1422
+> -- 401
+< -- 122
++ -- 138
+- -- 90
+* -- 3060
+:= -- 2100
+add.period$ -- 25
+call.type$ -- 23
+change.case$ -- 96
+chr.to.int$ -- 23
+cite$ -- 28
+duplicate$ -- 1916
+empty$ -- 1537
+format.name$ -- 238
+if$ -- 3957
 int.to.chr$ -- 1
-int.to.str$ -- 17
-missing$ -- 90
-newline$ -- 81
-num.names$ -- 27
-pop$ -- 306
+int.to.str$ -- 31
+missing$ -- 237
+newline$ -- 129
+num.names$ -- 66
+pop$ -- 777
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 114
 quote$ -- 0
-skip$ -- 297
+skip$ -- 753
 stack$ -- 0
-substring$ -- 194
-swap$ -- 674
-text.length$ -- 16
+substring$ -- 528
+swap$ -- 1745
+text.length$ -- 39
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 114
-warning$ -- 1
-while$ -- 24
+type$ -- 297
+warning$ -- 3
+while$ -- 62
 width$ -- 0
-write$ -- 131
-(There was 1 warning)
+write$ -- 250
+(There were 3 warnings)
