@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{23}%
+\begin{thebibliography}{40}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,12 +50,12 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Fermi}(1934)}]{fermi}%
+\bibitem [{\citenamefont {Fermi}(2008)}]{fermi}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
-  {Fermi}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Il
-  Nuovo Cimento}\ }\textbf {\bibinfo {volume} {11}} (\bibinfo {year}
-  {1934})}\BibitemShut {NoStop}%
+  {Fermi}},\ }\href {\doibase 10.1007/BF02959820} {\bibfield  {journal}
+  {\bibinfo  {journal} {Il Nuovo Cimento (1934)}\ }\textbf {\bibinfo {volume}
+  {11}},\ \bibinfo {pages} {1} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Wilson}(1968)}]{wilson}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~L.}\ \bibnamefont
@@ -90,12 +90,12 @@
   {\doibase 10.1103/PhysRevD.2.1285} {\bibfield  {journal} {\bibinfo  {journal}
   {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {1285}
   (\bibinfo {year} {1970})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Aguilar-Saavedra}(2004)}]{aguilar}%
+\bibitem [{\citenamefont {Aguilar-Saavedra}(2004{\natexlab{a}})}]{aguilar}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Aguilar-Saavedra}},\ }\href@noop {} {\enquote {\bibinfo {title} {Top
   flavour-changing neutral interactions: theoretical expectations and
-  experimental detection},}\ } (\bibinfo {year} {2004}),\ \Eprint
+  experimental detection},}\ } (\bibinfo {year} {2004}{\natexlab{a}}),\ \Eprint
   {http://arxiv.org/abs/hep-ph/0409342} {arXiv:hep-ph/0409342 [hep-ph]}
   \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Cabibbo}(1963)}]{cabibbo}%
@@ -105,8 +105,8 @@
   of the Italian School of Physics and Weak Interactions Bologna, Italy, April
   26-28, 1984}}},\ }\href {\doibase 10.1103/PhysRevLett.10.531} {\bibfield
   {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
-  {volume} {10}},\ \bibinfo {pages} {531} (\bibinfo {year} {1963})},\ \bibinfo
-  {note} {[,648(1963)]}\BibitemShut {NoStop}%
+  {volume} {10}},\ \bibinfo {pages} {531} (\bibinfo {year} {1963})}\BibitemShut
+  {NoStop}%
 %%CITATION = PRLTA,10,531;%%
 \bibitem [{\citenamefont {Kobayashi}\ and\ \citenamefont
   {Maskawa}(1973)}]{ckm}%
@@ -115,20 +115,16 @@
   {Kobayashi}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
   {Maskawa}},\ }\href {\doibase 10.1143/PTP.49.652} {\bibfield  {journal}
   {\bibinfo  {journal} {Progress of Theoretical Physics}\ }\textbf {\bibinfo
-  {volume} {49}},\ \bibinfo {pages} {652} (\bibinfo {year} {1973})},\ \Eprint
-  {http://arxiv.org/abs/https://academic.oup.com/ptp/article-pdf/49/2/652/5257692/49-2-652.pdf}
-  {https://academic.oup.com/ptp/article-pdf/49/2/652/5257692/49-2-652.pdf}
-  \BibitemShut {NoStop}%
+  {volume} {49}},\ \bibinfo {pages} {652} (\bibinfo {year} {1973})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Ligeti}(2005)}]{cp_vio}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
-  {Ligeti}},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle}
-  {{Proceedings, 32nd International Conference on High Energy Physics (ICHEP
-  2004): Beijing, China, August 16-22, 2004. Vol. 1+2}}},\ }\href {\doibase
-  10.1142/S0217751X05028624} {\bibfield  {journal} {\bibinfo  {journal} {Int.
-  J. Mod. Phys.}\ }\textbf {\bibinfo {volume} {A20}},\ \bibinfo {pages} {5105}
-  (\bibinfo {year} {2005})},\ \Eprint {http://arxiv.org/abs/hep-ph/0408267}
-  {arXiv:hep-ph/0408267 [hep-ph]} \BibitemShut {NoStop}%
+  {Ligeti}},\ }\href {\doibase 10.1142/S0217751X05028624} {\bibfield  {journal}
+  {\bibinfo  {journal} {Int. J. Mod. Phys.}\ }\textbf {\bibinfo {volume}
+  {A20}},\ \bibinfo {pages} {5105} (\bibinfo {year} {2005})},\ \Eprint
+  {http://arxiv.org/abs/hep-ph/0408267} {arXiv:hep-ph/0408267 [hep-ph]}
+  \BibitemShut {NoStop}%
 %%CITATION = HEP-PH/0408267;%%
 \bibitem [{\citenamefont {Abe}\ \emph {et~al.}(1995)\citenamefont {Abe} \emph
   {et~al.}}]{CDF}%
@@ -171,13 +167,12 @@
   {http://arxiv.org/abs/0805.1333} {arXiv:0805.1333 [hep-ph]} \BibitemShut
   {NoStop}%
 %%CITATION = ARXIV:0805.1333;%%
-\bibitem [{ttd()}]{ttdecayBR}%
+\bibitem [{\citenamefont {{D0 Collaboration website}}()}]{ttdecayBR}%
   \BibitemOpen
-  \href
-  {https://www-d0.fnal.gov/Run2Physics/top/top_public_web_pages/feynman_diagrams/top_pair_branching_frac.eps}
-  {\enquote {\bibinfo {title} {Useful diagrams of top signals and
-  backgrounds},}\ }\Eprint {http://arxiv.org/abs/D0 Collaboration website} {D0
-  Collaboration website} \BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{D0 Collaboration
+  website}}},\ }\href@noop {} {\enquote {\bibinfo {title}
+  {{\href{https://www-d0.fnal.gov/Run2Physics/top/top_public_web_pages/feynman_diagrams/top_pair_branching_frac.eps}{Useful
+  Diagrams of Top Signals and Backgrounds}}},}\ }\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Aad}\ \emph {et~al.}(2012)\citenamefont {Aad} \emph
   {et~al.}}]{higgsDiscovery}%
   \BibitemOpen
@@ -203,6 +198,86 @@
   {} {\  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1807.06209}
   {arXiv:1807.06209 [astro-ph.CO]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1807.06209;%%
+\bibitem [{\citenamefont {Aguilar-Saavedra}(2004{\natexlab{b}})}]{tcZ_sm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
+  {Aguilar-Saavedra}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Acta Phys. Polon.}\ }\textbf {\bibinfo {volume} {B35}},\ \bibinfo
+  {pages} {2695} (\bibinfo {year} {2004}{\natexlab{b}})},\ \Eprint
+  {http://arxiv.org/abs/hep-ph/0409342} {arXiv:hep-ph/0409342 [hep-ph]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-PH/0409342;%%
+\bibitem [{\citenamefont {Aguilar-Saavedra}(2003)}]{qs_limit}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
+  {Aguilar-Saavedra}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D67}},\ \bibinfo {pages}
+  {035003} (\bibinfo {year} {2003})},\ \Eprint
+  {http://arxiv.org/abs/hep-ph/0210112} {arXiv:hep-ph/0210112 [hep-ph]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-PH/0210112;%%
+\bibitem [{\citenamefont {Atwood}\ \emph {et~al.}(1997)\citenamefont {Atwood},
+  \citenamefont {Reina},\ and\ \citenamefont {Soni}}]{h2dm_limit}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Atwood}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Reina}}, \
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Soni}},\ }\href
+  {\doibase 10.1103/PhysRevD.55.3156} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {55}},\ \bibinfo
+  {pages} {3156} (\bibinfo {year} {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cao}\ \emph {et~al.}(2007)\citenamefont {Cao},
+  \citenamefont {Eilam}, \citenamefont {Frank}, \citenamefont {Hikasa},
+  \citenamefont {Liu}, \citenamefont {Turan},\ and\ \citenamefont
+  {Yang}}]{mssm_limit}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont
+  {Cao}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Eilam}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Frank}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Hikasa}}, \bibinfo {author} {\bibfnamefont
+  {G.~L.}\ \bibnamefont {Liu}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {Turan}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~M.}\
+  \bibnamefont {Yang}},\ }\href {\doibase 10.1103/PhysRevD.75.075021}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {75}},\ \bibinfo {pages} {075021} (\bibinfo {year}
+  {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yang}\ \emph {et~al.}(1998)\citenamefont {Yang},
+  \citenamefont {Young},\ and\ \citenamefont {Zhang}}]{RPV_limit}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Yang}}, \bibinfo {author} {\bibfnamefont {B.-L.}\ \bibnamefont {Young}}, \
+  and\ \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Zhang}},\ }\href
+  {\doibase 10.1103/PhysRevD.58.055001} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {58}},\ \bibinfo
+  {pages} {055001} (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Agashe}\ \emph {et~al.}(2007)\citenamefont {Agashe},
+  \citenamefont {Perez},\ and\ \citenamefont {Soni}}]{extra_limit}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Agashe}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Perez}}, \
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Soni}},\ }\href
+  {\doibase 10.1103/PhysRevD.75.015002} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {75}},\ \bibinfo
+  {pages} {015002} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hung}\ \emph {et~al.}(2018)\citenamefont {Hung},
+  \citenamefont {Lin}, \citenamefont {Nugroho},\ and\ \citenamefont
+  {Yuan}}]{rs_limit}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Hung}}, \bibinfo {author} {\bibfnamefont {Y.-X.}\ \bibnamefont {Lin}},
+  \bibinfo {author} {\bibfnamefont {C.~S.}\ \bibnamefont {Nugroho}}, \ and\
+  \bibinfo {author} {\bibfnamefont {T.-C.}\ \bibnamefont {Yuan}},\ }\href
+  {\doibase https://doi.org/10.1016/j.nuclphysb.2017.12.014} {\bibfield
+  {journal} {\bibinfo  {journal} {Nuclear Physics B}\ }\textbf {\bibinfo
+  {volume} {927}},\ \bibinfo {pages} {166 } (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Agashe}\ \emph {et~al.}(2013)\citenamefont {Agashe}
+  \emph {et~al.}}]{report_limit}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Agashe}} \emph {et~al.} (\bibinfo {collaboration} {Top Quark Working
+  Group})\ }(\bibinfo {year} {2013})\ \Eprint {http://arxiv.org/abs/1311.2028}
+  {arXiv:1311.2028 [hep-ph]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1311.2028;%%
 \bibitem [{\citenamefont {Glashow}\ and\ \citenamefont
   {Weinberg}(1977)}]{glash_fcnc}%
   \BibitemOpen
@@ -238,8 +313,7 @@
   and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Sakata}},\ }\href
   {\doibase 10.1143/PTP.28.870} {\bibfield  {journal} {\bibinfo  {journal}
   {Prog. Theor. Phys.}\ }\textbf {\bibinfo {volume} {28}},\ \bibinfo {pages}
-  {870} (\bibinfo {year} {1962})},\ \bibinfo {note} {[,34(1962)]}\BibitemShut
-  {NoStop}%
+  {870} (\bibinfo {year} {1962})}\BibitemShut {NoStop}%
 %%CITATION = PTPKA,28,870;%%
 \bibitem [{\citenamefont {Branco}\ \emph {et~al.}(2012)\citenamefont {Branco},
   \citenamefont {Ferreira}, \citenamefont {Lavoura}, \citenamefont {Rebelo},
@@ -256,4 +330,70 @@
   (\bibinfo {year} {2012})},\ \Eprint {http://arxiv.org/abs/1106.0034}
   {arXiv:1106.0034 [hep-ph]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1106.0034;%%
+\bibitem [{\citenamefont {Couture}\ \emph {et~al.}(1995)\citenamefont
+  {Couture}, \citenamefont {Hamzaoui},\ and\ \citenamefont
+  {K\"onig}}]{coulture_mssm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Couture}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Hamzaoui}}, \
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {K\"onig}},\ }\href
+  {\doibase 10.1103/PhysRevD.52.1713} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {52}},\ \bibinfo
+  {pages} {1713} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Evans}\ and\ \citenamefont
+  {Bryant}(2008)}]{CERN_acc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Evans}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Bryant}},\
+  }\href {\doibase 10.1088/1748-0221/3/08/s08001} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Instrumentation}\ }\textbf {\bibinfo
+  {volume} {3}},\ \bibinfo {pages} {S08001} (\bibinfo {year}
+  {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mobs}()}]{CERN_complex}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Mobs}},\ }\href@noop {} {\enquote {\bibinfo {title}
+  {\href{"https://cds.cern.ch/record/2636343"}{The CERN accelerator complex -
+  August 2018. Complexe des accélérateurs du CERN}},}\ }\BibitemShut
+  {NoStop}%
+\bibitem [{lum()}]{lumi}%
+  \BibitemOpen
+  \href@noop {} {\enquote {\bibinfo {title} {{LHC} public plots},}\ }\bibinfo
+  {howpublished}
+  {\href{https://twiki.cern.ch/twiki/bin/view/AtlasPublic/LuminosityPublicResultsRun2\#Pileup_Interactions_and_Data_Tak}{{ATLAS}
+  {T}wiki}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aad}\ \emph {et~al.}(2008)\citenamefont {Aad} \emph
+  {et~al.}}]{ATLAS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Aad}} \emph {et~al.} (\bibinfo {collaboration} {ATLAS}),\ }\href {\doibase
+  10.1088/1748-0221/3/08/S08003} {\bibfield  {journal} {\bibinfo  {journal}
+  {JINST}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages} {S08003}
+  (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{The ATLAS
+  collaboration}}(1997{\natexlab{a}})}]{MagSys}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{The ATLAS
+  collaboration}}},\ }\href {https://inspirehep.net/literature/455674} {\emph
+  {\bibinfo {title} {{ATLAS magnet system: {T}echnical {D}esign {R}eport}}}}\
+  (\bibinfo {year} {1997})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{The ATLAS collaboration}}(1996)}]{cal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{The ATLAS
+  collaboration}}},\ }\href {https://inspirehep.net/literature/1614085} {\emph
+  {\bibinfo {title} {{ATLAS liquid argon calorimeter: {T}echnical {D}esign
+  {R}eport}}}}\ (\bibinfo {year} {1996})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{The ATLAS collaboration}}(1997{\natexlab{b}})}]{MS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{The ATLAS
+  collaboration}}},\ }\href {https://inspirehep.net/literature/455675} {\emph
+  {\bibinfo {title} {{{ATLAS} muon spectrometer : {T}echnical {D}esign
+  {R}eport}}}}\ (\bibinfo {year} {1997})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{The ATLAS collaboration}}(2003)}]{TrigSys}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{The ATLAS
+  collaboration}}},\ }\href {https://inspirehep.net/literature/629896} {\emph
+  {\bibinfo {title} {{ATLAS high-level trigger, data acquisition and controls:
+  {T}echnical {D}esign {R}eport}}}}\ (\bibinfo {year} {2003})\BibitemShut
+  {NoStop}%
 \end{thebibliography}%

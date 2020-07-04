@@ -22,6 +22,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: biblio.bib
+I was expecting a `,' or a `}'---line 495 of file biblio.bib
+ :  accélérateurs du CERN}}
+ :                           ",
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 Control: key (0) 
@@ -34,45 +38,51 @@ Control: production of eprint (0) enabled
 Warning--missing publisher in renton
 Warning--empty year in ttdecayBR
 Warning--missing journal in plank
-You've used 23 entries,
+Warning--empty year in CERN_complex
+Warning--empty year in lumi
+Warning--missing publisher in MagSys
+Warning--missing publisher in cal
+Warning--missing publisher in MS
+Warning--missing publisher in TrigSys
+You've used 40 entries,
             5847 wiz_defined-function locations,
-            1811 strings with 19358 characters,
-and the built_in function-call counts, 20217 in all, are:
-= -- 1422
-> -- 401
-< -- 122
-+ -- 138
-- -- 90
-* -- 3060
-:= -- 2100
-add.period$ -- 25
-call.type$ -- 23
-change.case$ -- 96
-chr.to.int$ -- 23
-cite$ -- 28
-duplicate$ -- 1916
-empty$ -- 1537
-format.name$ -- 238
-if$ -- 3957
-int.to.chr$ -- 1
-int.to.str$ -- 31
-missing$ -- 237
-newline$ -- 129
-num.names$ -- 66
-pop$ -- 777
+            1923 strings with 22357 characters,
+and the built_in function-call counts, 34348 in all, are:
+= -- 2367
+> -- 723
+< -- 202
++ -- 248
+- -- 164
+* -- 5134
+:= -- 3595
+add.period$ -- 44
+call.type$ -- 40
+change.case$ -- 164
+chr.to.int$ -- 38
+cite$ -- 51
+duplicate$ -- 3247
+empty$ -- 2649
+format.name$ -- 425
+if$ -- 6754
+int.to.chr$ -- 3
+int.to.str$ -- 48
+missing$ -- 401
+newline$ -- 183
+num.names$ -- 117
+pop$ -- 1358
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 197
 quote$ -- 0
-skip$ -- 753
+skip$ -- 1286
 stack$ -- 0
-substring$ -- 528
-swap$ -- 1745
-text.length$ -- 39
+substring$ -- 915
+swap$ -- 2907
+text.length$ -- 69
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 297
-warning$ -- 3
-while$ -- 62
+type$ -- 517
+warning$ -- 9
+while$ -- 107
 width$ -- 0
-write$ -- 250
-(There were 3 warnings)
+write$ -- 377
+(There was 1 error message)
