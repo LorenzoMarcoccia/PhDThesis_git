@@ -39,7 +39,12 @@
 \usepackage{siunitx}
 \usepackage[bottom]{footmisc}
 \usepackage[section]{placeins}
+\usepackage{tabularx}
+\usepackage{comment}
 \usepackage{multirow}
+\usepackage{quoting,xparse}
+%\usepackage{caption}
+%\usepackage{subcaption}
  \addtolength{\textheight}{0.0cm}  % add/remove size to vertical text space in the page
  \addtolength{\voffset}{-0.0cm}    % vertical offset from top AND bottom of the page
  \addtolength{\textwidth}{0.48cm}  % add/remove size to the width of the text in the page
@@ -47,6 +52,21 @@
  \addtolength{\oddsidemargin}{-0.0cm}   % border size on the odd pages (for bindings)
  \addtolength{\evensidemargin}{0.0cm}   % border size on the even pages (for bindings)
 %\newcommand{\Neq}{\ensuremath{\,\rm{n}_{\rm{eq}}/cm^2}}
+
+\NewDocumentCommand{\bywhom}{m}{% the Bourbaki trick
+	{\nobreak\hfill\penalty50\hskip1em\null\nobreak
+		\hfill\mbox{\normalfont(#1)}%
+		\parfillskip=0pt \finalhyphendemerits=0 \par}%
+}
+
+\NewDocumentEnvironment{pquotation}{m}
+{\begin{quoting}[
+		indentfirst=false,
+		leftmargin=4cm,
+		rightmargin=\parindent]\itshape}
+	{\bywhom{#1}\end{quoting}}
+
+
 % --------------------------------------------------------------
 %                   FRONT MATTER: dedications, abstract,..
 % --------------------------------------------------------------
@@ -67,6 +87,19 @@
 \thispagestyle{empty}
 \newpage
 
+% --------------------- QUOTES----------------------------------
+\vspace*{3cm} 
+
+\begin{pquotation}{Karl Popper, The Logic of Scientific Discovery}
+	`The wrong view of science\\
+	 betrays itself in the craving to be right;\\ 
+	for it is not his possession of knowledge,\\ 
+	of irrefutable truth, that makes the man of science, \\
+	but his persistent and recklessly critical quest for truth.'\\
+	\newline
+\end{pquotation}
+
+% --------------------- ACKNOWLEDGEMENT----------------------------------
 %\include{Frontmatter/dedication}
 \fancyend
 \include{Frontmatter/acknowledgement}
