@@ -1,0 +1,394 @@
+\usepackage{Latex/StyleFiles/atlasbiblatex}	
+\usepackage{Latex/StyleFiles/atlasbsm}		
+%\usepackage{Latex/StyleFiles/atlascomment}	
+\usepackage{Latex/StyleFiles/atlascontribute}	
+%\usepackage{Latex/StyleFiles/atlascover}		
+%\usepackage{Latex/StyleFiles/atlascover2}		
+%\usepackage{Latex/StyleFiles/atlasdoc.cls		
+%\usepackage{Latex/StyleFiles/atlasdoc2.cls		
+\usepackage{Latex/StyleFiles/atlasheavyion}	
+\usepackage{Latex/StyleFiles/atlashepparticle}	
+\usepackage{Latex/StyleFiles/atlashepprocess}	
+\usepackage{Latex/StyleFiles/atlasjetetmiss}	
+\usepackage{Latex/StyleFiles/atlasjournal}	
+\usepackage{Latex/StyleFiles/atlasmath}		
+\usepackage{Latex/StyleFiles/atlasmetadefs}	
+\usepackage{Latex/StyleFiles/atlasmisc}		
+\usepackage{Latex/StyleFiles/atlasother}
+%		\usepackage{Latex/StyleFiles/atlaspackage}
+\usepackage{Latex/StyleFiles/atlasphysics}
+%		\usepackage{Latex/StyleFiles/atlasprocess}
+\usepackage{Latex/StyleFiles/atlassnippets}
+\usepackage{Latex/StyleFiles/atlasunit}
+\usepackage{Latex/StyleFiles/atlasxref}
+\usepackage{Latex/StyleFiles/doc_atlas_tables_atlas_tables-defs}
+%		\usepackage{Latex/StyleFiles/atlasparticle}
+		%-------
+
+% ===============
+% Font formatting
+% ===============
+ % Notes to the editorial board
+\newcommand{\EB}[1]{\textcolor{red}{\textbf{Note to the EB:} #1}}
+
+%\newcommand*{\anabasevers}{AnalysisBase-21.2.103\xspace}
+\newcommand*{\anabasevers}{AnalysisBase-21.2.127\xspace}
+
+\newcommand*{\lumi}{139 \mbox{fb\(^{-1}\)}} 
+\newcommand*{\FCNCtZq}{FCNC \tZq\xspace}
+\newcommand*{\FCNCtZc}{FCNC \tZc\xspace}
+\newcommand*{\FCNCtZu}{FCNC \tZu\xspace}
+\newcommand*{\tZq}{\Pqt{}\PZ{}\Pq}
+\newcommand*{\tZc}{\Pqt{}\PZ{}\Pqc}
+\newcommand*{\tZu}{\Pqt{}\PZ{}\Pqu}
+\newcommand*{\BR}{BR}
+
+\newcommand*{\ssb}{\ensuremath{\frac{S}{\sqrt{B}}}\xspace}
+
+\newcommand*{\OBDTG}{\ensuremath{O_{\text{BDTG}}}\xspace}
+\newcommand*{\musig}{\ensuremath{\mu_{\text{SIG}}}\xspace}
+\newcommand*{\Done}{\ensuremath{D_{\text{1}}}\xspace}
+\newcommand*{\DtwoU}{\ensuremath{D_{\text{2}}^{u}}\xspace}
+\newcommand*{\DtwoC}{\ensuremath{D_{\text{2}}^{c}}\xspace}
+\newcommand*{\Dthree}{\ensuremath{D_{\text{3}}}\xspace}
+
+\newcommand*{\pruneshape}{\SI{0.5}{\%}\xspace}
+\newcommand*{\prunenorm}{\SI{1}{\%}\xspace}
+
+
+\newcommand*{\ErrStatSys}{The uncertainty band includes both statistical and systematic uncertainties.\xspace}
+\newcommand*{\ErrStatOnly}{The uncertainty band includes only the statistical uncertainty.\xspace}
+\newcommand*{\TabErrStatSys}{The error includes both statistical and systematic uncertainties.\xspace}
+\newcommand*{\TabErrStatOnly}{The error includes only the statistical uncertainty.\xspace}
+\newcommand*{\Blinded}{These distributions are blinded, following the blinding strategy.\xspace}
+\newcommand*{\NoBDTGCut}{No cut on the BDTG discriminant is applied.\xspace}
+
+% ===============
+% Macros for comments
+% ===============
+\newcommand{\ADnote}[3][]{\FCNCtZqnote[author=Archil, #1]{#2}{#3}{blue!20}{blue}}
+\newcommand{\APnote}[3][]{\FCNCtZqnote[author=Ana, #1]{#2}{#3}{cyan!20}{cyan}}
+\newcommand{\LDnote}[3][]{\FCNCtZqnote[author=Lidia,#1]{#2}{#3}{green!20}{green!50!black!60}}
+\newcommand{\LMnote}[3][]{\FCNCtZqnote[author=Lorenzo, #1]{#2}{#3}{red!20}{red}}
+\newcommand{\NCnote}[3][]{\FCNCtZqnote[author=Nuno, #1]{#2}{#3}{orange!20}{orange}}
+\newcommand{\UDnote}[3][]{\FCNCtZqnote[author=Umberto, #1]{#2}{#3}{violet!20}{violet}}
+
+%\ifPrintNotes
+%  \typeout{FCNCtZq document: showing comments}
+%  \KOMAoptions{BCOR=-5mm}
+%  \KOMAoptions{DIV=last}
+%  \addtolength{\marginparwidth}{10mm}
+%  \addtolength{\textwidth}{-7.86mm}
+%  \RequirePackage{todonotes}
+%  % \presetkeys{todonotes}{color=cyan!20, linecolor=cyan}{}
+%  \newcommand{\FCNCtZqnote}[5][]{%
+%    \ifthenelse{ \equal{#1}{} }
+%      {\textcolor{#5}{#2}\todo[color=#4, linecolor=#5]{#3}\xspace}
+%      {\textcolor{#5}{#2}\todo[color=#4, linecolor=#5, #1]{#3}\xspace}
+%    }
+%\else
+%  \typeout{FCNC tZq document: not showing comments}
+%  \RequirePackage[disable]{todonotes}
+%  % \typeout{todo 1:#1; 2:#2; 3:#3;}
+%  \newcommand{\FCNCtZqnote}[5][]{%
+%    #2\xspace
+%  }
+%\fi
+
+% ==============
+% Physical units
+% ==============
+% Kinematics
+\newcommand*{\mT}{\ensuremath{m_{\text{T}}}\xspace}
+\newcommand*{\MT}{\ensuremath{m_{\text{T}}}\xspace}
+\newcommand*{\mTW}{\ensuremath{m_{\text{T}}(\PW)}\xspace}
+\newcommand*{\mtw}{\ensuremath{m_{\text{T}}(\PW)}\xspace}
+\newcommand*{\mll}{\ensuremath{m_{\ell\ell}}\xspace}
+\newcommand*{\mbj}{\ensuremath{m_{\Pqb\text{j}_{\text{f}}}}\xspace}
+\newcommand*{\OS}{OS\xspace}
+\newcommand*{\OSSF}{OSSF\xspace}
+\newcommand*{\OSOF}{OSOF\xspace}
+\newcommand*{\OSDF}{OSDF\xspace}
+\newcommand*{\SF}{\ensuremath{\text{SF}}\xspace}
+\newcommand*{\emm}{\Pe{}\Pgm{}\Pgm}
+\newcommand*{\mee}{\Pgm{}\Pe{}\Pe}
+\newcommand*{\eee}{\Pe{}\Pe{}\Pe}
+\newcommand*{\mmm}{\Pgm{}\Pgm{}\Pgm}
+
+\newcommand*{\mtop}{\ensuremath{m_{t}}\xspace}
+\newcommand*{\mtopfcnc}{\ensuremath{m^\mathrm{FCNC}_{t}}\xspace}
+\newcommand*{\mtopsm}{\ensuremath{m^\mathrm{SM}_{t}}\xspace}
+\newcommand*{\mtopvalue}{\SI{172.5}{\GeV}\xspace}
+
+\newcommand{\Et}{\ET}
+\newcommand{\Pt}{\pT}
+\newcommand{\PtW}{\pT(\Wboson)}
+\newcommand{\Pz}{p_z}
+\newcommand{\Ht}{H_{\text{T}}}
+\newcommand{\PtLep}{\Pt^{\lepton}}
+\newcommand{\DeltaPhi}{\varDelta{}\varphi}
+\newcommand{\DeltaEta}{\varDelta{}\eta}
+%\newcommand{\DeltaR}{\varDelta{}R}
+\newcommand{\DeltaE}{\varDelta{}\kern-0.1emE}
+\newcommand{\Etmiss}{\MET}
+\newcommand{\mtW}{m_{\text{T}}^{\Wboson}}
+\newcommand{\epsReal}{\epsilon_{\text{real}}}
+\newcommand{\epsFake}{\epsilon_{\text{fake}}}
+\newcommand{\PzNu}{\Pz^{\neutrino}}
+
+\newcommand*{\tllq}{\Pqt{}\Plp{}\Plm{}\Pq}
+\newcommand*{\tZ}{\Pqt{}\PZ}
+\newcommand*{\tH}{\Pqt{}\PH}
+\newcommand*{\tW}{\Pqt{}\PW}
+\newcommand*{\ttVH}{\ensuremath{\Pqt\Paqt V + \Pqt\Paqt \PH}\xspace}
+\newcommand*{\ttWZH}{\ensuremath{\Pqt\Paqt V + \Pqt\Paqt \PH + \Pqt\PW\PZ}\xspace}
+\newcommand*{\tWZ}{\Pqt{}\PW{}\PZ}
+\newcommand*{\ttV}{\ensuremath{\Pqt\Paqt V}\xspace}
+\newcommand*{\ttW}{\ensuremath{\Pqt\Paqt{}\PW{}}\xspace}
+\newcommand*{\ttZ}{\ensuremath{\Pqt\Paqt{}\PZ{}}\xspace}
+\newcommand*{\ttgamma}{\ensuremath{\Pqt\Paqt \gamma}\xspace}
+\newcommand*{\ttH}{\ensuremath{\Pqt\Paqt H}\xspace}
+\newcommand*{\ttbarX}{\ensuremath{\Pqt{}\Paqt}\xspace}
+\newcommand*{\WZ}{\PW{}\PZ}
+\newcommand*{\VV}{\ensuremath{VV}\xspace}
+\newcommand*{\VVLF}{\ensuremath{VV+\text{LF}}\xspace}
+\newcommand*{\VVHF}{\ensuremath{VV+\text{HF}}\xspace}
+\newcommand*{\VVCF}{\ensuremath{VV+\Pqc}\xspace}
+\newcommand*{\VVBF}{\ensuremath{VV+\Pqb}\xspace}
+\newcommand*{\smallBkgs}{\ensuremath{\text{Small backgrounds}}\xspace}
+
+% --- From PMG document
+% generators
+\def\pythia{\textsc{Pythia8}\xspace}
+\def\pythiasix{\textsc{Pythia6}\xspace}
+\def\sherpa{\textsc{Sherpa}\xspace} 
+\def\alpgen{\textsc{Alpgen}\xspace} 
+\def\herwig{\textsc{Herwig}\xspace} 
+\def\herwigseven{\textsc{Herwig7}\xspace} 
+\def\jimmy{\textsc{JIMMY}\xspace} 
+\def\menlops{\textsc{MENLOPS}\xspace} 
+\def\mepsatnlo{\textsc{MEPS@NLO}\xspace} 
+\def\mepsatlo{\textsc{MEPS@LO}\xspace} 
+\def\mcatnlo{\textsc{MC@NLO}\xspace} 
+\def\mcfm{\textsc{MCFM}\xspace} 
+\def\mgamc{\textsc{MadGraph5\_aMC@NLO}\xspace}
+\def\mg{\textsc{MadGraph}\xspace}
+\def\mgpythia{\textsc{MadGraph5\_aMC@NLO}\ensuremath{+}\pythia\xspace}
+\def\ggtwovv{\textsc{gg2VV}\xspace} 
+\def\vbfnlo{\textsc{VBFNLO}\xspace} 
+\def\openloops{\textsc{OpenLoops}\xspace}
+\def\collier{\textsc{Collier}\xspace}
+\def\minlo{\textsc{Powheg MiNLO}\xspace}
+\def\photospp{\textsc{Photos++}\xspace}
+\def\minntchannels{\texttt{Min\_N\_TChannels}\xspace}
+\def\fxfx{\textsc{FxFx}\xspace}
+% tunes and PDF sets
+\def\cteq{\texttt{CTEQ6L1}\xspace}
+\def\ctten{\texttt{CT10}\xspace}
+\def\cttennlo{\texttt{CT10nlo}\xspace}
+\def\ctfourteennlo{\texttt{CT14nnlo}\xspace}
+\def\ctfourteennnlo{\texttt{CT14nnlo}\xspace}
+\def\nnpdfnnlo{\texttt{NNPDF3.0nnlo}\xspace}
+\def\nnpdfnlo{\texttt{NNPDF3.0nlo}\xspace}
+\def\nnpdftwo{\texttt{NNPDF2.3lo}\xspace}
+\def\mstw{\texttt{MSTW2008nlo}\xspace}
+\def\powheg{\textsc{Powheg}\xspace}
+\def\powhegbox{\textsc{PowhegBox}\xspace}
+\def\powhegboxRes{\textsc{PowhegBoxRes}\xspace}
+\def\powhegboxpythia{\textsc{PowhegBox}\ensuremath{+}\pythia\xspace}
+\def\powhegboxRespythia{\textsc{PowhegBoxRes}\ensuremath{+}\pythia\xspace}
+\def\vbfnlopythia{\textsc{VBFNLO}\ensuremath{+}\pythia\xspace} 
+\def\powhegboxherwig{\textsc{PowhegBox}\ensuremath{+}\herwig\xspace} 
+\def\powhegboxherwigseven{\textsc{PowhegBox}\ensuremath{+}\herwigseven\xspace} 
+\def\amcpeight{\mgamc+\pythia}
+\def\mcatnloherwig{\textsc{MC@NLO}\ensuremath{+}\herwig\xspace} 
+\def\madspin{\textsc{MadSpin}\xspace}
+\def\photos{\texttt{Photos}\xspace} 
+\def\photospp{\textsc{Photos++}\xspace}
+\def\evtgen{\textsc{EvtGen}\xspace}
+\def\a14{\texttt{A14}\xspace}
+\def\auet{\texttt{AUET2}\xspace}
+\def\aznlo{\texttt{AZNLO}\xspace}
+\def\mmhtnnlo{\texttt{MMHT2014\,NNLO}\xspace}
+\def\mmhtnlo{\texttt{MMHT2014\,NLO}\xspace}
+\def\ueee{\texttt{UE-EE-5}\xspace}
+\def\Gmu{\ensuremath{G_{\mu}}\xspace}
+\def\hdamp{\ensuremath{h_{\mathrm{damp}}}\xspace}
+\def\mur{\ensuremath{\mu_r}\xspace}
+\def\muf{\ensuremath{\mu_f}\xspace}
+\def\ttll{\ensuremath{t\bar{t}\ell\ell}\xspace}
+
+% ===============
+% Particles names
+% ===============
+\newcommand{\jet}{j}
+%\newcommand{\photon}{\gamma}
+%\newcommand{\gluon}{g}
+\newcommand{\quark}{q}
+%\renewcommand{\qbar}{\bar{\quark}}
+\newcommand{\cquark}{c}
+\newcommand{\dquark}{d}
+\newcommand{\uquark}{u}
+%\newcommand{\squark}{s}
+%\renewcommand{\bbar}{\bar{\bquark}}
+%\renewcommand{\cbar}{\bar{\cquark}}
+%\renewcommand{\bbbar}{\bquark\bbar}
+%\renewcommand{\ccbar}{\cquark\cbar}
+\newcommand{\topquark}{t}
+\newcommand{\antitop}{\bar{\topquark}}
+\newcommand{\proton}{p}
+\newcommand{\Bmeson}{B}
+\newcommand{\Higgs}{H}
+%\newcommand{\Wjets}{\Wboson\kern-0.3em+\kern-0.2em\text{jets}}
+%\newcommand{\Zjets}{\Zboson\!\!+\!\text{jets}}
+\newcommand{\Wljet}{\Wboson\kern-0.3em+\kern-0.2em\text{light jet}}
+\newcommand{\Wljets}{\Wboson\kern-0.3em+\kern-0.2em\text{light jets}}
+\newcommand{\Wcjet}{\Wboson\kern-0.3em+\kern-0.2em\cquark+\text{jet}}
+\newcommand{\Wplusbb}{\Wboson\kern-0.3em+\kern-0.2em\bbbar}
+\newcommand{\Wt}{\topquark\Wboson\kern-0.1em}
+\newcommand{\Wtb}{\Wboson\kern-0.1em\topquark\bquark}
+\newcommand{\Wprime}{\Wboson^\prime}
+\newcommand{\Ztc}{\Zboson\topquark\cquark}
+\newcommand{\tHq}{\tH\quark}
+\newcommand{\utZ}{\uquark\topquark\Zboson}
+\newcommand{\tgq}{\topquark\gluon\quark}
+\newcommand{\ty}{\topquark\photon}
+\newcommand{\tyq}{\ty\quark}
+\newcommand{\tZj}{\topquark\Zboson\kern-0.1em\jet}
+\newcommand{\WW}{\Wboson\Wboson}
+\newcommand{\ZZ}{\Zboson\Zboson}
+\newcommand{\Wbb}{\Wboson\bbbar}
+\newcommand{\Wb}{\Wboson\bquark}
+\newcommand{\Wcc}{\Wboson\ccbar}
+\newcommand{\Wc}{\Wboson\cquark}
+\newcommand{\lepton}{\ell}
+\newcommand{\lplus}{\lepton^+}
+\newcommand{\lminus}{\lepton^-}
+\newcommand{\electron}{e}
+\newcommand{\eplus}{\electron^+}
+\newcommand{\eminus}{\electron^-}
+\newcommand{\muon}{\mu}
+\newcommand{\muplus}{\muon^+}
+\newcommand{\muminus}{\muon^-}
+\newcommand{\tauon}{\tau}
+\newcommand{\tauplus}{\tauon^+}
+\newcommand{\tauminus}{\tauon^-}
+\newcommand{\neutrino}{\nu}
+\newcommand{\pion}{\pi}
+\newcommand{\Tvlq}{T}
+\newcommand{\Bvlq}{B}
+%\newcommand{\Hplus}{\phi^+}
+%\newcommand{\Hminus}{\phi^-}
+
+% ==================
+% Physical constants
+% ==================
+\newcommand{\alphaS}{\alpha_{\text{s}}}
+%\renewcommand{\Vtb}{V_{\topquark\bquark}}
+%\renewcommand{\Vts}{V_{\topquark\squark}}
+%\renewcommand{\Vtd}{V_{\topquark\dquark}}
+\newcommand{\absVtb}{|\Vtb|}
+\newcommand{\absVts}{|\Vts|}
+\newcommand{\absVtd}{|\Vtd|}
+\newcommand{\Vtbsq}{\absVtb^2}
+\newcommand{\Fl}{\mathcal{F}_{\text{L}}}
+\newcommand{\Fr}{\mathcal{F}_{\text{R}}}
+\newcommand{\ProjL}{P_{\text{L}}}
+\newcommand{\ProjR}{P_{\text{R}}}
+\newcommand{\Gf}{\mathcal{G}_{\text{\kern-0.1em4f}}}
+\newcommand{\LambdaNP}{\Lambda_{\text{NP}}}
+
+% ======================
+% Experiments / Machines
+% ======================
+\newcommand{\ATLAS}{A\kern-0.08emT\kern0.01emLA\kern-0.02emS\xspace}
+\newcommand{\CMS}{CMS\xspace}
+\newcommand{\CERN}{CE\kern-0.08emRN\xspace}
+\newcommand{\LHC}{LH\kern-0.04emC\xspace}
+\newcommand{\CDF}{CDF\xspace}
+\newcommand{\Dzero}{D\kern0.1em/\kern-0.4em0\xspace}
+\newcommand{\Tevatron}{Tevatron\xspace}
+\newcommand{\HERA}{HERA\xspace}
+
+% ==========
+% Generators
+% ==========
+\newcommand{\Powheg}{POW\-HEG\xspace}
+\newcommand{\PowhegBox}{POWHEG-Box\xspace}
+\newcommand{\Pythia}{PYTHIA\xspace}
+%\renewcommand{\PYTHIA}{\Pythia}
+\newcommand{\PythiaSix}{PYTHIA6\xspace}
+\newcommand{\PythiaEight}{PYTHIA8\xspace}
+%\renewcommand{\Herwig}{HER\-WIG\xspace}
+%\renewcommand{\HERWIG}{\Herwig}
+\newcommand{\Jimmy}{JIMMY\xspace}
+\newcommand{\Alpgen}{ALPGEN\xspace}
+\newcommand{\AcerMC}{AcerMC\xspace}
+%\renewcommand{\MCatNLO}{MC\kern-0.02em@\kern-0.02emNLO\xspace}
+\newcommand{\MadGraph}{\textsc{MadGraph}\xspace}
+\newcommand{\aMCatNLO}{\MadGraph{}5\_a\MCatNLO\xspace}
+\newcommand{\Geant}{Geant\xspace}
+%\renewcommand{\GEANT}{\Geant}
+\newcommand{\Hathor}{HATHOR\xspace}
+\newcommand{\ARIADNE}{ARIADNE\xspace}
+\newcommand{\Sherpa}{SHERPA\xspace}
+\newcommand{\PerugiaC}{Perugia\,2011\kern-0.05emC\xspace}
+\newcommand{\PerugiaTwelve}{Perugia\,2012\xspace}
+\newcommand{\Auet}{AUET\xspace}
+\newcommand{\AtlFast}{AtlFast\xspace}
+
+% =========
+% Computing
+% =========
+\newcommand{\Root}{\textsc{Roo\kern-0.12emT}\xspace}
+\newcommand{\HistFactory}{HistFactory\xspace}
+\newcommand{\RooStats}{RooStats\xspace}
+\newcommand{\RooFit}{RooFit\xspace}
+\newcommand{\VEGAS}{VEG\kern-0.01emAS\xspace}
+\newcommand{\Vegas}{\VEGAS}
+\newcommand{\CUBA}{CUBA\xspace}
+\newcommand{\LHAPDF}{LHAPDF\xspace}
+%\renewcommand{\MCFM}{MCFM\xspace}
+\newcommand{\KLFitter}{KLFitter\xspace}
+\newcommand{\BAT}{BAT\xspace}
+\newcommand{\Minuit}{MINUIT\xspace}
+\newcommand{\Bill}{BILL\xspace}
+\newcommand{\CL}{\text{CL}}
+\newcommand{\CLs}{\CL_s}
+\newcommand{\CLb}{\CL_b}
+\newcommand{\CLsb}{\CL_{s+b}}
+
+%\newcommand{\MemTk}{\textsc{M\kern-0.03emem}\kern-0.12emT\kern-0.17em\footnotesize{k}\xspace}
+\protected\def\MemTk{\textsc{M\kern-0.03emem}\kern-0.12emT\kern-0.17em\raisebox{-0.3ex}{\footnotesize{k}}\xspace}
+
+\newcommand{\MemTkOne}{\raisebox{-0.2ex}{\large{$\mathcal{M}$}}\kern-0.05em
+  {\footnotesize\textsc{em}\kern-0.1em{T}}\kern-0.17em\raisebox{-0.3ex}
+  {\scriptsize k}\xspace}
+
+\newcommand{\MemTkTwo}{\raisebox{-0.2ex}{\large{$\mathcal{M}$}}\kern-0.02em\raisebox{0.04ex}{\rotatebox{90}{\tiny{em}}}\kern+0.01emT\kern-0.17em\raisebox{-0.3ex}{\footnotesize{k}}\xspace}
+
+% ===================================
+% Rounding and positioning in tables
+% ===================================
+\newcommand{\numRF}[2]{\num[round-precision=#2,round-mode=figures]{#1}}
+\newcommand{\phk}{\phantom{\,\,}}
+\newcommand{\phz}{\phantom{8}}
+\newcommand{\phdz}{\phantom{.8}}
+\newcommand{\phdzz}{\phantom{.88}}
+\newcolumntype{Y}{r@{\,}@{\phantom{$\pm$}}@{\,}} % for data position in yield tables
+%
+% do not use those anymore
+\newcommand{\phl}{\phantom{l}}
+\newcommand{\phd}{\phantom{d\,}}
+\newcommand{\phO}{\phantom{O\,}}
+\newcommand{\phdO}{\phantom{dO\,}}
+\newcommand{\phOO}{\phantom{OO\,}}
+
+% ====
+% Math
+% ====
+\newcommand{\defgl}{\mathrel{\mathop:}=}
+\newcommand{\defgr}{\mathrel{=\mathop:}}
+\newcommand{\alphaHH}{\hat{\hat{\alpha}}}
+\DeclareMathAlphabet{\mathup}{OT1}{\familydefault}{m}{n}
+

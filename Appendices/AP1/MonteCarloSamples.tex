@@ -1,0 +1,388 @@
+  % this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+% ----------------------- name of chapter  -------------------------
+\chapter{Monte Carlo Samples}
+\label{appendix:app_mc}
+
+% ----------------------- paths to graphics ------------------------
+
+% change according to folder and file names
+\ifpdf
+    \graphicspath{Appendices/AP1/figures/PNG/}
+\else
+    \graphicspath{Appendices/AP1/figures/}
+\fi
+
+% ----------------------- contents from here ------------------------
+This appendix summarises the MC datasets for signal and background.\\
+\Cref{tab:mc_sig_nom} shows the nominal signal samples produced in fast simulation, for mc16a, mc16d and mc16e.\\
+\Cref{tab:mc_bkg_nom} shows the nominal background samples produced in sull simulation, for mc16a, mc16d and mc16e.\\
+\Cref{tab:mc_bkg_sys} shows the samples used for systematic uncertainty evaluation, which are produced in fast simulation, for mc16a, mc16d and mc16e.
+
+\begin{center}
+	\xentrystretch{-0.05}
+	\topcaption{Overview of the signal simulated samples (fast simulation).}%
+	\label{tab:mc_sig_nom}
+	\tablehead{\toprule
+		\multicolumn{1}{c@{}}{Process}  &  \multicolumn{1}{c@{}}{Sample ID}  &  \multicolumn{1}{c}{Generator}  & 
+		\multicolumn{1}{c}{$N$-generated} \\
+		\midrule
+	}
+	\tablelasttail{\bottomrule}
+	{
+		\scriptsize
+		\begin{xtabular}{lcll}
+			
+			FCNC \tZc single-top LH  & 412141 & MadGraphPy8Ev--A14--TopFCNC--ctZLH--tZ--3l          & mc16a: 0.250 M   \\
+			& & & mc16d: 0.319 M \\
+			& & & mc16e: 0.440 M \\
+			FCNC \tZc \ttbar LH         & 412143 & MadGraphPy8Ev--A14--TopFCNC--ctZLH--tt--3l          & mc16a: 0.250 M   \\
+			& & & mc16d: 0.320 M \\
+			& & & mc16e: 0.440 M \\
+			FCNC \tZc \ttbar LH SMT filter  & 412146 & MadGraphPy8Ev--A14--TopFCNC--ctZLH--tt--3l--SMTFilter          & mc16a: 2.495 M   \\
+			& & & mc16d: 3.125 M \\
+			& & & mc16e: 4.375 M \\
+		\end{xtabular}
+}\end{center}
+
+
+\begin{center}
+	\xentrystretch{-0.05}
+	\topcaption{Overview of the background simulated samples (full simulation).}%
+	\label{tab:mc_bkg_nom}
+	\tablehead{\toprule
+		\multicolumn{1}{c@{}}{Process}  &  \multicolumn{1}{c@{}}{Sample ID}  &  \multicolumn{1}{c}{Generator}  & 
+		\multicolumn{1}{c}{$\sigma\,[\si{\pb}]$}  &  \multicolumn{1}{c@{}}{$k$-factor}  &  \multicolumn{1}{c}{$N$-generated} \\
+		\midrule
+	}
+	\tablelasttail{\bottomrule}
+	{
+		\scriptsize
+		\begin{xtabular}{lclS[round-mode=figures, round-precision=3]S[round-mode=places,  round-precision=2]l}
+			
+			\ttbar  & 410472 & PowPy8Ev--A14--ttbar--hdamp258p75--dil        & 76.95      & 1.14 & mc16a: 79.825 M   \\
+			& & & & & mc16d:   99.497 M \\
+			& & & & & mc16e: 139.202 M \\
+			
+			\midrule
+			$ttV$   & 410218 & aMcAtNloPy8Ev--A14--ttee                      &   0.036865   &  1.12   &  mc16a: 1.410 M \\
+			& & & & & mc16d: 1.337 M \\
+			& & & & & mc16e: 2.168 M \\
+			& 410219 & aMcAtNloPy8Ev--A14--ttmumu                &   0.036868   &  1.12   &  mc16a: 1.410 M \\
+			& & & & & mc16d: 1.339 M \\
+			& & & & & mc16e: 2.173 M \\
+			& 410220 & aMcAtNloPy8Ev--A14--tttautau                &   0.036515    & 1.12  &  mc16a: 0.935 M \\
+			& & & & & mc16d: 0.900 M \\
+			& & & & & mc16e: 0.960 M \\
+			& 410155 & aMcAtNloPy8Ev--A14--ttW                       &   0.54838     & 1.096  & mc16a: 7.497 M  \\
+			& & & & & mc16d: 7.497 M \\
+			& & & & & mc16e: 12.042 M \\
+			& 410156 & aMcAtNloPy8Ev--A14--ttZnunu                &   0.1549       & 1.11    & mc16a: 1.500 M  \\
+			& & & & & mc16d: 1.500 M \\
+			& & & & & mc16e: 2.001 M \\
+			& 410157 & aMcAtNloPy8Ev--A14--ttZqq                    &   0.52809     & 1.11    &  mc16a: 3.000 M \\
+			& & & & & mc16d: 3.000 M \\
+			& & & & & mc16e: 3.587 M \\
+			& 410276 & aMcAtNloPy8Ev--A14--ttee--mll--1--5 &   0.036865   &  1.12   &  mc16a: 0.350 M \\
+			& & & & & mc16d: 0.350 M \\
+			& & & & & mc16e: 0.468 M \\
+			& 410277 & aMcAtNloPy8Ev--A14--ttmumu--mll--1--5  &   0.036868   &  1.12   &  mc16a: 0.350 M \\
+			& & & & & mc16d: 0.350 M \\
+			& & & & & mc16e: 0.468 M \\
+			& 410278 & aMcAtNloPy8Ev--A14--tttautau--mll--1--5   &   0.036515    & 1.12  &  mc16a: 0.295 M \\
+			& & & & & mc16d: 0.290 M \\
+			& & & & & mc16e: 0.453 M \\
+			
+			\midrule
+			\tZq    & 412063 & MadGraphPy8Ev--A14--tllq--NLO                           &     0.03      & 1.0   & mc16a: 4.988 M   \\
+			& & & & & mc16d: 6.233 M \\
+			& & & & & mc16e: 8.261 M \\
+			
+			\midrule 
+			$tW$    & 410648 & PowPy8Ev--A14--Wt--t--dil                    & 3.997        & 0.94  & mc16a: 1.000 M    \\ 
+			& & & & & mc16d: 1.250 M \\
+			& & & & & mc16e: 1.6594 M \\
+			& 410649 & PowPy8Ev--A14--Wt--tbar--dil               & 3.994         & 0.94 & mc16a: 1.000 M    \\
+			& & & & & mc16d: 1.249 M \\
+			& & & & & mc16e: 1.6549 M \\
+			
+			\midrule
+			\tWZ   & 410408 &  aMcAtNloPy8Ev--A14--tWZ--Ztoll--DR1    & 0.02    & 1.0   & mc16a: 0.100 M   \\
+			& & & & & mc16d: 0.120 M \\
+			& & & & & mc16e: 0.158 M \\
+			
+			\midrule
+			Diboson  & 364250 & Sherpa222--llll                             & 1.25      & 1.0   & mc16a: 17.8429 M   \\
+			& & & & & mc16d: 35.9959 M \\
+			& & & & & mc16e: 25.6839 M \\
+			& 364253 & Sherpa222--lllv                             & 4.58      & 1.0   & mc16a: 15.5379 M   \\
+			& & & & & mc16d: 32.1138 M \\
+			& & & & & mc16e: 26.7896 M \\
+			& 364254 & Sherpa222--llvv                             & 12.50      & 1.0   & mc16a: 14.996 M   \\
+			& & & & & mc16d: 29.975 M \\
+			& & & & & mc16e: 24.889 M \\
+			& 364255 & Sherpa222--lllv                             &                & 1.0   & mc16a: 5.999 M   \\
+			& & & & & mc16d: 11.995 M \\
+			& & & & & mc16e: 9.957 M \\
+			              & 363356 & Sherpa221--ZqqZll                             & 15.56      & 0.14   & mc16a: 5.40 M \\
+			 & & & & & mc16d: 5.40 M \\
+			 & & & & & mc16e: 8.95 M \\
+			              & 363358 & Sherpa221--WqqZll                             & 3.44      & 1.0   & mc16a: 5.40 M  \\
+			 & & & & & mc16d: 26.91 M \\
+			 & & & & & mc16e: 8.96 M \\
+			& 345705 & Sherpa222--ggllll--0M4l130        &                & 1.0   & mc16a: 0.100 M   \\
+			& & & & & mc16d: 0.125 M \\
+			& & & & & mc16e: 0.499 M \\
+			& 345706 & Sherpa222--ggllll--130M4l        &                & 1.0   & mc16a: 0.989 M   \\
+			& & & & & mc16d: 0.980 M \\
+			& & & & & mc16e: 0.9926 M \\
+			& 364283 & Sherpa222--lllljj--EW6                &                & 1.0   & mc16a: 0.2999 M   \\
+			& & & & & mc16d: 0.380 M \\
+			& & & & & mc16e: 0.300 M \\
+			& 364284 & Sherpa222--lllvjj--EW6                &                & 1.0   & mc16a: 1.498 M   \\
+			& & & & & mc16d: 1.921 M \\
+			& & & & & mc16e: 2.491 M \\
+			
+			
+			
+			
+			
+			
+			
+			
+			 \midrule
+			 $ttH$   & 346343 & PowPy8Ev--A14--ttH125--allhad            & 0.05343       & 1.0    & mc16a: 4.98 M   \\
+			  & & & & & mc16d: 6.49 M \\
+			  & & & & & mc16e: 8.25 M \\
+			             & 346344 & PowPy8Ev--A14--ttH125--sl                  & 0.22276       & 1.0    & mc16a: 4.99 M   \\
+			  & & & & & mc16d: 6.50 M \\
+			  & & & & & mc16e: 8.26 M \\
+			             & 346345 & PowPy8Ev--A14--ttH125--dilep             & 0.23082       & 1.0   & mc16a: 4.99 M   \\
+			  & & & & & mc16d: 6.49 M \\
+			  & & & & & mc16e: 8.28 M \\
+			
+			
+			
+			\midrule
+			\Zjets & 364114 & Sherpa221--Zee--maxHtPtV0\_70--L       & 1627.18 & 0.98 &  mc16a: 8.00 M \\
+			& & & & & mc16d: 10.00 M \\
+			& & & & & mc16e: 13.27 M \\
+			& 364115 & Sherpa221--Zee--maxHtPtV0\_70--C       & 223.73 & 0.98 &  mc16a: 5.00 M \\
+			& & & & & mc16d: 6.24 M \\
+			& & & & & mc16e: 8.31 M \\
+			& 364116 & Sherpa221--Zee--maxHtPtV0\_70--B        & 126.45 & 0.98 &  mc16a: 8.00 M \\
+			& & & & & mc16d: 9.99 M \\
+			& & & & & mc16e: 13.28 M \\
+			& 364117 & Sherpa221--Zee--maxHtPtV70\_140--L    & 76.29 & 0.98  &  mc16a: 5.96 M \\
+			& & & & & mc16d: 7.38 M \\
+			& & & & & mc16e: 9.95 M \\
+			& 364118 & Sherpa221--Zee--maxHtPtV70\_140--C   & 20.34 & 0.98 &  mc16a: 2.00 M \\
+			& & & & & mc16d: 2.50 M \\
+			& & & & & mc16e: 3.33 M \\
+			& 364119 & Sherpa221--Zee--maxHtPtV70\_140--B   & 12.62 & 0.98 &  mc16a: 5.97 M \\
+			& & & & & mc16d: 7.49 M \\
+			& & & & & mc16e: 9.91 M \\
+			& 364120 & Sherpa221--Zee--maxHtPtV140\_280--L & 25.03 & 0.98 &  mc16a: 5.00 M \\
+			& & & & & mc16d: 6.25 M \\
+			& & & & & mc16e: 8.36 M \\
+			& 364121 & Sherpa221--Zee--maxHtPtV140\_280--C & 9.37 & 0.98 &  mc16a: 3.00 M \\
+			& & & & & mc16d: 3.75 M \\
+			& & & & & mc16e: 4.99 M \\
+			& 364122 & Sherpa221--Zee--maxHtPtV140\_280--B & 6.08 & 0.98 &  mc16a: 12.44 M \\
+			& & & & & mc16d: 15.66 M \\
+			& & & & & mc16e: 20.74 M \\
+			& 364123 & Sherpa221--Zee--maxHtPtV280\_500--L & 4.87 & 0.98 &  mc16a: 2.00 M \\
+			& & & & & mc16d: 2.50 M \\
+			& & & & & mc16e: 2.78 M \\
+			& 364124 & Sherpa221--Zee--maxHtPtV280\_500--C & 2.28 & 0.98 &  mc16a: 1.00 M \\
+			& & & & & mc16d: 1.25 M \\
+			& & & & & mc16e: 1.74 M \\
+			& 364125 & Sherpa221--Zee--maxHtPtV280\_500--B & 1.49 & 0.98 &  mc16a: 2.00 M \\
+			& & & & & mc16d: 2.50 M \\
+			& & & & & mc16e: 3.33 M \\
+			& 364126 & Sherpa221--Zee--maxHtPtV500\_1000       & 1.81 & 0.98 &  mc16a: 3.00 M \\
+			& & & & & mc16d: 3.71 M \\
+			& & & & & mc16e: 4.98 M \\
+			& 364127 & Sherpa221--Zee--maxHtPtV1000\_Ecms     & 0.15 & 0.98 &  mc16a: 1.00 M \\
+			& & & & & mc16d: 1.25 M \\
+			& & & & & mc16e: 1.67 M \\
+			
+			& 364100 & Sherpa221--Zmumu--maxHtPtV0\_70--L       & 1630.22 & 0.98 &  mc16a: 7.97 M \\
+			& & & & & mc16d: 9.91 M \\
+			& & & & & mc16e: 13.26 M \\
+			& 364101 & Sherpa221--Zmumu--maxHtPtV0\_70--C       & 223.72 & 0.98 &  mc16a: 4.98 M \\
+			& & & & & mc16d: 6.20 M \\
+			& & & & & mc16e: 8.28 M \\
+			& 364102 & Sherpa221--Zmumu--maxHtPtV0\_70--B        & 127.18 & 0.98 &  mc16a: 7.98 M \\
+			& & & & & mc16d: 9.26 M \\
+			& & & & & mc16e: 13.24 M \\
+			& 364103 & Sherpa221--Zmumu--maxHtPtV70\_140--L    & 75.02 & 0.98 &  mc16a: 5.98 M \\
+			& & & & & mc16d: 7.48 M \\
+			& & & & & mc16e: 9.94 M \\
+			& 364104 & Sherpa221--Zmumu--maxHtPtV70\_140--C   & 20.35 & 0.98 &  mc16a: 2.00 M \\
+			& & & & & mc16d: 2.49 M \\
+			& & & & & mc16e: 3.31 M \\
+			& 364105 & Sherpa221--Zmumu--maxHtPtV70\_140--B   & 12.39 & 0.98 &  mc16a: 5.98 M \\
+			& & & & & mc16d: 7.47 M \\
+			& & & & & mc16e: 9.94 M \\
+			& 364106 & Sherpa221--Zmumu--maxHtPtV140\_280--L & 24.29 & 0.98 &  mc16a: 5.00 M \\
+			& & & & & mc16d: 6.24 M \\
+			& & & & & mc16e: 8.29 M \\
+			& 364107 & Sherpa221--Zmumu--maxHtPtV140\_280--C & 9.28 & 0.98 &  mc16a: 3.00 M \\
+			& & & & & mc16d: 3.75 M \\
+			& & & & & mc16e: 4.99 M \\
+			& 364108 & Sherpa221--Zmumu--maxHtPtV140\_280--B & 6.01 & 0.98 &  mc16a: 12.46 M \\
+			& & & & & mc16d: 15.63 M \\
+			& & & & & mc16e: 20.74 M \\
+			& 364109 & Sherpa221--Zmumu--maxHtPtV280\_500--L & 4.77 & 0.98 &  mc16a: 2.00 M \\
+			& & & & & mc16d: 2.46 M \\
+			& & & & & mc16e: 3.32 M \\
+			& 364110 & Sherpa221--Zmumu--maxHtPtV280\_500--C & 2.27 & 0.98 &  mc16a: 1.00 M \\
+			& & & & & mc16d: 1.25 M \\
+			& & & & & mc16e: 1.67 M \\
+			& 364111 & Sherpa221--Zmumu--maxHtPtV280\_500--B & 1.49 & 0.98 &  mc16a: 2.00 M \\
+			& & & & & mc16d: 2.50 M \\
+			& & & & & mc16e: 3.33 M \\
+			& 364112 & Sherpa221--Zmumu--maxHtPtV500\_1000       & 1.79 & 0.98 &  mc16a: 3.00 M \\
+			& & & & & mc16d: 3.75 M \\
+			& & & & & mc16e: 5.09 M \\
+			& 364113 & Sherpa221--Zmumu--maxHtPtV1000\_Ecms     & 0.15 & 0.98 &  mc16a: 1.00 M \\
+			& & & & & mc16d: 1.25 M \\
+			& & & & & mc16e: 1.67 M \\
+			
+			& 364128 & Sherpa221--Ztautau--maxHtPtV0\_70--L       & 1627.73 & 0.98 &  mc16a: 7.99 M \\
+			& & & & & mc16d: 10.00 M \\
+			& & & & & mc16e: 13.27 M \\
+			& 364129 & Sherpa221--Ztautau--maxHtPtV0\_70--C       & 223.88 & 0.98 &  mc16a: 4.98 M \\
+			& & & & & mc16d: 6.14 M \\
+			& & & & & mc16e: 8.27 M \\
+			& 364130 & Sherpa221--Ztautau--maxHtPtV0\_70--B        & 127.73 & 0.98 &  mc16a: 8.00 M \\
+			& & & & & mc16d: 9.99 M \\
+			& & & & & mc16e: 13.28 M \\
+			& 364131 & Sherpa221--Ztautau--maxHtPtV70\_140--L    & 76.03 & 0.98 &  mc16a: 6.00 M \\
+			& & & & & mc16d: 7.50 M \\
+			& & & & & mc16e: 9.97 M \\
+			& 364132 & Sherpa221--Ztautau--maxHtPtV70\_140--C   & 20.21 & 0.98 &  mc16a: 2.00 M \\
+			& & & & & mc16d: 2.50 M \\
+			& & & & & mc16e: 3.33 M \\
+			& 364133 & Sherpa221--Ztautau--maxHtPtV70\_140--B   & 12.29 & 0.98 &  mc16a: 5.97 M \\
+			& & & & & mc16d: 7.50 M \\
+			& & & & & mc16e: 9.96 M \\
+			& 364134 & Sherpa221--Ztautau--maxHtPtV140\_280--L & 24.80 & 0.98 &  mc16a: 4.94 M \\
+			& & & & & mc16d: 6.23 M \\
+			& & & & & mc16e: 8.30 M \\
+			& 364135 & Sherpa221--Ztautau--maxHtPtV140\_280--C & 9.33 & 0.98 &  mc16a: 3.00 M \\
+			& & & & & mc16d: 3.75 M \\
+			& & & & & mc16e: 4.99 M \\
+			& 364136 & Sherpa221--Ztautau--maxHtPtV140\_280--B & 5.48 & 0.98 &  mc16a: 4.99 M \\
+			& & & & & mc16d: 6.21 M \\
+			& & & & & mc16e: 8.29 M \\
+			& 364137 & Sherpa221--Ztautau--maxHtPtV280\_500--L & 4.79 & 0.98 &  mc16a: 2.00 M \\
+			& & & & & mc16d: 2.50 M \\
+			& & & & & mc16e: 3.32 M \\
+			& 364138 & Sherpa221--Ztautau--maxHtPtV280\_500--C & 2.28 & 0.98 &  mc16a: 1.00 M \\
+			& & & & & mc16d: 1.23 M \\
+			& & & & & mc16e: 1.67 M \\
+			& 364139 & Sherpa221--Ztautau--maxHtPtV280\_500--B & 1.50 & 0.98 &  mc16a: 1.98 M \\
+			& & & & & mc16d: 2.50 M \\
+			& & & & & mc16e: 3.32 M \\
+			& 364140 & Sherpa221--Ztautau--maxHtPtV500\_1000       & 1.81 & 0.98 &  mc16a: 3.00 M \\
+			& & & & & mc16d: 3.75 M \\
+			& & & & & mc16e: 4.96 M \\
+			& 364141 & Sherpa221--Ztautau--maxHtPtV1000\_Ecms     & 0.15 & 0.98 &  mc16a: 1.00 M \\
+			& & & & & mc16d: 1.25 M \\
+			& & & & & mc16e: 1.67 M \\
+		\end{xtabular}
+}\end{center}
+
+\clearpage
+
+\begin{center}
+	\xentrystretch{-0.05}
+	\topcaption{Overview of the signal and background simulated samples used for systematic uncertainty evaluation (fast simulation). If the samples are in full simulation, this is indicated with $\dagger$.}%
+	\label{tab:mc_bkg_sys}
+	\tablehead{\toprule
+		\multicolumn{1}{c@{}}{Process}  &  \multicolumn{1}{c@{}}{Sample ID}  &  \multicolumn{1}{c}{Generator}  &
+		\multicolumn{1}{c}{$\sigma\,[\si{\pb}]$}  &  \multicolumn{1}{c@{}}{$k$-factor}   &  \multicolumn{1}{c}{$N$-generated} \\
+		\midrule
+	}
+	\tablelasttail{\bottomrule}
+	{
+		\scriptsize
+		\begin{xtabular}{lclS[round-mode=figures, round-precision=3]S[round-mode=places,  round-precision=2]l}
+			
+			\ttbar  & 410472 & PowPy8Ev--A14--ttbar--hdamp258p75--dil        & 76.95      & 1.14 & mc16a: 79.859 M   \\
+			& & & & & mc16d:   99.797 M \\
+			& & & & & mc16e: 132.310 M \\
+			& 410558 & PowH7Ev--H7UE--ttbar--hdamp258p75--dil     & 77.00      & 1.14 & mc16a: 79.886 M   \\
+			& & & & & mc16d:   99.645 M \\
+			& & & & & mc16e: 132.917 M \\
+			& 410482 & PowPy8Ev--A14--ttbar--hdamp517p5--dil        & 76.94      & 1.14 & mc16a: 79.976 M   \\
+			& & & & & mc16d:   99.704 M \\
+			& & & & & mc16e: 133.138 M \\
+			
+			\midrule
+			\ttZ    & 410142 & Sherpa221--ttll--LO                                       & 0.11      & 1.09 & mc16a:1.800 M ($\dagger$) \\
+			& & & & & mc16d: 1.800 M ($\dagger$) \\
+			& & & & & mc16e: 2.998 M ($\dagger$) \\
+			& 410370 & aMcAtNloPy8Ev--A14--ttee--Var3cUp            &      &  & mc16a: 0.470 M ($\dagger$) \\
+			& & & & & mc16d: 0.575 M ($\dagger$) \\
+			& & & & & mc16e: 0.741 M ($\dagger$) \\
+			& 410371 & aMcAtNloPy8Ev--A14--ttee--Var3cDown        &      &  & mc16a: 0.470 M ($\dagger$) \\
+			& & & & & mc16d: 0.570 M ($\dagger$) \\
+			& & & & & mc16e: 0.728 M ($\dagger$) \\
+			& 410372 & aMcAtNloPy8Ev--A14--ttmumu--Var3cUp      &      &  & mc16a: 0.470 M ($\dagger$) \\
+			& & & & & mc16d: 0.570 M ($\dagger$) \\
+			& & & & & mc16e: 0.720 M ($\dagger$) \\
+			& 410373 & aMcAtNloPy8Ev--A14--ttmumu--Var3cDown &      &  & mc16a: 0.470 M ($\dagger$) \\
+			& & & & & mc16d: 0.575 M ($\dagger$) \\
+			& & & & & mc16e: 0.739 M ($\dagger$) \\
+			& 410374 & aMcAtNloPy8Ev--A14--tttautau--Var3cUp      &      &  & mc16a: 0.470 M ($\dagger$) \\
+			& & & & & mc16d: 0.570 M ($\dagger$) \\
+			& & & & & mc16e: 0.740 M ($\dagger$) \\
+			& 410375 & aMcAtNloPy8Ev--A14--tttautau--Var3cDown &      &  & mc16a: 0.470 M ($\dagger$) \\
+			& & & & & mc16d: 0.575 M ($\dagger$) \\
+			& & & & & mc16e: 0.744 M ($\dagger$) \\
+			
+			\midrule
+			\tZq    & 412063 & MadGraphPy8Ev--A14--tllq--NLO                           &     0.03      & 1.0   & mc16a: 5.000 M   \\
+			& & & & & mc16d: 6.250 M \\
+			& & & & & mc16e: 8.290 M \\
+			& 412064 & MadGraphPy8Ev--A14--tllq--NLO--Var3cDown             &     0.03      & 1.0   & mc16a: 5.000 M   \\
+			& & & & & mc16d: 6.235 M \\
+			& & & & & mc16e: 8.300M \\
+			& 412065 & MadGraphPy8Ev--A14--tllq--NLO--Var3cUp                  &     0.03      & 1.0   & mc16a: 4.995 M   \\
+			& & & & & mc16d: 6.250 M \\
+			& & & & & mc16e: 8.295 M \\
+			
+			\midrule
+			\tWZ   & 412119 &  aMcAtNloPy8Ev--A14--tWZ--Ztoll--DR2     & 0.02    & 1.0   & mc16a: 0.500 M ($\dagger$)  \\
+			& & & & & mc16d: 0.625 M ($\dagger$) \\
+			& & & & & mc16e: 0.830 M ($\dagger$) \\
+			
+			\midrule
+			Diboson & 361600 & PowPy8Ev--CT10--WWlvlv             &      & 1.0 & mc16a: 14.770 M ($\dagger$) \\
+			& & & & & mc16d: 14.956 M ($\dagger$) \\
+			& & & & & mc16e: 24.877 M ($\dagger$) \\
+			& 361601 & PowPy8Ev--CT10--WZlvll--mll4    & 4.46      & 1.0 & mc16a:10.010 M ($\dagger$) \\
+			& & & & & mc16d: 10.001 M ($\dagger$) \\
+			& & & & & mc16e: 16.466 M ($\dagger$) \\
+			& 361603 & PowPy8Ev--CT10--ZZllll--mll4    &     & 1.0 & mc16a: 3.950 M ($\dagger$) \\
+			& & & & & mc16d: 3.980 M ($\dagger$) \\
+			& & & & & mc16e: 6.529 M ($\dagger$) \\
+			& 361604 & PowPy8Ev--CT10--ZZvvll--mll4    &     & 1.0 & mc16a: 0.995 M ($\dagger$) \\
+			& & & & & mc16d: 0.995 M ($\dagger$) \\
+			& & & & & mc16e: 0.990 M ($\dagger$) \\
+			& 361607 & PowPy8Ev--CT10--WZqqll--mll20    &     & 1.0 & mc16a: 1.490 M ($\dagger$) \\
+			& & & & & mc16d: 1.476 M ($\dagger$) \\
+			& & & & & mc16e: 2.449 M ($\dagger$) \\
+			& 361610 & PowPy8Ev--CT10--ZZqqll--mqq20mll20    &     & 1.0 & mc16a: 3.990 M ($\dagger$) \\
+			& & & & & mc16d: 3.988 M ($\dagger$) \\
+			& & & & & mc16e: 6.601 M ($\dagger$) \\
+			
+			%sample & XXXXXX & something                             & 0      & 0 & mc16a:XX M \\
+			% & & & & & mc16d: XX M \\
+			
+		\end{xtabular}
+}\end{center}
