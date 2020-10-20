@@ -33,6 +33,9 @@
 \usepackage{booktabs}
 \usepackage{adjustbox}
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{bm}
 \usepackage{amssymb}
 \usepackage[super]{nth}
 \usepackage{mathtools}
@@ -42,6 +45,14 @@
 \usepackage{tabularx}
 \usepackage{comment}
 \usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{afterpage}
+
+%\sisetup{round-mode=places,round-precision=4}
+%\sisetup{[round-mode=figures,round-precision=3]S[round-mode=places,round-precision=2]l}
+	
+\usepackage{definitions} %% DEFINITIONS
 \usepackage{quoting,xparse}
 %\usepackage{caption}
 %\usepackage{subcaption}
@@ -65,7 +76,6 @@
 		leftmargin=4cm,
 		rightmargin=\parindent]\itshape}
 	{\bywhom{#1}\end{quoting}}
-
 
 % --------------------------------------------------------------
 %                   FRONT MATTER: dedications, abstract,..
@@ -164,7 +174,8 @@
 \include{Chapters/CH7/Conclusions}
 
 \appendix
-\include{Appendices/AP1/MassResolution}
+\include{Appendices/AP1/MonteCarloSamples}
+\include{Appendices/AP2/MassResolution}
 
 
 % the back matter: appendix and references close the thesis
@@ -221,7 +232,9 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{References}
 \renewcommand{\bibname}{References}
-\bibliography{biblio}
+\footnotesize
+\bibliography{biblio,bib/ATLAS.bib,bib/CMS.bib,bib/ConfNotes.bib,bib/PubNotes.bib,bib/PMGRefs.bib}
+
 
 
 
