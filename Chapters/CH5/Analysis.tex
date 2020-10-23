@@ -108,8 +108,8 @@ Three SRs are defined for the \tZc coupling extraction, targeting:
 The SRs for each coupling extraction are orthogonal between each other. 
 The orthogonality is assured by selecting events with different jet multiplicities 
 and by selecting or vetoing the presence of a jet associated to a soft muon.\\
-The description of the SR3 selections is reported in \Cref{sec:selection}.\\
-The description of the other SRs selections is reported in \Cref{sec:other_selection}.
+This thesis main focus on the Soft Muon Tagging technique used as charm tagger and therefore on the definition of SR3, reported in \Cref{sec:selection}.\\
+The description of the other SRs selections, used for the combined fit to extract expected limits, are reported in \Cref{sec:other_selection}.
 
 \paragraph{Background estimation}
 The main background sources are:
@@ -324,6 +324,13 @@ of tuned parameters~\cite{Bellm:2015jjp} and the MMHT2014LO PDF set
 \cite{Harland-Lang:2014zoa}.
 The decays of bottom and charm hadrons
 are simulated using the \evtgen\ v1.6.0 program~\cite{EvtGen}. 
+The Var3c A14 tune variation~\cite{ATL-PHYS-PUB-2014-021}, that largely corresponds to the variation of
+$\alpha_{\textrm{s}}$ for initial state radiation (ISR) in the A14
+tune, is considered as an uncertainty. The impact of final-state-radiation (FSR) is evaluated using PS
+weights which vary the renormalisation scale for QCD emission in the
+FSR by a factor of 0.5 and 2.0, respectively.
+Additionally, the uncertainty associated to the \hdamp\ parameter is evaluated using the
+alternative sample (DSID\@: 410482) with the \hdamp\ value increased to $3.0~\mtop$. 
 
 \paragraph{$t\bar{t}V$ production} 
 The production of \ttV\ events (DSID\@: 410155-410157, 410218-410220
@@ -387,7 +394,7 @@ An additional \tWZ sample is used to estimate the uncertainty connected with the
 The samples simulating \PW{}\PW, \PW{}\PZ and \PZ{}\PZ events with at least two charged leptons are all considered.
 In the trilepton topology, \PW{}\PZ events are the ones that significantly contribute to the background.\\
 Samples of diboson final states ($VV$) are simulated with the
-\sherpa~v2.2.1 or v2.2.2~\cite{Bothmann:2019yzt} generator depending on the process,
+\sherpa~v2.2.1 or \\v2.2.2~\cite{Bothmann:2019yzt} generator depending on the process,
 including off-shell effects and Higgs-boson contributions, where appropriate.
 Fully leptonic final states and semi-leptonic final states, where one boson
 decays leptonically and the other hadronically, are generated using
@@ -427,32 +434,145 @@ for the hard-scattering processes, whereas the CTEQ6L1 PDF
 set~\cite{Pumplin:2002vw} is used for the parton shower. The \evtgen~v1.2.0
 program~\cite{EvtGen} is used to decay bottom and charm hadrons.
 
-\paragraph{Z+jets production ?? POWEG}     
-%The production of \PZ+jets is simulated with the
-%\sherpa~v2.2.1~\cite{Bothmann:2019yzt}
-%generator using NLO-accurate matrix elements for up to two jets, and LO-accurate matrix elements
-%for up to four jets calculated with the Comix~\cite{Gleisberg:2008fv}
-%and OpenLoops~\cite{Cascioli:2011va,Denner:2016kdg} libraries. They
-%are matched with the \sherpa parton shower~\cite{Schumann:2007mg} using the MEPS@NLO
-%prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}
-%using the set of tuned parameters developed by the \sherpa authors.
-%The \nnpdfnnlo set of PDFs~\cite{Ball:2014uwa} is used and the samples
-%are normalised to a next-to-next-to-leading order (NNLO)
-%prediction~\cite{Anastasiou:2003ds}.
+\paragraph{Z+jets production}     
+The \powhegbox v1 MC generator~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Alioli:2008gx}
+is used for the simulation at NLO accuracy of the hard-scattering processes of 
+$Z$-boson production and decay in the electron, muon, and tau
+channels. It is interfaced to \pythia{}.186~\cite{Sjostrand:2007gs}
+for the modelling of the parton shower, hadronisation, and underlying
+event, with parameters set according to the AZNLO
+tune~\cite{STDM-2012-23}. The CT10 PDF set~\cite{Lai:2010vv} is used
+for the hard-scattering processes, whereas the CTEQ6L1 PDF
+set~\cite{Pumplin:2002vw} is used for the parton shower. The effect of
+QED final-state radiation is simulated with Photos++
+(v3.52)~\cite{Golonka:2005pn,Davidson:2010ew}. The \evtgen~v1.2.0
+program~\cite{Lange:2001uf} is used to decay bottom and charm hadrons.
 
-\paragraph{Tribosons, 3 tops, 4 tops, ttH, WH, ZH ??}    
+\paragraph{$t\bar{t}H$ production}
+The production of \ttH\ events is modelled using the\\
+\powhegbox~v2~\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Hartanto:2015uka}
+generator which provides matrix elements at next-to-leading order (NLO) in the strong coupling 
+constant \alphas in the five-flavour scheme with the \nnpdfnlo~\cite{Ball:2014uwa} PDF set.
+The functional form of the renormalisation and factorisation scale is 
+set to $\sqrt[3]{m_\text{T}(t)\cdot m_\text{T}(\bar{t}) \cdot m_\text{T}(H)}$.
+The events are interfaced to \pythia.230~\cite{Sjostrand:2014zea}~
+using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
+\nnpdftwo~\cite{Ball:2014uwa} PDF set. The decays of bottom and charm hadrons
+are performed by \evtgen~v1.6.0~\cite{Lange:2001uf}.
 
+\paragraph{Other rare backgrounds}
+The production of triboson ($VVV$) events is simulated with the 
+\sherpa~v2.2.2~\cite{Bothmann:2019yzt} generator using factorised gauge boson decays. 
+Matrix elements, accurate at NLO for the inclusive process and at LO for up to 
+two additional parton emissions, are matched and merged with the \sherpa parton 
+shower based on Catani-Seymour dipole factorisation~\cite{Gleisberg:2008fv,Schumann:2007mg} 
+using the MEPS@NLO prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}. 
+The virtual QCD correction for matrix elements at NLO accuracy are 
+provided by the \openloops library~\cite{Buccioni:2019sur,Cascioli:2011va,Denner:2016kdg}.
+Samples are generated using the \nnpdfnnlo set~\cite{Ball:2014uwa}, along with
+the dedicated set of tuned parton-shower parameters developed by the~\sherpa authors.\\
+The production of \tttt\ is modelled using the \mgamc~v2.3.3~\cite{Alwall:2014hca}
+generator at NLO with the \nnpdfonenlo~\cite{Ball:2014uwa} parton distribution function~(PDF).
+The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea}~ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
+\nnpdftwo~\cite{Ball:2014uwa} PDF set.
+The decays of bottom and charm hadrons are simulated using the \evtgen\ v1.6.0 program~\cite{Lange:2001uf}. \\
+The other rare top quark processes namely the production of \ttWW and \ttt are all modeled using the \mgamc generator at LO interfaced with \pythia using the A14 tune.
 
-
-\clearpage
 \section{Event selections and reconstruction}
 \label{sec:selection}
-\begin{equation}
-\chi^2=\frac{  (m^{reco}_{j_{SMT}l_{a}l_{b}} -m_{t_{FCNC}})^2 }{\sigma^2_{t_{FCNC}}}   +\frac{  (m^{reco}_{j_{bjet}l_{c}\nu} -m_{t_{SM}})^2 }{\sigma^2_{t_{SM}}}+\frac{  (m^{reco}_{l_{c}\nu} -m_{W})^2 }{\sigma^2_{W}}
-\end{equation}
-\clearpage
+The channel studied for this work is \FCNCtZc in \ttbar decays using Soft Muon Tagging.
+One of the \Pqt-quarks decays following the SM into a \PW boson and a
+\Pqb-quark (called in the following \textit{SM top}), while the other
+\Pqt-quark (called in the following \textit{FCNC top}) decays into a \PZ
+boson and a \Pqc-quark that subsequentially decays semi-leptonically.\\
+This semi-leptonic decay is tagged using the Soft Muon Tagging (SMT) technique. \\
+Only the trileptonic channel is considered, i.e. the \PZ boson from the
+FCNC top decays leptonically and the \PW boson from the SM top
+decays leptonically.\\
+Therefore the final state is characterised by the presence of three leptons, an
+SMT-jet, a \Pqb-tagged jet and missing transverse momentum from the
+escaping neutrinos. \\
+The final states where either the \PZ or the \PW bosons decay
+hadronically were not considered because of the higher backgrounds.\\
+The pre-selection criteria, common to all the Signal Regions used in this work, are the following:
+\begin{itemize}
+	\item    Exactly three leptons (electrons or muons) required. \\
+				These leptons must satisfy the requirements described in
+				\cref{sec:object:el,sec:object:mu}. 
+				At least one lepton must have $\pt > \SI{27}{\GeV}$. 
+				The other two leptons must have $\pt > \SI{15}{\GeV}$. 
+				Events with a fourth lepton with $\pt > \SI{15}{\GeV}$ are vetoed. 
+	\item   There should be at least one opposite-sign same-flavour lepton pair
+				(OSSF) with an invariant mass in the range 
+				$|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$. \\
+				These two leptons are considered as the ones coming from the \PZ boson.\\ 	
+				If more than one lepton pair satisfy these selections, the pair
+				with the invariant mass closest to the mass of the \PZ boson is
+				considered. 
+\end{itemize}	
+
 \subsection {Top quarks reconstruction}
-\clearpage
+%\begin{equation}
+%\chi^2=\frac{  (m^{reco}_{j_{SMT}l_{a}l_{b}} -m_{t_{FCNC}})^2 }{\sigma^2_{t_{FCNC}}}   +\frac{  (m^{reco}_{j_{bjet}l_{c}\nu} -m_{t_{SM}})^2 }{\sigma^2_{t_{SM}}}+\frac{  (m^{reco}_{l_{c}\nu} -m_{W})^2 }{\sigma^2_{W}}
+%\end{equation}
+
+\label{sec:sel:topmassrec}
+In the events having at least two jets with one of them being \Pqb-tagged, two top quarks (FCNC and SM tops) candidates are reconstructed under the FCNC \ttbar decay signal hypothesis.
+The kinematics of the top-quark candidates can be reconstructed from
+the corresponding decay particles.\\
+The reconstructed \PZ boson is assumed to come from the FCNC top decay ($t\to cZ$),
+while \Pqb-tagged jet from SM top decay ($t\to bW$).\\
+In order to reconstruct both top quarks, 
+further we need to associate a reconstructed jet to the \Pqc-quark from FCNC top decay, and reconstruct
+the \PW boson from the SM top decay. This can be done by assuming the lepton not used to reconstruct the \PZ boson to be the one coming from the \PW boson decay,
+the missing transverse momentum to be the transverse momentum of the neutrino from \PW boson decay
+and determining longitudinal component of the neutrino momentum ($p^{\nu}_z$)
+using the minimisation of the following expression for each jet combination:
+
+\begin{equation}
+\chi^2_{\ttbar}  =  \frac{\left(m^{\mathrm{reco}}_{j_a\ell\ell}-m_{t_{\mathrm{FCNC}}}\right)^2}{\sigma_{t_{\mathrm{FCNC}}}^2}+
+\frac{\left(m^{\mathrm{reco}}_{j_b\ell_W\nu}-m_{t_{\mathrm{SM}}}\right)^2}{\sigma_{t_{\mathrm{SM}}}^2}
++ \frac{\left(m^{\mathrm{reco}}_{\ell_W\nu}-m_W\right)^2}{\sigma_W^2},
+\label{eq:chi2tt}
+\end{equation}
+where $m^{\mathrm{reco}}_{j_a\ell\ell}$, 
+$m^{\mathrm{reco}}_{j_b\ell_W\nu}$, and $m^{\mathrm{reco}}_{\ell_W\nu}$ are 
+the reconstructed masses of the $cZ$, $bW$, and $\ell_W\nu$ systems, respectively.
+For each jet combination, where any jet can be assigned to $j_a$, while $j_b$ must correspond to a \Pqb-tagged jet, the $\chi^2_{\ttbar}$ minimisation gives the most probable value for $p^{\nu}_z$. From all combinations, the one with the minimum $\chi^2$ is chosen.
+%This procedure assigns the SMT-jet to the \Pqc-quark from FCNC top decay or to the \Pqb-quark 
+%from SM top decay (depending on the number of \Pqb-tagged jet) and determines the $p^{\nu}_z$ value, completing all ingredients to reconstruct four-momenta of the 
+%top-quark candidates.
+In~\Cref{eq:chi2tt}, the central value for the masses and the widths of the top quarks and \PW boson are taken from reconstructed simulated FCNC \ttbar decay signal events. This is done by matching the true \Pqc- and \Pqb-quarks in the simulated events to the reconstructed ones, setting the longitudinal momentum of the neutrino to the $p_z$ of the true simulated neutrino and then performing Bukin fits
+\footnote{These fits use a piecewise function with  a Gaussian function in the centre and two 		
+	asymmetric tails. Five parameters determine the overall normalization, the peak position, the width of the core, the asymmetry, the size of the lower tail, and the size of the higher tail. From these parameters, only the peak position and the width enter the $\chi^2$.}~\cite{Bukin} 
+to the masses of the reconstructed top quarks and \PW boson (more details are in~\Cref{appendix:mass_resolution}). \\
+The values are: 
+\begin{itemize}
+	\item for the FCNC top, $m_{t_{\mathrm{FCNC}}}=171.2$~\GeV and $\sigma_{t_{\mathrm{FCNC}}}=11.4$~\GeV;
+	\item for the SM top, $m_{t_{\mathrm{SM}}}=168.0$~\GeV and $\sigma_{t_{\mathrm{SM}}}=23.9$~\GeV;
+	\item for the \PW boson, $m_W=82.6$~\GeV and $\sigma_W=16.6$~\GeV.
+\end{itemize}	
+%The SM top quark candidate is reconstructed under the FCNC single-top quark production hypothesis in the events having one or two jets with exactly one being $b$-tagged,
+%which is assumed to come from the top-quark decay ($t\to bW$). 
+%The lepton not used to reconstruct the \PZ boson is assumed to be the one coming from \PW boson decay
+%and the missing transverse momentum is assumed to be the transverse momentum of the neutrino from \PW boson decay,
+%while the most probable value for the longitudinal component of the neutrino momentum is determined using the minimisation of the following expression:
+%\begin{equation}
+%\chi^2_{\tZ}  = 
+%\frac{\left(m^{\mathrm{reco}}_{b\ell_W\nu}-m_{t_{\mathrm{SM}}}\right)^2}{\sigma_{t_{\mathrm{SM}}}^2}
+%+ \frac{\left(m^{\mathrm{reco}}_{\ell_W\nu}-m_W\right)^2}{\sigma_W^2},
+%\label{eq:chi2tZ}
+%\end{equation}
+%where $m^{\mathrm{reco}}_{j_b\ell_W\nu}$ and $m^{\mathrm{reco}}_{\ell_W\nu}$ are 
+%the reconstructed masses of the $bW$ and $\ell_W\nu$ systems, respectively.
+%In~\cref{eq:chi2tZ}, the central value for the masses and the widths
+%of the top quark and $W$ boson are
+%the same as in~\cref{eq:chi2tt}, therefore, in the events with two jets,
+%the four-momentum of SM top-quark candidate reconstructed under the FCNC single-top quark
+%production signal hypothesis is the same as the one
+%reconstructed under the FCNC \ttbar decay signal hypothesis.\\
+%The mass cuts are applied on the reconstructed top-quark candidates in the signal regions as described in the following sections.
+
 \subsection {Signal Region definition}
 
 

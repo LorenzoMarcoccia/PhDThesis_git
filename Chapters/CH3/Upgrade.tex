@@ -14,27 +14,29 @@
 % ----------------------- introduction content -------------------------
 % ----------------------------------------------------------------------
 Since the beginning, the LHC accelerator has faced operating periods and dedicated shut-downs to
-upgrade the accelerator machine and the detectors. In Figure~\ref{fig:phase2} a summary of the LHC timeline for operation and upgrade is shown.
+upgrade the accelerator machine and the detectors. \\In Figure~\ref{fig:phase2} a summary of the LHC timeline for operation and upgrade is shown.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Chapters/CH3/figures/phase2}
 	\caption{Summary of the LHC timeline for operation and upgrade~\cite{phase2}.}
 	\label{fig:phase2}
 \end{figure}
-\\At the end of 2018, the LHC was shut-down and for two years it will be upgraded to reach the center-of-mass energy to its design value of 14 TeV and collect 300 $\mathrm{fb^{-1}}$ of data, almost double of the current available statistics of Run2.\\
-After 4 years of duty cycle, the High-Luminosity period of LHC (HL-LHC) will start and aims to bring the integrated luminosity to 3000 $\mathrm{fb^{-1}}$, unlocking several studies, mostly related with rare phenomena, which are impossible to perform with the current statistics.\\
-The main focus of this chapter is the trigger system upgrade for HL-LHC and several studies will be presented.
+\\At the end of 2018, the LHC was shut-down and for two years it will be upgraded to bring the center-of-mass energy to its design value of 14 TeV and collect 300 $\mathrm{fb^{-1}}$ of data, almost double the current available statistics of Run2.
+After 4 years of duty cycle, the High-Luminosity period of LHC (HL-LHC) will start and aims to bring the integrated luminosity to 3000 $\mathrm{fb^{-1}}$, unlocking several studies, mostly related with rare phenomena, which are impossible to perform with the current datasets.\\
+This chapter describes the Barrel Muon Trigger system (Section~\ref{barrel_muon_trig}), the BI upgrade for the HL-LHC (Section~\ref{BI_upg}), and the studies performed in the context of the RPC upgrade.
+In particular, the goal of this work was the implementation of a new simulation to model the digitization of RPC hits in the BI region (Section~\ref{sec:hit_dig}) and, using this new model, trigger efficiency studies were performed in the BI and BM/BO regions (Section~\ref{sec:eff}).
+In the end, summary and final considerations are also reported (Section~\ref{sec:concl_QT}).
 
 \section{ATLAS Barrel Muon Trigger}
+\label{barrel_muon_trig}
 The muon detector chambers are arranged such that particles from the interaction point traverse three stations of chambers.\\
 The system is subdivided azimuthally into 16 sectors numbered from 1 to 16.
 The sector number increases in the direction of increasing $\mathrm{\phi}$ with the number 1 corresponding to coordinate $\mathrm{\phi=0}$. The odd sector (called “large sectors”)
-are located between barrel coils, instead, the even sectors (called “small sectors”) are covered by the coils.\\
+are located between barrel coils, while, the even sectors (called “small sectors”) are covered by the coils.\\
 The muon spectrometer consists of three large air-core superconducting toroidal magnets (two end-caps and one barrel) providing a field of approximately 0.5 T.\\
 In the barrel, the chambers are arranged in three concentric cylinders around the beam axis called BI (Barrel Inner), BM (Barrel Middle), and BO (Barrel Outer). \\
-RPC planes are installed in the Middle
-and Outer stations of the Muon Spectrometer always mechanically associated with MDT precision chambers (except for some “special” chambers). \\
-Two RPC planes are integrated with MDT in the Middle stations and one RPC plane only in the Outer stations.\\
+The RPC planes are installed in the Middle
+and Outer stations of the Muon Spectrometer and are mechanically associated with MDT precision chambers (except for some “special” chambers). \\
 Schematic drawings of the present ATLAS MS~\cite{TDR}, are shown in Figures~\ref{fig:MS_rz} and~\ref{fig:MS_xy2}.
 \begin{figure}[!h]
 	\centering
@@ -49,7 +51,7 @@ Schematic drawings of the present ATLAS MS~\cite{TDR}, are shown in Figures~\ref
 	\label{fig:MS_xy2}
 \end{figure}
 The MS detector and electronics components have been designed for 10 years of operation
-at a luminosity of $\mathrm{1\times 10^{34}cm^{-2} s^{-1}}$, corresponding to an integrated luminosity of $\mathrm{1000 fb^{-1}}$. 
+at a luminosity of $\mathrm{1\times 10^{34}cm^{-2} s^{-1}}$, corresponding to an integrated luminosity of 1000 \ifb. 
 Conservative safety factors for radiation tolerance and rate capability were taken
 into account in the original designs, and components have been tested up to and above
 levels corresponding to the expected doses and rates predicted by simulations multiplied
@@ -59,7 +61,8 @@ the measurements to within a maximum deviation of about 50\%.
 \\Based on this observation, the original safety factors were reduced [10], and as a consequence the original irradiation and high-rate tests have qualified the detectors for longer running and higher rates than originally anticipated.
 
 
-\section {BI upgrade for Phase II}
+\section {BI upgrade for Phase-II}
+\label{BI_upg}
 In the Phase-I upgrade, foreseen for LS2, the Small Wheels will be replaced by the New Small Wheels (NSW)~\cite{NSW} using small-strip TGC (sTGC) and Micro-Mesh Gaseous Structure
 (MicroMeGaS or Micromegas, MM for short) chambers used for both triggering and precision tracking.\\
 At the time of the Phase-II upgrade, there will thus be no CSC chambers
@@ -88,7 +91,7 @@ the lower single-hit efficiencies, a high trigger efficiency and purity can be m
 loosening the requirements on hit coincidences in the old chambers, if at the same time a
 coincidence with the new BI RPC chambers is introduced. The installation of these chambers
 will also close most of the acceptance holes of the present barrel muon trigger, which
-amount to more than 20\% of the $\eta-\phi$ coverage for $\eta$ < 1.05 (see Section~\ref{sec:eff}).\\
+amount to more than 20\% of the $\eta-\phi$ coverage for $!\eta!$ < 1.05 (see Section~\ref{sec:eff}).\\
 
 \noindent Adding new RPC chambers in the barrel is challenging in terms of available space and
 installation. In the small sectors, the BI RPC chambers can only be installed if the present
@@ -97,7 +100,7 @@ the sMDT chambers and the new RPCs fit in the same envelope as the original MDT 
 In the large sectors there is sufficient space available to add the new RPC chambers
 without replacing the MDTs, if on-detector services are re-arranged.\\
 The retrofitting of selected RPC chambers in the BM and BO layer in the areas of high
-rate at $\eta$ > 0.8, namely the BML7 and BOL6 chambers, is a small additional upgrade. The
+rate at $|\eta|$ > 0.8, namely the BML7 and BOL6 chambers, is a small additional upgrade. The
 MDT+RPC stations will be temporarily removed from the detector to replace the front-end
 electronics and the readout panels, so that the chambers can be run at reduced HV without
 efficiency loss. \\
@@ -191,6 +194,7 @@ by the performance requirements, the strip impedance, and cost considerations. T
 number of readout channels is about 8700.
 
 \subsection {Trigger scheme}
+\label{sec:trigScheme}
 All the hits from RPC detectors will be available to the barrel Sector Logic board that uses them to
 generate barrel trigger candidates. The new BI RPCs increase the geometrical acceptance
 of the present barrel muon trigger and its robustness against inefficiencies of the old BM
@@ -203,7 +207,7 @@ together with the MDT chambers. The acceptance holes in the BM layer, caused by 
 magnet coils and their supports, are also visible.
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Chapters/CH3/figures/trig_schemeXY}
+	\includegraphics[width=0.75\textwidth]{Chapters/CH3/figures/trig_schemeXY_paint}
 	\caption{Transverse section of a small sector in the barrel region, showing the four layers of RPC chambers (RPC0,1,2,3), as well as the MDT chambers in the barrel-inner (BI), barrel-middle (BM), and barrel-outer (BO) layers. The three dashed lines represent muon trajectories traversing four, two, and three RPC chambers~\cite{TDR}.}
 	\label{fig:trig_schemeXY}
 \end{figure}
@@ -250,7 +254,7 @@ gaps, if the muon trigger rate in the barrel gets too high.
 \end{figure}
 
 \section{Hit digitization in the BI region}
-\label{sec:trigScheme}
+\label{sec:hit_dig}
 Since at the present time the new chambers in the BI region are not yet installed,
 the simulation performed for this work takes into account the presence 
 of hits in the BI RPC chambers exploiting the true hits, recorded 
@@ -258,59 +262,61 @@ by the MDT chambers in the BI region, and treating them as hits of the future RP
 In this work, it has been used the the common framework \texttt{muTrigNt\_write}~\cite{muTrigNt} that includes a realistic digitization.
 This code reproduces the dimensions of the new BI RPC chambers and, 
 given as input the true MDT hits, it checks if the hits are in the geometric 
-acceptance.\\
-\noindent The code allows generating strips (both in $\eta$ and $\phi$ coordinates) as well
-and thus to digitize the true MDT hit recording its as a hit in the middle of the strip. 
-This \texttt{muTrigNt\_write} is also able to simulate the trigger efficiencies as described in Sec~\ref{sec:eff}. 
-They have been calculated considering muons reconstructed in $\eta < 1.05$ by the offline reconstruction, using a single-muon Monte Carlo sample with fixed $p_{T} = 50$ GeV and uniform distributions in $\eta$ and $\phi$. It is the official Muon-phase2 sample {\scriptsize\texttt{mc15\_14TeV.422063.ParticleGun\_single\_mu\_Pt50.recon.ESD.e5392\_s2988\_s3000\_r8974}}~\cite{Muontwiki}, containing 50K events, produced with the ITk (Inner Traker) simulation and with the layout of Run-I muons, that differs compared to the layout of Run-II muons because the feet and the elevator chambers are missing.
-The simulation implements a more realistic digitization that produces:
+acceptance.
+The code also allows to generate strips, of an arbitrary pitch, in the two orthogonal directions ($\eta$ and $\phi$) and thus to digitize the true MDT hits, recording them as hits with the coordinates reported in the center of the strip.
+In this way, it is possible to completely simulate the RPC chamber. \\
+%This \texttt{muTrigNt\_write} is also able to simulate the trigger efficiencies, as described in Sec~\ref{sec:eff}. 
+The studies presented in this chapter were performed using the official MC sample\\  {\scriptsize\texttt{mc15\_14TeV.422063.ParticleGun\_single\_mu\_Pt50.recon.ESD.e5392\_s2988\_s3000\_r8974}}~\cite{Muontwiki}, containing 50K events, produced with the ITk (Inner Tracker) simulation and with the layout of Run-I muons, that differs compared to the layout of Run-II muons because the feet and the elevator chambers are missing.
+This MC sample considers muons reconstructed in $|\eta| < 1.05$ by the offline reconstruction, using a single-muon MC sample with fixed \mbox{$p_{T}=50$ \GeV}. \\
+Given the framework described above, the goal of this work was to implement a simulation with a more realistic digitization that would produce:
 \begin{itemize}
 	\item cluster size, strip number and the associated coordinates of the strips (Section~\ref{sec:CSM});
 	\item timing (Section~\ref{sec:timing});
 	%\item the option of BI RPCs with two-sides $\eta-\eta$ readout  (Section~\ref{sec:etaeta});
-	\item BI and BMBO Efficiencies (Section~\ref{sec:eff});
+%	\item BI and BMBO Efficiencies (Section~\ref{sec:eff});
 \end{itemize}
 
 \subsection{The cluster size model}
 \label{sec:CSM}
 A single discharge in the gas volume can induce a signal in more than
-one RPC strip (i.e. occurs a so-called $cluster$), this is due to the charge sharing.
-The number of RPC strips fired in temporal coincidence is called $cluster$ $size$. 
-The cluster size is a relevant parameter for RPC detector and it must be strictly monitored to 
+one RPC strip (i.e. it causes a so-called $cluster$), which is due to the charge sharing.
+The number of the RPC strips fired in temporal coincidence is called $cluster$ $size$. 
+The cluster size is a relevant parameter for the RPC detector and it must be strictly monitored to 
 ensure a full trigger efficiency,
 The cluster size is simulated using a Gaussian charge distribution, with fixed width and centered on the true MDT hit that is induced on the strips~\cite{MuonWeek22Oct}. 
 This function is defined as:
 \begin{equation}
-G(z)=f(A)\cdot erf \bigg(\frac{\mu-z}{\sigma\sqrt{2}}\bigg)
+G(z)=f(A)\cdot \frac{2}{\pi} \int{e^{-\frac{\mu-z}{\sigma\sqrt{2}}}}
 \end{equation}
-where the amplitude distribution $f(A)$ is variable with an exponential decreasing tail $f(A)=e^{-\frac{A}{\tau}}$, with the parameters $\tau$ = 0.8 and random $A$, fixed width $\sigma$ = 16 mm and $\mu$ is the $z$~-~coordinate of the hit.\\
-When the charge integrated over a strip exceeds a certain threshold (0.2 in this simulation), then the strip is switched on.\\
-This is not a strictly physical model but a decreasing exponential is useful to produce the expected tail, unless to use a more realistic model for amplitudes
+where the amplitude distribution $f(A)$ is a variable with an exponential decreasing tail $f(A)=e^{-\frac{A}{\tau}}$, with the parameters $\tau$ = 0.8, $A$ is a random number between 0 and 1, fixed width $\sigma$ = 16 mm and $\mu$ is the $z$~-~coordinate of the hit.
+When the charge integrated over a strip exceeds a certain threshold (0.2 in this simulation), the strip is switched on.\\
+This is not a strictly physical model but a decreasing exponential is useful to produce the expected tail, in the absence of a more realistic model for amplitudes
 based on experimental studies. A picture of the model used in this simulation is illustrated in Figure~\ref{fig:csm_pic}.
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Chapters/CH3/figures/csm_pic}
+	\includegraphics[width=0.53\textwidth]{Chapters/CH3/figures/csm_pic}
 	\caption{Cluster size model used in the simulation. $C_i$ is the charge integrated over a strip $i$. 
 		Some other parameters are the strip pitch $z_w$ ( 22 mm), random amplitude$A$ and width $\sigma$. When the charge integrated over a strip exceeds a certain threshold, the strip is switched on~\cite{MuonWeek22Oct}.}
 	\label{fig:csm_pic}
 \end{figure}
-Cluster size is given by the number of strips fired at the same time. It depends on the absolute value of charge integrated over a strip but it also depends on the position of the true hit.
+Cluster size is given by the number of strips fired at the same time. \\
+It depends on the absolute value of charge integrated over a strip, but it also depends on the position of the true hit.
 Originally, the RPC hit is fixed to be at the center of the strip and the true MDT hit belongs to one strip only but in this simulation, it would be possible to have many strips fired at the same time using the relation: $\mathrm{GlobPos_{i} = GlobPos_{i,true}\pm strip\_center_{i}}$. 
-The resulting cluster size distribution is shown in Figure~\ref{fig:CS}.
+The resulting cluster size distribution is in line with the expectations in~\cite{TDR} and shown in Figure~\ref{fig:CS}.
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.6\textwidth]{Chapters/CH3/figures/CS}
+	\includegraphics[width=0.7\textwidth]{Chapters/CH3/figures/CS}
 	\caption{Cluster size distribution obtained with the model and parameters illustrated in this section. The average value is 1.6.}
 	\label{fig:CS}
 \end{figure}
 \newpage\phantom{}
-\noindent Looking at the hit distribution in Figure~\ref{fig:strips_eta} for the $\eta$ layer and Figure~\ref{fig:strips_phi} for the $\phi$ layer, it is possible to see that:
+\noindent Considering the hit distribution in Figure~\ref{fig:strips_eta} for the $\eta$ layer and Figure~\ref{fig:strips_phi} for the $\phi$ layer, it is possible to see that:
 \begin{itemize}
-\item CS=0 never possible by definition, one hit corresponds at least at one fired strip;
+\item CS=0 is never possible by definition, one hit corresponds to at least one fired strip;
 \item CS=1 the hit distribution is uniform, because the integrated charge is less than the fixed threshold;
 \item CS=2 mostly when the truth hit is far from the strip center and at the strip~edge;
 \item CS=3 mostly when the truth hit is far from the strip~edge and at the strip~center;
-\item CS>3 are rare events, but they follow the same pattern.
+\item CS=4 mostly when the truth hit is far from the strip center and at the strip~edge.
 \end{itemize}
 \begin{figure}[!h]
 	\centering	
@@ -332,11 +338,11 @@ strips oriented along $\phi$ are always oriented with increasing $\phi$.
 	\label{fig:Nstrips}
 \end{figure}	
 \newpage
-\noindent ~\Cref{fig:param_BIL,fig:param_BIR} summarise the main  chamber parameters of the expected layout 
-for the Phase II upgrade. Strip and front-end board 
+\noindent \Cref{fig:param_BIL,fig:param_BIR} summarises the main chamber parameters of the expected layout 
+for the Phase-II upgrade. Strip and front-end board 
 entries are based on the assumptions of a 20 mm pitch and eight channels per board.\\
 Figure~\ref{fig:strips_BI} shows the number of $\eta$ and $\phi$ strips switched on in the 
-simulation. It is possible to verify that the simulation developed for this work follows the requirements of the Phase II upgrade for BI RPCs to be realistic and reliable as much as possible.
+simulation. It is possible to verify that the simulation developed for this work follows the requirements of the Phase-II upgrade for BI RPCs to be realistic and reliable as much as possible.
 \begin{table}[!h]
 	\centering	
 	\subfigure[] {\label{fig:param_BIL}\includegraphics[width=1 \textwidth]{Chapters/CH3/figures/param_BIL}} 
@@ -357,15 +363,15 @@ simulation. It is possible to verify that the simulation developed for this work
 \label{sec:timing}
 Another important variable is the time taken for the particle to pass through the detector. It is 
 important because it is one of the discriminating variables in the algorithm's selection of hits. 
-Hits recorded in the bunch crossing event are considered and not all the hits previously recorded. 
+Only hits recorded in the bunch crossing event are considered and not all the hits previously recorded. 
 Therefore, all hits outside 25~ns coincidence window around the bunch crossing of interest are 
 excluded.\\
 In order to simulate the new RPCs one has to take into account several effects and apply an 
 appropriate correction and extract a digital readout.
 \vspace{\baselineskip}\\
-The final formula used to extract digitized time in which the hit is recorded by the detector is:
+The final formula used to extract the digitized time in which the hit is recorded by the detector is:
 \begin{equation}
-t_{hit}= int\footnotemark\bigg(\frac{t_{true}+t_{Gauss}+t_{FE}-t_{cal}}{\Delta t}\bigg)\Delta t
+t_{hit}= int\footnotemark\bigg\{\frac{t_{true}+t_{Gauss}+t_{FE}-t_{cal}}{\Delta t}\bigg\}\Delta t
 \label{eq:timing}
 \end{equation}
 \begin{itemize}
@@ -387,18 +393,18 @@ secondary hits.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=1\textwidth]{Chapters/CH3/figures/time_BI}
+	\includegraphics[width=0.9\textwidth]{Chapters/CH3/figures/time_BI}
 	\caption{Digitized time associated to the RPC hit. The tail of the distribution is given by low 
 		$p_T$ muons that produce secondary hits}
 	\label{fig:time_BI}
 \end{figure}
 
-\footnotetext{The $int$ function takes the integer part of a natural number.}
+\footnotetext{The $int$ function takes the integer part of a real number.}
 
 \section{L0 barrel trigger efficiency}
 \label{sec:eff}
 The performance of the barrel muon trigger was studied for a fixed transverse momentum threshold: $p_{T} > 10$ GeV~\cite{Marcoccia:2693982} and with the hit digitization described in the previous sections.\\
-To study the robustness of the trigger against possible efficiency reductions of the old RPCs in the BM and BO layers, the simulation was performed in the so-called "worst-case scenario" that introduces inefficiencies depending on the station type and sector and summarised in Table~\ref{tab:WCS}. It includes inefficiencies due to a reduction of the high voltage of the BM and BO RPCs such that the expected RPC current is always below the safe operation limit.
+To study the robustness of the trigger against possible efficiency reductions of the old RPCs in the BM and BO layers, the simulation was performed in the so-called "worst-case scenario" that introduces inefficiencies depending on the station type and sector and summarised as Table~\ref{tab:WCS}. It includes inefficiencies due to a reduction of the high voltage of the BM and BO RPCs such that the expected RPC current is always below the safe operation limit.
 \begin{table}[htbp]
 	\begin{center}
 		\begin{tabular}{c|cccccccc}
@@ -439,13 +445,15 @@ Adding the new BI RPC layer greatly reduces the dependence of the trigger effici
 	\caption{Efficiency times acceptance of the L0 barrel trigger for each trigger logic scheme, assuming the worst-case scenario with the hit digitization.}
 	\label{fig:h_eff}
 \end{figure}
-\\Starting from the WCS scenario, other studies have been performed on the L0 barrel trigger 
-efficiency using simulations with RPC stations in various operational conditions, in particular the 
-refurbish of BM and BO chambers (Section~\ref{sec:BMBO_retrofit}) and about the installation of BI chambers in the rail sectors 11 and 15 (Section~\ref{sec:BIRBIM_drop}).
+\\Starting from the WCS scenario, other two studies have been performed on the L0 barrel trigger 
+efficiency using simulations with RPC stations in various operational conditions: the first study is the  refurbish of BM and BO chambers (Section~\ref{sec:BMBO_retrofit}) and the second study is about the installation of BI chambers in the rail sectors 11 and 15 (Section~\ref{sec:BIRBIM_drop}).
 
 \subsection{BM and BO retrofitting}
 \label{sec:BMBO_retrofit}
-In the first case presented, efficiencies of the "worst-case scenario" summarised in Table~\ref{tab:WCS}, are used, except for the following stations, setted to 100\% efficiency:
+In the Phase-II upgrade of the muon system, most of the readout electronics will
+be replaced to make it faster and resistant to radiation.
+An essential step is therefore to understand what would be the impact of the legacy BM/BO chambers with the new electronics.\\
+In this first study, efficiencies of the "worst-case scenario" summarised in Table~\ref{tab:WCS}, are used, except for the following stations set to 100\% efficiency:
 \renewcommand{\labelenumii}{\Lowercase{enumii}}
 \begin{enumerate}
 \item BML 7,
@@ -453,7 +461,6 @@ In the first case presented, efficiencies of the "worst-case scenario" summarise
 \item BOS 6,
 \item BOL 5.
 \end{enumerate}
-At this stage, an essential step is to understand what would be the impact of the legacy BM/BO chambers with the new electronics.\\
 The products of muon trigger efficiency and acceptance for the BM and BO retrofitting are listed in Table~\ref{tab:allcasesBMBO}.\\
 The trigger efficiency times acceptance is also presented in Figure~\ref{fig:allcasesBMBO} that compare the "worst-case scenario" with all the variants of the WCS, in which some stations are fixed to 100\% efficiency.\\
 In the first analysed case, the most relevant effect on the trigger efficiency times acceptance is on the 3/4 chambers logic scheme, in particular for the Case 1b (BOL 6 100\%) the variation is +1.08\% compared to the "worst-case scenario".
@@ -473,7 +480,7 @@ In the first analysed case, the most relevant effect on the trigger efficiency t
 			Case 1d (BOL 5 100\%) 								& +0.23 				& +0.82 		& +0.41\\		
 			\hline 
 		\end{tabular} 
-		\caption{Efficiency times acceptance for the L0 barrel trigger for different assumptions on the hit efficiency of the present RPC detectors. The “WCS” row corresponds to the scenario in which the efficiencies are listed in Table~\ref{tab:WCS}. The other rows correspond to the variants of the WCS, in which the efficiency of some stations are setted to 100\%. The correspondent results of these variants, are expressed as variations to the WCS~\cite{Marcoccia:2693982}.} 
+		\caption{Efficiency times acceptance for the L0 barrel trigger for different assumptions on the hit efficiency of the present RPC detectors. The “WCS” row corresponds to the scenario in which the efficiencies are listed in Table~\ref{tab:WCS}. The other rows correspond to the variants of the WCS, in which the efficiency of some stations are set to 100\%. The corresponding results of these variants, are expressed as variations to the WCS~\cite{Marcoccia:2693982}.} 
 		\label{tab:allcasesBMBO}
 	\end{center} 
 \end{table} 
@@ -493,10 +500,10 @@ In the first analysed case, the most relevant effect on the trigger efficiency t
 \FloatBarrier
 \subsection{Dropping BIR and BIM chambers}
 \label{sec:BIRBIM_drop}
-Since the installation of the RPCs in the sectors 11 and 15 (BIM and BIR) seems to be very hard, another special case was performed simulating a scenario in which BI RPC are not installed in these sectors.\\
-The products of muon trigger efficiency and acceptance for the second case are listed in Table~\ref{tab:allcasesBIRBIM}.\\
+Since the installation of the RPCs in the sectors 11 and 15  seems to be very hard, another special case was performed simulating a scenario in which BIM and BIR RPC are not installed in these sectors.\\
+The products of muon trigger efficiency and acceptance for this second study are listed in Table~\ref{tab:allcasesBIRBIM}.\\
 The results are also presented in Figure~\ref{fig:allcasesBIRBIM} that compares the "worst-case scenario" with this second case, in which BIM and BIR are turned off.
-The efficiency distributions show that the absence of BIR and BIM has the most relevant effect on the 3/4 chambers + BIBO logic scheme with a correspondent variation of -3.11\%.
+The efficiency distributions show that the absence of BIR and BIM has the most relevant effect on the 3/4 chambers + BIBO logic scheme with a corresponding variation of -3.11\%.
 
 \begin{table}[h]
 	\begin{center}
@@ -511,7 +518,7 @@ The efficiency distributions show that the absence of BIR and BIM has the most r
 			Case 2  (BIM BIR off)								& +0.03 			   	& -2.70 				& -3.11\\
 			\hline 
 		\end{tabular} 
-		\caption{Efficiency times acceptance for the L0 barrel trigger for different assumptions on the hit efficiency of the present RPC detectors. The WCS row corresponds to the scenario in which the efficiencies are listed in Table~\ref{tab:WCS}. The row "Case 2" corresponds to the case in which RPCs in the sectors 11-15 (BIM and BIR) are turned off. The correspondent results of the Case 2, are expressed as variations to the WCS~\cite{Marcoccia:2693982}.} 
+		\caption{Efficiency times acceptance for the L0 barrel trigger for different assumptions on the hit efficiency of the present RPC detectors. The WCS row corresponds to the scenario in which the efficiencies are listed in Table~\ref{tab:WCS}. The row "Case 2" corresponds to the case in which the RPCs in the sectors 11-15 (BIM and BIR) are turned off. The corresponding results of the Case 2, are expressed as variations to the WCS~\cite{Marcoccia:2693982}.} 
 		\label{tab:allcasesBIRBIM}
 	\end{center} 
 \end{table} 
@@ -526,12 +533,31 @@ The efficiency distributions show that the absence of BIR and BIM has the most r
 	\subfigure [3/3 chambers]{\label{fig:allcasesBIRBIM}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BMBO_secondCase_phi}} 
 \end{figure}	
 
-\begin{figure}
+\begin{figure}[h]
 	\centering	
 	\subfigure [3/4 chambers]{\label{fig:allcasesBIRBIM}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBM_secondCase_phi}} 
 	\subfigure [3/4 chambers + BIBO]{\label{fig:allcasesBIRBIM}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBO_secondCase_phi}} 
 	\caption{Efficiency times acceptance of the L0 barrel trigger compared to reconstructed muons with $p_{T} = 50$ GeV as a function of $\phi$. The histograms show the efficiency of a) the existing 3/3 chambers trigger, of b) the 3/4 chambers trigger including the BI layer, and c) the additional gain from the BI-BO trigger. Efficiency times acceptance is defined as the fraction of reconstructed muons accepted by the trigger, using a simulation that includes the RPC detector efficiency~\cite{Marcoccia:2693982}.}
+
 \end{figure}	
+\FloatBarrier
 
-
-\clearpage
+\section{Summary and considerations }
+\label{sec:concl_QT}
+The works described in this chapter aimed at a new simulation of the RPC in the BI region.
+They involved the construction of a model:
+\begin{itemize}
+\item for the definition of the cluster size, which is important for creating a simulation as realistic as possible;
+\item to define a variable that represents the time taken by the particle to pass through the detector, which is important because it is one of the discriminating variables in the algorithm's selection of hits.
+\end{itemize}
+The new developed model results in agreement with the required technical characteristics of the RPCs for Phase-II, described in the Technical Design Report~\cite {TDR}.\\
+A more realistic simulation of the RPCs is now available for further studies.
+\vspace{\baselineskip}
+\\Using this model, L0 barrel trigger efficiency studies were performed in the following two scenarios:
+\begin{enumerate}
+\item the refurbish of BM and BO chambers, to understand what would be the impact of the legacy BM / BO chambers with the new electronics;
+\item the drop of BIR and BIM chambers, given that the installation of the RPCs in the sectors 11 and 15 seems to be very hard.
+\end{enumerate}
+The first scenario gives an estimation of the improvements by replacing the electronics. Moreover, the most significant expected improvement is from BOL6.\\
+The second scenario showed that there is a significant loss of efficiency if the collaboration decides to don't install the RPC in sectors 11 and 15.\\
+These two studies will help plan the work for the Phase-II upgrade. 

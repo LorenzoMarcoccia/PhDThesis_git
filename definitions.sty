@@ -30,7 +30,7 @@
 % ===============
  % Notes to the editorial board
 \newcommand{\EB}[1]{\textcolor{red}{\textbf{Note to the EB:} #1}}
-
+\newcommand\notsotiny{\@setfontsize\notsotiny\@vipt\@viipt}
 %\newcommand*{\anabasevers}{AnalysisBase-21.2.103\xspace}
 \newcommand*{\anabasevers}{AnalysisBase-21.2.127\xspace}
 
@@ -140,6 +140,7 @@
 \newcommand*{\tZ}{\Pqt{}\PZ}
 \newcommand*{\tH}{\Pqt{}\PH}
 \newcommand*{\tW}{\Pqt{}\PW}
+\newcommand*{\ttWW}{\Pqt{}\Paqt{}\PW\PW}
 \newcommand*{\ttVH}{\ensuremath{\Pqt\Paqt V + \Pqt\Paqt \PH}\xspace}
 \newcommand*{\ttWZH}{\ensuremath{\Pqt\Paqt V + \Pqt\Paqt \PH + \Pqt\PW\PZ}\xspace}
 \newcommand*{\tWZ}{\Pqt{}\PW{}\PZ}
@@ -151,11 +152,16 @@
 \newcommand*{\ttbarX}{\ensuremath{\Pqt{}\Paqt}\xspace}
 \newcommand*{\WZ}{\PW{}\PZ}
 \newcommand*{\VV}{\ensuremath{VV}\xspace}
+\newcommand*{\VVV}{\ensuremath{VVV}\xspace}
+\newcommand*{\VH}{\ensuremath{VH}\xspace}
 \newcommand*{\VVLF}{\ensuremath{VV+\text{LF}}\xspace}
 \newcommand*{\VVHF}{\ensuremath{VV+\text{HF}}\xspace}
 \newcommand*{\VVCF}{\ensuremath{VV+\Pqc}\xspace}
 \newcommand*{\VVBF}{\ensuremath{VV+\Pqb}\xspace}
 \newcommand*{\smallBkgs}{\ensuremath{\text{Small backgrounds}}\xspace}
+\newcommand*{\tttt}{\ensuremath{tttt}\xspace}
+\newcommand*{\ttt}{\ensuremath{ttt}\xspace}
+
 
 % --- From PMG document
 % generators
@@ -191,6 +197,7 @@
 \def\nnpdfnnlo{\texttt{NNPDF3.0nnlo}\xspace}
 \def\nnpdfnlo{\texttt{NNPDF3.0nlo}\xspace}
 \def\nnpdftwo{\texttt{NNPDF2.3lo}\xspace}
+\def\nnpdfonenlo{\texttt{NNPDF3.1nlo}\xspace}
 \def\mstw{\texttt{MSTW2008nlo}\xspace}
 \def\powheg{\textsc{Powheg}\xspace}
 \def\powhegbox{\textsc{PowhegBox}\xspace}
