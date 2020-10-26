@@ -48,6 +48,8 @@
 \usepackage{siunitx}
 \usepackage{booktabs}
 \usepackage{afterpage}
+\usepackage{bookmark}
+\usepackage[titletoc]{appendix}
 
 %\sisetup{round-mode=places,round-precision=4}
 %\sisetup{[round-mode=figures,round-precision=3]S[round-mode=places,round-precision=2]l}
@@ -117,11 +119,15 @@
 %\setcounter{page}{1}
 
 % ----------------------- ABSTRACT ------------------------------------
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
 \include{Abstract/abstract}
 \include{Abstract/personal}
 \fancyend
 
 % ----------------------- TABLE OF CONTENTS ---------------------------
+\phantomsection
+\addcontentsline{toc}{chapter}{Contents}
 % levels are: 0 - chapter, 1 - section, 2 - subsection, 3 - subsection
 \setcounter{secnumdepth}{3} % organisational level that receives a numbers
 \setcounter{tocdepth}{3}    % print table of ts for level 3
@@ -163,6 +169,8 @@
 % But take care that the paths match.
 
 \selectlanguage{english}
+\cleardoublepage
+\phantomsection
 \addcontentsline{toc}{chapter}{Introduction}
 \include{Chapters/CH0/Introduction}
 \include{Chapters/CH1/SM}
@@ -171,13 +179,23 @@
 \include{Chapters/CH4/Object_reconstruction}
 \include{Chapters/CH5/Analysis}
 \include{Chapters/CH6/Statistical_analysis}
+\addtocontents{toc}{\protect\vskip30pt}
 \include{Chapters/CH7/Conclusions}
 
-\appendix
+\cleardoublepage
+\phantomsection
+\begin{appendices}
+\bookmarksetupnext{level=-1}
 \include{Appendices/AP1/MonteCarloSamples}
+\bookmarksetupnext{level=-2}
 \include{Appendices/AP2/MassResolution}
+\bookmarksetupnext{level=-3}
+\include{Appendices/AP3/DL1rc}
+\bookmarksetupnext{level=-4}
+\end{appendices}
 
 
+\addtocontents{toc}{\protect\vskip30pt}
 % the back matter: appendix and references close the thesis
 
 % ----------------------- bibliography ------------------------

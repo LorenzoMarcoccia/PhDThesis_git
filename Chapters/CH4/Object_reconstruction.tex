@@ -223,6 +223,27 @@ and $|\eta|\!<\!2.4$, corresponding to an efficiency of 92\%.
 \subsubsection{Soft Muon Tagging}
 
 \subsubsection{Recurrent Deep-Learning DL1r}
+In this analysis the \texttt{DL1r} algorithm is used~\cite{ATL-PHYS-PUB-2017-013,Aad:2019aic}.
+It is based on a deep feed-forward neural network (NN) trained using Keras~\cite{keras} with the Theano~\cite{theano} backend and the Adam optimiser~\cite{adam}. The DL1 NN has a multidimensional output corresponding to the probabilities for a jet to be a b-jet, a c-jet or a light-flavour jet. The topology of the output consists of a mixture of fully connected hidden and Maxout layers [31]. The input variables to DL1 consist of those used for the previous official algorithm MV2, with the addition of the \textsc{JetFitter} c-tagging variables described in Ref~\cite{Aad:2019aic}.
+\paragraph {\textit{b}-tagged jets}
+Jets originating from bottom quarks (called $b$-tagged jets) are
+identified by reconstructing secondary vertices from the tracks
+associated to the jets and by combining their spatial parameters with
+life-time related information.
+In the current  analysis the \SI{77}{\%} operation point is used.\\
+Finally, all $b$-tagged jets considered in this analysis should have a transverse
+momentum $\pT > \SI{25}{\GeV}$ and a pseudo-rapidity of
+$|\eta|\!<\!2.5$.  
+\paragraph {\textit{c}-tagged jets}
+The \texttt{DL1r} algorithm also allows to construct DL1r$_{c}$ discriminant that is used for charm-tagging.\\
+They are reconstructed jets satisfying $\pT > \SI{25}{\GeV}$ and $|\eta| < 2.5$ requirements,
+and failing the $b$-tagging requirement.
+This search uses the cut operation point giving the $c$-efficiency of 20\% studied and being calibrated
+in the $tc$+MET SUSY analysis~\cite{ANA-SUSY-2019-23}.\\
+More details of charm-tagging are given in~\Cref{appendix:DL1rc}.
+
+
+
 
 \clearpage
 \subsection{Missing transverse momentum}

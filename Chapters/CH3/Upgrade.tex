@@ -286,9 +286,9 @@ ensure a full trigger efficiency,
 The cluster size is simulated using a Gaussian charge distribution, with fixed width and centered on the true MDT hit that is induced on the strips~\cite{MuonWeek22Oct}. 
 This function is defined as:
 \begin{equation}
-G(z)=f(A)\cdot \frac{2}{\pi} \int{e^{-\frac{\mu-z}{\sigma\sqrt{2}}}}
+G(z)=A(z)\cdot \frac{2}{\pi} \int{e^{-\frac{\mu-z}{\sigma\sqrt{2}}}}
 \end{equation}
-where the amplitude distribution $f(A)$ is a variable with an exponential decreasing tail $f(A)=e^{-\frac{A}{\tau}}$, with the parameters $\tau$ = 0.8, $A$ is a random number between 0 and 1, fixed width $\sigma$ = 16 mm and $\mu$ is the $z$~-~coordinate of the hit.
+where the amplitude $A(z)$ is a random distribution having a decreasing exponential distribution  $f(A)=e^{-\frac{z}{\tau}}$, with the parameter $\tau$ = 0.8, fixed width $\sigma$ = 16 mm and $\mu$ is the $z$~-~coordinate of the hit.
 When the charge integrated over a strip exceeds a certain threshold (0.2 in this simulation), the strip is switched on.\\
 This is not a strictly physical model but a decreasing exponential is useful to produce the expected tail, in the absence of a more realistic model for amplitudes
 based on experimental studies. A picture of the model used in this simulation is illustrated in Figure~\ref{fig:csm_pic}.
@@ -403,7 +403,7 @@ secondary hits.
 
 \section{L0 barrel trigger efficiency}
 \label{sec:eff}
-The performance of the barrel muon trigger was studied for a fixed transverse momentum threshold: $p_{T} > 10$ GeV~\cite{Marcoccia:2693982} and with the hit digitization described in the previous sections.\\
+The performance of the barrel muon trigger was studied using single-muon MC samples with fixed \pT = 50 \GeV, for a fixed transverse momentum threshold: $p_{T} > 10$ GeV~\cite{Marcoccia:2693982} and with the hit digitization described in the previous sections.\\
 To study the robustness of the trigger against possible efficiency reductions of the old RPCs in the BM and BO layers, the simulation was performed in the so-called "worst-case scenario" that introduces inefficiencies depending on the station type and sector and summarised as Table~\ref{tab:WCS}. It includes inefficiencies due to a reduction of the high voltage of the BM and BO RPCs such that the expected RPC current is always below the safe operation limit.
 \begin{table}[htbp]
 	\begin{center}
