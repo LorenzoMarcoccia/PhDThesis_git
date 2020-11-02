@@ -62,7 +62,7 @@ rather than carrying out the full shower simulation.
 \section{Object reconstruction}
 This section describes the main reconstruction and identification criteria applied for each physics
 objects considered in this analysis (electrons, muons, jets, $b$-tagged jets and missing transverse momentum). \\
-A summary of the object selections is reported in~\cref{tab:objects}.
+A summary of the object selections is reported in~\Cref{tab:objects}.
 
 \begin{table}[!h]
 	\small
@@ -186,16 +186,16 @@ Like for electrons, correction factors are applied to simulated muons
 to account for the small differences between data and simulation. 
 
 \subsection{Soft muons}
-\label{sec:soft_muons}
+\label{sec:object:soft_muons}
 Different requirements are applied to select and distinguish muons 
 from leptonic decays of the Z and W bosons 
 (referred to as`prompt' or `isolated' muons in the following) 
 and muons from semi-leptonic c-hadron decays 
 (called `soft' or `SMT' muons in the following). \\
 Reconstructed muons with $p_{T} > 4 $ GeV not passing 
-the selection described in the previous section can instead be selected as soft muons.\\
+the prompt muon selection can instead be selected as soft muons.\\
 Soft muons are required to pass the \texttt{Tight} quality requirements~\cite{muon2015} 
-and to be closer than 0.4 in $\Delta R$ within a selected jet. 
+and to be closer than 0.25 in $\Delta R$ within a selected jet. 
 In case more than one muon passing these criteria is found for a given jet,
 the soft muon with the lower $p_{T}$ is chosen. 
 The closest jet to a soft muon is defined as the `SMT' jet. \\
@@ -218,14 +218,20 @@ method, is used~\cite{ATLAS-CONF-2014-018}. A JVT value of at least
 0.59 is required for jets with $p_{T}< 60$ GeV
 and $|\eta|\!<\!2.4$, corresponding to an efficiency of 92\%.
 
-\subsection{Jet Flavour Tagging }
+%\subsection{Jet Flavour Tagging }
 
-\subsubsection{Soft Muon Tagging}
+\subsection{Soft Muon Tagging}
+\label{sec:object:smt}
+The Soft Muon Tagging (SMT) is a tagging technique for heavy-flavour jets.\\
+ It exploits the $b \rightarrow \mu + X$,
+ $b \rightarrow c \rightarrow \mu + X$ and $c \rightarrow \mu + X$ decay chains (with a total BR$\approx$ 20\%), by identifying muons reconstructed inside jets. Those muons are referred to as soft muons and they were described in Section~\ref{sec:object:soft_muons}.
+ More details on the soft muon tagging are in Ref.~\cite{SMT-INT-13TeV}.
 
-\subsubsection{Recurrent Deep-Learning DL1r}
+\subsection{Recurrent Deep-Learning DL1r}
 In this analysis the \texttt{DL1r} algorithm is used~\cite{ATL-PHYS-PUB-2017-013,Aad:2019aic}.
-It is based on a deep feed-forward neural network (NN) trained using Keras~\cite{keras} with the Theano~\cite{theano} backend and the Adam optimiser~\cite{adam}. The DL1 NN has a multidimensional output corresponding to the probabilities for a jet to be a b-jet, a c-jet or a light-flavour jet. The topology of the output consists of a mixture of fully connected hidden and Maxout layers [31]. The input variables to DL1 consist of those used for the previous official algorithm MV2, with the addition of the \textsc{JetFitter} c-tagging variables described in Ref~\cite{Aad:2019aic}.
-\paragraph {\textit{b}-tagged jets}
+It is based on a deep feed-forward neural network (NN) trained using Keras~\cite{keras} with the Theano~\cite{theano} backend and the Adam optimiser~\cite{adam}. The DL1 NN has a multidimensional output corresponding to the probabilities for a jet to be a b-jet, a c-jet or a light-flavour jet. The topology of the output consists of a mixture of fully connected hidden and Maxout layers~\cite{goodfellow2013maxout}. The input variables to DL1 consist of those used for the previous official algorithm MV2, with the addition of the \textsc{JetFitter} c-tagging variables described in Ref.~\cite{Aad:2019aic}.
+\subsubsection {\textit{b}-tagged jets}
+\label{sec:object:bjet}
 Jets originating from bottom quarks (called $b$-tagged jets) are
 identified by reconstructing secondary vertices from the tracks
 associated to the jets and by combining their spatial parameters with
@@ -234,7 +240,8 @@ In the current  analysis the \SI{77}{\%} operation point is used.\\
 Finally, all $b$-tagged jets considered in this analysis should have a transverse
 momentum $\pT > \SI{25}{\GeV}$ and a pseudo-rapidity of
 $|\eta|\!<\!2.5$.  
-\paragraph {\textit{c}-tagged jets}
+\subsubsection {\textit{c}-tagged jets}
+\label{sec:object:cjet}
 The \texttt{DL1r} algorithm also allows to construct DL1r$_{c}$ discriminant that is used for charm-tagging.\\
 They are reconstructed jets satisfying $\pT > \SI{25}{\GeV}$ and $|\eta| < 2.5$ requirements,
 and failing the $b$-tagging requirement.
@@ -242,10 +249,6 @@ This search uses the cut operation point giving the $c$-efficiency of 20\% studi
 in the $tc$+MET SUSY analysis~\cite{ANA-SUSY-2019-23}.\\
 More details of charm-tagging are given in~\Cref{appendix:DL1rc}.
 
-
-
-
-\clearpage
 \subsection{Missing transverse momentum}
 \label{sec:object:met}
 The missing transverse momentum, $E^{miss}_{T}$, is a measure of the momentum

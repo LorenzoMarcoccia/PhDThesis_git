@@ -50,6 +50,7 @@
 \usepackage{afterpage}
 \usepackage{bookmark}
 \usepackage[titletoc]{appendix}
+\usepackage[figuresright]{rotating}
 
 %\sisetup{round-mode=places,round-precision=4}
 %\sisetup{[round-mode=figures,round-precision=3]S[round-mode=places,round-precision=2]l}
@@ -178,9 +179,10 @@
 \include{Chapters/CH3/Upgrade}
 \include{Chapters/CH4/Object_reconstruction}
 \include{Chapters/CH5/Analysis}
-\include{Chapters/CH6/Statistical_analysis}
-\addtocontents{toc}{\protect\vskip30pt}
-\include{Chapters/CH7/Conclusions}
+\include{Chapters/CH6/DL1rc}
+\include{Chapters/CH7/Statistical_analysis}
+%\addtocontents{toc}{\protect\vskip30pt}
+\include{Chapters/CH8/Conclusions}
 
 \cleardoublepage
 \phantomsection
@@ -192,11 +194,11 @@
 \bookmarksetupnext{level=-3}
 \include{Appendices/AP3/DL1rc}
 \bookmarksetupnext{level=-4}
+\include{Appendices/AP4/BDT_optimization}
+\bookmarksetupnext{level=-4}
 \end{appendices}
+%\addtocontents{toc}{\protect\vskip30pt}
 
-
-\addtocontents{toc}{\protect\vskip30pt}
-% the back matter: appendix and references close the thesis
 
 % ----------------------- bibliography ------------------------
 

@@ -1,0 +1,246 @@
+  % this file is called up by thesis.tex
+% content in this file will be fed into the main document
+% ----------------------- name of chapter  -------------------------
+%\newgeometry{top=-0.4cm, left=0.9cm, right=1.5cm}
+\chapter{BDT optimization}
+\label{app:BDT}
+% ----------------------- paths to graphics ------------------------
+
+% change according to folder and file names
+\ifpdf
+    \graphicspath{Appendices/AP4/figures/}
+\else
+    \graphicspath{Appendices/AP4/figures/}
+\fi
+\vspace{-0.5cm}
+% ----------------------- contents from here ------------------------
+This section describes the study of input variables and hyper-parameters optimisation for the BDT discriminants presented in~\cref{sec:separation}.\\
+\indent The $k$-fold cross-validation method with $k=5$ is used to define the final set of input variables and determine the optimal
+values for BDT hyper-parameters. The total set of MC events is split into 5 folds with approximately equal sizes, using the pseudo-random numbers.
+Four of folds are used as a training set, and the remaining one as a validation set. 
+Separate BDT is trained and evaluated for each fold considered as the validation fold.
+The performance across the validation folds is averaged to estimate the expected performance of the
+BDT with the considered input variables and hyper-parameters. \\
+\indent Many input variables are considered to train the BDT, then the ones that do not have significant impact on the BDT performance are removed
+since they could introduce instability in the BDT output when considering systematic uncertainties.
+The strategy is to remove variables that have relatively low values of separation and strong correlations with other variables,
+without significant loss of the BDT performance. \Cref{app:BDT:tab:param} shows the values for configuration options of the BDT method used for this study.
+They are chosen to counteract overtraining.
+
+\begin{table}[!htbp]
+	%	\small
+	\centering 
+	\begin{tabular}{cc}
+		\toprule
+		Option & Value for \Dthree \\
+		\hline
+		NTrees & 800 \\ 
+		MinNodeSize & 2\% \\
+		BoostType & Grad \\
+		Shrinkage & 0.05 \\
+		UseBaggedBoost  & True \\
+		BaggedSampleFraction & 0.6\\
+		nCuts  & 200 \\
+		MaxDepth &  2\\
+		NegWeightTreatment & IgnoreNegWeightsInTraining\\
+		\bottomrule
+	\end{tabular}
+	\caption{
+		Used values for configuration options of the TMVA method Boosted Decision Trees~\cite{TMVA}. 
+	}%
+	\label{app:BDT:tab:param}
+\end{table}
+
+
+\section{Input variables}
+\indent Input variables considered for the \Dthree discriminant in SR3 are presented in~\cref{app:BDT:tab:D3input}, that includes invaraint mass of the reconstructed objects
+as well as transverse momentum, pseudorapidity and $\DeltaR$ between them in ($\eta,\phi$) plane. Separation values are presented in the same table,
+while correlations are shown in~\cref{app:BDT:fig:D3inputCorrMatrix}.
+Input variables that have separation value below 0.02 are removed from the final set of input variables.
+The $\chi^{2}_{\ttbar}$ and $m_{\ell\nu}$ variables have high correlation with $m_{c\ell\ell}$ and $m_{b\ell\nu}$, respectively, and lower separation value, so that they are removed
+as well as $\pT^{W}$ which is highly correlated with $\MET$ and having lower separation value.
+The final set of input variables are presented in~\cref{app:BDT:tab:D3inputFinalSet}.
+With the full set of input variables, the BDT output score distributions in each fold for the signal and background samples are presented in~\cref{app:BDT:fig:SR3:GBDTsigFullSet}
+and~\cref{app:BDT:fig:SR3:GBDTbkgFullSet}, respectively, while for the final (reduced) set of input variables -- in~\cref{app:BDT:fig:SR3:GBDTsigFinalSet}
+and~\cref{app:BDT:fig:SR3:GBDTbkgFinalSet}.
+The ROC integral, averaged over the validation folds, for the BDT trained with the full set of input variables is 0.8679 with RMS of 0.0029,
+while for the BDT with final set of input variables: 0.8641 with RMS of 0.0030.
+\Cref{app:BDT:fig:SR3:CutEff} shows the $S_{\text{eff}}/\sqrt{B_{\text{eff}}}$ value averaged over the validation folds
+as a function of the cut on the BDT output score, with full set and final set of input variables.
+The $S_{\text{eff}}/\sqrt{B_{\text{eff}}}$ values are calculated only if $S_{\text{eff}}$ and $B_{\text{eff}}$ are above 1\% to avoid statistically unstable results.
+The maximum value of $S_{\text{eff}}/\sqrt{B_{\text{eff}}}$ is 2.469 with RMS of 0.211 for the full set of input variables,
+while 2.352 with RMS of 0.112 for the final set of input variables.
+Results show that the BDT performance is not affected significantly by reducing the input variables set, 
+but would have better BDT output stability once systematics uncertainties are considered.
+
+\begin{table}[!htbp]
+	\scriptsize
+	\caption{
+		Initial (full) set of input variables considered in the training of the GBDT in SR3 to built the \Dthree discriminant for \tZc couplings search.
+		Variables are ordered by the separation $\langle s^{2}\rangle$ value.
+	}%
+	\label{app:BDT:tab:D3input}
+	\input{Chapters/CH5/figures/SR3_UsingSMT/BDT/FullSet/Separation.tex}
+	\centering
+\end{table}
+
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tabular}{c}
+		\includegraphics[width=.7\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/CorrMatrix_sig}\\
+		\includegraphics[width=.7\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/CorrMatrix_bkg}
+	\end{tabular}
+	\caption{ Correlation matrix of the input variables from signal (top) and background (bottom) samples
+		considered in the training of the GBDT in SR3 to built the \Dthree discriminant for \tZc coupling search.}
+	\label{app:BDT:fig:D3inputCorrMatrix}
+\end{figure}
+
+\begin{table}[!htbp]
+	\scriptsize
+	\caption{
+		Final set of input variables considered in the training of the GBDT in SR3 to built the \Dthree discriminant used in \tZc coupling search.
+		Variables are ordered by the separation $\langle s^{2}\rangle$ value.
+	}%
+	\label{app:BDT:tab:D3inputFinalSet}
+	\input{Chapters/CH5/figures/SR3_UsingSMT/BDT/Separation.tex}
+	\centering
+\end{table}
+
+
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tabular}{ccc}
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_signal_FullSet_Fold1} &
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_signal_FullSet_Fold2} &
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_signal_FullSet_Fold3} \\
+		\multicolumn{3}{c}{
+			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_signal_FullSet_Fold4}
+			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_signal_FullSet_Fold5}} \\
+	\end{tabular}
+	\caption{ The FCNC \ttbar decay signal GBDT output score distribution for each of five GBDTs trained in SR3 for the \Dthree discriminant.
+		Initial (full) set of input variables is used in the training.
+		Comparing results between training and test samples.
+	}%
+	\label{app:BDT:fig:SR3:GBDTsigFullSet}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tabular}{ccc}
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_background_FullSet_Fold1} &
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_background_FullSet_Fold2} &
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_background_FullSet_Fold3} \\
+		\multicolumn{3}{c}{
+			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_background_FullSet_Fold4}
+			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/RedSet/GBDT_background_FullSet_Fold5}} \\
+	\end{tabular}
+	\caption{ The background GBDT output score distribution for each of five GBDTs trained in SR3 for the \Dthree discriminant.
+		Initial (full) set of input variables is used in the training.
+		Comparing results between training and test samples.
+	}%
+	\label{app:BDT:fig:SR3:GBDTbkgFullSet}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tabular}{ccc}
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_signal_FinalSet_Fold1} &
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_signal_FinalSet_Fold2} &
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_signal_FinalSet_Fold3} \\
+		\multicolumn{3}{c}{
+			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_signal_FinalSet_Fold4}
+			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_signal_FinalSet_Fold5}} \\
+	\end{tabular}
+	\caption{ The FCNC \ttbar decay signal GBDT output score distribution for each of five GBDTs trained in SR3 for the \Dthree discriminant.
+		Final set of input variables is used in the training.
+		Comparing results between training and test samples.
+	}%
+	\label{app:BDT:fig:SR3:GBDTsigFinalSet}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tabular}{ccc}
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_background_FinalSet_Fold1} &
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_background_FinalSet_Fold2} &
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_background_FinalSet_Fold3} \\
+		\multicolumn{3}{c}{
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_background_FinalSet_Fold4}
+		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/GBDT_background_FinalSet_Fold5}} \\
+	\end{tabular}
+	\caption{ The background GBDT output score distribution for each of five GBDTs trained in SR3 for the \Dthree discriminant.
+		Final set of input variables is used in the training.
+		Comparing results between training and test samples.
+	}%
+	\label{app:BDT:fig:SR3:GBDTbkgFinalSet}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tabular}{c}
+		\includegraphics[width=.65\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/CutEff_FinalSet}
+	\end{tabular}
+	\caption{ The $S_{\text{eff}}/\sqrt{B_{\text{eff}}}$ value averaged over the validation folds as a function of the cut on the BDT output score
+		with final set of input variables in the SR3.
+		Values are calculated only if $S_{\text{eff}}$ and $B_{\text{eff}}$ are above 1\% to avoid statistically unstable results.}
+	\label{app:BDT:fig:SR3:CutEff}
+\end{figure}
+
+\section{Hyper-parameters optimisation}
+Once the final set of input variables are defined, the BDT hyper-parameters optimisation is performed.
+The following BDT paremeters~\cite{TMVA} and values are considered with total of 144 combination:
+NTrees=[400,600,800,1000], minNodSize=[2.0,4.0,6.0], shrinkage=[0.025,0.05,0.1], maxDepth=[1,2,3,4].
+~\Cref{app:BDT:fig:SR3:HPO} presents the maximum value of $S_{\text{eff}}/\sqrt{B_{\text{eff}}}$ by cutting the BDT output score, and the ROC integral,
+averaged over the validation folds, as a function of BDT hyper-parameters combination.
+The difference between highest and lowest values of $S_{\text{eff}}/\sqrt{B_{\text{eff}}}$ and ROC integral,
+with the different BDT hyper-parameters combinations, is $\sim16\%$ and $\sim2\%$, respectively.
+These results indicate that the BDT performance is stable and not much can be improved with the hyper-parameters.
+The average ROC integral (0.8641 with RMS of 0.0030) obtained with the reference BDT parameters (see~\cref{app:BDT:tab:param}) is almost identical to the highest value
+of ROC integral (0.8672 with RMS of 0.0025) obtained from the hyper-parameters optimisation.
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{c}
+		\includegraphics[width=.75\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/ROC_integral}
+	\end{tabular}
+	\caption{ROC integral, averaged over the validation folds,
+		as a function of BDT hyper-parameters combination in the SR3. The highest and lowest values of $S_{\text{eff}}/\sqrt{B_{\text{eff}}}$ and ROC integral are presented on the plots as well as
+		the corresponding BDT parameters values.}
+	\label{app:BDT:fig:SR3:HPO}
+\end{figure}
+
+%\begin{figure}[htbp]
+%	\centering
+%	\begin{tabular}{ccc}
+%		\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold1_NTrees_800_MinNodeSize_2.0_Shrinkage_0.05_MaxDepth_2}.pdf} &
+%		\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold2_NTrees_800_MinNodeSize_2.0_Shrinkage_0.05_MaxDepth_2}.pdf} &
+%		\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold3_NTrees_800_MinNodeSize_2.0_Shrinkage_0.05_MaxDepth_2}.pdf} \\
+%		\multicolumn{3}{c}{
+%			\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold4_NTrees_800_MinNodeSize_2.0_Shrinkage_0.05_MaxDepth_2}.pdf}
+%			\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold5_NTrees_800_MinNodeSize_2.0_Shrinkage_0.05_MaxDepth_2}.pdf}} \\
+%	\end{tabular}
+%	\caption{ The ROC curves obtained with the reference BDT parameters (see~\cref{app:BDT:tab:param}) in the SR3 for each of five folds.
+%		Final set of input variables is used in the training. Comparing results between training and test samples.
+%	}%
+%	\label{app:BDT:fig:SR3:RefParamROC}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%	\centering
+%	\begin{tabular}{ccc}
+%		\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold1_NTrees_1000_MinNodeSize_2.0_Shrinkage_0.025_MaxDepth_4}.pdf} &
+%		\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold2_NTrees_1000_MinNodeSize_2.0_Shrinkage_0.025_MaxDepth_4}.pdf} &
+%		\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold3_NTrees_1000_MinNodeSize_2.0_Shrinkage_0.025_MaxDepth_4}.pdf} \\
+%		\multicolumn{3}{c}{
+%			\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold4_NTrees_1000_MinNodeSize_2.0_Shrinkage_0.025_MaxDepth_4}.pdf}
+%			\includegraphics[width=.32\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/FinalSet/HPO/{ROC_FinalSet_Fold5_NTrees_1000_MinNodeSize_2.0_Shrinkage_0.025_MaxDepth_4}.pdf}} \\
+%	\end{tabular}
+%	\caption{ The ROC curves obtained with the BDT hyper-parameters giving the highest ROC-integral in the SR3 for each of five folds.
+%		Final set of input variables is used in the training. Comparing results between training and test samples.
+%	}%
+%	\label{app:BDT:fig:SR3:HighestROC}
+%\end{figure}
+
