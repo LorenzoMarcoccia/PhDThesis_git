@@ -108,16 +108,16 @@ Three SRs are defined for the \tZc coupling extraction, targeting:
 The SRs for each coupling extraction are orthogonal between each other. 
 The orthogonality is assured by selecting events with different jet multiplicities 
 and by selecting or vetoing the presence of a jet associated to a soft muon.\\
-This thesis main focus on the Soft Muon Tagging technique used as charm tagger and therefore on the definition of SR3, reported in \Cref{sec:selection}.\\
-The description of the other SRs selections, used for the combined fit to extract expected limits, are reported in \Cref{sec:other_selection}.\\
-The $\mathrm{DL1r_{c}}$ technique is also investigated as an alternative to SMT and described in the same section.
+This thesis main focus on the Soft Muon Tagging technique used as charm tagger and therefore on the definition of SR3\tZc, reported in \Cref{sec:selection}.\\
+The description of the other SRs selections, used for the combined fit to extract expected limits, are reported in \Cref{sec:selection_dl1rc}.\\
+The $\mathrm{DL1r_{c}}$ technique is also investigated as an alternative to SMT and described in \Cref{sec:other_selection}.
 
 \paragraph{Background estimation}
 The main background sources are:
 \begin{itemize}
-	\item for SR1s (both SR1\tZu and SR1\tZc), \ttZ and \VVHF;
-	\item for SR2s (both SR2\tZu and SR2\tZc), \VVHF and Standard Model \tZq ;
-	\item for SR3, \ttZ and \VVHF.
+	\item for SR1\tZc, \ttZ and \VVHF;
+	\item for SR2\tZc, \VVHF and Standard Model \tZq ;
+	\item for SR3\tZc, \ttZ and \VVHF.
 \end{itemize}
 
 \noindent All backgrounds are estimated using Monte Carlo samples. They are
@@ -596,6 +596,7 @@ The SR3\tZc has the following additional requirements:
 The event yield for each \Pqb-jet multiplicities and the total event yield is shown in Table~\ref{tab:yields:sr3}. 
 Even though the selection with exactly one \Pqb-jet is the purest, for the SR3\tZc, events containing zero and two \Pqb-jet are also considered to have as many signal events as possible and then work on the separation of signal from background, as described in \Cref{sec:separation}.
 \begin{table}[!h]
+	\centering
 	\begin{tabular}{|l|c|c|c|c|}
 		\hline
 		\multirow{2}{*}{\textbf{Sample}}      & \multicolumn{3}{|c|}{\textbf{Number of $b$-jets}} & \multirow{2}{*}{\textbf{Total yield}}\\
@@ -633,7 +634,7 @@ Even though the selection with exactly one \Pqb-jet is the purest, for the SR3\t
 	\caption{Event yield for each \Pqb-jet multiplicities and total event yield for the SR3\tZc selection.}
 	\label{tab:yields:sr3}
 \end{table}    
-\\~\Cref{fig:sr3_kin_lep,fig:sr3_kin_jet} show the distributions of kinematic variables for events selected in the SR3 region for the \tZc coupling extraction selection (SR3\tZu).
+\\~\Cref{fig:sr3_kin_lep,fig:sr3_kin_jet} show the distributions of kinematic variables for events selected in the SR3 region for the \tZc coupling extraction selection (SR3\tZc).
 As it can be noticed, the main background sources are \ttZ and \VVHF.
 
 \begin{figure}[!htbp]
@@ -646,7 +647,7 @@ As it can be noticed, the main background sources are \ttZ and \VVHF.
 		\includegraphics[width=.45\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/lep3_eta} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/lep3_pt} \\
 	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of leptons for events selected in the SR3 region for the \tZc coupling extraction selection.  Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5. 
+	\caption{Pre-fit distributions of kinematic variables of leptons for events selected in the SR3\tZc region.  Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5. 
 		\ErrStatOnly
 		\Blinded
 	}%
@@ -663,7 +664,7 @@ As it can be noticed, the main background sources are \ttZ and \VVHF.
 		\includegraphics[width=.45\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/jet_pt} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/SMTjet_Pt} \\
 	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of jets for events selected in the SR3 region for the \tZc coupling extraction selection. Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5. 
+	\caption{Pre-fit distributions of kinematic variables of jets for events selected in the SR3\tZc region. Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5. 
 		\ErrStatOnly
 		\Blinded
 	}%
@@ -751,7 +752,7 @@ For \VVHF the main contributions come from C-hadrons ($\sim$ 60\%), mostly  \WZ\
 	\caption{Reconstructed chain of ancestors that produces the soft muon for the background sample \VVHF }
 	\label{tab:VV_comp}
 \end{table}    
-\clearpage
+
 \section{Background estimation}
 \label{sec:background}
 A variety of background sources are considered.
@@ -766,7 +767,7 @@ simulations, for both the normalisation and the shape, while for the
 normalisation is extracted from data. \\
 The \ttZ enters the event selection because of the presence in the
 final state of a SM top quark and of a \PZ boson. The only difference
-to the signal topology, for the semileptonic \ttbar decay, is the
+to the signal topology, for the semi-leptonic \ttbar decay, is the
 presence of additional jets in the event. \\
 The diboson background (mainly \PW\PZ and \PZ\PZ) enters the selection because of the presence
 of a \PZ boson and of additional jets, that can come from heavy
@@ -778,22 +779,6 @@ This variable, provided by the flavour tagging group, defines a cone of $\Delta 
 If a \Pqb-hadron with ( \pT > \SI{5}{\GeV}) is found within this cone the jet is identified as a \bjet.
 If no \Pqb-hadrons are found, the algorithm searches for \Pqc-hadrons, then \Pgt leptons.
 If none of these identifiers are found the jet is labelled as a light jet.\\
-In order to study the modelling of the main background samples, Control regions (CRs) are used in the fit to extract the normalisation of some relevant background sources.\\
-Several CRs are defined:
-\begin{itemize}
-\item \ttbar CR is designed to control the minor \ttbar
-background. As previously mentioned, this background enters the
-selection because of the presence of a mis-reconstructed lepton,
-i.e. a fake lepton. Since this background is small, the decision was
-taken to evaluate it using MC. Nevertheless, the normalisation is
-taken from data. 
-\item \ttZ CR is designed to control the \ttZ
-background. It is constructed by requiring the presence of more jets
-with respect to the jet multiplicity required in the SRs.
-\item Side-band CRs are designed to contain a mixture
-of the main background sources (\ttZ and diboson). They are
-constructed applying cuts on the top mass.
-\end{itemize}
 
 %\clearpage
 %\subsection {Fake composition}
@@ -824,14 +809,13 @@ constructed applying cuts on the top mass.
 %\FloatBarrier
 
 
-\clearpage
 \section{Separation of signal from background events}
 \label{sec:separation}
 A multivariate analysis (MVA) technique is used to separate signal from background. 
 The Gradient Boosted Decision Trees (GBDT) method with TMVA software package 
 is exploited in this study~\cite{BDTG,TMVA}. The GBDT output score is in the range between -1 and 1.
 The most signal-like events have scores near 1 while the most background-like events have scores near -1. The GBDTs are trained separately in each signal regions as described below.
-The SR3 is defined targeting the FCNC \tZc coupling in \ttbar decay events
+The SR3\tZc is defined targeting the FCNC \tZc coupling in \ttbar decay events
 using the soft muon tagging, therefore the MVA discriminant for this coupling, \Dthree,  is built using the GBDT trained with the FCNC \tZc \ttbar decay events against backgrounds.
 
 \subsection {Input variables}
@@ -862,10 +846,10 @@ The distributions of input variables in each signal region are presented in~\Cre
 		\bottomrule
 	\end{tabular}
 	\caption{
-	Set of variables used in the training of the GBDT in SR3 to built the \Dthree discriminant used in the \tZc coupling search. Variables are ordered by the separation 	$\langle s^{2}\rangle$ value. }
+	Set of variables used in the training of the GBDT in SR3\tZc to built the \Dthree discriminant used in the \tZc coupling search. Variables are ordered by the separation 	$\langle s^{2}\rangle$ value. }
 	\label{tab:D3input}
 \end{table}
-\newpage
+
 \subsection {GBDT training and evaluation}
 In order to train the GBDT algorithm and have a reliable model with a good performance, it is better to use as much statistics as possible from the available signal and background MC samples.
 On the other hand, to check the performance and validate the model, 
@@ -948,7 +932,7 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 		\includegraphics[width=.45\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/ttbar_dR} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/softmuZ_dR} \\
 	\end{tabular}
-	\caption{Pre-fit distributions of the input variables used in the training of the GBDT in SR3 to built the \Dthree discriminant. Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5.  
+	\caption{Pre-fit distributions of the input variables used in the training of the GBDT in SR3\tZc to built the \Dthree discriminant. Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5.  
 		\ErrStatOnly
 		\Blinded
 	}%
@@ -965,7 +949,7 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/ROC_Fold4}
 			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/ROC_Fold5}} \\
 	\end{tabular}
-	\caption{ The ROC curves for each of five GBDTs trained in SR3 to built the \Dthree discriminant. 
+	\caption{ The ROC curves for each of five GBDTs trained in SR3\tZc to built the \Dthree discriminant. 
 		Comparing results between training and test samples.
 	}%
 	\label{fig:separation:SR3:ROC}
@@ -981,7 +965,7 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold4}
 			\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold5}} \\
 	\end{tabular}
-	\caption{ The FCNC \tZc \ttbar decay signal GBDT output score distribution for each of five GBDTs trained in SR3 to built the \Dthree discriminant. 
+	\caption{ The FCNC \tZc \ttbar decay signal GBDT output score distribution for each of five GBDTs trained in SR3\tZc to built the \Dthree discriminant. 
 		Comparing results between training and test samples.
 	}%
 	\label{fig:separation:SR3:GBDTsig}
@@ -997,7 +981,7 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/GBDT_background_Fold4}
 		\includegraphics[width=.3\textwidth]{Chapters/CH5/figures/SR3_UsingSMT/BDT/GBDT_background_Fold5}} \\
 	\end{tabular}
-	\caption{ The background GBDT output score distribution for each of five GBDTs trained in SR3 to built the \Dthree discriminant. 
+	\caption{ The background GBDT output score distribution for each of five GBDTs trained in SR3\tZc to built the \Dthree discriminant. 
 		Comparing results between training and test samples.
 	}%
 	\label{fig:separation:SR3:GBDTbkg}
@@ -1014,12 +998,128 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 \end{figure}
 
 \clearpage
-\section {Additional Signal Regions and alternative c-tagger}
+\section {The alternative c-tagger $\mathrm{DL1r_{c}}$}
 \label{sec:other_selection}
-\clearpage
-%\subsection {SR1 selections}
-%\clearpage
-%\subsection {SR2 selections}
-%\clearpage
-%\subsubsection {DL1r(c) selection}
+The alternative c-tagger $\mathrm{DL1r_{c}}$ (see \Cref{sec:object:cjet}) has been investigated for SR3\tZc as an alternative to SMT, already discussed in \Cref{sec:sel:sr3}.\\
+The requirements in this region are the following:
+\begin{itemize}
+	\item At least two jets satisfying the requirements described in \Cref{sec:object:jet}. 
+	\item Exactly one \Pqb-jet satisfying the requirements in \Cref{sec:object:bjet}. 
+	\item At least one c-jets satisfying the requirements described in \Cref{sec:object:cjet}.
+	\item No requirements on the masses of both the FCNC and the SM top-quark candidates are applied. 
+\end{itemize}
+The event yield for  for this selection is shown in Table~\ref{tab:yields:sr3_dl1rc}.
+\begin{table}[!h]
+	\centering
+	\small
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Sample}                  			 & \textbf{Total yield}     \\
+		\hline
+		ZZ+LF                 & 0.71 $\pm$ 0.07          \\   
+		ZZ+HF                 & 5.31 $\pm$ 0.13         \\   
+		WZ+LF                  & 2.18 $\pm$ 0.12         \\   
+		WZ+HF                  & 25.02 $\pm$ 0.39         \\   
+		VV (2l)                 					  & 0.05 $\pm$ 0.04                             \\   
+		WtZ                       					  & 12.39 $\pm$ 0.49                                \\   
+		$t\bar{t}W$             					  & 2.04 $\pm$ 0.12                             \\   
+		$t\bar{t}Z$ (2l)       					      & 0.02 $\pm$ 0.02                             \\   
+	    $t\bar{t}Z$           &69.49 $\pm$ 0.61   \\   
+		Wt                      					  & 0.00 $\pm$ 0.00                           \\   
+		tZ                      					  & 13.82 $\pm$ 0.28                            \\     
+		$t\bar{t}$             						  & 3.66 $\pm$ 0.37                            \\   
+		Z+jets                 						  & 1.32 $\pm$ 0.58                            \\   
+		4 tops                 						  & 0.09 $\pm$ 0.01                           \\   
+		3 tops                 						  & 0.02 $\pm$ 0.00                           \\   
+		VVV                     					  & 0.22 $\pm$ 0.02                           \\   
+		VH                      					  & 0.00 $\pm$ 0.00                           \\   
+		$t\bar{t}H$             					  & 2.63 $\pm$ 0.05                           \\   
+		$t\bar{t}WW$          					      & 0.16 $\pm$ 0.04                           \\   
+		\hline                                                                    
+		Total bkg.              					  &  139.13 $\pm$ 1.17                          \\       
+		\hline                                                                     
+		FCNC $t\bar{t}$(cZ)   					      &  21.94 $\pm$ 0.39                \\
+		FCNC (c)tZ              				      &  1.21 $\pm$ 0.03                          \\
+%		\hline                                                                    
+%		$S/\sqrt{B}$ (ctZ)      					  &  1.96 $\pm$ 0.02                      \\
+		\hline
+	\end{tabular}
+	\caption{Total event yield for the SR3\tZc selection using the c-tagger $\mathrm{DL1r_{c}}$.}
+\label{tab:yields:sr3_dl1rc}
+\end{table}  
+\newline \noindent Comparing the two event yield in Table~\ref{tab:yields:sr3} with Table~\ref{tab:yields:sr3_dl1rc} is possible to see that using \DLrc the number of signal events is significantly larger than using SMT since the semi-leptonic decay of heavy hadrons is limited by the branching ratio ($\simeq$ 20\%).
+However, taking into account the SMT selection with only one b-jet, it is also possible to see that SMT has a better discrimination of backgrounds manly due to a better light-rejection.\\
+To choose the best selection, one can compare the values of \ssplusb for each bin of the GBDT discriminant as can bee seen in Table~\ref{tab:yields:sr3_smt_bdt} for the SMT selection, in Table~\ref{tab:yields:sr3_dl1rc_bdt} for \DLrc selection, and Figure~\ref{fig:yields:sr3_bdt}.\\
+For the \DLrc selection, in the last three bins of the GBDT discriminant, there are
+12.3 events of signal and 9.3 events of background 
+which corresponds to more signal events and 10\% background events of the whole SR3\tZc with SMT. The GBDT output for SMT is presented in \Cref{sec:separation} while for \DLrc it will be presented in \Cref{sec:separation_dl1r}.
+\begin{figure}[!htbp]
+	\centering
+	\subfigure[SMT selection]{
+		\includegraphics[width=.9\textwidth]{Chapters/CH5/figures/GBDT_smt}
+		\label{fig:yields:sr3_smt_bdt}} \qquad
+	\subfigure[\DLrc selection]{
+		\includegraphics[width=.9\textwidth]{Chapters/CH5/figures/GBDT_dl1rc}
+		\label{fig:yields:sr3_dl1rc_bdt}} \\
+	\caption{Values of \ssplusb for each bin of the GBDT discriminant for ~\subref{fig:yields:sr3_smt_bdt} SMT selection and ~\subref{fig:yields:sr3_dl1rc_bdt} for \DLrc selection. 	}%
+	\label{fig:yields:sr3_bdt}
+\end{figure}
+
+\begin{table}[!h]
+	\centering
+	\small
+\begin{tabular}{|l|c|c|c|c|c|} 
+	\hline 
+	Sample 			       & Bin 6            & Bin 7            & Bin 8             & Bin 9           & Bin 10          \\ 
+	\hline                 
+	Others 			       & 0.46 $\pm$ 0.42  & 0.91  $\pm$ 0.63 & 0.04  $\pm$ 0.05  & 0.02 $\pm$ 0.05 & 0.00 $\pm$ 0.05 \\
+	$Z$ + jets             & 0.18 $\pm$ 0.17  & 0.03  $\pm$ 0.03 & 0.23  $\pm$ 0.23  & 0.60 $\pm$ 0.35 & 0.01 $\pm$ 0.29 \\
+	$t\bar{t}+tW$          & 1.10 $\pm$ 0.28  & 0.64  $\pm$ 0.25 & 0.38  $\pm$ 0.22  & 0.59 $\pm$ 0.22 & 0.16 $\pm$ 0.21 \\
+	$tZq$ 			       & 2.93 $\pm$ 0.13  & 2.11  $\pm$ 0.12 & 2.01  $\pm$ 0.11  & 1.51 $\pm$ 0.10 & 0.93 $\pm$ 0.07 \\
+	$VV$ + HF              & 6.40 $\pm$ 0.20  & 4.50  $\pm$ 0.20 & 2.81  $\pm$ 0.14  & 1.72 $\pm$ 0.11 & 0.71 $\pm$ 0.08 \\ 
+	$VV$ + LF              & 2.80 $\pm$ 0.13  & 1.48  $\pm$ 0.10 & 0.61  $\pm$ 0.08  & 0.11 $\pm$ 0.03 & 0.05 $\pm$ 0.01 \\
+	$t\bar{t}H+t\bar{t}W$  & 0.58 $\pm$ 0.05  & 0.40  $\pm$ 0.04 & 0.23  $\pm$ 0.03  & 0.16 $\pm$ 0.03 & 0.05 $\pm$ 0.02 \\
+	$t\bar{t}Z+tWZ$        & 8.17 $\pm$ 0.24  & 6.35  $\pm$ 0.21 & 4.63  $\pm$ 0.18  & 2.99 $\pm$ 0.15 & 1.52 $\pm$ 0.11 \\
+	\hline                   
+	Total bkg              & 22.61 $\pm$ 0.64 & 16.42 $\pm$ 0.75 & 10.94 $\pm$ 0.42  & 7.69 $\pm$ 0.46 & 3.44 $\pm$ 0.40 \\
+	\hline                   
+	Signal                 & 1.79  $\pm$ 0.02 & 2.06  $\pm$ 0.02 & 2.41  $\pm$ 0.02  & 2.77 $\pm$ 0.02 & 2.79 $\pm$ 0.02 \\
+	\hline                   
+	$S/B$                  & 0.08             & 0.13             & 0.22              & 0.36            & 0.81            \\
+	$S/\sqrt{S+B}$         & 0.36             & 0.48             & 0.66              & 0.86            & 1.12         \\
+	\hline 
+\end{tabular} 
+	\caption{Values of \ssplusb for each bin of the GBDT discriminant for the SMT selection.}%
+\label{tab:yields:sr3_smt_bdt}
+\end{table}
+
+\begin{table}[!h]
+	\centering
+	\small
+	\begin{tabular}{|l|c|c|c|c|c|} 
+		\hline 
+		Sample 			       & Bin 6            & Bin 7           & Bin 8           & Bin 9           & Bin 10          \\ 
+		\hline                 
+		Others 			       & 0.03  $\pm$ 0.03 & 0.01 $\pm$ 0.03 & 0.02 $\pm$ 0.03 & 0.00 $\pm$ 0.03 & 0.00 $\pm$ 0.03 \\
+		$Z$ + jets             & 0.36  $\pm$ 0.29 & 0.06 $\pm$ 0.07 & 0.00 $\pm$ 0.07 & 0.21 $\pm$ 0.24 & 0.00 $\pm$ 0.07 \\
+		$t\bar{t}+tW$          & 0.64  $\pm$ 0.15 & 0.17 $\pm$ 0.08 & 0.16 $\pm$ 0.08 & 0.14 $\pm$ 0.07 & 0.17 $\pm$ 0.09 \\
+		$tZq$ 			       & 1.80  $\pm$ 0.10 & 1.37 $\pm$ 0.08 & 0.76 $\pm$ 0.06 & 0.46 $\pm$ 0.04 & 0.27 $\pm$ 0.03 \\
+		$VV$ + HF              & 2.51  $\pm$ 0.13 & 1.86 $\pm$ 0.12 & 0.97 $\pm$ 0.07 & 0.53 $\pm$ 0.06 & 0.19 $\pm$ 0.03 \\
+		$VV$ + LF              & 0.25  $\pm$ 0.04 & 0.24 $\pm$ 0.05 & 0.08 $\pm$ 0.02 & 0.06 $\pm$ 0.03 & 0.00 $\pm$ 0.00 \\
+		$t\bar{t}H+t\bar{t}W$  & 0.36  $\pm$ 0.04 & 0.37 $\pm$ 0.04 & 0.30 $\pm$ 0.03 & 0.17 $\pm$ 0.03 & 0.10 $\pm$ 0.02 \\
+		$t\bar{t}Z+tWZ$        & 6.77  $\pm$ 0.22 & 4.53 $\pm$ 0.18 & 2.60 $\pm$ 0.14 & 1.38 $\pm$ 0.09 & 0.66 $\pm$ 0.07 \\
+		\hline                                                                                                           
+		Total bkg              & 12.74 $\pm$ 0.43 & 8.60 $\pm$ 0.26 & 4.88 $\pm$ 0.20 & 2.97 $\pm$ 0.28 & 1.40 $\pm$ 0.14 \\
+		\hline                                                                                                           
+		Signal                 & 2.23  $\pm$ 0.12 & 2.98 $\pm$ 0.14 & 3.69 $\pm$ 0.16 & 4.07 $\pm$ 0.16 & 4.54 $\pm$ 0.17 \\
+		\hline                 
+		$S/B$                  & 0.17             & 0.35            & 0.76            & 1.37            & 3.24            \\
+		$S/\sqrt{S+B}$         & 0.58             & 0.88            & 1.26            & 1.53            & 1.86       \\
+		\hline
+	\end{tabular} 
+	\caption{Values of \ssplusb for each bin of the GBDT discriminant for the \DLrc selection.}%
+	\label{tab:yields:sr3_dl1rc_bdt}
+\end{table}
+
+
 

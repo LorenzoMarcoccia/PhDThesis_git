@@ -16,13 +16,51 @@
 
 
 \section{Event selections and reconstruction}
-\label{sec:selection}
+\label{sec:selection_dl1rc}
 
 \subsection {Signal Region definition}
-\label{sec:sel:sr3}
+\subsubsection{SR1 selections}
+The Signal Region called SR1 targets the \FCNCtZq in \ttbar decays.\\
+In this channel, one of the \Pqt-quarks decays following the SM into a \PW boson and a
+\Pqb-quark (called in the following \textit{SM top}), while the other
+\Pqt-quark (called in the following \textit{FCNC top}) decays into a \PZ
+boson and a \Pqc-quark. Only the
+trileptonic channel is considered, i.e. when the \PZ boson from the
+FCNC top decays leptonically and the \PW boson from the SM top
+decays leptonically. Therefore the final state is characterised by
+the presence of three leptons, a \Pqc-jet, a \Pqb-tagged jet and missing
+transverse momentum from the escaping neutrino.  
+
+\subsubsection{SR2 selections}
+The Signal Region called SR2 targets the \FCNCtZq in single-top production.\\
+In this channel, the
+production of a single top-quark proceeds through an FCNC
+interaction. The \Pqt-quark is produced in association with a \PZ
+boson. Also in this case only the trileptonic channel is
+considered. Therefore the final state is characterised by
+the presence of three leptons, a \Pqb-tagged jet and missing
+transverse momentum from the escaping neutrino. 
+
 \clearpage
 \section{Background estimation}
 \label{sec:background}
+A variety of background sources are considered and already discussed in \Cref{sec:background}.
+In order to study the modelling of the main background samples, Control regions (CRs) are used in the fit to extract the normalisation of some relevant background sources.\\
+Several CRs are defined:
+\begin{itemize}
+	\item \ttbar CR is designed to control the minor \ttbar
+	background. As previously mentioned, this background enters the
+	selection because of the presence of a mis-reconstructed lepton,
+	i.e. a fake lepton. Since this background is small, the decision was
+	taken to evaluate it using MC. Nevertheless, the normalisation is
+	taken from data. 
+	\item \ttZ CR is designed to control the \ttZ
+	background. It is constructed by requiring the presence of more jets
+	with respect to the jet multiplicity required in the SRs.
+	\item Side-band CRs are designed to contain a mixture
+	of the main background sources (\ttZ and diboson). They are
+	constructed applying cuts on the top mass.
+\end{itemize}
 
 \subsection {Control Regions definition}
 \label{sec:bkg:sel}
@@ -289,7 +327,7 @@ of kinematic variables for events selected in the side-band CR2 region.
 
 \clearpage
 \section{Separation of signal from background events}
-\label{sec:separation}
+\label{sec:separation_dl1r}
 \clearpage
 \subsection {GBDT discriminant definition}
 \clearpage

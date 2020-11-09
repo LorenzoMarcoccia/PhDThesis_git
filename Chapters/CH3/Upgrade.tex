@@ -322,7 +322,7 @@ The resulting cluster size distribution is in line with the expectations in~\cit
 	\centering	
 	\subfigure[] {\label{fig:strips_eta}\includegraphics[width=0.83 \textwidth]{Chapters/CH3/figures/clusterSize_BI_stripCenterEta}} 
 	\subfigure[] {\label{fig:strips_phi}\includegraphics[width=0.83 \textwidth]{Chapters/CH3/figures/clusterSize_BI_stripCenterPhi}} 
-	\caption{RPC hit distribution $\mathrm{GlobPos_{i}}$ for a) strips along $\eta$ and b) strips along $R\phi$.}
+	\caption{RPC hit distribution $\mathrm{GlobPos_{i}}$ for \subref{fig:strips_eta} strips along $\eta$ and \subref{fig:strips_phi} strips along $R\phi$.}
 	\label{fig:strips}
 \end{figure}	
 Strips in $\eta$ and $\phi$ layers are orthogonal to each other and it is possible to see how 
@@ -334,7 +334,7 @@ strips oriented along $\phi$ are always oriented with increasing $\phi$.
 	\centering	
 	\subfigure[] {\label{fig:Nstrips_eta}\includegraphics[width=1 \textwidth]{Chapters/CH3/figures/h_globalPos_StripEta}} 
 	\subfigure[] {\label{fig:Nstrips_phi}\includegraphics[width=1 \textwidth]{Chapters/CH3/figures/h_phi_StripPhi}} 
-	\caption{Arrangement of strips in the a) $\eta$ layer and b) $\phi$ layer as a function of the Global Position in the BI region of the ATLAS detector.}
+	\caption{Arrangement of strips in the \subref{fig:Nstrips_eta} $\eta$ layer and \subref{fig:Nstrips_phi} $\phi$ layer as a function of the Global Position in the BI region of the ATLAS detector.}
 	\label{fig:Nstrips}
 \end{figure}	
 \newpage
@@ -347,7 +347,7 @@ simulation. It is possible to verify that the simulation developed for this work
 	\centering	
 	\subfigure[] {\label{fig:param_BIL}\includegraphics[width=1 \textwidth]{Chapters/CH3/figures/param_BIL}} 
 	\subfigure[] {\label{fig:param_BIR}\includegraphics[width=1 \textwidth]{Chapters/CH3/figures/param_BIR}} 
-	\caption{Main parameters of a) the BIL RPC chambers and b) the BIR/BIM/BIS RPC chambers~\cite{TDR}.}
+	\caption{Main parameters of \subref{fig:param_BIL} the BIL RPC chambers and \subref{fig:param_BIR} the BIR/BIM/BIS RPC chambers~\cite{TDR}.}
 	\label{fig:param}
 \end{table}	
 \begin{figure}[!h]
@@ -487,13 +487,13 @@ In the first analysed case, the most relevant effect on the trigger efficiency t
 
 \begin{figure}[h]
 	\centering
-	\subfigure [3/3 chamber]{\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BMBO_firstCase}} 
+	\subfigure [3/3 chamber]{{\label{fig:allcasesBMBO_a}}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BMBO_firstCase}} 
 \end{figure}	
 \begin{figure}[h]
 	\centering
-	\subfigure [3/4 chambers]{\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBM_firstCase}} 
-	\subfigure [3/4 chambers + BIBO]{\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBO_firstCase}} 
-	\caption{Efficiency times acceptance of the L0 barrel trigger compared to reconstructed muons with $p_{T} = 50$ GeV as a function of $\eta$ taking in to account all the variants of the WCS. The histograms show the efficiency of a) the existing 3/3 chambers trigger, of b) the 3/4 chambers trigger including the BI layer, and c) the additional gain from the BI-BO trigger. Efficiency times acceptance is defined as the fraction of reconstructed muons accepted by the trigger, using a simulation that includes the RPC detector efficiency~\cite{Marcoccia:2693982}.}
+	\subfigure [3/4 chambers]{{\label{fig:allcasesBMBO_b}}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBM_firstCase}} 
+	\subfigure [3/4 chambers + BIBO]{{\label{fig:allcasesBMBO_c}}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBO_firstCase}} 
+	\caption{Efficiency times acceptance of the L0 barrel trigger compared to reconstructed muons with $p_{T} = 50$ GeV as a function of $\eta$ taking in to account all the variants of the WCS. The histograms show the efficiency of \subref{fig:allcasesBMBO_a} the existing 3/3 chambers trigger, of \subref{fig:allcasesBMBO_b}  the 3/4 chambers trigger including the BI layer, and \subref{fig:allcasesBMBO_c}  the additional gain from the BI-BO trigger. Efficiency times acceptance is defined as the fraction of reconstructed muons accepted by the trigger, using a simulation that includes the RPC detector efficiency~\cite{Marcoccia:2693982}.}
 	\label{fig:allcasesBMBO}
 \end{figure}
 
@@ -530,15 +530,15 @@ The efficiency distributions show that the absence of BIR and BIM has the most r
 
 \begin{figure}[h]
 	\centering
-	\subfigure [3/3 chambers]{\label{fig:allcasesBIRBIM}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BMBO_secondCase_phi}} 
+	\subfigure [3/3 chambers]{\label{fig:allcasesBIRBIM_a}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BMBO_secondCase_phi}} 
 \end{figure}	
 
 \begin{figure}[h]
 	\centering	
-	\subfigure [3/4 chambers]{\label{fig:allcasesBIRBIM}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBM_secondCase_phi}} 
-	\subfigure [3/4 chambers + BIBO]{\label{fig:allcasesBIRBIM}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBO_secondCase_phi}} 
-	\caption{Efficiency times acceptance of the L0 barrel trigger compared to reconstructed muons with $p_{T} = 50$ GeV as a function of $\phi$. The histograms show the efficiency of a) the existing 3/3 chambers trigger, of b) the 3/4 chambers trigger including the BI layer, and c) the additional gain from the BI-BO trigger. Efficiency times acceptance is defined as the fraction of reconstructed muons accepted by the trigger, using a simulation that includes the RPC detector efficiency~\cite{Marcoccia:2693982}.}
-
+	\subfigure [3/4 chambers]{\label{fig:allcasesBIRBIM_b}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBM_secondCase_phi}} 
+	\subfigure [3/4 chambers + BIBO]{\label{fig:allcasesBIRBIM_c}\includegraphics[width=0.95 \textwidth]{Chapters/CH3/figures/BIBO_secondCase_phi}} 
+	\caption{Efficiency times acceptance of the L0 barrel trigger compared to reconstructed muons with $p_{T} = 50$ GeV as a function of $\phi$. The histograms show the efficiency of \subref{fig:allcasesBIRBIM_a}  the existing 3/3 chambers trigger, of \subref{fig:allcasesBIRBIM_b} the 3/4 chambers trigger including the BI layer, and \subref{fig:allcasesBIRBIM_c} the additional gain from the BI-BO trigger. Efficiency times acceptance is defined as the fraction of reconstructed muons accepted by the trigger, using a simulation that includes the RPC detector efficiency~\cite{Marcoccia:2693982}.}
+	\label{fig:allcasesBIRBIM}
 \end{figure}	
 \FloatBarrier
 
