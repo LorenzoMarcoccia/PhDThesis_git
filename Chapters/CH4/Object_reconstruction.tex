@@ -21,14 +21,14 @@ The same reconstruction algorithms used to reconstruct data are also applied to 
 To understand what the final state of any given physics process will look like,
 \textit{Monte Carlo simulation} (MC) is used to model both the initial and final state of the 
 process of interest, as well as the propagation of particles through the detector. \\
-A typical MC simulated $p-p$ collision can be schematized as in Figure~\ref{fig:MC}.
+A typical MC simulated $p-p$ collision can be schematized as in Figure~\ref{fig:MC}.\\
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Chapters/CH4/figures/MC}
 	\caption{Typical Monte Carlo simulated event with representation of several processes: underlying event, hard scattering, parton shower, hadronisation and decay.}
 	\label{fig:MC}
 \end{figure}
-The first step of an event simulation is represented by the extraction of initial-state partons and the evaluation of their momenta using the proton PDFs.\\
+\noindent The first step of an event simulation is represented by the extraction of initial-state partons and the evaluation of their momenta using the proton PDFs.\\
 Fixed order matrix element (ME) are used to determine the cross section for the hard scatter 
 integrated over the phase space of the final state particles and it also predicts their momenta.\\
 The particles produced by the hard scatter then undergo a process of \textit{parton showering} 
@@ -37,8 +37,9 @@ Particles are emitted and produced until the energy scale is below 1 GeV, at whi
 \textit{hadronisation} process starts and colorless hadrons are formed. These hadrons then decay 
 into lighter particles.\\
 As well as the original hard scatter, additional interactions between other partons within the
-proton must be included in a process known as \textit{underlying event}.\\
-Finally, \textit{pile-up} collisions also overlaid, which originate from collisions of other
+proton must be included in a process known as \textit{underlying event}.
+\newpage
+\noindent Finally, \textit{pile-up} collisions also overlaid, which originate from collisions of other
 protons in the beam.\\
 For hadronisation, two main models exist, the string model~\cite{string} and the cluster 
 model~\cite{cluster}. In the \texttt{PYTHIA} event generator~\cite{pythia} the string model is used 
@@ -65,7 +66,7 @@ objects considered in this analysis (electrons, muons, jets, $b$-tagged jets and
 A summary of the object selections is reported in~\Cref{tab:objects}.
 
 \begin{table}[!h]
-	\small
+	\scriptsize
 	\centering
 	\begin{tabular}{cccccl}
 		\toprule
@@ -146,13 +147,13 @@ This analysis needs the suppression of the contribution from non-prompt muons, t
 requirements are placed on muon candidates. \\
 In CB tracks, the variables commonly used in muon identification are:
 \begin{itemize}
-\item $\bm{q/p}$ \textbf{significance}: defined as the absolute value of the difference between the
+	\item $\bm{q/p}$ \textbf{significance}: defined as the absolute value of the difference between the
 ratio of the charge and momentum of the muons measured in the ID and MS
 divided by the sum in quadrature of the corresponding uncertainties;
-\item $\bm{\rho'}$: defined as the absolute value of the difference between the transverse momentum
+	\item $\bm{\rho'}$: defined as the absolute value of the difference between the transverse momentum
 measurements in the ID and the MS divided by the $p_T$ of the combined
 track;
-\item $\bm{\chi^2}$: normalised $\chi^2$ of the combined track fit.
+	\item $\bm{\chi^2}$: normalised $\chi^2$ of the combined track fit.
 \end{itemize}
 To reject misidentified muon candidates, primarily originating from pion and kaon decays, several 
 quality requirements can be imposed on the muon candidate.\\
@@ -162,15 +163,15 @@ There are four muon identification working points:
 at the cost of some efficiency. Only CB muons with hits in at least two stations
 of the MS and satisfying the Medium selection criteria are considered.
 The reconstruction efficiency for Tight muons in the range $20 < p_T < 100$ GeV is 91.8\%.
-\item \textbf{Medium Muons}: this is the default working point used by the ATLAS collaboration.
+	\item \textbf{Medium Muons}: this is the default working point used by the ATLAS collaboration.
 Only CB and ME tracks are used. The CB tracks are required to have 3 hits in at
 least two MDT layers. The reconstruction efficiency for this working point in
 the range $20 < p_T < 100$ GeV is 96.1\%.
-\item \textbf{Loose Muons}: all CB and ME muons that satisfy the Medium requirement are also
+	\item \textbf{Loose Muons}: all CB and ME muons that satisfy the Medium requirement are also
 included in the Loose selection. It is optimised to maximise the reconstruction efficiency, while 
 still retaining only good quality muon tracks. The reconstruction efficiency for
 Loose muons in the range $20 < p_T < 100$ GeV is 98.1\%.
-\item \textbf{High-$\bm{p_T}$ Muons}: the selection is optimised for analyses searching for
+	\item \textbf{High-$\bm{p_T}$ Muons}: the selection is optimised for analyses searching for
 high-mass resonances using muons. CB muons are required to pass the Medium selection
 and have at least three hits in three MS stations. This selection maximises the momentum
 resolution for muons with pT > 100 GeV
@@ -201,7 +202,7 @@ and to be closer than 0.25 in $\Delta R$ within a selected jet.
 The closest jet to a soft muon is defined as the `SMT' jet. \\
 Very loose requirements are applied on the impact parameters to remove
 pathological cases: 
-$|d_0| < 3$ mm and $|z_0 \sin\theta| < 3$  mm.\\
+$|d_0| < 3$ mm and $|z_0 \sin\theta| < 3$  mm.
 More details on the soft muon tagging are in Ref.~\cite{SMT-INT-13TeV}.
 
 \FloatBarrier

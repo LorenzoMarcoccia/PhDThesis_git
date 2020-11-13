@@ -29,7 +29,7 @@ will lead LHC to High-Luminosity LHC (HL-LHC).
 \section{The LHC accelerator}
 Located at CERN, the Large Hadron Collider (LHC) ~\cite{CERN_acc} is the world’s highest energy particle accelerator.
 LHC is a circular hadron accelerator, positioned at a depth of about 100~m in the tunnel built for the LEP accelerator.
-It is 26.6~km long and currently operates by making proton beams collide at an energy $ \sqrt {s} = $ 13~TeV. \\
+It is 26.6~km long and currently operates by making proton beams collide at an energy $ \sqrt {s} = $ 13~TeV. 
 The overall accelerator complex is shown in Figure~\ref{fig:CERN_complex}.
 \begin{figure}[!h]
 	\centering
@@ -38,7 +38,7 @@ The overall accelerator complex is shown in Figure~\ref{fig:CERN_complex}.
 	\label{fig:CERN_complex}
 \end{figure}
 \\CERN's choice to replace the LEP leptonic collider with an hadronic one, such as LHC, has brought two fundamental advantages: the first is that for the same infrastructural size it is possible to reach a higher energy in the center of mass, since the energy lost by radiation of synchrotron from a particle in circular motion is $\frac{dE}{dt}\propto\frac{E^4}{m^4R}$, where $R$ is the bending radius and $m$ is the mass of the accelerated particle travelling at an energy $E$, hence protons are better than electrons.
-\newpage
+%\newpage
 \noindent The second advantage is that the composite structure of the protons allows access to a wider energy spectrum that can be explored simultaneously without having to change the beam parameters. On the other hand, the number of background events also increases.
 In addition to proton-proton (p--p) collisions, the LHC can also collide heavy lead ions (Pb-Pb). \\
 Before reaching the the target energy, protons undergo subsequent acceleration steps. \\
@@ -65,7 +65,7 @@ Actually there are two different sources of pile-up:
 	\item out-of-time pile-up is due to finite read-out time resolution of the detectors, often larger than 25 ns. In this case, the residual energy from
 	a previous bunch crossing could potentially be associated to the following bunch crossing.
 \end{itemize}
-\newpage
+%\newpage
 \noindent The distribution of $\mathrm{<\mu>}$ is shown in Figure~\ref{fig:pileup}, for the different data-taking periods. The average pile-up for 2015-2018 is $\mathrm{<\mu>=33.7}$.
 \begin{figure}[h]
 	\centering
@@ -89,9 +89,9 @@ which is typically expressed in $\mathrm{fb^{-1}}$ (1 $\mathrm{b = 10^{-28} m^{2
 \\Figure~\ref{fig:lum} shows the total integrated luminosity over the full LHC data taking period at $\mathrm{\sqrt{13}}$ TeV and Table~\ref{tab:lum} summarizes the main design parameters of the LHC.
 \begin{figure}[!ht]
 	\centering
-	\subfigure[]{\includegraphics[width=75mm]{Chapters/CH2/figures/intlumivsyear}}\quad
-	\subfigure[]{\includegraphics[width=75mm]{Chapters/CH2/figures/intlumivstimeRun2}}\quad
-	\caption{Cumulative luminosity versus $a$) day delivered to ATLAS during stable beams; $b$) time delivered to ATLAS (green) and recorded by ATLAS (yellow) during stable beams for pp collisions at $\mathrm{\sqrt{13}}$~\cite{lumi}.}
+	\subfigure[]{\includegraphics[width=.8\textwidth]{Chapters/CH2/figures/intlumivsyear}\label{fig:intlumivsyear}}
+	\subfigure[]{\includegraphics[width=.8\textwidth]{Chapters/CH2/figures/intlumivstimeRun2}\label{fig:intlumivstimeRun2}}
+	\caption{Cumulative luminosity versus~\subref{fig:intlumivsyear} day delivered to ATLAS during stable beams;~\subref{fig:intlumivstimeRun2} time delivered to ATLAS (green) and recorded by ATLAS (yellow) during stable beams for pp collisions at $\mathrm{\sqrt{13}}$~\cite{lumi}.}
 	\label{fig:lum}
 \end{figure}
 \begin{table}[!h]
@@ -127,11 +127,11 @@ It can be divided into five main parts:
 \end{itemize}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=110mm]{Chapters/CH2/figures/ATLAS}
+	\includegraphics[width=90mm]{Chapters/CH2/figures/ATLAS}
 	\caption{Cut-away view of the ATLAS detector. The dimensions of the detector are 25 m in height and 44 m in length. The overall weight of the detector is approximately 7000 tonnes~\cite{ATLAS}.}
 	\label{fig:ATLAS}
 \end{figure}
-\clearpage
+%\clearpage
 \subsubsection*{Coordinate system}
 The ATLAS coordinate system is a right-handed Cartesian coordinate system with the origin defined at the IP, in the center of the detector.
 The $z$-axis corresponds to the beam pipe while the $x$ and $y$ directions define the transverse plane.\\
@@ -158,12 +158,12 @@ The inner detector is immersed in a 2 T solenoidal field provided by the central
 It is designed to minimize the amount of material in front of the calorimeter to have a small impact on the energy measurement. This is achieved by hosting the solenoid and
 the cryostat in the same vacuum vessel of the electromagnetic calorimeter.\\
 The overall dimensions of the magnet system is 26 m long and 20 m diameter and provide and average magnetic field intensity of 0.5 T in the barrel and 1 T in the end-caps regions~\cite{MagSys}.
-\clearpage
+%\clearpage
 \subsection{Inner Detector}
 \label{sec:ID}
 The Inner Detector (ID)~\cite{ATLAS} is the detector system closest to the beam.\\
 It is composed of three detectors: the semiconductor pixel detector (PIXEL), the microstrip detector SCT (Semi-Conductor Tracker), and the most external, the transition radiation detector TRT (Transition Radiation 
-Tracker).\\
+Tracker).
 Its overall layout is depicted in Figure~\ref{fig:ID}.
 \begin{figure}[h]
 	\centering
@@ -173,15 +173,17 @@ Its overall layout is depicted in Figure~\ref{fig:ID}.
 \end{figure}
 \\The ID is contained in a cylinder, 7 m long and 1.15 m in radius, placed in a 2 T solenoid magnetic field and it is designed to trace charged particles with a minimum moment of 0.1 GeV/c, it allows the measurement of the moment through the track curvature radius and the reconstruction of the main interaction and decay vertices (both primary and secondary).\\
 The innermost part of the ID, which has a radius of about 15 cm, consists of silicon pixels to maximize the precision in the reconstruction of the tracks and the resistance to radiation.
-The pixel detector records on average three points for each track, which allows a reconstruction of the secondary decay vertices. This detector has a total of approximately 80 million sensitive elements.
-\vspace{\baselineskip}
-\\The intermediate part, which covers a radius ranging from 30 to 60 cm, uses a microstrip detector (Semi-Conductor Tracker), to provide good spatial resolution.
+The pixel detector records on average three points for each track, which allows a reconstruction of the secondary decay vertices. This detector has a total of approximately 80 million sensitive elements.\\
+
+
+\noindent The intermediate part, which covers a radius ranging from 30 to 60 cm, uses a microstrip detector (Semi-Conductor Tracker), to provide good spatial resolution.
 The detection technique of the SCT relies on the same principle as for the pixel detector, however long strips are used compared to the rectangular pixels due to 
 the smaller particle density in the outer layers.
 It is located around the Pixel detector and is designed to provide eight precision measurements per track, contributing to the measurements of momentum, impact parameter and 
-vertex position. The total number of sensitive items is around 6 million.
-\vspace{\baselineskip}
-\\The outermost layer ranges from 60 to 95 cm in radius; it is a gas detector (Transition Radiation Tracker) consisting of a set of small diameter tubes, containing $\mathrm{Xe}$ ($\mathrm{70\%}$), 
+vertex position. The total number of sensitive items is around 6 million.\\
+
+
+\noindent The outermost layer ranges from 60 to 95 cm in radius; it is a gas detector (Transition Radiation Tracker) consisting of a set of small diameter tubes, containing $\mathrm{Xe}$ ($\mathrm{70\%}$), 
 $\mathrm{CO_2}$ ($\mathrm{27\%}$),  $\mathrm{O_2}$ ($\mathrm{3\%}$); it provides a good resolution of the curvature of the track and contributes strongly to its reconstruction.\\\
 The tracker contributes to the identification of the electrons, being sensitive to the emission of transition radiation that the particles emit when passing between different materials. 
 

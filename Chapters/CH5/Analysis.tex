@@ -235,7 +235,7 @@ selecting muons with $\pT > \SI{50}{\GeV}$.
 
 ATLAS Monte Carlo samples for analyses on the 2015--2018 dataset are split into three subsets: mc16a reflects the pile-up conditions of the years 2015 and 2016, mc16d reflects the pile-up conditions of 2017 data and mc16e reflects the pile-up conditions of 2018 data. Therefore, mc16a samples need to be scaled to 2015+2016 integrated luminosity, mc16d samples need to be scaled to 2017 integrated luminosity and mc16e samples need to be scaled to the 2018 integrated luminosity.\\
 The generated MC samples containing top-quarks are produced with the top-quark mass, \mtop,
-parameter set to \SI{172.5}{\GeV} and a branching fraction of the top-quark decay to a \PW boson and a \Pqb quark of 1. \\
+parameter set to \SI{172.5}{\GeV} and a branching fraction of the top-quark decay to a \PW boson and a \Pqb quark of 1. 
 In all samples, decays into \Pgt leptons are included and if the \Pgt decays leptonically such events are taken into account in the analysis.\\
 In the following, samples used in the analysis are explained in detail, both for the signal and for the background sources.
 
@@ -244,7 +244,7 @@ In the following, samples used in the analysis are explained in detail, both for
 \label{sec:samples:mc:sig}
 %-------------------------------------------------------------------------------
 
-The Monte Carlo simulation samples for signal were generated at next-to-leading-order (NLO) with \aMCatNLO~\cite{Alwall:2014hca} interfaced to the \PythiaEight~\cite{Sjostrand:2007gs} with the \textsc{A14} tune~\cite{Skands:2010ak} and \textsc{NNPDF2.3LO} PDF set. Only decays of the \PW and \PZ bosons involving charged leptons were generated at the matrix element level (\mbox{$Z\to e^+e^-,~\mu^+\mu^-,~\tau^+\tau^-$} and \mbox{$W \to e\nu, \mu\nu, \tau\nu$)}. For the matrix element, PDF set \textsc{NNPDF3.0NLO} is used. The Universal FeynRules Output (UFO) model~\cite{Alloul:2013bka} is used for computation at the NLO in QCD. Top quark FCNC decay is done by TopFCNC model~\cite{Degrande:2014tta,Durieux:2014xla}.\\
+The Monte Carlo simulation samples for signal were generated at next-to-leading-order (NLO) with \aMCatNLO~\cite{Alwall:2014hca} interfaced to the \PythiaEight~\cite{Sjostrand:2007gs} with the \textsc{A14} tune~\cite{Skands:2010ak} and \textsc{NNPDF2.3LO} PDF set. Only decays of the \PW and \PZ bosons involving charged leptons were generated at the matrix element level (\mbox{$Z\to e^+e^-,~\mu^+\mu^-,~\tau^+\tau^-$} and \mbox{$W \to e\nu, \mu\nu, \tau\nu$)}. For the matrix element, PDF set \textsc{NNPDF3.0NLO} is used. The Universal FeynRules Output (UFO) model~\cite{Alloul:2013bka} is used for computation at the NLO in QCD. Top quark FCNC decay is done by TopFCNC model~\cite{Degrande:2014tta,Durieux:2014xla}.
 The TopFCNC UFO model includes the effects of new physics at a energy scale $\Lambda$ by adding effective terms to the SM lagrangian:
 \begin{equation}
 \mathcal{L} = \mathcal{L}_{SM} + \mathcal{L}^{eff} = \mathcal{L}_4 + \frac{1}{\Lambda^2} \mathcal{L}_6+ ...
@@ -360,10 +360,10 @@ NNPDF3.0NNLO~\cite{Ball:2014uwa} PDF set.
 \paragraph{tZq production}
 The production of \tZq\ events is modelled using the\\ \mgamc~v2.3.3 \cite{Alwall:2014hca}
 generator at NLO with NNPDF3.0NLO~\cite{Ball:2014uwa} parton distribution function~(PDF) (DSID\@: 412063).
-The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea}~ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the NNPDF2.3LO~\cite{Ball:2014uwa} PDF set.\\
+The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea} using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the NNPDF2.3LO~\cite{Ball:2014uwa} PDF set.\\
 The uncertainty due to initial-state-radiation (ISR) is estimated by comparing the nominal \tZq\ sample with two additional samples (DSID\@: 412064-412065),
 which have the same setting as the nominal one, but with the Var3 up and down variations of the A14 tune. 
-The predicted cross-section was calculated with \MGMCatNLOV{2.6.0}, using the five-flavour scheme with the \textsc{NNPDF30\_nlo\_as\_0118} PDF set and with the renormalization and factorisation scales, \muR\ and \muF, set to \\ \mbox{$\muR = \muF = (\mtop + \mZ)/4 = \SI{66}{\GeV}$.} The SM \tZq cross-section at NLO in QCD, including non-resonant contributions with $m_{\ell^+\ell^-} > 30\,\GeV$, is \SI{102}{fb}.
+The predicted cross-section was calculated with \MGMCatNLOV{2.6.0}, using the five-flavour scheme with the \textsc{NNPDF30\_nlo\_as\_0118} PDF set and with the renormalization and factorisation scales, \muR\ and \muF, set to \mbox{$\muR = \muF = (\mtop + \mZ)/4 = \SI{66}{\GeV}$.} The SM \tZq cross-section at NLO in QCD, including non-resonant contributions with $m_{\ell^+\ell^-} > 30\,\GeV$, is \SI{102}{fb}.
 
 \paragraph{tW production} 
 Although having a very low contribution, single top-quark production is also considered.
@@ -371,7 +371,7 @@ The associated production of top-quarks with \PW bosons ($tW$) is
 modelled using the
 \powhegbox~\cite{Re:2010bp,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}~v2
 generator at NLO in QCD using the five-flavour scheme and the
-NNPDF3.0NLO set of PDFs~\cite{Ball:2014uwa}.\\
+NNPDF3.0NLO set of PDFs~\cite{Ball:2014uwa}.
 The diagram removal (DR) scheme~\cite{Frixione:2008yi} is used to
 remove interference and overlap with \ttbar\ production.\\ 
 %The related uncertainty is estimated by comparing to an alternative sample
@@ -416,11 +416,11 @@ Electroweak production of diboson in association with two jets
 ($VVjj$) is simulated with the \sherpa~v2.2.2~\cite{Bothmann:2019yzt}
 generator (DSID\@: 364283-364284). The LO-accurate matrix elements are matched to a parton
 shower based on Catani-Seymour dipoles~\cite{Gleisberg:2008fv,Schumann:2007mg} using the MEPS@LO
-prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}.
+prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}.\\
 Samples are generated using the \nnpdfnnlo set~\cite{Ball:2014uwa},
 along with the dedicated set of tuned parton-shower parameters
 developed by the \sherpa authors.\\
-To assess the uncertainty from the generator, alternative samples are used. 
+To assess the uncertainty from the generator, alternative samples are used. \\
 The PowhegBox v2~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd} generator
 is used to generate these alternative $WW$, $WZ$ and $ZZ$ samples~\cite{Nason:2013ydw}
 processes at NLO-accuracy in QCD. The effect of singly resonant
@@ -452,7 +452,7 @@ program~\cite{Lange:2001uf} is used to decay bottom and charm hadrons.
 The production of \ttH\ events is modelled using the\\
 \powhegbox~v2~\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Hartanto:2015uka}
 generator which provides matrix elements at next-to-leading order (NLO) in the strong coupling 
-constant \alphas in the five-flavour scheme with the \nnpdfnlo~\cite{Ball:2014uwa} PDF set.
+constant \alphas in the five-flavour scheme with the\\ \nnpdfnlo~\cite{Ball:2014uwa} PDF set.
 The functional form of the renormalisation and factorisation scale is 
 set to $\sqrt[3]{m_\text{T}(t)\cdot m_\text{T}(\bar{t}) \cdot m_\text{T}(H)}$.
 The events are interfaced to \pythia.230~\cite{Sjostrand:2014zea}~
@@ -468,12 +468,12 @@ two additional parton emissions, are matched and merged with the \sherpa parton
 shower based on Catani-Seymour dipole factorisation~\cite{Gleisberg:2008fv,Schumann:2007mg} 
 using the MEPS@NLO prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}. 
 The virtual QCD correction for matrix elements at NLO accuracy are 
-provided by the \openloops library~\cite{Buccioni:2019sur,Cascioli:2011va,Denner:2016kdg}.
+provided by the \openloops library~\cite{Cascioli:2011va,Denner:2016kdg}.\\
 Samples are generated using the \nnpdfnnlo set~\cite{Ball:2014uwa}, along with
 the dedicated set of tuned parton-shower parameters developed by the~\sherpa authors.\\
 The production of \tttt\ is modelled using the \mgamc~v2.3.3~\cite{Alwall:2014hca}
 generator at NLO with the \nnpdfonenlo~\cite{Ball:2014uwa} parton distribution function~(PDF).
 The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea}~ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
-\nnpdftwo~\cite{Ball:2014uwa} PDF set.
+\nnpdftwo~\cite{Ball:2014uwa} PDF set.\\
 The decays of bottom and charm hadrons are simulated using the \evtgen\ v1.6.0 program~\cite{Lange:2001uf}. \\
 The other rare top quark processes namely the production of \ttWW and \ttt are all modeled using the \mgamc generator at LO interfaced with \pythia using the A14 tune.

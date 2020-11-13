@@ -120,7 +120,7 @@
 %\setcounter{page}{1}
 
 % ----------------------- ABSTRACT ------------------------------------
-%\small
+\small
 \phantomsection
 \addcontentsline{toc}{chapter}{Abstract}
 \include{Abstract/abstract}
@@ -128,7 +128,7 @@
 \fancyend
 
 % ----------------------- TABLE OF CONTENTS ---------------------------
-%\small
+\small
 \phantomsection
 \addcontentsline{toc}{chapter}{Contents}
 % levels are: 0 - chapter, 1 - section, 2 - subsection, 3 - subsection
@@ -170,7 +170,7 @@
 
 % Parts of the thesis are included below. Rename the files as required.
 % But take care that the paths match.
-%\small
+\small
 \selectlanguage{english}
 \cleardoublepage
 \phantomsection
@@ -184,12 +184,12 @@
 \include{Chapters/CH6/Charm_tag}
 \include{Chapters/CH7/Regions}
 \include{Chapters/CH8/Statistical_analysis}
-\addtocontents{toc}{\protect\vskip30pt}
+%\addtocontents{toc}{\protect\vskip30pt}
 \include{Chapters/CH9/Conclusions}
 
 \cleardoublepage
 \phantomsection
-%\small
+\small
 \begin{appendices}
 \bookmarksetupnext{level=-1}
 \include{Appendices/AP1/MonteCarloSamples}
@@ -200,9 +200,9 @@
 \bookmarksetupnext{level=-4}
 \include{Appendices/AP4/BDT_optimization}
 \bookmarksetupnext{level=-5}
-\include{Appendices/AP6/SignalRegions}
+\include{Appendices/AP5/SignalRegions}
 \bookmarksetupnext{level=-5}
-\include{Appendices/AP5/ControlRegions}
+\include{Appendices/AP6/ControlRegions}
 \bookmarksetupnext{level=-5}
 \end{appendices}
 \addtocontents{toc}{\protect\vskip30pt}
