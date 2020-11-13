@@ -3,6 +3,7 @@
 % --- Style file for Latex
 % In this template package, it can be found in ./Class/
 \documentclass{Latex/Classes/GenThesis}
+
 % Adding metadata:
 \usepackage{changepage}
 \usepackage{datetime}
@@ -39,20 +40,19 @@
 \usepackage{amssymb}
 \usepackage[super]{nth}
 \usepackage{mathtools}
-\usepackage{siunitx}
+\usepackage[separate-uncertainty=true]{siunitx}
 \usepackage[bottom]{footmisc}
 \usepackage[section]{placeins}
 \usepackage{tabularx}
 \usepackage{comment}
 \usepackage{multirow}
-\usepackage{siunitx}
 \usepackage{booktabs}
 \usepackage{afterpage}
 \usepackage{bookmark}
 \usepackage[titletoc]{appendix}
 \usepackage[figuresright]{rotating}
 \usepackage{lipsum}
-
+\usepackage{array}
 %\sisetup{round-mode=places,round-precision=4}
 %\sisetup{[round-mode=figures,round-precision=3]S[round-mode=places,round-precision=2]l}
 	
@@ -80,7 +80,7 @@
 		leftmargin=4cm,
 		rightmargin=\parindent]\itshape}
 	{\bywhom{#1}\end{quoting}}
-
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 % --------------------------------------------------------------
 %                   FRONT MATTER: dedications, abstract,..
 % --------------------------------------------------------------
@@ -120,6 +120,7 @@
 %\setcounter{page}{1}
 
 % ----------------------- ABSTRACT ------------------------------------
+%\small
 \phantomsection
 \addcontentsline{toc}{chapter}{Abstract}
 \include{Abstract/abstract}
@@ -127,6 +128,7 @@
 \fancyend
 
 % ----------------------- TABLE OF CONTENTS ---------------------------
+%\small
 \phantomsection
 \addcontentsline{toc}{chapter}{Contents}
 % levels are: 0 - chapter, 1 - section, 2 - subsection, 3 - subsection
@@ -168,7 +170,7 @@
 
 % Parts of the thesis are included below. Rename the files as required.
 % But take care that the paths match.
-
+%\small
 \selectlanguage{english}
 \cleardoublepage
 \phantomsection
@@ -187,6 +189,7 @@
 
 \cleardoublepage
 \phantomsection
+%\small
 \begin{appendices}
 \bookmarksetupnext{level=-1}
 \include{Appendices/AP1/MonteCarloSamples}
@@ -196,7 +199,11 @@
 \include{Appendices/AP3/DL1rc}
 \bookmarksetupnext{level=-4}
 \include{Appendices/AP4/BDT_optimization}
-\bookmarksetupnext{level=-4}
+\bookmarksetupnext{level=-5}
+\include{Appendices/AP6/SignalRegions}
+\bookmarksetupnext{level=-5}
+\include{Appendices/AP5/ControlRegions}
+\bookmarksetupnext{level=-5}
 \end{appendices}
 \addtocontents{toc}{\protect\vskip30pt}
 

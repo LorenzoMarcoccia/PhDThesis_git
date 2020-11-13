@@ -4,10 +4,11 @@
 
 % ----------------------- introduction file header -----------------------
 %\chapter{Search for the FCNC decay \pmb{$t\rightarrow c + Z$}}
-\chapter{FCNC $tZc$ with charm-tagging}
+\chapter{FCNC \tZc with charm-tagging}
 \label{chapter:charm_tag}
-This chapter presents an important fraction of my work was dedicated to the event selection using the charm-tagging techniques and
-the design and optimization of the multivariate analysis.
+This chapter presents an important fraction of my work was dedicated to the event selection using the SMT technique, the charm-tagger \DLrc and the comparison between these two techniques.
+The design and optimization of the multivariate analysis is also part of my work and it will be presented in this chapter.
+
 % ----------------------- paths to graphics ------------------------
 
 % the code below specifies where the figures are stored
@@ -117,7 +118,7 @@ The values are:
 %reconstructed under the FCNC \ttbar decay signal hypothesis.\\
 %The mass cuts are applied on the reconstructed top-quark candidates in the signal regions as described in the following sections.
 
-\subsection {Signal Region definition}
+\subsection {Signal Region with SMT definition}
 \label{sec:sel:sr3}
 The SR3\tZc has the following additional requirements:
 \begin{itemize}
@@ -127,8 +128,28 @@ The SR3\tZc has the following additional requirements:
 	\item At least one SMT jet described in \Cref{sec:object:smt}. 
 	\item No requirements on the masses of both the FCNC and the SM top-quark candidates are applied. 
 \end{itemize}
-The event yield for each \Pqb-jet multiplicities and the total event yield is shown in Table~\ref{tab:yields:sr3}. 
-Even though the selection with exactly one \Pqb-jet is the purest, for the SR3\tZc, events containing zero and two \Pqb-jet are also considered to have as many signal events as possible and then work on the separation of signal from background, as described in \Cref{sec:separation}.
+This selection is summarized in Table~\ref{tab:sel:sr3_smt}.
+\begin{table}[!h]
+	\centering
+	\small
+	\begin{tabular}{c}
+		\toprule
+		SR3\tZc using SMT\\
+		\midrule
+		Exactly 3 leptons with $|\eta| < 2.5$ and $\pT(\ell_1)> \SI{27}{\GeV}$, $\pT(\ell_2)> \SI{15}{\GeV}$, $\pT(\ell_3)> \SI{15}{\GeV}$\\
+		$\ge$ 1 \OSSF pair, with $|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$\\
+		$\ge$ 2 jets with $|\eta| < $ 2.5\\
+		$\le$ 2 \Pqb-jets\\
+		OS($\mu^{soft}$,$\ell_W$)\\
+		$\ge$ 1 SMT jet \\
+		\bottomrule
+	\end{tabular}
+\caption{Overview of the requirements applied for selecting events in the Signal Region with SMT}
+\label{tab:sel:sr3_smt}
+\end{table}    
+		
+\noindent The event yield for each \Pqb-jet multiplicities and the total event yield is shown in Table~\ref{tab:yields:sr3}. 
+Even though the selection with exactly one \Pqb-jet is the purest, for the SR3\tZc, events containing zero and two \Pqb-jets are also considered in order to have the largest possible signal acceptance and then work on the separation of signal from background, as described in \Cref{sec:separation}.
 \begin{table}[!h]
 	\centering
 	\begin{tabular}{|l|c|c|c|c|}
@@ -435,7 +456,7 @@ No significant overtraining is detected. The GBDT output scores for each of five
 built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The GBDTs suffer from low background MC statistics, however results seem to be fairly stable within the statistical uncertainties. 
 \\Input variables importance for each GBDT are presented in~\Cref{tab:D3importance}. The importance is evaluated as the total separation gain that this variable had in the decision trees (weighted by the number of events). It is normalized to all variables together, which have an importance of 1.
 \begin{table}[!htbp]
-	small
+	\small
 	\centering
 	\begin{tabular}{cccccc}
 		\toprule
@@ -532,17 +553,41 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 \end{figure}
 
 \clearpage
-\section {The alternative c-tagger $\mathrm{DL1r_{c}}$}
+\section {The alternative \Pqc-tagger $\mathrm{DL1r_{c}}$}
 \label{sec:other_selection}
-The alternative c-tagger $\mathrm{DL1r_{c}}$ (see \Cref{sec:object:cjet}) has been investigated for SR3\tZc as an alternative to SMT, already discussed in \Cref{sec:sel:sr3}.\\
+The alternative \Pqc-tagger $\mathrm{DL1r_{c}}$ (see \Cref{sec:object:cjet}) has been investigated for SR3\tZc as an alternative to SMT, already discussed in \Cref{sec:sel:sr3}.\\
 The requirements in this region are the following:
 \begin{itemize}
 	\item At least two jets satisfying the requirements described in \Cref{sec:object:jet}. 
 	\item Exactly one \Pqb-jet satisfying the requirements in \Cref{sec:object:bjet}. 
-	\item At least one c-jets satisfying the requirements described in \Cref{sec:object:cjet}.
+	\item At least one \Pqc-jets satisfying the requirements described in \Cref{sec:object:cjet}.
 	\item No requirements on the masses of both the FCNC and the SM top-quark candidates are applied. 
 \end{itemize}
-The event yield for  for this selection is shown in Table~\ref{tab:yields:sr3_dl1rc}.
+This selection is summarized in Table~\ref{tab:sel:sr3_dl1rc} together with the selection using SMT for comparison. Kinematic plots are presented in \Cref{app:SRs:SR3}.
+\begin{table}[!h]
+	\centering
+	\small
+	\begin{tabular}{ P{5.75cm} | P{5cm} }
+		\toprule
+		\multicolumn{2}{c}{Common selections} \\
+		\midrule
+		\multicolumn{2}{c}{Exactly 3 leptons with $|\eta| < 2.5$ and $\pT(\ell_1)> \SI{27}{\GeV}$, $\pT(\ell_2)> \SI{15}{\GeV}$, $\pT(\ell_3)> \SI{15}{\GeV}$} \\
+		\multicolumn{2}{c}{$\ge$ 1 \OSSF pair, with $|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$} \\
+		\multicolumn{2}{c}{$\ge$ 2 jets with $|\eta| < $ 2.5} \\
+		\midrule
+		\midrule
+		SR3\tZc using SMT 			  &  SR3\tZc using \DLrc \\
+		\midrule
+		$\le$ 2 \Pqb-tagged jets 	& =1  \Pqb-jet             \\
+		OS($\mu^{soft}$,$\ell_W$) & --								\\
+		$\ge$ 1 SMT jet  				 & --							   \\
+		--  									 & $\ge$ 1 \Pqc-tagged jet \\
+		\bottomrule
+	\end{tabular}
+	\caption{Overview of the requirements applied for selecting events in the Signal Region with \DLrc}
+	\label{tab:sel:sr3_dl1rc}
+\end{table}    
+\\The event yield for  for this selection is shown in Table~\ref{tab:yields:sr3_dl1rc}.
 \begin{table}[!h]
 	\centering
 	\small
@@ -578,7 +623,7 @@ The event yield for  for this selection is shown in Table~\ref{tab:yields:sr3_dl
 %		$S/\sqrt{B}$ (ctZ)      					  &  1.96 $\pm$ 0.02                      \\
 		\hline
 	\end{tabular}
-	\caption{Total event yield for the SR3\tZc selection using the c-tagger $\mathrm{DL1r_{c}}$.}
+	\caption{Total event yield for the SR3\tZc selection using the \Pqc-tagger $\mathrm{DL1r_{c}}$.}
 \label{tab:yields:sr3_dl1rc}
 \end{table}  
 \newline \noindent Comparing the two event yield in Table~\ref{tab:yields:sr3} with Table~\ref{tab:yields:sr3_dl1rc} is possible to see that using \DLrc the number of signal events is significantly larger than using SMT since the semi-leptonic decay of heavy hadrons is limited by the branching ratio ($\simeq$ 20\%).
@@ -587,18 +632,20 @@ To choose the best selection, one can compare the values of \ssplusb for each bi
 For the \DLrc selection, in the last three bins of the GBDT discriminant, there are
 12.3 events of signal and 9.3 events of background 
 which corresponds to more signal events and 10\% background events of the whole SR3\tZc with SMT. The GBDT output for SMT is presented in \Cref{sec:separation} while for \DLrc it will be presented in \Cref{sec:separation_all}.
+
+\FloatBarrier
 \begin{figure}[!htbp]
 	\centering
 	\subfigure[SMT selection]{
-		\includegraphics[width=.9\textwidth]{Chapters/CH6/figures/GBDT_smt}
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/GBDT_smt}
 		\label{fig:yields:sr3_smt_bdt}} \qquad
 	\subfigure[\DLrc selection]{
-		\includegraphics[width=.9\textwidth]{Chapters/CH6/figures/GBDT_dl1rc}
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/GBDT_dl1rc}
 		\label{fig:yields:sr3_dl1rc_bdt}} \\
 	\caption{Values of \ssplusb for each bin of the GBDT discriminant for ~\subref{fig:yields:sr3_smt_bdt} SMT selection and ~\subref{fig:yields:sr3_dl1rc_bdt} for \DLrc selection. 	}%
 	\label{fig:yields:sr3_bdt}
 \end{figure}
-
+\FloatBarrier
 \begin{table}[!h]
 	\centering
 	\small
@@ -654,6 +701,5 @@ which corresponds to more signal events and 10\% background events of the whole 
 	\caption{Values of \ssplusb for each bin of the GBDT discriminant for the \DLrc selection.}%
 	\label{tab:yields:sr3_dl1rc_bdt}
 \end{table}
-
 
 

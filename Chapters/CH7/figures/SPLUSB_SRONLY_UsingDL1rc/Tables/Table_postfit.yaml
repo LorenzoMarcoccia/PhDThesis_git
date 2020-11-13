@@ -1,0 +1,186 @@
+- Region: SR1tZc
+  Samples:
+    - Sample: t#bar{t}Z
+      Yield: 137.86997760303899
+      Error: 0.80507274071376589
+    - Sample: tWZ
+      Yield: 30.573709845727521
+      Error: 0.17841233342747431
+    - Sample: t#bar{t}W
+      Yield: 5.7846308892902378
+      Error: 0.033318575792960284
+    - Sample: t#bar{t}H
+      Yield: 6.0997924574803717
+      Error: 0.035402648458858696
+    - Sample: VV+LF
+      Yield: 28.223513506428571
+      Error: 0.16358782581689021
+    - Sample: VV+HF
+      Yield: 142.71899606748855
+      Error: 0.82536866216984406
+    - Sample: tZ
+      Yield: 46.536119660119283
+      Error: 0.31525382130560381
+    - Sample: t#bar{t}
+      Yield: 19.953893407264673
+      Error: 0.12123665670980394
+    - Sample: Wt
+      Yield: 0.70326491260599111
+      Error: 0.007559345299053841
+    - Sample: Z+jets
+      Yield: 9.9073046605008557
+      Error: 0.082590109287480298
+    - Sample: VH
+      Yield: 1.1933335887676095
+      Error: 0.015465668614450881
+    - Sample: t#bar{t}WW
+      Yield: 0.38908326909451268
+      Error: 0.0023762223479390481
+    - Sample: VVV
+      Yield: 0.70377172277611943
+      Error: 0.004196374343562465
+    - Sample: 4 tops
+      Yield: 0.15100352164542796
+      Error: 0.0009485320840273713
+    - Sample: 3 tops
+      Yield: 0.02203258688210526
+      Error: 0.00013863039104373081
+    - Sample: t#bar{t}Z (2l)
+      Yield: 0.04639389070455658
+      Error: 0.00069032244045175422
+    - Sample: VV (2l)
+      Yield: 0.48539760871959708
+      Error: 0.004403844753664986
+    - Sample: FCNC (c)tZ
+      Yield: 0.00041307181812620761
+      Error: 0.46059486755138218
+    - Sample: FCNC t#bar{t}(cZ)
+      Yield: 0.0073072065899042584
+      Error: 8.1478840896602627
+    - Sample: Total background
+      Yield: 431.362219198535
+      Error: 2.5269897991480348
+- Region: SR2tZc
+  Samples:
+    - Sample: t#bar{t}Z
+      Yield: 24.108523018517324
+      Error: 0.21855231746792614
+    - Sample: tWZ
+      Yield: 9.3767828854892095
+      Error: 0.082778983608415319
+    - Sample: t#bar{t}W
+      Yield: 3.3303677032506465
+      Error: 0.031600746528372872
+    - Sample: t#bar{t}H
+      Yield: 0.88083958494043157
+      Error: 0.0079284718616311929
+    - Sample: VV+LF
+      Yield: 34.834914499317456
+      Error: 0.38789397274463139
+    - Sample: VV+HF
+      Yield: 155.85593648804121
+      Error: 1.5502868504951621
+    - Sample: tZ
+      Yield: 109.99209957637474
+      Error: 0.94951189413991499
+    - Sample: t#bar{t}
+      Yield: 31.467401436627664
+      Error: 0.29257620114543242
+    - Sample: Wt
+      Yield: 0.7818247814614997
+      Error: 0.00943669792814434
+    - Sample: Z+jets
+      Yield: 11.794219634430823
+      Error: 0.11793445155588866
+    - Sample: VH
+      Yield: 3.1890615741983215
+      Error: 0.034567350343462984
+    - Sample: t#bar{t}WW
+      Yield: 0.027264224960723761
+      Error: 0.00056762938767069074
+    - Sample: VVV
+      Yield: 0.58972725554079242
+      Error: 0.0058729645716164916
+    - Sample: 4 tops
+      Yield: 0.0030337668746054096
+      Error: 3.8296354114064881e-05
+    - Sample: 3 tops
+      Yield: 0.0010710946685952101
+      Error: 1.6117525124446702e-05
+    - Sample: t#bar{t}Z (2l)
+      Yield: 0.0092837478255461906
+      Error: 0.00023270254302322889
+    - Sample: VV (2l)
+      Yield: 0.29607536634219822
+      Error: 0.0031326984762537523
+    - Sample: FCNC (c)tZ
+      Yield: 0.0015071199599126838
+      Error: 1.680510983029325
+    - Sample: FCNC t#bar{t}(cZ)
+      Yield: 0.0022555020066238334
+      Error: 2.5149930401429978
+    - Sample: Total background
+      Yield: 386.53842663886184
+      Error: 3.5315121828749652
+- Region: SR3tZc
+  Samples:
+    - Sample: t#bar{t}Z
+      Yield: 69.49166237228998
+      Error: 0.54218926661371614
+    - Sample: tWZ
+      Yield: 12.384897255188573
+      Error: 0.097375367862477538
+    - Sample: t#bar{t}W
+      Yield: 2.0353292683408526
+      Error: 0.015495139826375489
+    - Sample: t#bar{t}H
+      Yield: 2.6316023346555748
+      Error: 0.020162372669519986
+    - Sample: VV+LF
+      Yield: 2.8939709268651894
+      Error: 0.022868581412273953
+    - Sample: VV+HF
+      Yield: 30.333756102737318
+      Error: 0.23782436154963923
+    - Sample: tZ
+      Yield: 13.818749803548039
+      Error: 0.11322019494914035
+    - Sample: t#bar{t}
+      Yield: 3.6599427756517988
+      Error: 0.032223559654538859
+    - Sample: Wt
+      Yield: 9.9994150000000006e-06
+      Error: 8.8979685215149825e-08
+    - Sample: Z+jets
+      Yield: 1.3239259650832722
+      Error: 0.016239156057488345
+    - Sample: VH
+      Yield: 9.9994150000000006e-06
+      Error: 8.8979685215149825e-08
+    - Sample: t#bar{t}WW
+      Yield: 0.15681696005427997
+      Error: 0.0014219717138450178
+    - Sample: VVV
+      Yield: 0.22030287482107896
+      Error: 0.0018990099521624152
+    - Sample: 4 tops
+      Yield: 0.091960502832771795
+      Error: 0.00080499655947311886
+    - Sample: 3 tops
+      Yield: 0.015480811857819889
+      Error: 0.00015190981992596795
+    - Sample: t#bar{t}Z (2l)
+      Yield: 0.016958074059518255
+      Error: 0.00031889016824298552
+    - Sample: VV (2l)
+      Yield: 0.04972214348206476
+      Error: 0.00076976300038729536
+    - Sample: FCNC (c)tZ
+      Yield: 0.00015382313098216097
+      Error: 0.17152019784511477
+    - Sample: FCNC t#bar{t}(cZ)
+      Yield: 0.0027999276861576904
+      Error: 3.1220530833165565
+    - Sample: Total background
+      Yield: 139.12509817029812
+      Error: 1.0744657639477819

@@ -4,7 +4,7 @@
 
 % ----------------------- introduction file header -----------------------
 %\chapter{Search for the FCNC decay \pmb{$t\rightarrow c + Z$}}
-\chapter{FCNC $tZc$ without charm-tagging}
+\chapter{FCNC \tZc with charm-tagging veto}
 \label{chapter:regions}
 
 % the code below specifies where the figures are stored
@@ -13,15 +13,17 @@
 % ----------------------------------------------------------------------
 % ----------------------- introduction content -------------------------
 % ----------------------------------------------------------------------
-
+This chapter presents the Signal Regions dedicated to FCNC \tZc in \ttbar decays and single-top production using vetoes on \Pqc-tagged jets.
+Background sources are also described as well as the definitions of several Control Regions.
 
 \section{Event selections and reconstruction}
 \label{sec:selection_all}
-
-\subsection {Signal Region definition}
-\subsubsection{SR1 selections}
-The Signal Region called SR1 targets the \FCNCtZq in \ttbar decays.\\
-In this channel, one of the \Pqt-quarks decays following the SM into a \PW boson and a
+The pre-selection criteria, common to all the Signal Regions used in this work were already discussed in Cref{sec:selection}.
+In this section, the topology of the final states of the signal in the signal regions are described. 
+The SR3\tZc selection using the \Pqc-tagger \DLrc is already presented in \Cref{sec:other_selection}.\\
+There are two more channels that remain to present.
+\vspace{\baselineskip}
+\\The first channel is \FCNCtZc in \ttbar decays, where one of the \Pqt-quarks decays following the SM into a \PW boson and a
 \Pqb-quark (called in the following \textit{SM top}), while the other
 \Pqt-quark (called in the following \textit{FCNC top}) decays into a \PZ
 boson and a \Pqc-quark. Only the
@@ -30,16 +32,134 @@ FCNC top decays leptonically and the \PW boson from the SM top
 decays leptonically. Therefore the final state is characterised by
 the presence of three leptons, a \Pqc-jet, a \Pqb-tagged jet and missing
 transverse momentum from the escaping neutrino.  
-
-\subsubsection{SR2 selections}
-The Signal Region called SR2 targets the \FCNCtZq in single-top production.\\
-In this channel, the
+The final state of this channel was already presented in \Cref{sec:selection}  with the exception that no SMT or \Pqc-tagged jet is required.
+\vspace{\baselineskip}
+\\The second channel is \FCNCtZc in single-top production, where the
 production of a single top-quark proceeds through an FCNC
 interaction. The \Pqt-quark is produced in association with a \PZ
 boson. Also in this case only the trileptonic channel is
 considered. Therefore the final state is characterised by
 the presence of three leptons, a \Pqb-tagged jet and missing
 transverse momentum from the escaping neutrino. 
+
+\subsection {Top quarks reconstruction}
+In the events having at least two jets with one of them being \Pqb-tagged, two top quarks (FCNC and SM tops) candidates are reconstructed under the FCNC \ttbar decay signal hypothesis.
+The kinematics of the top-quark candidates can be reconstructed from
+the corresponding decay particles using~\Cref{eq:chi2tt} in~\Cref{sec:sel:topmassrec} as well more other details about the Top quarks reconstruction
+The SM top quark candidate is reconstructed under the FCNC single-top quark production hypothesis in the events having one or two jets with exactly one being $b$-tagged,
+which is assumed to come from the top-quark decay ($t\to bW$). 
+The lepton not used to reconstruct the \PZ boson is assumed to be the one coming from \PW boson decay
+and the missing transverse momentum is assumed to be the transverse momentum of the neutrino from \PW boson decay,
+while the most probable value for the longitudinal component of the neutrino momentum is determined using the minimisation of the following expression:
+\begin{equation}
+\chi^2_{\tZ}  = 
+\frac{\left(m^{\mathrm{reco}}_{b\ell_W\nu}-m_{t_{\mathrm{SM}}}\right)^2}{\sigma_{t_{\mathrm{SM}}}^2}
++ \frac{\left(m^{\mathrm{reco}}_{\ell_W\nu}-m_W\right)^2}{\sigma_W^2},
+\label{eq:chi2tZ}
+\end{equation}
+where $m^{\mathrm{reco}}_{j_b\ell_W\nu}$ and $m^{\mathrm{reco}}_{\ell_W\nu}$ are 
+the reconstructed masses of the $bW$ and $\ell_W\nu$ systems, respectively.
+In~\cref{eq:chi2tZ}, the central value for the masses and the widths
+of the top quark and $W$ boson are
+the same as in~\cref{eq:chi2tt}, therefore, in the events with two jets,
+the four-momentum of SM top-quark candidate reconstructed under the FCNC single-top quark
+production signal hypothesis is the same as the one
+reconstructed under the FCNC \ttbar decay signal hypothesis.\\
+The mass cuts are applied on the reconstructed top-quark candidates in the signal regions as described in the following sections.\\
+The overview of the requirements applied for selecting events in all the signal regions is shown in Table~\ref{tab:sel:srs}. 
+
+\subsection{SR1 selections}
+\label{sec:sel:sr1}
+The SR1 have the following additional requirements:
+\begin{itemize}
+	\item At least two jets satisfying the requirements described in 
+	\Cref{sec:object:jet}. 
+	\item Exactly one \Pqb-jet satisfying the requirements
+	described in \Cref{sec:object:bjet}. 
+	\item The mass of the FCNC top-quark candidate,
+	\mtopfcnc, must be within $2\sigma^{FCNC}$ from \mtopvalue, while no
+	requirement on the mass of the SM top-quark candidate, \mtopsm, is applied. 
+\end{itemize}
+In the SR1\tZc region there is also a veto of events where there is a \Pqc-tagged jet described in~\Cref{sec:object:cjet}.  Kinematic plots are presented in \Cref{app:SRs:SR1}.
+
+% -------------------------------------------------------------------------------
+\subsection{SR2 selections}
+\label{sec:sel:sr2}
+
+The SR2s (both SR2\tZu and SR2\tZc) have the following additional requirements:
+\begin{itemize}
+	\item Exactly one or two jets satisfying the requirements described in 
+	\Cref{sec:object:jet}. 
+	\item Exactly one \Pqb-jet satisfying the requirements
+	described in \Cref{sec:object:bjet}. 
+	\item The lepton not used to reconstruct the \PZ boson is assumed to be
+	the one coming from the \PW boson.
+	The transverse mass is calculated using the momentum of the lepton associated with the $W$ boson, $\MET$ and azimuthal angle,$\phi$, between them: 
+	$\mT(\ell_{\PW},\Pgn) = \sqrt{2\pT^{\ell}\MET \left(1-\cos\Delta\phi\right)}$.
+	Events are required to have $\mT(\ell_{\PW},\Pgn) > \SI{40}{\GeV}$.
+	\item For events with exactly one jet, no
+	requirement is applied on the massed of the FCNC and SM top-quark
+	candidates. For events with exactly two jets, the mass of the FCNC
+	top-quark candidate, \mtopfcnc, must be outside $2\sigma^{FCNC}$
+	from \mtopvalue, while the mass of the SM top-quark candidate,
+	\mtopsm, must be within $2\sigma^{SM}$ from \mtopvalue. The
+	requirement on \mtopfcnc makes this region orthogonal to SR1.
+\end{itemize}
+In the SR2\tZc region there is also a veto of events where there is a \Pqc-tagged jet described in~\Cref{sec:object:cjet}.  Kinematic plots are presented in \Cref{app:SRs:SR2}.
+\clearpage
+\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}
+\begin{sidewaystable}[!htbp]
+	\centering
+	\begin{tabular}{c|c|c|c}
+		\toprule
+		\multicolumn{4}{c}{Common selections} \\
+		\midrule
+		\multicolumn{4}{c}{Exactly 3 leptons with $|\eta| < 2.5$ and $\pT(\ell_1)> \SI{27}{\GeV}$, $\pT(\ell_2)> \SI{15}{\GeV}$, $\pT(\ell_3)> \SI{15}{\GeV}$} \\
+		\multicolumn{4}{c}{$\ge$ 1 \OSSF pair, with $|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$} \\
+		% \multicolumn{4}{c}{$\mT(\ell_{\PW},\Pgn) > \SI{40}{\GeV}$} \\
+		% \multicolumn{4}{c}{$\pT(\text{jet})> \SI{35}{\GeV}$} &  \\
+		\midrule
+		\midrule
+		SR1\tZc & \multicolumn{2}{c|}{SR2\tZc} & SR3\tZc \\
+		\midrule 
+		$\ge$ 2 jets with $|\eta| < $ 2.5  & = 1 jet with $|\eta| < $ 2.5  & = 2 jets with $|\eta| < $ 2.5  & $\ge$ 2 jets with $|\eta| < $ 2.5 \\
+		= 1 \Pqb-jet  & = 1 \Pqb-jet & = 1 \Pqb-jet & = 1 \Pqb-jet \\
+		-- & $\mT$($\ell_{\PW},\Pgn$)$ > \SI{40}{\GeV}$ & $\mT$($\ell_{\PW},\Pgn$)$ > \SI{40}{\GeV}$ & -- \\
+		% --  & -- & -- & OS($\mu^{soft}$,$\ell_W$) & OS($\mu^{soft}$,$\ell_W$) \\
+		% = 0 SMT anti-\Pqb-tagged jet  & -- & = 0 SMT anti-\Pqb-tagged jet & $\ge$ 1 SMT anti-\Pqb-tagged jet & $\ge$ 1 SMT \Pqb-tagged jet\\
+		= 0 \Pqc-tagged jet  & -- & = 0 \Pqc-tagged jet & $\ge$ 1 \Pqc-tagged jet \\
+		$|\mtopfcnc - \mtopvalue| < 2\sigma^{FCNC}$ & -- & $|\mtopfcnc - \mtopvalue| > 2\sigma^{FCNC}$ & -- \\
+		-- & -- & $|\mtopsm - \mtopvalue| < 2\sigma^{SM}$ & -- \\
+		\bottomrule
+	\end{tabular}
+	\caption{
+	Overview of the requirements applied for selecting events in the signal regions.
+}%
+\label{tab:sel:srs}
+\end{sidewaystable}
+\clearpage
+\FloatBarrier
+\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
+
+\subsection{Event yields in the Signal Regions}
+Event yields in the SRs for the \tZc coupling extraction are reported in Table~\ref{tab:sel:yields:tzc}.
+
+As it can be noticed, the main background sources are:
+\begin{itemize}
+	\item for SR1s (both SR1\tZu and SR1\tZc), \ttZ and \VVHF;
+	\item for SR2s (both SR2\tZu and SR2\tZc), \VVHF and Standard Model \tZq ;
+	\item for SR3, \ttZ.
+\end{itemize}
+
+\begin{table}[!htbp]
+	\centering
+	\small
+%	\input{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/Tables/Yields_clean.tex}
+	\input{Chapters/CH7/figures/SPLUSB_SRONLY_UsingDL1rc/Tables/Yields_clean.tex}
+	\caption{Event yields in the SRs for the \tZc coupling extraction. \TabErrStatOnly} 
+	\label{tab:sel:yields:tzc}
+\end{table} 
+
 
 \clearpage
 \section{Background estimation}
@@ -72,14 +192,15 @@ of opposite-sign but different-flavour leptons in the
 event. Obviously, no cut on the invariant mass of the opposite-sign
 leptons is applied. Concerning the jet multiplicity, there should be
 at least one jet in the event, of which exactly one should be
-\Pqb-tagged.
+\Pqb-tagged. Kinematic plots are presented in \Cref{app:CRs:tt}.
 
 \paragraph{\ttZ CR selections}
 \label{sec:bkg:ttz}
 The \ttZ CR is defined by requiring the presence of at least four jets
 and of exactly two \Pqb-tagged jets. Also the cut on the transverse
 mass of the \PW boson is softened to \SI{30}{\GeV}. To be orthogonal 
-with SR3, also a veto on the presence of a c-jet is required. 
+with SR3, also a veto on the presence of a \Pqc-jet is required. 
+Kinematic plots are presented in \Cref{app:CRs:ttZ}.
 
 \paragraph{Side-band CR1 selections}
 \label{sec:bkg:sbcr1tzu}
@@ -88,7 +209,8 @@ and of exactly one \Pqb-tagged jet.
 The mass of the FCNC top-quark candidate, \mtopfcnc,
 must be outside $2\sigma^{FCNC}$ from \mtopvalue, the mass of the
 SM top-quark candidate, \mtopsm, must be also outside $2\sigma^{SM}$
-from \mtopvalue.  In addition, a veto on the presence of a c-jet is required. 
+from \mtopvalue.  In addition, a veto on the presence of a \Pqc-jet is required. 
+Kinematic plots are presented in \Cref{app:CRs:SB1}.
 
 \paragraph{Side-band CR2 selections}
 \label{sec:bkg:sbcr2}
@@ -97,24 +219,23 @@ and of exactly one \Pqb-tagged jet.   The transverse mass is calculated using th
 $\mT(\ell_{\PW},\Pgn) = \sqrt{2\pT^{\ell}\MET \left(1-\cos\Delta\phi\right)}$.
 Events are required to have $\mT(\ell_{\PW},\Pgn) > \SI{40}{\GeV}$.\\
 The mass of the SM top-quark candidate, \mtopsm, must be also outside $2\sigma^{SM}$
-from \mtopvalue.\\
+from \mtopvalue. Kinematic plots are presented in \Cref{app:CRs:SB2}.
+
+\subsection{Event yields in the Control Regions}
 Event yields in the CRs are shown in \Cref{tab:bkg:yields:tzc}. 
 As it can be noticed, the signal contribution in the various CRs is small.
+Every Control Region is enriched of the correspondent background. 
 \begin{table}[htbp]
-	\small
-	\caption{Event yields in the CRs for the \tZc coupling extraction. \TabErrStatSys} 
-	\label{tab:bkg:yields:tzc}
+	\footnotesize
 	\centering
 	\input{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/Tables/Yields_clean.tex}
+	\caption{Event yields in the CRs for the \tZc coupling extraction. \TabErrStatSys} 
+	\label{tab:bkg:yields:tzc}
 \end{table} 
 
 \clearpage
 \global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}
 \begin{sidewaystable}[!htbp]
-	\caption{
-		Overview of the requirements applied for selecting events in the control regions.
-	}%
-	\label{tab:bkg:crs}
 	\centering
 	\footnotesize
 	\begin{tabular}{c|c|c|c}
@@ -130,170 +251,19 @@ As it can be noticed, the signal contribution in the various CRs is small.
 		-- & $\mT(\ell_{\PW},\Pgn) > \SI{30}{\GeV}$ & $\mT(\ell_{\PW},\Pgn) > \SI{40}{\GeV}$ & $\mT(\ell_{\PW},\Pgn) > \SI{40}{\GeV}$ \\
 		$\ge$ 1 jet with $|\eta| < $ 2.5  & $\ge$ 4 jet with $|\eta| < $ 2.5 & $\ge$ 2 jet with $|\eta| < $ 2.5  & = 1 jet with $|\eta| < $ 2.5 \\
 		= 1 \Pqb-jet  & = 2 \Pqb-jet  &  = 1 \Pqb-jet & = 1 \Pqb-jet \\
-		-- & -- & = 0 c-jet & --\\ 
+		-- & -- & = 0 \Pqc-jet & --\\ 
 		-- & -- &  $|\mtopfcnc - \mtopvalue| > 2\sigma^{FCNC}$ & -- \\
 		-- & -- & $|\mtopsm - \mtopvalue| > 2\sigma^{SM}$ & $|\mtopsm - \mtopvalue| > 2\sigma^{SM}$ \\
 		\bottomrule
 	\end{tabular}
+	\caption{
+		Overview of the requirements applied for selecting events in the control regions.
+	}%
+	\label{tab:bkg:crs}
 \end{sidewaystable} 
 \clearpage
 \FloatBarrier
-\subsubsection{\ttbar CR}
-%
-\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0} -------------------------------------------------------------------------------
-\Cref{fig:sel:cr:ttbar:leps,fig:sel:cr:ttbar:jets} show the distributions 
-of kinematic variables for events selected in the \ttbar CR region.
-
-\begin{figure}[!htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTCR/lep1_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTCR/lep1_pt} \\
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTCR/lep2_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTCR/lep2_pt} \\
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTCR/lep3_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTCR/lep3_pt} \\
-	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of leptons for events selected in the \ttbar CR.
-		\ErrStatOnly
-	}%
-	\label{fig:sel:cr:ttbar:leps}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/TTCR/nJets} &
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/TTCR/jet_pt} \\
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/TTCR/b_pt} & \includegraphics[width=.35\textwidth]{Chapters/CH7/figures/TTCR/b_eta} \\
-	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of jets for events selected in the \ttbar CR.
-		\ErrStatOnly
-		\NoBDTGCut
-		\Blinded
-	}%
-	\label{fig:sel:cr:ttbar:jets}
-\end{figure}
-
-\clearpage
-\FloatBarrier
-% -------------------------------------------------------------------------------
-\subsubsection{\ttZ CR}
-% -------------------------------------------------------------------------------
-\Cref{fig:sel:cr:ttz:leps,fig:sel:cr:ttz:jets} show the distributions 
-of kinematic variables for events selected in the \ttZ CR region.
-
-\begin{figure}[!htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTZCR/lep1_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTZCR/lep1_pt} \\
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTZCR/lep2_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTZCR/lep2_pt} \\
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTZCR/lep3_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/TTZCR/lep3_pt} \\
-	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of leptons for events selected in the \ttZ CR.
-		\ErrStatOnly
-	}%
-	\label{fig:sel:cr:ttz:leps}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/TTZCR/nJets} &
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/TTZCR/jet_pt} \\
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/TTZCR/b_pt} &
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/TTZCR/b_eta} \\
-	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of jets for events selected in the \ttZ CR.
-		\ErrStatOnly
-		\NoBDTGCut
-		\Blinded
-	}%
-	\label{fig:sel:cr:ttz:jets}
-\end{figure}
-
-\clearpage
-\FloatBarrier
-% -----------------------------------------------------------------------------
-\subsubsection{Side-band CR1}
-% -------------------------------------------------------------------------------
-\Cref{fig:sel:cr:sb1tzc:leps,fig:sel:cr:sb1tzc:jets} show the distributions 
-of kinematic variables for events selected in the side-band CR1 region. 
-
-\begin{figure}[!htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR1/lep1_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR1/lep1_pt} \\
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR1/lep2_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR1/lep2_pt} \\
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR1/lep3_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR1/lep3_pt} \\
-	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of leptons for events selected in the side-band CR1 region.
-		\ErrStatOnly
-	}%
-	\label{fig:sel:cr:sb1tzc:leps}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/SBCR1/nJets}&
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/SBCR1/jet_pt} \\
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/SBCR1/b_pt} &
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/SBCR1/b_eta}\\
-	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of jets for events selected in the side-band CR1 region.
-		\ErrStatOnly
-		\NoBDTGCut
-		\Blinded
-	}%
-	\label{fig:sel:cr:sb1tzc:jets}
-\end{figure}
-
-\clearpage
-\FloatBarrier
-% -------------------------------------------------------------------------------
-\subsubsection{Side-band CR2}
-% -------------------------------------------------------------------------------
-\Cref{fig:sel:cr:sb2:leps,fig:sel:cr:sb2:jets} show the distributions 
-of kinematic variables for events selected in the side-band CR2 region.
-
-\begin{figure}[!htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR2/lep1_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR2/lep1_pt} \\
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR2/lep2_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR2/lep2_pt} \\
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR2/lep3_eta} &
-		\includegraphics[width=.32\textwidth]{Chapters/CH7/figures/SBCR2/lep3_pt} \\
-	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of leptons for events selected in the side-band CR2 region.
-		\ErrStatOnly
-	}%
-	\label{fig:sel:cr:sb2:leps}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/SBCR2/nJets} &
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/SBCR2/jet_pt} \\
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/SBCR2/b_pt} &
-		\includegraphics[width=.35\textwidth]{Chapters/CH7/figures/SBCR2/b_eta} \\
-	\end{tabular}
-	\caption{Pre-fit distributions of kinematic variables of jets for events selected in the side-band CR2 region.
-		\ErrStatOnly
-		\NoBDTGCut
-		\Blinded
-	}%
-	\label{fig:sel:cr:sb2:jets}
-\end{figure}
+\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
 
 
 %\clearpage
