@@ -264,6 +264,64 @@ Every Control Region is enriched of the correspondent background.
 \FloatBarrier
 \global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
 
+\clearpage
+\section{Separation of signal from background events}
+\label{sec:separation_all}
+Three different GBDTs are trained separately in each signal region.
+In this section only the GBDT for SR3\tZc will be presented because directly related to the work of this thesis.\\
+The SR3\tZc is defined targeting the FCNC \tZc coupling in \ttbar decay events using the charm tagger \DLrc, therefore the MVA discriminant for this coupling, \Dthree, is built using the GBDT trained with the FCNC\tZc \ttbar decay events against backgrounds.\\
+The procedure is not different from that described in \Cref{sec:separation} and only the final results will be presented.
+The final set of variables used to train and test the GBDT method on the events in
+SR3\tZc is in \Cref{tab:D3input_dl1rc}, ordered by the separation value.\\
+The five GBDT output scores used to built discriminant variables are compared in~\Cref{fig:separation:GBDT_dl1rc}.\\
+\begin{table}[!htbp]
+	\small
+	\centering
+	\begin{tabular}{ccc}
+		\toprule
+		Variable & $\langle s^{2}\rangle$  & Definition \\
+		\midrule
+		$m_{b\ell\nu}$  &  0.1329  &  SM top-quark candidate mass  \\
+		$\pT^{q}$  &  0.07402  &  $u$/$c$-quark candidate transverse momentum  \\
+		$N_{jets}$  &  0.0575  &  Jet multiplicity  \\
+		$m_{q\ell\ell}$  &  0.04343  &  FCNC top-quark candidate mass  \\
+		$\Delta R(t_{\text{SM}},t_{\text{FCNC}})$  &  0.03822  &  $\Delta R$ between SM and FCNC top-quark candidates  \\
+		$\Delta R(c,Z)$  &  0.0359  &  $\Delta R$ between $c$-quark and $Z$ boson candidates  \\
+		$\Delta R(\ell,Z)$  &  0.02417  &  $\Delta R$ between $W$ boson lepton and $Z$ boson candidates  \\
+		\bottomrule
+	\end{tabular}
+	\caption{ Variables used in the training of the GBDT in SR3\tZc to built the \Dthree discriminant used in \tZc couplings search. Variables are ordered by the separation 	$\langle s^{2}\rangle$ value. }%
+\label{tab:D3input_dl1rc}
+\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\subfigure[]{\includegraphics[width=.47\textwidth]{Chapters/CH7/figures/cveto_bdt/GBDT_signal}\label{subfig:separation:GBDTsig_dl1rc}}\qquad
+	\subfigure[]{\includegraphics[width=.47\textwidth]{Chapters/CH7/figures/cveto_bdt/GBDT_background}\label{subfig:separation:GBDTbkg_dl1rc}}
+	\caption{ The GBDT output score distributions for \subref{subfig:separation:GBDTsig_dl1rc} signal events and \subref{subfig:separation:GBDTbkg_dl1rc} background events, in the test samples. Trained five GBDTs are compared in each signal region. }
+	\label{fig:separation:GBDT_dl1rc}
+\end{figure}
+
+
+%
+%\begin{table}[htbp]
+%	\caption{
+%		Summary of the GBDT discriminant variables with their training regions, signal samples and search coupling.
+%	}%
+%	\label{tab:discriminants}
+%	\centering
+%	\begin{tabular}{cccc}
+%		\toprule
+%		GBDT discriminant & Training Region & Training signal & Search coupling \\
+%		\hline
+%		\Done   & SR1 \tZu & FCNC \tZu and \tZc in \ttbar decays & \tZu, \tZc \\
+%		\DtwoU & SR2 \tZu & FCNC \tZu in \tZ production & \tZu \\
+%		\DtwoC & SR2 \tZu & FCNC \tZc in \ttbar decays and \tZ production & \tZc \\
+%		\Done & SR3 \tZc & FCNC \tZc in \ttbar decays & \tZc \\
+%		\bottomrule
+%	\end{tabular}
+%\end{table}
+
 
 %\clearpage
 %\subsection {Fake composition}
@@ -292,15 +350,4 @@ Every Control Region is enriched of the correspondent background.
 %
 %\clearpage
 %\FloatBarrier
-
-
-\clearpage
-\section{Separation of signal from background events}
-\label{sec:separation_all}
-\clearpage
-\subsection {GBDT discriminant definition}
-\clearpage
-\subsection {Input variables}
-\clearpage
-
 

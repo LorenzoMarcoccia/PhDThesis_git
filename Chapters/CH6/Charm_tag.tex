@@ -261,18 +261,18 @@ The Gradient Boosted Decision Trees (GBDT) method with TMVA software package
 is exploited in this study~\cite{BDTG,TMVA}. The GBDT output score is in the range between -1 and 1.
 The most signal-like events have scores near 1 while the most background-like events have scores near -1. The GBDTs are trained separately in each signal regions as described below.
 The SR3\tZc is defined targeting the FCNC \tZc coupling in \ttbar decay events
-using the soft muon tagging, therefore the MVA discriminant for this coupling, \Dthree,  is built using the GBDT trained with the FCNC \tZc \ttbar decay events against backgrounds.
+using the soft muon tagging, therefore the MVA discriminant for this coupling, \Dthree, is built using the GBDT trained with the FCNC \tZc \ttbar decay events against backgrounds.
 
 \subsection {Input variables}
 A set of variables as the GBDT input is used to train and test the GBDT method on the events in
-each signal region. Those variables are listed in \Cref{tab:D3input}, ordered by the separation value, defined by, as in~\cite{TMVA}:
+SR3\tZc. Those variables are listed in \Cref{tab:D3input}, ordered by the separation value, defined by, as in~\cite{TMVA}:
 \begin{equation*}
 \langle s^{2}\rangle = \frac{1}{2}\int \frac{[p_{s}(y)-p_{b}(y)]^{2}}{p_{s}(y)+p_{b}(y)}dy
 \end{equation*}
 where $p_{s}(y)$ and $p_{b}(y)$ are the signal and background PDFs of the classifier $y$. 
 The separation is 0 (1) for identical (non-overlapping) signal and background shapes.\\
 These sets of input variables are constructed based on separation values, correlations and impact on the BDT performance. The details are documented in Appendix~\ref{app:BDT}.  
-The distributions of input variables in each signal region are presented in~\Cref{fig:separation:SR3}.
+The distributions of input variables in the Signal Region is presented in~\Cref{fig:separation:SR3}.
 
 \begin{table}[!htbp]
 	\small
@@ -343,7 +343,7 @@ and have an optimal performance.
 Overtraining  leads  to  a  seeming  increase  in  the  classification performance  over  the
 objectively  achievable  one,  if  measured  on  the  training  sample,  and  to  an  effective
 performance decrease when measured with an independent test sample.  A convenient way to detect overtraining and to measure its impact is therefore to compare the performance results between training and test samples. \Cref{fig:separation:SR3:ROC} present the Receiver Operating  Characteristic (ROC) curves for each GBDT output score in the signal region, while \Cref{fig:separation:SR3:GBDTbkg} show the GBDT output score distributions for signal and background samples, comparing results between training and test samples.
-No significant overtraining is detected. The GBDT output scores for each of five BDTGs used to
+No significant overtraining is detected. The five GBDT output scores used to
 built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The GBDTs suffer from low background MC statistics, however results seem to be fairly stable within the statistical uncertainties. 
 \\Input variables importance for each GBDT are presented in~\Cref{tab:D3importance}. The importance is evaluated as the total separation gain that this variable had in the decision trees (weighted by the number of events). It is normalized to all variables together, which have an importance of 1.
 \begin{table}[!htbp]
