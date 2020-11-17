@@ -422,11 +422,13 @@ is almost identical to the results of the B-only fit in the CRs
 Normalisation factors (\cref{fig:stat:tzc:splusb:crsr:norm}) and NP
 pulls and constrains 
 (\Cref{fig:stat:tzc:splusb:crsr:np:instr,fig:stat:tzc:splusb:crsr:np:model}) 
-are very similar. 
-The most pulled NPs (e.g. \ttbar FSR, \VVHF 
-normalisation, and \VVHF Berends scaling are
-not among the highest ranked NPs
-(\Cref{fig:stat:tzc:splusb:crsr:ranking}). VERIFICARE \\
+are very similar. \\
+%The most pulled NPs (e.g. \ttbar FSR, \VVHF 
+%normalisation, and \VVHF Berends scaling for events with 1 jet) are
+%not among the highest ranked NPs
+%(\Cref{fig:stat:tzc:splusb:crsr:ranking}). 
+%Slightly pulled NPs (e.g. Other fakes norm. and \ttZ norm.) have a small impact on the signal strength, around 2\%.\\
+None of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 3\%.
 Concerning the correlations between NPs
 (\Cref{fig:stat:tzc:splusb:crsr:corrmatrix}), some strong correlations
 between diboson related NPs are present, as expected. This is also
@@ -474,12 +476,12 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 	\label{fig:stat:tzc:splusb:crsr:pruning}
 \end{figure}
 
-%\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/Ranking}
-%	\caption{Ranking of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
-%	\label{fig:stat:tzc:splusb:crsr:ranking}
-%\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/Ranking}
+	\caption{Ranking of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:ranking}
+\end{figure}
 
 \FloatBarrier
 \clearpage
@@ -558,17 +560,51 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 	\label{fig:stat:tzc:splusb:crsr:crplots:2}
 \end{figure}
 
-
-
-
 \clearpage
 \section{Results}
 \label{sec:stat:tzc}
-\clearpage
-\subsection{Background-only fit in CRs}
-\clearpage
-%\subsection{Signal+Background fit in SR3}
-%\clearpage
-\subsection{Signal+Background fit in SRs+CRs}
-\clearpage
+From the fits described in this chapter, in particular the
+signal+background fits in SRs+CRs with the realistic Asimov datasets in \Cref{sec:stat:tzc:splusb:crsr},
+expected limits on the branching ratios of
+$\Pqt\rightarrow\PZ\Pqc$ are extracted. \\
+In Table \ref{tab:limits:comparison} is also possible to estimate the impact of the \Pqc-tagging using \DLrc or SMT (presented in \Cref{chapter:charm_tag}) on the analysis comparing the results without using none of these techniques (called 'Baseline').\\
+The improvement obtained using SMT is around 2\%, while using \DLrc is around 10\%.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|c}
+		\toprule
+		\multicolumn{3}{c}{Expected limits on BR $\Pqt\rightarrow\PZ\Pqc$ }\\
+		\toprule
+		 \textbf{Baseline [$ \times 10^{-5}$]}          & \textbf{Using SMT [$ \times 10^{-5}$]}			& \textbf{Using \DLrc} \\
+		 \midrule
+		 $10.67 $ 	& $ 10.43 $   & $  9.55 $\\
+		\bottomrule
+	\end{tabular}
+	\caption{ Expected limits on the branching ratios of $\Pqt\rightarrow\PZ\Pqc$. 
+					Results using \DLrc, SMT and none of them are reported to estimate the impact of these techniques on the analysis.  }%
+	\label{tab:limits:comparison}
+\end{table}
+\\The expected limits, together
+with statistical only limits and the expected limits from the previous ATLAS
+analysis~\cite{TOPQ-2017-06}, are reported in
+\cref{tab:results:limits}.\\
+The overall impact of systematics on the expected limit is 22\%.\\
+The limit from the previous analysis is improved by a factor of 2.3 for the \tZc coupling.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{lccc}
+		\toprule
+		\textbf{Limits} & \textbf{$-1\sigma$} & \textbf{Expected} & \textbf{$+1\sigma$} \\
+		\midrule
+		BR $\Pqt\rightarrow\PZ\Pqc$ \cite{TOPQ-2017-06} & \SI{2.2e-4}{} & \SI{3.2e-4}{} & \SI{4.6e-4}{} \\
+		BR $\Pqt\rightarrow\PZ\Pqc$  (stat. only)                 & \SI{5.3e-5}{} & \SI{7.4e-5}{} & \SI{10.5e-5}{} \\
+		BR $\Pqt\rightarrow\PZ\Pqc$                                    & \SI{6.9e-5}{} & \SI{9.6e-5}{} & \SI{13.8e-5}{} \\		
+		\bottomrule
+	\end{tabular}
+	\caption{
+	Expected limits on the branching ratios of $\Pqt\rightarrow\PZ\Pqc$.
+	Expected limit from \cite{TOPQ-2017-06} is also included for reference.
+}%
+\label{tab:results:limits}
+\end{table}
 
