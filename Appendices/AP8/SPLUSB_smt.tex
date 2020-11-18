@@ -1,0 +1,197 @@
+  % this file is called up by thesis.tex
+% content in this file will be fed into the main document
+% ----------------------- name of chapter  -------------------------
+\newgeometry{top=-0.9cm, left=1.2cm, right=1.5cm, bottom=1.45cm}
+\chapter{Signal + Background fit in SRs+CRs using SMT}
+\label{app:stat_smt:tzc:splusb:crsr}
+% ----------------------- paths to graphics ------------------------
+
+% change according to folder and file names
+\ifpdf
+\graphicspath{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys}
+\else
+\graphicspath{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys}
+\fi
+\vspace{-1cm}
+To extract the expected sensitivity, an SRs+CRs S+B fit is performed. 
+Real data in used in CRs while in SRs an Asimov dataset is used,
+constructed using the background normalisations as done in Appendix \ref{app:stat:tzc:bonly:cr} for the selection using \DLrc.\\
+A summary of plots and tables shown in this section are the following:
+\begin{itemize}
+	\item The value of the post-fit normalisation parameters of the free floating background is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:norm}.
+	\item The pull distributions of the all nuisance parameters can be seen in \Cref{fig:stat_smt:tzc:splusb:crsr:np:instr,fig:stat_smt:tzc:splusb:crsr:np:model} and \Cref{fig:stat_smt:tzc:splusb:crsr:gamma}. 
+	\item The correlation matrix of the nuisance parameters is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:corrmatrix}. 
+	\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:pruning}.
+	\item The ranking of the nuisance parameters is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:ranking}. 
+	%Red and blue plots for the top five ranked NPs are shown in a
+	%dedicated appendix (\Cref{sec:app:fit:redblue:tzc:splusb:crsr}).\\
+	\item Event yields pre- and post-fit are shown in \Cref{tab:stat_smt:tzc:splusb:crsr:yields:prefit,tab:stat_smt:tzc:splusb:crsr:yields:postfit}. 
+	\item Pre-fit and post-fit distributions of the fitted distributions in the various regions are shown in \Cref{fig:stat_smt:tzc:splusb:crsr:srplots:1,fig:stat_smt:tzc:splusb:crsr:srplots:2,fig:stat_smt:tzc:splusb:crsr:crplots:1,fig:stat_smt:tzc:splusb:crsr:crplots:2}.
+	\item Expected limits on the branching ratios of $\Pqt\rightarrow\PZ\Pqc$ shown in \Cref{tab:results:limits_smt}.
+\end{itemize}
+Normalisation factors (\cref{fig:stat_smt:tzc:splusb:crsr:norm}) and NP
+pulls and constrains 
+(\Cref{fig:stat_smt:tzc:splusb:crsr:np:instr,fig:stat_smt:tzc:splusb:crsr:np:model}) 
+are very similar. 
+%The most pulled NPs (e.g. \ttbar FSR, \VVHF 
+%normalisation, and \VVHF Berends scaling for events with 1 jet) are
+%not among the highest ranked NPs
+%(\Cref{fig:stat_smt:tzc:splusb:crsr:ranking}). 
+%Slightly pulled NPs (e.g. Other fakes norm. and \ttZ norm.) have a small impact on the signal strength, around 2\%.\\
+None of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 4\%.
+Concerning the correlations between NPs
+(\Cref{fig:stat_smt:tzc:splusb:crsr:corrmatrix}), some strong correlations
+between diboson related NPs are present, as expected. This is also
+true for the \ttbar normalisation and some \ttbar modeling NPs. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.42\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/NormFactors}
+	\caption{Normalisation factors for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat_smt:tzc:splusb:crsr:norm}
+\end{figure}
+\restoregeometry
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.8\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/NuisPar_Instrumental}
+	\caption{Pulls and constraints of the instrumental nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat_smt:tzc:splusb:crsr:np:instr}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.85\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/NuisPar_Theoretical_&_Modelling}
+	\caption{Pulls and constraints of the theoretical and modeling nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat_smt:tzc:splusb:crsr:np:model}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.85\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Gammas}
+	\caption{Gamma parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat_smt:tzc:splusb:crsr:gamma}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.95\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/CorrMatrix}
+	\caption{Correlation matrix of the nuisance paramenters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat_smt:tzc:splusb:crsr:corrmatrix}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.85\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Pruning}
+	\caption{Pruning of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat_smt:tzc:splusb:crsr:pruning}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.9\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Ranking}
+	\caption{Ranking of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat_smt:tzc:splusb:crsr:ranking}
+\end{figure}
+
+\FloatBarrier
+\clearpage
+%\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}
+\begin{table}[]
+	\centering
+	\tiny
+	\input{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Tables/Yields_clean}
+	\caption{Pre-fit event yields in the S+B \tZc fit in SRs+CRs with realistic Asimov. \TabErrStatSys} 
+	\label{tab:stat_smt:tzc:splusb:crsr:yields:prefit}
+\end{table} 
+
+\begin{table}[]
+	\centering
+	\tiny
+	\input{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Tables/Yields_postFit}
+	\caption{Post-fit event yields in the S+B \tZc fit in SRs+CRs with realistic Asimov. \TabErrStatSys} 
+	\label{tab:stat_smt:tzc:splusb:crsr:yields:postfit}
+\end{table} 
+\clearpage
+\FloatBarrier
+%\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
+
+\clearpage
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SR1} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SR1_postFit} \\
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SR2} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SR2_postFit} \\
+	\end{tabular}
+	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in SR1 and SR2 for the S+B \tZc fit in SRs+CRs with realistic Asimov.
+		\ErrStatSys
+	}%
+	\label{fig:stat_smt:tzc:splusb:crsr:srplots:1}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SR3} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SR3_postFit} \\
+	\end{tabular}
+	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in SR3 for the S+B \tZc fit in SRs+CRs with realistic Asimov.
+		\ErrStatSys
+	}%
+	\label{fig:stat_smt:tzc:splusb:crsr:srplots:2}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SBCR1} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SBCR1_postFit} \\
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SBCR2} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/SBCR2_postFit} \\
+	\end{tabular}
+	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in the side-band CRs for the S+B \tZc fit in SRs+CRs with realistic Asimov.
+		\ErrStatSys
+	}%
+	\label{fig:stat_smt:tzc:splusb:crsr:crplots:1}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/TTCR} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/TTCR_postFit} \\
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/TTZCR} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Plots/TTZCR_postFit} \\
+	\end{tabular}
+	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in the \ttbar and \ttZ CRs for the S+B \tZc fit in SRs+CRs with realistic Asimov.
+		\ErrStatSys
+	}%
+	\label{fig:stat_smt:tzc:splusb:crsr:crplots:2}
+\end{figure}
+
+\FloatBarrier
+The expected limits, together
+with statistical only limits and the expected limits from the previous ATLAS
+analysis~\cite{TOPQ-2017-06}, are reported in \Cref{tab:results:limits_smt}.\\
+The overall impact of systematics on the expected limit is 24\%.\\
+The limit from the previous analysis is improved by a factor of 3.1 for the \tZc coupling.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{lccc}
+		\toprule
+		\textbf{Limits} & \textbf{$-1\sigma$} & \textbf{Expected} & \textbf{$+1\sigma$} \\
+		\midrule
+		BR $\Pqt\rightarrow\PZ\Pqc$ \cite{TOPQ-2017-06} & \SI{2.2e-4}{} & \SI{3.2e-4}{} & \SI{4.6e-4}{} \\
+		BR $\Pqt\rightarrow\PZ\Pqc$  (stat. only)                 & \SI{5.7e-5}{} & \SI{7.9e-5}{} & \SI{10.9e-5}{} \\
+		BR $\Pqt\rightarrow\PZ\Pqc$                                    & \SI{7.4e-5}{} & \SI{10.4e-5}{} & \SI{14.8e-5}{} \\		 % SMT limits minus =7.44e-05, expected=10.32, plus=14.78
+		\bottomrule
+	\end{tabular}
+	\caption{
+		Expected limits on the branching ratios of $\Pqt\rightarrow\PZ\Pqc$ using SMT.
+		Expected limit from \cite{TOPQ-2017-06} is also included for reference.
+	}%
+	\label{tab:results:limits_smt}
+\end{table}
+
