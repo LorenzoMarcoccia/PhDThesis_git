@@ -148,7 +148,7 @@ different generators and varying parameters for the event generation.
 	A scale uncertainty systematic is also included, following the
 	latest prescriptions. In particular, the $\mu_r$ and $\mu_f$
 	variations are included and the envelope of the variations is added 
-	(called \textit{\ttZ $\mu_r$ and $\mu_f$}).
+	(called \textit{\ttZ $\mu_r$} and \textit{$\mu_f$}).
 	Additionally, the effects of QCD radiation for this
 	sample are also taken into account through samples for different A14
 	tune variations (called \textit{\ttZ QCD}).\\
@@ -166,13 +166,13 @@ different generators and varying parameters for the event generation.
 	investigated and the difference between \Sherpa and \PowhegBox
 	prediction is included as diboson generator uncertainty. This
 	uncertainty is split into two components: light- and heavy-flavour
-	(called \textit{\VVLF Generator} and \textit{\VVHF Generator}). \\
+	(called \textit{\VVLF Generator} and \textit{\VVHF Generator}) using truth information. \\
 	An uncertainty depending on the jet multiplicity is also included for
 	the diboson samples with the separation by light- and heavy-flavour as
 	well. Therefore, an uncertainty of \SI{25}{\%} 
 	(called \textit{\VVLF N Jet} and similarly for \VVHF) is added in quadrature
 	per jet in each jet multiplicity resulting into 
-	5 NP (= 1, = 2, = 3, = 4, $\geq$ 5 jets). \\ 
+	5 NP (= 1, = 2, = 3, = 4, $\geq$ 5 jets). This uncertainty is also known as \textit{Berends scaling} \\ 
 	\item \textbf{MC statistics} \\ 
 	The uncertainty due to the limited size of the MC samples is also included.
 \end{itemize}
@@ -184,20 +184,27 @@ The uncertainties used on the background rate uncertainties are summarised in
 \cref{tab:syst-crosssections}.
 \begin{itemize}
 	\item \textbf{\ttbar} \\
-	For the $t\bar{t}$ process, an uncertainty of \SI{5.5}{\%} on the normalisation is applied. Since this is one of the main backgrounds of this analysis, a normalisation factor for this background is added to the fit as a free-floating parameter.\\
+	For the $t\bar{t}$ process, an uncertainty of \SI{5.5}{\%} on the normalisation is applied. Since this is one of the main backgrounds of this analysis, a normalisation factor for this background is added to the fit as a free-floating parameter.
 	\item \textbf{\ttV} \\
-	For $t\bar{t}Z$ and $t\bar{t}W$ backgrounds, the uncertainty on the normalisation is taken from~\cite{ATL-COM-PHYS-2018-140}, where a \SI{12}{\%} theory uncertainty is quoted.\\
+	For $t\bar{t}Z$ and $t\bar{t}W$ backgrounds, the uncertainty on the normalisation is taken from~\cite{ATL-COM-PHYS-2018-140}, where a \SI{12}{\%} theory uncertainty is quoted.
 	\item \textbf{\tWZ} \\
-	For the $tWZ$ background, an uncertainty of \SI{30}{\%} is applied on the normalisation.\\
+	For the $tWZ$ background, an uncertainty of \SI{30}{\%} is applied on the normalisation.
 	\item \textbf{\tZq} \\
-	For the $tZq$ process, an uncertainty of \SI{14}{\%} on the normalisation is applied in agreement with the recent results from the $tZq$ observation.\\
+	For the $tZq$ process, an uncertainty of \SI{14}{\%} on the normalisation is applied in agreement with the recent results from the $tZq$ observation.
 	\item \textbf{Diboson} \\
-	For diboson background, the normalization uncertainty is taken from ATLAS results~\cite{STDM-2018-03}. The uncertainties applied are \SI{20}{\%} for the light diboson component and \SI{30}{\%} for the heavy diboson component. On top of that, modelling uncertainties are also used in the fit.\\
+	For diboson background, the normalization uncertainty is taken from ATLAS results~\cite{STDM-2018-03}. The uncertainties applied are \SI{20}{\%} for the light diboson component and \SI{30}{\%} for the heavy diboson component. On top of that, modelling uncertainties are also used in the fit.
 	\item \textbf{\Zjets} \\
-	Concerning the \Zjets processes, an uncertainty on the normalisation is applied with a value of \SI{100}{\%} allowing the constraint of this value by the fit.\\
+	Concerning the \Zjets processes, an uncertainty on the normalisation is applied with a value of \SI{100}{\%} allowing the constraint of this value by the fit.
+	\item \textbf{\ttH} \\
+	Normalisation uncertainty of \SI{15}{\%} is applied on the \ttH background. 
+	\item \textbf{Other background processes} 
+	A conservative overall normalization uncertainty of \SI{50}{\%} is applied
+	on the remaining minor backgrounds (\ttt,\tttt,\VVV,\VH and \ttWW). 
+	These background components are typically well below of \SI{1}{\%} in the SRs.
 \end{itemize}
 
 \begin{table}[t]
+	\small
 	\centering
 	\begin{tabular}{l c }
 		\toprule
@@ -210,6 +217,8 @@ The uncertainties used on the background rate uncertainties are summarised in
 		\VVLF & \SI{20}{\%} \\
 		\VVHF & \SI{30}{\%} \\
 		\Zjets & \SI{100}{\%} \\
+		 \ttH    & \SI{15}{\%} \\
+		Other (\ttt,\tttt,\VVV,\VH and \ttWW) & \SI{50}{\%} \\		
 		\bottomrule
 	\end{tabular}
 	\caption{Uncertainties on the normalisation of all background processes.}
@@ -407,9 +416,9 @@ constructed using the background normalisations found in Appendix \ref{app:stat:
 A summary of plots and tables shown in this section are the following:
 \begin{itemize}
 \item The value of the post-fit normalisation parameters of the free floating background is shown in \Cref{fig:stat:tzc:splusb:crsr:norm}.
+\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \cref{fig:stat:tzc:splusb:crsr:pruning}.
 \item The pull distributions of the all nuisance parameters can be seen in \Cref{fig:stat:tzc:splusb:crsr:np:instr,fig:stat:tzc:splusb:crsr:np:model} and \Cref{fig:stat:tzc:splusb:crsr:gamma}. 
 \item The correlation matrix of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:corrmatrix}. 
-\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \cref{fig:stat:tzc:splusb:crsr:pruning}.
 \item The ranking of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:ranking}. 
 %Red and blue plots for the top five ranked NPs are shown in a
 %dedicated appendix (\Cref{sec:app:fit:redblue:tzc:splusb:crsr}).
@@ -428,7 +437,7 @@ are very similar. \\
 %not among the highest ranked NPs
 %(\Cref{fig:stat:tzc:splusb:crsr:ranking}). 
 %Slightly pulled NPs (e.g. Other fakes norm. and \ttZ norm.) have a small impact on the signal strength, around 2\%.\\
-None of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 3\%.
+None of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 3\% as can be seen in \Cref{fig:stat:tzc:splusb:crsr:ranking}.\\
 Concerning the correlations between NPs
 (\Cref{fig:stat:tzc:splusb:crsr:corrmatrix}), some strong correlations
 between diboson related NPs are present, as expected. This is also
@@ -439,6 +448,13 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 	\includegraphics[width=.6\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/NormFactors}
 	\caption{Normalisation factors for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
 	\label{fig:stat:tzc:splusb:crsr:norm}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/Pruning}
+	\caption{Pruning of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -467,13 +483,6 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 	\includegraphics[width=.95\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/CorrMatrix}
 	\caption{Correlation matrix of the nuisance paramenters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
 	\label{fig:stat:tzc:splusb:crsr:corrmatrix}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/Pruning}
-	\caption{Pruning of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
-	\label{fig:stat:tzc:splusb:crsr:pruning}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -567,7 +576,7 @@ From the fits described in this chapter, in particular the
 signal+background fits in SRs+CRs with the realistic Asimov datasets in \Cref{sec:stat:tzc:splusb:crsr},
 expected limits on the branching ratios of
 $\Pqt\rightarrow\PZ\Pqc$ are extracted. \\
-In Table \ref{tab:limits:comparison} is also possible to estimate the impact of the \Pqc-tagging using \DLrc or SMT (presented in \Cref{app:stat_smt:tzc:splusb:crsr}) on the analysis comparing the results without using none of these techniques (called 'Baseline').\\
+In Table \ref{tab:limits:comparison} is possible to estimate the impact of the \Pqc-tagging using \DLrc or SMT (presented in \Cref{app:stat_smt:tzc:splusb:crsr}) on the analysis comparing the results without using none of these techniques (called 'Baseline').\\
 The improvement obtained using SMT is around 2\%, while using \DLrc is around 10\%.
 \begin{table}[htbp]
 	\centering
@@ -607,4 +616,9 @@ The limit from the previous analysis is improved by a factor of 3.3 for the \tZc
 }%
 \label{tab:results:limits}
 \end{table}
+%WITH CALIBRATION
+%root -l -q -b macros/getBR.C\(0.00024,0.299678\) 7.1910630e-05
+%root -l -q -b macros/getBR.C\(0.00024,0.415899\) 9.9801765e-05
+%root -l -q -b macros/getBR.C\(0.00024,0.603668\) 0.00014486654
+% 6% improvement using dl1r wrt baseline
 

@@ -19,9 +19,9 @@ constructed using the background normalisations as done in Appendix \ref{app:sta
 A summary of plots and tables shown in this section are the following:
 \begin{itemize}
 	\item The value of the post-fit normalisation parameters of the free floating background is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:norm}.
+	\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:pruning}.
 	\item The pull distributions of the all nuisance parameters can be seen in \Cref{fig:stat_smt:tzc:splusb:crsr:np:instr,fig:stat_smt:tzc:splusb:crsr:np:model} and \Cref{fig:stat_smt:tzc:splusb:crsr:gamma}. 
 	\item The correlation matrix of the nuisance parameters is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:corrmatrix}. 
-	\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:pruning}.
 	\item The ranking of the nuisance parameters is shown in \Cref{fig:stat_smt:tzc:splusb:crsr:ranking}. 
 	%Red and blue plots for the top five ranked NPs are shown in a
 	%dedicated appendix (\Cref{sec:app:fit:redblue:tzc:splusb:crsr}).\\
@@ -54,6 +54,13 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 
 \begin{figure}[htbp]
 	\centering
+	\includegraphics[width=.85\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Pruning}
+	\caption{Pruning of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat_smt:tzc:splusb:crsr:pruning}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
 	\includegraphics[width=.8\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/NuisPar_Instrumental}
 	\caption{Pulls and constraints of the instrumental nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
 	\label{fig:stat_smt:tzc:splusb:crsr:np:instr}
@@ -78,13 +85,6 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 	\includegraphics[width=.95\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/CorrMatrix}
 	\caption{Correlation matrix of the nuisance paramenters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
 	\label{fig:stat_smt:tzc:splusb:crsr:corrmatrix}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.85\textwidth]{Appendices/AP8/figures/SPLUSB_CRSR_UsingSMTFullSys/Pruning}
-	\caption{Pruning of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
-	\label{fig:stat_smt:tzc:splusb:crsr:pruning}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -172,7 +172,7 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 \end{figure}
 
 \FloatBarrier
-The expected limits, together
+\noindent The expected limits, together
 with statistical only limits and the expected limits from the previous ATLAS
 analysis~\cite{TOPQ-2017-06}, are reported in \Cref{tab:results:limits_smt}.\\
 The overall impact of systematics on the expected limit is 24\%.\\

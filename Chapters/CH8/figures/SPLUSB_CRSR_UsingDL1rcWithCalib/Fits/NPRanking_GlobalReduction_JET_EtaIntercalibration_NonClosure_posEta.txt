@@ -1,0 +1,1 @@
+GlobalReduction_JET_EtaIntercalibration_NonClosure_posEta   0.0102935 +0.99321 -0.99321  7.57722e-06   -5.40408e-06  7.63648e-06   -5.43347e-06 

@@ -1,7 +1,7 @@
   % this file is called up by thesis.tex
 % content in this file will be fed into the main document
 % ----------------------- name of chapter  -------------------------
-\newgeometry{top=0.2cm, left=1.2cm, right=1.5cm, bottom=1.45cm}
+\newgeometry{top=-0.1cm, left=1.2cm, right=1.5cm, bottom=1.45cm}
 \chapter{Background only fit in CRs}
 \label{app:stat:tzc:bonly:cr}
 % ----------------------- paths to graphics ------------------------
@@ -21,16 +21,16 @@ A summary of plots shown in the following:
 \begin{itemize}
 \item The value of the post-fit normalisation parameters of the free
 floating background is shown in \cref{fig:stat:tzc:bonly:cr:norm}.
-\item The pull distributions of the all nuisance parameters can be seen in
-\Cref{fig:stat:tzc:bonly:cr:np:instr,fig:stat:tzc:bonly:cr:np:model} and \Cref{fig:stat:tzc:bonly:cr:gamma}. 
 \item The list of the systematic shapes that are dropped from the fit for
 each sample and for each region is shown in \Cref{fig:stat:tzc:bonly:cr:pruning}.
+\item The pull distributions of the all nuisance parameters can be seen in
+\Cref{fig:stat:tzc:bonly:cr:np:instr,fig:stat:tzc:bonly:cr:np:model} and \Cref{fig:stat:tzc:bonly:cr:gamma}. 
 \item Event yields pre- and post-fit are shown in \Cref{tab:stat:tzc:bonly:cr:yields:prefit,tab:stat:tzc:bonly:cr:yields:postfit}. 
 \item Pre-fit and post-fit distributions of the fitted distributions in the
 various regions are shown in \Cref{fig:stat:tzc:bonly:cr:crplots:1,fig:stat:tzc:bonly:cr:crplots:2}.
 \end{itemize}
 As shown in \cref{fig:stat:tzc:bonly:cr:norm}, the \ttbar scale factor
-is \SI{0.93\pm0.25}{}, compatible with unity. Also, the \VVHF
+is \SI{0.93\pm0.25}{}, compatible with unity. The pull distributions show that the \VVHF
 normalisation is pulled up (\cref{fig:stat:tzc:bonly:cr:np:model}), 
 driven by the prediction being lower than data in the side-band CRs
 (\cref{tab:stat:tzc:bonly:cr:yields:prefit,tab:stat:tzc:bonly:cr:yields:postfit}).  
@@ -46,15 +46,22 @@ prediction, as it can be seen in the post-fit event yields
 of the fitted variables in the CRs
 (\cref{fig:stat:tzc:bonly:cr:crplots:1,fig:stat:tzc:bonly:cr:crplots:2}). 
 
-
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=.6\textwidth]{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/NormFactors}
+	\includegraphics[width=.56\textwidth]{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/NormFactors}
 	\caption{Normalisation factors for the B-only \tZc fit in CRs.}%
 	\label{fig:stat:tzc:bonly:cr:norm}
 \end{figure}
 
 \restoregeometry
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.65\textwidth]{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/Pruning}
+	\caption{Pruning of the nuisance parameters for the B-only \tZc fit in CRs.}%
+	\label{fig:stat:tzc:bonly:cr:pruning}
+\end{figure}
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.8\textwidth]{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/NuisPar_Instrumental}
@@ -74,13 +81,6 @@ of the fitted variables in the CRs
 	\includegraphics[width=.85\textwidth]{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/Gammas}
 	\caption{Gamma parameters for the B-only \tZc fit in CRs.}%
 	\label{fig:stat:tzc:bonly:cr:gamma}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.65\textwidth]{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/Pruning}
-	\caption{Pruning of the nuisance parameters for the B-only \tZc fit in CRs.}%
-	\label{fig:stat:tzc:bonly:cr:pruning}
 \end{figure}
 
 \FloatBarrier
