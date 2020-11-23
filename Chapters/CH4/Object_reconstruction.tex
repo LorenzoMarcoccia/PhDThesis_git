@@ -5,9 +5,9 @@
 % ----------------------- introduction file header -----------------------
 \chapter{Data modeling and object reconstruction} 
 \label{chapter:object_reco}
-Monte Carlo event generators are the indispensable workhorses of particle physics, bridging the gap between theoretical ideas and first-principles calculations on the one hand, and the complex detector signatures and data of the experimental community on the other hand.
+Monte Carlo event generators are the indispensable workhorses of particle physics, bridging the gap between theoretical ideas and first-principles calculations on the one hand, and the complex detector signatures on the other hand.
 In fact, they are mainly used to predict event rates and topologies, simulate possible backgrounds, study detector requirements and study detector imperfections.\\
-The same reconstruction algorithms used to reconstruct data are also applied to all MC samples.
+The same reconstruction algorithms are used to reconstruct data and all MC samples.
 
 % ----------------------- paths to graphics ------------------------
 
@@ -18,17 +18,17 @@ The same reconstruction algorithms used to reconstruct data are also applied to 
 % ----------------------- introduction content -------------------------
 % ----------------------------------------------------------------------
 \section{Event simulation}
-To understand what the final state of any given physics process will look like,
+To understand what the final state of any given physics process looks like,
 \textit{Monte Carlo simulation} (MC) is used to model both the initial and final state of the 
 process of interest, as well as the propagation of particles through the detector. \\
-A typical MC simulated $p-p$ collision can be schematized as in Figure~\ref{fig:MC}.\\
-\begin{figure}[!h]
+A typical MC simulated $p-p$ collision can be schematized as in Figure~\ref{fig:MC}.
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Chapters/CH4/figures/MC}
 	\caption{Typical Monte Carlo simulated event with representation of several processes: underlying event, hard scattering, parton shower, hadronisation and decay.}
 	\label{fig:MC}
 \end{figure}
-\noindent The first step of an event simulation is represented by the extraction of initial-state partons and the evaluation of their momenta using the proton PDFs.\\
+\\ The first step of an event simulation is represented by the extraction of initial-state partons and the evaluation of their momenta using the proton PDFs.\\
 Fixed order matrix element (ME) are used to determine the cross section for the hard scatter 
 integrated over the phase space of the final state particles and it also predicts their momenta.\\
 The particles produced by the hard scatter then undergo a process of \textit{parton showering} 
@@ -40,18 +40,18 @@ As well as the original hard scatter, additional interactions between other part
 proton must be included in a process known as \textit{underlying event}.
 \newpage
 \noindent Finally, \textit{pile-up} collisions also overlaid, which originate from collisions of other
-protons in the beam.\\
-For hadronisation, two main models exist, the string model~\cite{string} and the cluster 
-model~\cite{cluster}. In the \texttt{PYTHIA} event generator~\cite{pythia} the string model is used 
+protons in the beam.
+For hadronisation, two main models exist: the string model~\cite{string} and the cluster 
+model~\cite{cluster}.\\ In the \texttt{PYTHIA} event generator~\cite{pythia} the string model is used 
 whereas the \texttt{HERWIG} event generator~\cite{herwig} uses the cluster model. The 
 differences in performance of these models can be used to assess the uncertainty due to the 
 model chosen.\\
 The output of the MC event generation process is used as an input to a simulation of the
 ATLAS detector. This simulation describes all of the detector material and geometry, as
 well as any defects in the material or electrical problems. The simulation is built using the
-\texttt{GEANT4}~\cite{geant}. simulation software.\\
+\texttt{GEANT4}~\cite{geant}. simulation software.
 The output of the detector simulation is reconstructed in the exact same way as data to allow the 
-two to be compared directly.\\
+two to be compared directly.
 The simulation of the passage of particles through the detector is very computationally expensive.
 This is mainly due to simulation of the calorimeters because it is extremely time consuming
 to simulate the particle showers. To speed this up, an approximate simulation, 
@@ -59,7 +59,7 @@ to simulate the particle showers. To speed this up, an approximate simulation,
 particle showers in the calorimeters using parameterised functions applied to particle energy, 
 rather than carrying out the full shower simulation.
 
-
+\newpage
 \section{Object reconstruction}
 This section describes the main reconstruction and identification criteria applied for each physics
 objects considered in this analysis (electrons, muons, jets, $b$-tagged jets and missing transverse momentum). \\
