@@ -277,14 +277,16 @@ normalisation and shape, respectively.
 \label{sec:stat:strategy}
 
 In order to extract the \tZc couplings, a binned maximum
-likelihood fit is performed using the MC templates for both signal and
-background predictions.\\
+likelihood $L(\mu,\theta)$ fit is performed using the MC templates for both signal and
+background predictions.The $L(\mu,\theta)$ is constructed as a product of Poisson
+probability terms over all bins in each considered distribution, and Gaussian constraint terms
+for $\theta$, a set of nuisance parameters that parametrize effects of systematic uncertainties on the signal and background expectations.\\
 The software framework used for performing the fit is \texttt{TRExFitter}~\cite{TRexfitter}.
 This combines the functionalities of
 \texttt{RooFit}~\cite{Verkerke:2003ir} and
 \texttt{RooStats}~\cite{Moneta:2010pm} and is designed to build
 probability density functions that are automatically fit to data and
-interpreted with statistical tests.\\
+interpreted with statistical tests.
 The likelihood function comprises histogram bins from both SRs and
 CRs.
 
@@ -445,7 +447,7 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.6\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/NormFactors}
+	\includegraphics[width=.5\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/NormFactors}
 	\caption{Normalisation factors for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
 	\label{fig:stat:tzc:splusb:crsr:norm}
 \end{figure}
@@ -572,11 +574,11 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 \clearpage
 \section{Results}
 \label{sec:stat:tzc}
-From the fits described in this chapter, in particular the
+From the likelihood fits described in this chapter, namely the
 signal+background fits in SRs+CRs with the realistic Asimov datasets in \Cref{sec:stat:tzc:splusb:crsr},
-expected limits on the branching ratios of
-$\Pqt\rightarrow\PZ\Pqc$ are extracted. \\
-In Table \ref{tab:limits:comparison} is possible to estimate the impact of the \Pqc-tagging using \DLrc or SMT (presented in \Cref{app:stat_smt:tzc:splusb:crsr}) on the analysis comparing the results without using none of these techniques (called 'Baseline').\\
+expected upper limits can be extracted. In the absence of
+FCNC signal, upper limit can be computed with the CLs method~\cite{Junk:1999kv,Read:2002hq} with the expected 95\% confidence level (CL) limit on the branching ratio BR($\Pqt\rightarrow\PZ\Pqc$).\\ 
+In Table \ref{tab:limits:comparison} is possible to estimate the impact of the \Pqc-tagging using \DLrc or SMT (presented in \Cref{app:stat_smt:tzc:splusb:crsr}) on the analysis comparing the results without using none of these techniques (called 'Baseline').
 The improvement obtained using SMT is around 2\%, while using \DLrc is around 10\%.
 \begin{table}[htbp]
 	\centering
@@ -611,8 +613,8 @@ The limit from the previous analysis is improved by a factor of 3.3 for the \tZc
 		\bottomrule
 	\end{tabular}
 	\caption{
-	Expected limits on the branching ratios of $\Pqt\rightarrow\PZ\Pqc$.
-	Expected limit from \cite{TOPQ-2017-06} is also included for reference.
+	Expected upper limits on the branching ratios of $\Pqt\rightarrow\PZ\Pqc$.
+	Expected upper limit from \cite{TOPQ-2017-06} is also included for reference.
 }%
 \label{tab:results:limits}
 \end{table}
