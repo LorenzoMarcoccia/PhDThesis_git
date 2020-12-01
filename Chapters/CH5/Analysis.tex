@@ -4,14 +4,13 @@
 
 % ----------------------- introduction file header -----------------------
 %\chapter{Search for the FCNC decay \pmb{$t\rightarrow c + Z$}}
-\chapter{Search for the FCNC decay of top-quark in \Pqc-quark and Z boson}
+\chapter{Search for FCNC top quark decay $t\rightarrow cZ$}
 \label{chapter:analysis}
-This chapter presents a search for the Flavor-Changing-Neutral-Current decay of top-quark 
-in \Pqc-quark and Z boson, denoted FCNC \tZc.	\\ 
-The study uses a data sample of proton--proton collisions at 
-$\sqrt{s}$=\SI{13}{\TeV} recorded in full Run2 (since 2015 to 2018) by the ATLAS experiment, and targets final states with three
+This chapter presents a search for flavour-changing neutral current top-quark decay $t\rightarrow cZ$.\\ 
+The study uses a data sample from proton--proton collisions at 
+$\sqrt{s}$ = \SI{13}{\TeV} recorded in full Run2 (from 2015 to 2018) by the ATLAS experiment, and targets final states with three
 leptons (either electrons or muons).\\
-I took in charge most of the analysis, from the event selection up to the final results.\\
+I took in charge of most of the analysis, from the event selection up to the extraction of the final results.\\
 
 % ----------------------- paths to graphics ------------------------
 
@@ -24,9 +23,9 @@ I took in charge most of the analysis, from the event selection up to the final 
 
 \section{Physics motivation}
 The heaviest particle in the Standard Model (SM), the top quark, decays almost exclusively to a \PW-boson and a bottom quark~\cite{pdg2}. In proton--proton ($pp$) collisions, top quarks are produced dominantly in pairs, via the strong interaction, but also singly, via the electroweak interaction. \\%involving a $Wtb$ vertex. %Therefore single-top quark production provides a powerful probe of the electroweak couplings of the top quark. 
-Within the SM, flavour changing neutral currents (FCNC) processes are forbidden at tree level due to the Glashow-Iliopoulos-Maiani mechanism \cite{gim} (see Section~\ref{sec:gim}) and the approximate diagonality of the Cabibbo-Kobayashi-Maskawa matrix~\cite{pdg2} causes the suppression of such processes at higher orders (see Section~\ref{sec:ckm}).\\
-Nonetheless, there are several scenarios beyond the Standard Model (BSM) that can significantly enhance the FCNC processes in the top quark sector, opening a door for its detection at the Large Hadron Collider (LHC)~\cite{aguilar,barger,h2dm_limit,mssm_limit,RPV_limit, extra_limit} and some of them are already discussed in Section~\ref{sec:bsm}. \\
-The analysis presented in the following searches for FCNC \tZc processes. A comparison between SM and BSM models predictions for the branching ratios of top quark decays to an up or a charm quark and a \PZ boson is shown in Table \ref{tab:intro-fcnc-br-th}.\\
+Within the SM, "flavour-changing neutral-current" (FCNC) processes are forbidden at tree level due to the Glashow-Iliopoulos-Maiani mechanism \cite{gim} (see Section~\ref{sec:gim}) and the approximate diagonality of the Cabibbo-Kobayashi-Maskawa matrix~\cite{pdg2} causes the suppression of such processes at higher orders (see Section~\ref{sec:ckm}).\\
+Nonetheless, there are several scenarios beyond the Standard Model (BSM) that can significantly enhance the FCNC processes in the top quark sector, opening a door for its detection at the Large Hadron Collider (LHC)~\cite{aguilar,barger,h2dm_limit,mssm_limit,RPV_limit, extra_limit} and some of them have been already discussed in Section~\ref{sec:bsm}. \\
+The analysis presented in the following searches for FCNC \tZc coupling. A comparison between SM and BSM predictions for the branching ratios of top quark decays to an up or a charm quark and a \PZ boson is shown in Table \ref{tab:intro-fcnc-br-th}.\\
 
 \begin{table}[h]
 	\begin{adjustbox}{max width=1.\textwidth,center}
@@ -42,16 +41,12 @@ The analysis presented in the following searches for FCNC \tZc processes. A comp
 	\label{tab:intro-fcnc-br-th}
 \end{table} 
 
-\noindent The search for FCNC \tZc processes can be performed by analysing the top quark decays in \ttbar events as well as the production of single-top quarks (see Figure \ref{fig:signal}). In the former channel, one of the top quarks decays through FCNC and the other through the dominant mode ($t\to Wb$). The latter channel is characterised by a final state composed of a single top quark and a \PZ boson. The main difference between the final state of decay and production modes is the presence of one additional jet. \\
-The analysis presented in the following targets both production and decay mode. This search is done using $pp$ collision data collected by the ATLAS detector at a centre-of-mass energy of \SI{13}{\TeV} and corresponding to an integrated luminosity of \lumi.\\
-The analysis targets both events with the production of a \PZ boson and a single-top quark decaying to a \PW boson and a \Pqb-quark and events with the production of top quark pairs, where one top quark decays to a \PZ boson and a charm quark and the other top quark decays to a \PW boson and a \Pqb-quark. For both modes, the \PZ boson decays into two charged leptons (electrons or muons including those coming from leptonic $\tau$-lepton decays) and the \PW boson from the top quark decays leptonically too. \\
-
 \begin{figure}[htb]
 	\centering
-	\subfigure[\tZc production via FCNC ($s$-channel)]{\includegraphics[width=0.50\textwidth]{Chapters/CH5/figures/Production_1.pdf}\label{subfig:signal1}}\qquad
-	\subfigure[\tZc production via FCNC ($s$-channel)]{\includegraphics[width=0.40\textwidth]{Chapters/CH5/figures/Production_2.pdf} \label{subfig:signal2} }
+	\subfigure[Single top production via FCNC ($s$-channel)]{\includegraphics[width=0.50\textwidth]{Chapters/CH5/figures/Production_1.pdf}\label{subfig:signal1}}\qquad
+	\subfigure[Single top production via FCNC ($t$-channel)]{\includegraphics[width=0.40\textwidth]{Chapters/CH5/figures/Production_2.pdf} \label{subfig:signal2} }
 	\subfigure[ \ttbar production with \tZc decay]{\includegraphics[width=0.54\textwidth]{Chapters/CH5/figures/TtbarProduction.pdf} \label{subfig:signal3}}
-	\caption{Examples of lowest order Feynman diagrams for \tZc production via FCNC in \subref{subfig:signal1} the $s$-channel and \subref{subfig:signal2} the $t$-channel. Example of the lowest order Feynman diagrams for \subref{subfig:signal3} \ttbar production, with one top-quark decaying through the SM and the other via \tZc. The vertex labelled as \tZq corresponds to the coupling responsible for the FCNC interaction.}
+	\caption{Examples of lowest order Feynman diagrams for single top production via FCNC in \subref{subfig:signal1} the $s$-channel and \subref{subfig:signal2} the $t$-channel. Example of the lowest order Feynman diagrams for \subref{subfig:signal3} \ttbar production, with one top-quark decaying through the SM and the other via \tZc coupling. The vertex labelled as \tZq corresponds to the coupling responsible for the FCNC interaction.}
 	\label{fig:signal}
 \end{figure} 
 
@@ -65,7 +60,7 @@ Therefore, the anomalous couplings can be approximated with dimension-6 operator
 \label{eq:lagrangian}
 \end{equation}
 
-\noindent Experimental limit on the branching ratio of FCNC \tZc decay was previously established by experiments at the Large Electron-Positron Collider (LEP)~\cite{ALEPH,DELPHI,OPAL,L3}, the Hadron-Electron Ring Accelerator (HERA)~\cite{ZEUS}, the Tevatron\ \cite{CDF,DZero} and the Large Hadron Collider (LHC)~\cite{TOPQ-2017-06,Chatrchyan:2013nwa,CMS-TOP-12-039}. The ATLAS and the CMS collaborations obtained limits at the \SI{95}{\percent} confidence level (CL) for this process using data collected at $\sqrt{s}$=\SI{13}{\TeV} and $\sqrt{s}$=\SI{8}{\TeV}, focusing on FCNC top-quark decays~\cite{TOPQ-2017-06,Chatrchyan:2013nwa}, or both production and decay modes combined~\cite{CMS-TOP-12-039}. 
+\noindent Experimental limit on the branching ratio of FCNC $t\rightarrow cZ$ decays was previously established by experiments at the Large Electron-Positron Collider (LEP)~\cite{ALEPH,DELPHI,OPAL,L3}, the Hadron-Electron Ring Accelerator (HERA)~\cite{ZEUS}, the Tevatron\ \cite{CDF,DZero} and the Large Hadron Collider (LHC)~\cite{TOPQ-2017-06,Chatrchyan:2013nwa,CMS-TOP-12-039}. The ATLAS and the CMS collaborations obtained limits at the \SI{95}{\percent} confidence level (CL) for this process using data collected at $\sqrt{s}$ = \SI{13}{\TeV} and $\sqrt{s}$ = \SI{8}{\TeV}, focusing on FCNC top-quark decays~\cite{TOPQ-2017-06,Chatrchyan:2013nwa}, or both production and decay modes combined~\cite{CMS-TOP-12-039}. 
 A summary of the ATLAS and CMS results on the limits on FCNC couplings is shown in \Cref{fig:intro:limits}. The actual observed limits on the FCNC \tZc coupling from ATLAS is $\mathrm{BR(t\to cZ) < \SI{2.4e-4}{}}$~\cite{TOPQ-2017-06}.\\
 Recent studies were done on the interference effects on the \textit{tZ1} and $t\gamma q$ anomalous couplings, concluding that these effects are smaller than the variations of the systematics uncertainties considered~\cite{Interference}. Therefore, both decay and production modes are taken into account in this analysis to improve the results on the limit for \tZc anomalous coupling.
 
@@ -80,54 +75,58 @@ Recent studies were done on the interference effects on the \textit{tZ1} and $t\
 \section{Analysis strategy}
 In the following, the analysis strategy is described.
 
-\paragraph{Analysis motivation and overview}
+\paragraph{Analysis overview}
 The analysis presented in the following searches for flavour-changing
 neutral current (FCNC) coupling between the top-quark and the \PZ
 boson in proton--proton collisions at $\sqrt{s} = \SI{13}{\TeV}$ with
 the ATLAS detector. \\
 The search is carried out in both single-top quark production and
-top-quark pair-production events. In addition, to increase the sensitivity to FCNC \tZc coupling, 
-the Soft Muon Tagging (SMT) technique is exploited for
+top-quark pair-production events.\\
+The search for FCNC $t\rightarrow cZ$ processes can be performed by analysing the top quark decays in \ttbar events as well as the production of single-top quarks (see Figure \ref{fig:signal}). In the former channel, one of the top quarks decays through FCNC and the other through the SM mode ($t\to Wb$). The latter channel is characterised by a final state composed of a single top quark and a \PZ boson. The main difference between the final states of decay and production modes is the presence of one additional jet. \\
+The analysis presented in the following targets both production and decay mode. This search is done using $pp$ collision data collected by the ATLAS detector at a centre-of-mass energy of \SI{13}{\TeV} and corresponding to an integrated luminosity of \lumi.\\
+The analysis targets both events with the production of a \PZ boson and a single-top quark decaying to a \PW boson and a \Pqb-quark and events with the production of top quark pairs, where one top quark decays to a \PZ boson and a charm quark and the other top quark decays to a \PW boson and a \Pqb-quark. For both modes, the \PZ boson decays into two charged leptons (electrons or muons including those coming from leptonic $\tau$-lepton decays) and the \PW boson from the top quark decays leptonically too. \\
+In addition, to increase the sensitivity to FCNC \tZc couplings, 
+a charm tagging technique is exploited for
 the semi-leptonic decays of \Pqc-hadrons produced by the FCNC top
 decay. 
 
 \paragraph{Dataset}
-Data from the full Run2 is used, \lumi. \\
-The description of the data sample and of the Monte Carlo samples can
+Data from proton--proton collisions at 
+$\sqrt{s}$ = \SI{13}{\TeV} recorded in full Run2 (from 2015 to 2018) by the ATLAS experiment is used, for a total integrated luminosity of \lumi.\\
+The description of the data and Monte Carlo samples used in the following can
 be found in \Cref{sec:samples}.
 
 \paragraph{Signal regions}
-The analysis focuses on the trilepton final state. \\
-Three SRs are defined for the \tZc coupling extraction, targeting:
+Three Signal Regions (SRs) are defined for the \tZc coupling extraction, targeting:
 \begin{itemize}
 	\item FCNC \tZc in \ttbar decays (called SR1\tZc), 
 	\item FCNC \tZc in single-top production (called SR2\tZc), 
-	\item FCNC \tZc in \ttbar decays (called SR3\tZc) using:
+	\item FCNC \tZc in \ttbar decays (called SR3\tZc) using either:
 	\begin{itemize}
 		\item the SMT technique or
 		\item the \Pqc-tagger \DLrc
 	\end{itemize}
 \end{itemize}
-The SRs for each coupling extraction are orthogonal between each other. 
+The SRs are orthogonal between each other. 
 %The orthogonality is assured by selecting events with different jet multiplicities and by selecting or vetoing the presence of a jet associated to a soft muon.\\
-The main focus of this thesis is the definition of SR3\tZc investigating the best technique for this analysis.\\
-The selection using SMT is reported in \Cref{sec:selection}.\\
-The selection using $\mathrm{DL1r_{c}}$ is reported in \Cref{sec:other_selection} together with the comparison with SMT.\\
-The description of the other SRs selections, used for the combined fit to extract expected limits, are reported in \Cref{sec:selection_all}.\\
+The main focus of this thesis is the definition of SR3\tZc investigating the best c-tagging technique for this analysis.\\
+The event selection using the SMT technique is reported in \Cref{sec:selection}.\\
+The event selection using $\mathrm{DL1r_{c}}$ tagger is reported in \Cref{sec:other_selection}, together with the comparison with SMT.\\
+The description of the other SRs selections, used to extract expected limits, is reported in \Cref{sec:selection_all}.\\
 
 \paragraph{Background estimation}
 The main background sources are:
 \begin{itemize}
-	\item for SR1\tZc, \ttZ and \VVHF;
+	\item for SR1\tZc, \ttZ and Diboson (VV)+HF;
 	\item for SR2\tZc, \VVHF and Standard Model \tZq ;
-	\item for SR3\tZc, \ttZ and \VVHF.
+	\item for SR3\tZc, \ttZ and Diboson (VV)+HF.
 \end{itemize}
 
 \noindent All backgrounds are estimated using Monte Carlo samples. They are
-normalised to the theoretical cross-sections. The normalisation of the
-\ttbar background is left free floating in the fits.
-Various control regions (CRs) are included in the fits to control the
-background normalisations. For the fit, a total of four CRs is used. 
+normalised to the theoretical cross-sections. 
+%The normalisation of the \ttbar background is left free floating in the fits.
+Various control regions (CRs) are constructed to control the
+background normalisations. A total of four CRs is used. 
 The description of the background sources and the CR selections is
 reported in \Cref{sec:background}.
 
@@ -159,8 +158,8 @@ This section describes the samples used in this analysis.
 The detailed lists of data and Monte Carlo (MC) samples can be found
 in \App{\ref{appendix:app_mc}}, 
 while a description is presented below.\\
-The starting point for the analysis are the ROOT ntuples, produced using the 
-\anabasevers version, starting from \texttt{TOPQ1} derivations~\cite{top:deriv}.\\
+The starting point for the analysis are the ROOT~\cite{Antcheva:2009zz} ntuples, produced using the common ATLAS software version
+\anabasevers, starting from \texttt{TOPQ1} derivations~\cite{top:deriv}.\\
 The derivations contain a filter that requires at least one lepton
 (a loose electron or a good combined muon) with a \pT above \SI{20}{\GeV} and $\abseta \leq 2.5$. 
 
@@ -173,7 +172,7 @@ The analysis described in this paper uses data collected from 2015 to 2018 by th
 The complete sample includes all \SI{25}{\nano\second} data periods from 2015, as well as the whole 2016--2018 datasets.
 The total integrated luminosity is of \lumi.
 The selected data periods were collected during stable beam LHC operations and with the ATLAS detector fully functioning.\\
-The partial integrated luminosities and the Good Run Lists used are reported in \cref{tab:samples:lumi}. 
+The partial integrated luminosities and the Good Run Lists\footnote{The Good Runs List (GRL) is a file that selects good luminosity blocks from within the data runs (spanning 1-2 minutes of data-taking). } (GRL) used are reported in \cref{tab:samples:lumi}. 
 
 \begin{table}[htbp]
 	\centering
@@ -193,14 +192,13 @@ The partial integrated luminosities and the Good Run Lists used are reported in 
 \end{table}
 
 \noindent Events are considered only if they are accepted by at least one of the single-muon or single-electron triggers
-described in Refs.~\cite{TRIG-2016-01,ATL-DAQ-PUB-2016-001,ATL-DAQ-PUB-2017-001,ATL-DAQ-PUB-2018-002} and listed in \cref{tab:samples:trig}. \\
+described in Refs.~\cite{TRIG-2016-01,ATL-DAQ-PUB-2016-001,ATL-DAQ-PUB-2017-001,ATL-DAQ-PUB-2018-002} and listed in Table~\ref{tab:samples:trig}. \\
 The ATLAS trigger system is composed by two levels: the first level (\texttt{L1}) is a hardware trigger implemented
 in custom-built electronics, while the second level, referred to as high level trigger (\texttt{HLT}), is software based.
 
 \begin{table}[htbp]
 	\centering
 	\footnotesize
-	\label{tab:samples:trig}
 	\begin{tabular}{cll}
 		\toprule
 		Year & \multicolumn{1}{l}{Single $e$} & \multicolumn{1}{l}{Single \Pgm} \\
@@ -215,6 +213,7 @@ in custom-built electronics, while the second level, referred to as high level t
 		\bottomrule
 	\end{tabular}
 	\caption{Trigger selections.}%
+	\label{tab:samples:trig}
 \end{table}
 
 \noindent The electron triggers select a calorimeter cluster matched to a track.
@@ -248,8 +247,8 @@ In the following, samples used in the analysis are explained in detail, both for
 \label{sec:samples:mc:sig}
 %-------------------------------------------------------------------------------
 
-The Monte Carlo simulation samples for signal were generated at next-to-leading-order (NLO) with \aMCatNLO~\cite{Alwall:2014hca} interfaced to the \PythiaEight~\cite{Sjostrand:2007gs} with the \textsc{A14} tune~\cite{Skands:2010ak} and \textsc{NNPDF2.3LO} PDF set. Only decays of the \PW and \PZ bosons involving charged leptons were generated at the matrix element level (\mbox{$Z\to e^+e^-,~\mu^+\mu^-,~\tau^+\tau^-$} and \mbox{$W \to e\nu, \mu\nu, \tau\nu$)}. For the matrix element, PDF set \textsc{NNPDF3.0NLO} is used. The Universal FeynRules Output (UFO) model~\cite{Alloul:2013bka} is used for computation at the NLO in QCD. Top quark FCNC decay is done by TopFCNC model~\cite{Degrande:2014tta,Durieux:2014xla}.
-The TopFCNC UFO model includes the effects of new physics at a energy scale $\Lambda$ by adding effective terms to the SM lagrangian:
+The Monte Carlo simulation samples for the signal were generated at next-to-leading order (NLO) with \aMCatNLO~\cite{Alwall:2014hca} interfaced to \PythiaEight~\cite{Sjostrand:2007gs} with the \textsc{A14} tune~\cite{Skands:2010ak} and the \textsc{NNPDF2.3LO} PDF set. Only decays of the \PW and \PZ bosons involving charged leptons were generated at matrix element level (\mbox{$Z\to e^+e^-,~\mu^+\mu^-,~\tau^+\tau^-$} and \mbox{$W \to e\nu, \mu\nu, \tau\nu$)}. For the matrix element, the PDF set \textsc{NNPDF3.0NLO} is used. The Universal FeynRules Output (UFO) model~\cite{Alloul:2013bka} is used for the computation at NLO in QCD. The top quark FCNC decay is done by TopFCNC model~\cite{Degrande:2014tta,Durieux:2014xla}.
+The TopFCNC UFO model includes the effects of new physics at an energy scale $\Lambda$ by adding effective terms to the SM lagrangian:
 \begin{equation}
 \mathcal{L} = \mathcal{L}_{SM} + \mathcal{L}^{eff} = \mathcal{L}_4 + \frac{1}{\Lambda^2} \mathcal{L}_6+ ...
 \end{equation}
@@ -261,7 +260,7 @@ The TopFCNC UFO model includes the effects of new physics at a energy scale $\La
 \end{equation}
 
 \noindent with $C_j$ being complex constants and $O_j$ being SM gauge invariant dimension-six operators that contain the fermion doublets and singlets, the gauge field tensors, the Higgs doublet and the covariant derivatives.\\
-Taking into account that both production and decay modes are considered in this analysis, separated samples for each mode and for \tZc (using $IC_{ctB}$ and $IC_{ctW}$) anomalous coupling were generated. In order to allow the study of the chirality of these couplings, samples with left-handed or right-handed couplings were obtained as well but the latter are not considered in this thesis.\\ Finally, an additional sample for \ttbar production was generated including a soft muon filter targeting the charm-tagging signal region. \\
+Taking into account that both production and decay modes are considered in this analysis, separated samples for each mode and for the \tZc (using $IC_{ctB}$ and $IC_{ctW}$) anomalous coupling were generated. In order to allow the study of the chirality of these couplings, samples with left-handed or right-handed couplings were obtained as well but the latter are not considered in this thesis.\\ Finally, an additional sample for \ttbar production was generated including a soft muon filter targeting the charm-tagged signal region. \\
 Therefore, three different signal samples are considered:
 \begin{itemize}
 %	\item $tZ$ production for $tZu$ left-handed coupling; 
@@ -276,6 +275,8 @@ Therefore, three different signal samples are considered:
 \noindent For the signal samples with \ttbar production, it is considered that one of the top-quarks decays through FCNC to $cZ$ and the other, according to the SM, to $Wb$.\\ 
 For the $tZ$ production, a top-quark and a \PZ boson is generated, where the top-quark decays according to the SM, since the $tZq$ anomalous coupling is assumed in the primary vertex. \\
 The number of signal events is normalised to a branching ratio of  \mbox{BR($t\rightarrow cZ$) = $2.4\times10^{-4}$}, constraining \mbox{BR($t\rightarrow bW$) = 1 - BR($t\rightarrow cZ$).}\\
+The considered value of the $t\to cZ$ branching ratio is the observed limit obtained from
+the previous analysis at a center-of-mass energy of \SI{13}{\TeV} with \SI{36}{\ifb}~\cite{TOPQ-2017-06}. \\
 The FCNC \ttbar decay signal
 is normalised using the \ttbar cross-section prediction at next-to-next-to-leading order (NNLO)
 in QCD including the re-summation of next-to-next-to-leading logarithmic (NNLL) soft-gluon terms calculated using
@@ -283,28 +284,21 @@ in QCD including the re-summation of next-to-next-to-leading logarithmic (NNLL) 
 For proton--proton collisions at a centre-of-mass energy of \rts~=~\SI{13}{\TeV}, this cross section corresponds to
 $\sigma(\ttbar)_{\textrm{NNLO+NNLL}} = \mathrm{832\pm51~pb}$ using a top-quark mass of $\mtop~ =~\SI{172.5}{GeV}$.\\
 The uncertainties on the cross-section due to PDF and $\alpha_{\textrm{s}}$ are calculated using the PDF4LHC prescription~\cite{Botje:2011sn}
-with the MSTW2008 68\% CL NNLO~\cite{Martin:2009iq,Martin:2009bu}, CT10 NNLO~\cite{Lai:2010vv,Gao:2013xoa} and NNPDF2.3 5f FFN~\cite{Ball:2012cx} PDF sets,
+with the MSTW2008 68\% CL NNLO~\cite{Martin:2009iq,Martin:2009bu}, CT10 NNLO~\cite{Lai:2010vv,Gao:2013xoa} and \textsc{NNPDF2.3} 5f FFN~\cite{Ball:2012cx} PDF sets,
 and are added in quadrature to the scale uncertainty.
 The FCNC single-top quark production signal normalisation cross-section is calculated at 
 NLO using the TopFCNC model as implemented in the \aMCatNLO.  \\
-The considered value of the $t\to cZ$ branching ratio is the observed limit obtained from
-the previous analysis at a center-of-mass energy of \SI{13}{\TeV} with \SI{36}{\ifb}~\cite{TOPQ-2017-06}. 
 
 \subsubsection{Background samples}
 \label{sec:samples:mc:bkg}
 %-------------------------------------------------------------------------------
 
-Simulated samples are included in the analysis in order to account for all the SM predicted background channels.
-The samples are normalised to the cross-sections given in
-\App{\ref{appendix:app_mc}} multiplied by the $k$ factors given in the same
-tables.\\
-The descriptions below are taken from the reference document by the
-PMG group. 
+Simulated samples are included in the analysis in order to account for all the SM predicted background sources. 
 
 \paragraph{$t\bar{t}$ production} 
 The production of \ttbar\ events is modelled using the
 \powhegbox~\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}~v2
-generator at NLO with the NNPDF3.0NLO~\cite{Ball:2014uwa} parton set
+generator at NLO with the \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} parton set
 of distribution functions~(PDF) and the \hdamp\ parameter\footnote{The
 	\hdamp\ parameter is a re-summation damping factor and one of the
 	parameters that controls the matching of Powheg matrix elements to
@@ -313,15 +307,15 @@ of distribution functions~(PDF) and the \hdamp\ parameter\footnote{The
 to 1.5~\mtop~\cite{ATL-PHYS-PUB-2016-020}.  The events are interfaced
 to \pythia.230~\cite{Sjostrand:2014zea} to model the parton shower,
 hadronisation, and underlying event, with parameters set according
-to the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and using the \nnpdftwo
+to the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and using the \textsc{NNPDF3.0NLO}
 set of PDFs~\cite{Ball:2012cx}. The decays of bottom and charm hadrons
 are performed by \mbox{\evtgen~v1.6.0~\cite{EvtGen}.}
-In the sample used (DSID\@: 410472), it is required that both the \PW bosons from the \Pqt quarks decay leptonically.\\
+In the sample used, it is required that both the \PW bosons from the \Pqt quarks decay leptonically.\\
 The impact of the parton shower and hadronisation model is evaluated
-by comparing the nominal generator setup with a sample (DSID\@: 410558) produced with
+by comparing the nominal generator setup with a sample produced with
 the
 \powhegbox~\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}~v2
-generator using the NNPDF3.0NLO~\cite{Ball:2014uwa} parton
+generator using the \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} parton
 distribution function~(PDF). The events are interfaced with
 \herwigseven.04~\cite{Bahr:2008pv,Bellm:2015jjp}, using the H7UE set
 of tuned parameters~\cite{Bellm:2015jjp} and the MMHT2014LO PDF set
@@ -334,24 +328,23 @@ tune, is considered as an uncertainty. The impact of final-state-radiation (FSR)
 weights which vary the renormalisation scale for QCD emission in the
 FSR by a factor of 0.5 and 2.0, respectively.
 Additionally, the uncertainty associated to the \hdamp\ parameter is evaluated using the
-alternative sample (DSID\@: 410482) with the \hdamp\ value increased to $3.0~\mtop$. 
+alternative sample with the \hdamp\ value increased to $3.0~\mtop$. 
 
 \paragraph{$t\bar{t}V$ production} 
-The production of \ttV\ events (DSID\@: 410155-410157, 410218-410220
-and 410276-410278) is modelled using the
+The production of \ttV\ events is modelled using the\\
 \mgamc~v2.3.3~\cite{Alwall:2014hca} generator at NLO with the
-NNPDF3.0NLO~\cite{Ball:2014uwa} parton distribution function~(PDF).
+\textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} parton distribution function~(PDF).
 The events are interfaced to \pythia.210~\cite{Sjostrand:2014zea}~
 using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
-NNPDF2.3LO~\cite{Ball:2014uwa} PDF set. The decays of bottom and charm
+\textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set. The decays of bottom and charm
 hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{EvtGen}.\\
 The uncertainty due to initial-state-radiation (ISR) is estimated by
-comparing the nominal \ttV\ sample with two additional samples (DSID\@: 410370-410375), which
+comparing the nominal \ttV\ sample with two additional samples, which
 have the same setting as the nominal one, but with the Var3 up or down
 variation of the A14 tune.  The Var3c A14 tune variation corresponds
 to the variation of $\alpha_{\textrm{s}}$ for initial state radiation
 (ISR) in the A14 tune.\\
-Additional \ttV\ samples (DSID\@: 410142) are produced with the
+Additional \ttV\ samples are produced with the
 \sherpa~2.2.0~\cite{Bothmann:2019yzt} generator at LO accuracy, using
 the MEPS@LO setup~\cite{Catani:2001cc,Hoeche:2009rj} with up to one
 additional parton for \ttll\ sample and two additional partons for the
@@ -359,15 +352,15 @@ others. A dynamic renormalization scale is used and it is defined
 similarly to that of the nominal \ttV\ samples. The CKKW matching
 scale of the additional emissions is set to 30~GeV. The default
 \sherpa~2.2.0 parton shower is used along with the
-NNPDF3.0NNLO~\cite{Ball:2014uwa} PDF set.
+\textsc{NNPDF3.0NNLO}~\cite{Ball:2014uwa} PDF set.
 
 \paragraph{tZq production}
 The production of \tZq\ events is modelled using the\\ \mgamc~v2.3.3 \cite{Alwall:2014hca}
-generator at NLO with NNPDF3.0NLO~\cite{Ball:2014uwa} parton distribution function~(PDF) (DSID\@: 412063).
-The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea} using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the NNPDF2.3LO~\cite{Ball:2014uwa} PDF set.\\
-The uncertainty due to initial-state-radiation (ISR) is estimated by comparing the nominal \tZq\ sample with two additional samples (DSID\@: 412064-412065),
+generator at NLO with \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} parton distribution function~(PDF).
+The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea} using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the \textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set.\\
+The uncertainty due to initial-state-radiation (ISR) is estimated by comparing the nominal \tZq\ sample with two additional samples,
 which have the same setting as the nominal one, but with the Var3 up and down variations of the A14 tune. 
-The predicted cross-section was calculated with \MGMCatNLOV{2.6.0}, using the five-flavour scheme with the \textsc{NNPDF30\_nlo\_as\_0118} PDF set and with the renormalization and factorisation scales, \muR\ and \muF, set to \mbox{$\muR = \muF = (\mtop + \mZ)/4 = \SI{66}{\GeV}$.} The SM \tZq cross-section at NLO in QCD, including non-resonant contributions with $m_{\ell^+\ell^-} > 30\,\GeV$, is \SI{102}{fb}.
+The predicted cross-section was calculated with \MGMCatNLOV{2.6.0}, using the five-flavour scheme with the \textsc{NNPDF30NLO} PDF set and with the renormalization and factorisation scales, \muR\ and \muF, set to\\ \mbox{$\muR = \muF = (\mtop + \mZ)/4 = \SI{66}{\GeV}$.} The SM \tZq cross-section at NLO in QCD, including non-resonant contributions with $m_{\ell^+\ell^-} > 30\,\GeV$, is \SI{102}{fb}.
 
 \paragraph{tW production} 
 Although having a very low contribution, single top-quark production is also considered.
@@ -375,53 +368,53 @@ The associated production of top-quarks with \PW bosons ($tW$) is
 modelled using the
 \powhegbox~\cite{Re:2010bp,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}~v2
 generator at NLO in QCD using the five-flavour scheme and the
-NNPDF3.0NLO set of PDFs~\cite{Ball:2014uwa}.
+\textsc{NNPDF3.0NLO} set of PDFs~\cite{Ball:2014uwa}.
 The diagram removal (DR) scheme~\cite{Frixione:2008yi} is used to
 remove interference and overlap with \ttbar\ production.\\ 
 %The related uncertainty is estimated by comparing to an alternative sample
 %generated using the diagram subtraction scheme~\cite{Frixione:2008yi,ATL-PHYS-PUB-2016-020}~\footnote{Analyses which do not use this approach 
 %should obviously not use this sentence in their description.}. 
 The events are interfaced to \pythia.230~\cite{Sjostrand:2014zea} using the A14
-tune~\cite{ATL-PHYS-PUB-2014-021} and the \nnpdftwo set of
+tune~\cite{ATL-PHYS-PUB-2014-021} and the \textsc{NNPDF2.3LO} set of
 PDFs~\cite{Ball:2012cx}.
-In the samples used (DSIDs: 410648 and 410649), it is required that both \PW bosons in the event decay leptonically. 
+In the samples used, it is required that both \PW bosons in the event decay leptonically. 
 
 \paragraph{tWZ production} 
 The production of \tWZ\ events is modelled using the \\ \mgamc~v2.3.3~\cite{Alwall:2014hca}
-generator at NLO with NNPDF3.0NLO~\cite{Ball:2014uwa} parton distribution function~(PDF).
-The events are interfaced with \pythia.212~\cite{Sjostrand:2014zea}~ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the NNPDF2.3LO~\cite{Ball:2014uwa} PDF set.
+generator at NLO with \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} parton distribution function~(PDF).
+The events are interfaced with \pythia.212~\cite{Sjostrand:2014zea}~ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the \textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set.
 The decays of bottom and charm hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{EvtGen}. 
-In the sample used (DSID\@: 410408), it is required that the \PZ boson decays leptonically. \\
-An additional \tWZ sample is used to estimate the uncertainty connected with the description of the interference between \ttZ and \tWZ. The nominal samples is generated with the DR1 scheme, while the alternative sample is generated using the DR2 scheme (DSID\@: 412119).
+In the sample used, it is required that the \PZ boson decays leptonically. \\
+An additional \tWZ sample is used to estimate the uncertainty connected with the description of the interference between \ttZ and \tWZ. The nominal samples is generated with the DR1 scheme, while the alternative sample is generated using the DR2 scheme.
 
 \paragraph{Diboson production} 
 The samples simulating \PW{}\PW, \PW{}\PZ and \PZ{}\PZ events with at least two charged leptons are all considered.
 In the trilepton topology, \PW{}\PZ events are the ones that significantly contribute to the background.\\
 Samples of diboson final states ($VV$) are simulated with the
-\sherpa~v2.2.1 or \\v2.2.2~\cite{Bothmann:2019yzt} generator depending on the process,
+\sherpa~v2.2.1 or v2.2.2~\cite{Bothmann:2019yzt} generator depending on the process,
 including off-shell effects and Higgs-boson contributions, where appropriate.
 Fully leptonic final states and semi-leptonic final states, where one boson
 decays leptonically and the other hadronically, are generated using
 matrix elements at NLO accuracy in QCD for up to one additional parton
 and at LO accuracy for up to three additional parton
-emissions (DSID\@: 364250, 364253-364255). Samples for the loop-induced processes $gg \to VV$ are
+emissions. Samples for the loop-induced processes $gg \to VV$ are
 generated using LO-accurate matrix elements for up to one
 additional parton emission for both cases of fully leptonic and
-semi-leptonic final states (DSID\@: 345705-345706). The matrix element calculations are matched
+semi-leptonic final states. The matrix element calculations are matched
 and merged with the \sherpa parton shower based on Catani-Seymour
 dipole~\cite{Gleisberg:2008fv,Schumann:2007mg} using the MEPS@NLO
 prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}.
 The virtual QCD correction are provided by the
-\openloops\ library~\cite{Cascioli:2011va,Denner:2016kdg}. The
-\nnpdfnnlo set of PDFs is used~\cite{Ball:2014uwa}, along with the
+\openloops\ library~\cite{Cascioli:2011va,Denner:2016kdg}. The 
+\textsc{NNPDF3.0NNLO} set of PDFs is used~\cite{Ball:2014uwa}, along with the
 dedicated set of tuned parton-shower parameters developed by the
 \sherpa authors.\\
 Electroweak production of diboson in association with two jets
 ($VVjj$) is simulated with the \sherpa~v2.2.2~\cite{Bothmann:2019yzt}
-generator (DSID\@: 364283-364284). The LO-accurate matrix elements are matched to a parton
+generator. The LO-accurate matrix elements are matched to a parton
 shower based on Catani-Seymour dipoles~\cite{Gleisberg:2008fv,Schumann:2007mg} using the MEPS@LO
 prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}.\\
-Samples are generated using the \nnpdfnnlo set~\cite{Ball:2014uwa},
+Samples are generated using the \textsc{NNPDF3.0NNLO} set~\cite{Ball:2014uwa},
 along with the dedicated set of tuned parton-shower parameters
 developed by the \sherpa authors.\\
 To assess the uncertainty from the generator, alternative samples are used. \\
@@ -453,16 +446,16 @@ QED final-state radiation is simulated with Photos++
 program~\cite{Lange:2001uf} is used to decay bottom and charm hadrons.
 
 \paragraph{$t\bar{t}H$ production}
-The production of \ttH\ events is modelled using the\\
+The production of \ttH\ events is modelled using the
 \powhegbox~v2~\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Hartanto:2015uka}
 generator which provides matrix elements at next-to-leading order (NLO) in the strong coupling 
-constant \alphas in the five-flavour scheme with the\\ \nnpdfnlo~\cite{Ball:2014uwa} PDF set.
+constant \alphas in the five-flavour scheme with the \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} PDF set.
 The functional form of the renormalisation and factorisation scale is 
 set to $\sqrt[3]{m_\text{T}(t)\cdot m_\text{T}(\bar{t}) \cdot m_\text{T}(H)}$.
 The events are interfaced to \pythia.230~\cite{Sjostrand:2014zea}~
 using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
-\nnpdftwo~\cite{Ball:2014uwa} PDF set. The decays of bottom and charm hadrons
-are performed by \evtgen~v1.6.0~\cite{Lange:2001uf}.
+\\ \textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set. The decays of bottom and charm hadrons
+are performed by\\ \evtgen~v1.6.0~\cite{Lange:2001uf}.
 
 \paragraph{Other rare backgrounds}
 The production of triboson ($VVV$) events is simulated with the 
@@ -473,11 +466,11 @@ shower based on Catani-Seymour dipole factorisation~\cite{Gleisberg:2008fv,Schum
 using the MEPS@NLO prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}. 
 The virtual QCD correction for matrix elements at NLO accuracy are 
 provided by the \openloops library~\cite{Cascioli:2011va,Denner:2016kdg}.\\
-Samples are generated using the \nnpdfnnlo set~\cite{Ball:2014uwa}, along with
+Samples are generated using the \textsc{NNPDF3.0NNLO} set~\cite{Ball:2014uwa}, along with
 the dedicated set of tuned parton-shower parameters developed by the~\sherpa authors.\\
 The production of \tttt\ is modelled using the \mgamc~v2.3.3~\cite{Alwall:2014hca}
-generator at NLO with the \nnpdfonenlo~\cite{Ball:2014uwa} parton distribution function~(PDF).
+generator at NLO with the \textsc{NNPDF3.1NLO}~\cite{Ball:2014uwa} parton distribution function~(PDF).
 The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea}~ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
-\nnpdftwo~\cite{Ball:2014uwa} PDF set.\\
+\textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set.\\
 The decays of bottom and charm hadrons are simulated using the \evtgen\ v1.6.0 program~\cite{Lange:2001uf}. \\
 The other rare top quark processes namely the production of \ttWW and \ttt are all modeled using the \mgamc generator at LO interfaced with \pythia using the A14 tune.
