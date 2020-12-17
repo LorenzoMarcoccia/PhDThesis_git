@@ -3,60 +3,59 @@
 % content in this file will be fed into the main document
 
 % ----------------------- introduction file header -----------------------
-\chapter{FCNC \tZc with charm-tagging}
+\chapter{Search for FCNC $t\rightarrow Zc$ using a charm-tagger}
 \label{chapter:charm_tag}
-This chapter presents an important fraction of my work. It was dedicated to the event selection using the SMT technique, the charm-tagger \DLrc and the comparison between these two techniques.
-The design and optimization of the multivariate analysis is part of my work as well, and it will be presented in this chapter.
+This chapter presents an important fraction of my work. It is dedicated to the event selection using the SMT technique, the charm-tagger \DLrc and the comparison between these two techniques.
+The design and optimization of the multivariate analysis is part of my work as well, and it is presented in this chapter.
 
 % ----------------------- paths to graphics ------------------------
 
 \graphicspath{Chapters/CH6/figures}
 
-\section{Event selections and reconstruction}
+\section{Event selection and reconstruction}
 \label{sec:selection}
-The channel presented in this section is \FCNCtZc in \ttbar decays, using the Soft Muon Tagging.
+This section describes the event selection for the search for FCNC \tZc decay.
 One of the \Pqt-quarks decays following the SM into a \PW boson and a
 \Pqb-quark (called in the following \textit{SM top}), while the other
 \Pqt-quark (called in the following \textit{FCNC top}) decays into a \PZ
-boson and a \Pqc-quark that subsequentially decays semi-leptonically.\\
+boson and a \Pqc-quark that subsequentially decays semi-leptonically.
 This semi-leptonic decay is tagged using the Soft Muon Tagging (SMT) technique. \\
 Only the trileptonic channel is considered, i.e. the \PZ boson from the
 FCNC top decays leptonically and the \PW boson from the SM top
-decays leptonically.\\
+decays leptonically.
 Therefore the final state is characterised by the presence of three leptons, an
 SMT-jet, a \Pqb-tagged jet and missing transverse momentum from the
-escaping neutrinos. \\
+escaping neutrino. \\
 The final states where either the \PZ or the \PW bosons decay
-hadronically were not considered because of the higher backgrounds.\\
+hadronically are not considered because of the higher backgrounds.\\
 The pre-selection criteria, common to all the Signal Regions used in this work, are the following:
 \begin{itemize}
-	\item    Exactly three leptons (electrons or muons) required. \\
+	\item    Exactly three leptons (electrons or muons) are required. 
 				These leptons must satisfy the requirements described in
-				\cref{sec:object:el,sec:object:mu}. 
-				At least one lepton must have $\pt > \SI{27}{\GeV}$. 
+				\Cref{sec:object:el,sec:object:mu}. 
+				At least one lepton must have $\pt > \SI{27}{\GeV}$ to be above the trigger threshold.
 				The other two leptons must have $\pt > \SI{15}{\GeV}$. 
 				Events with a fourth lepton with $\pt > \SI{15}{\GeV}$ are vetoed. 
 	\item   There should be at least one opposite-sign same-flavour lepton pair
 				(OSSF) with an invariant mass in the range 
-				$|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$. \\
+				$|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$. 
 				These two leptons are considered as the ones coming from the \PZ boson.\\ 	
-				If more than one lepton pair satisfy these selections, the pair
+				If more than one lepton pair satisfies these selections, the pair
 				with the invariant mass closest to the mass of the \PZ boson is
 				considered. 
 \end{itemize}	
 
 \subsection {Top quarks reconstruction}
 \label{sec:sel:topmassrec}
-In the events having at least two jets with one of them being \Pqb-tagged, two top quarks (FCNC and SM tops) candidates are reconstructed under the FCNC \ttbar decay signal hypothesis.
+Given the topology of the FCNC \tZc decay, the next step is the reconstruction of the two top quarks.
+The signal event has at least two jets with one of them being \Pqb-tagged, two top quark (FCNC and SM tops) candidates are reconstructed under the FCNC \ttbar decay signal hypothesis.
 The kinematics of the top-quark candidates can be reconstructed from
 the corresponding decay particles.\\
 The reconstructed \PZ boson is assumed to come from the FCNC top decay ($t\to cZ$),
-while \Pqb-tagged jet from SM top decay ($t\to bW$).\\
-In order to reconstruct both top quarks, 
-further we need to associate a reconstructed jet to the \Pqc-quark from FCNC top decay, and reconstruct
-the \PW boson from the SM top decay. This can be done by assuming the lepton not used to reconstruct the \PZ boson to be the one coming from the \PW boson decay,
-the missing transverse momentum to be the transverse momentum of the neutrino from \PW boson decay
-and determining longitudinal component of the neutrino momentum ($p^{\nu}_z$)
+while the \Pqb-tagged jet from SM top decay ($t\to bW$).\\
+In order to reconstruct both top quarks, we need to associate a reconstructed jet to the \Pqc-quark from the FCNC top decay, and to reconstruct
+the \PW boson from the SM top decay. This can be done by assuming that the lepton not used to reconstruct the \PZ boson is the one coming from the \PW boson decay,
+the missing transverse momentum is the transverse momentum of the neutrino from \PW boson decay and determining the longitudinal component of the neutrino momentum ($p^{\nu}_z$)
 using the minimisation of the following expression for each jet combination:
 
 \begin{equation}
@@ -69,7 +68,6 @@ where $m^{\mathrm{reco}}_{j_a\ell\ell}$,
 $m^{\mathrm{reco}}_{j_b\ell_W\nu}$, and $m^{\mathrm{reco}}_{\ell_W\nu}$ are 
 the reconstructed masses of the $cZ$, $bW$, and $\ell_W\nu$ systems, respectively.
 For each jet combination, where any jet can be assigned to $j_a$, while $j_b$ must correspond to a \Pqb-tagged jet, the $\chi^2_{\ttbar}$ minimisation gives the most probable value for $p^{\nu}_z$. From all combinations, the one with the minimum $\chi^2$ is chosen.
-For each event that contains at least one soft muon, the SMT-jet must be assigned to $j_a$ or $j_b$, depending on the $\chi^2$.
 %This procedure assigns the SMT-jet to the \Pqc-quark from FCNC top decay or to the \Pqb-quark 
 %from SM top decay (depending on the number of \Pqb-tagged jet) and determines the $p^{\nu}_z$ value, completing all ingredients to reconstruct four-momenta of the 
 %top-quark candidates.
@@ -82,19 +80,78 @@ The extracted values are:
 	\item $m_{t_{\mathrm{SM}}}=168.0$~\GeV,  $\sigma_{t_{\mathrm{SM}}}=23.9$~\GeV;
 	\item $m_W=82.6$~\GeV,  $\sigma_W=16.6$~\GeV.
 \end{itemize}	
+The SM top quark candidate is reconstructed under the FCNC single-top quark production hypothesis in the events having one or two jets with exactly one being $b$-tagged, which is assumed to come from the top-quark decay ($t\to bW$). 
+The most probable value for the longitudinal component of the neutrino momentum for the FCNC single-top quark production is determined using the minimisation of the following expression:
+\begin{equation}
+\chi^2_{\tZ}  = 
+\frac{\left(m^{\mathrm{reco}}_{b\ell_W\nu}-m_{t_{\mathrm{SM}}}\right)^2}{\sigma_{t_{\mathrm{SM}}}^2}
++ \frac{\left(m^{\mathrm{reco}}_{\ell_W\nu}-m_W\right)^2}{\sigma_W^2},
+\label{eq:chi2tZ}
+\end{equation}
+where $m^{\mathrm{reco}}_{j_b\ell_W\nu}$ and $m^{\mathrm{reco}}_{\ell_W\nu}$ are 
+the reconstructed masses of the $bW$ and $\ell_W\nu$ systems, respectively.
+In~\Cref{eq:chi2tZ}, the central value for the masses and the widths
+of the top quark and $W$ boson are the same as in~\Cref{eq:chi2tt}, therefore, in the events with two jets,
+the four-momentum of SM top-quark candidate reconstructed under the FCNC single-top quark
+production signal hypothesis is the same as the one reconstructed under the FCNC \ttbar decay signal hypothesis. 
+Moreover, the first term (the FCNC top) in~\Cref{eq:chi2tt} is a constant term in the minimisation of $\chi^{2}$, therefore it does not affect the extraction of the longitudinal component of the neutrino momentum.
 
-\clearpage
-\subsection {Signal Region with SMT definition}
+
+\section{Background estimation}
+\label{sec:background}
+A variety of background sources are considered.
+These include SM processes with three leptons in the final state as the FCNC \ttbar (Zc)
+process (such as VV or the associated production of \ttbar with
+a \PZ boson), as well as events in which at least one of the leptons
+in the final state is \textit{fake} (either a jet misidentified as a
+lepton or a non-prompt lepton).
+The estimation of the various sources of background relies on MC
+simulations while for the
+\ttbar fake-lepton background the shapes are taken from MC but the
+normalisation is extracted from data. \\
+The \ttZ process enters the event selection because of the presence in the
+final state of a SM top quark and of a \PZ boson. The only difference
+w.r.t the signal topology, for the semi-leptonic \ttbar decay, is the
+presence of additional jets in the event. \\
+The diboson background (mainly \PW\PZ and \PZ\PZ) enters the selection because of the presence
+of three leptons and of additional jets emitted, that can come from heavy
+quarks. 
+The diboson background is split into \VVHF (heavy flavour) and \VVLF (light flavour) based on the type of jets associated:
+if one of the associated jets originated from a \Pqb-quark or a \Pqc-quark then it is considered as \VVHF, otherwise it is considered as \VVLF. % chktex 13
+The jet type is determined using the \texttt{jet\_truthflav} variable.
+This variable, provided by the flavour tagging group, defines a cone of $\Delta R < 0.3$ associated with each jet.
+If a \Pqb-hadron with \pT > \SI{5}{\GeV} is found within this cone the jet is identified as a \bjet.
+If no \Pqb-hadrons are found, the algorithm searches for \Pqc-hadrons, then \Pgt leptons.
+If none of these identifiers are found the jet is labelled as a light jet.\\
+In the following sections, some other backgrounds are grouped as follows:
+\begin{itemize}
+	\item \ttZ+\tWZ;
+	\item \ttW+\ttH;
+	\item \ttbar+\Wt, backgrounds with fake leptons;
+	\item \textit{Other fakes} which contains backgrounds with fake leptons as well (\Zjets, \VV~(2l), \ttZ~(2l)) but categorized in a different group as explained in \Cref{sec:stat:strategy};
+	\item \textit{Other} which contains minor backgrounds (\ttt, \VVV,  \ttWW etc.).
+\end {itemize}
+
+\subsection {Signal Region with SMT requirement}
 \label{sec:sel:sr3}
-The SR3\tZc has the following additional requirements:
+The Signal region considered in this chapter is called SR3\tZc and it has the following requirements in addition to the cuts described previously:
 \begin{itemize}
 	\item At least two jets satisfying the requirements described in \Cref{sec:object:jet}. 
 	\item Zero, one or two \Pqb-jets satisfying the requirements in \Cref{sec:object:bjet}. 
 	\item The selected soft muon must be opposite-sign with the lepton coming from \PW boson also satisfying the requirements described in \Cref{sec:object:soft_muons} .
-	\item At least one SMT jet described in \Cref{sec:object:smt}. 
+	\item At least one SMT jet described in \Cref{sec:object:smt}. For each event that contains at least one 
+	soft muon, the SMT-jet must be assigned to the FCNC top or the SM top, depending on the $\chi^2$ 
+	in~\Cref{eq:chi2tt}.	 
 	\item No requirements on the masses of both the FCNC and the SM top-quark candidates are applied. 
 \end{itemize}
-This selection is summarized in Table~\ref{tab:sel:sr3_smt}.
+These selections are summarized in Table~\ref{tab:sel:sr3_smt}.\\
+The event yields for each \Pqb-jet multiplicity and the total event yields are shown in Table~\ref{tab:yields:sr3}. 
+Even though the selection with exactly one \Pqb-jet is the purest events containing zero and two \Pqb-jets are also considered in order to have the largest possible signal acceptance and then work on the separation of signal from background, as described in \Cref{sec:separation}.\\
+~\Cref{fig:sr3_kin_lep,fig:sr3_kin_jet} show the distributions of some kinematic variables for events selected in the SR3 region for the \tZc coupling extraction selection (SR3\tZc). 
+As it can be noticed, the main background sources are \ttZ and \VVHF. In the next section these
+two backgrounds will be investigated more in detail exploiting the information carried by the soft muon
+decay chain.
+
 \begin{table}[!h]
 	\centering
 	\small
@@ -110,21 +167,17 @@ This selection is summarized in Table~\ref{tab:sel:sr3_smt}.
 		$\ge$ 1 SMT jet \\
 		\bottomrule
 	\end{tabular}
-\caption{Overview of the requirements applied for selecting events in the Signal Region with SMT}
-\label{tab:sel:sr3_smt}
-\end{table}    
-		
-\noindent The event yield for each \Pqb-jet multiplicities and the total event yield is shown in Table~\ref{tab:yields:sr3}. 
-Even though the selection with exactly one \Pqb-jet is the purest, for the SR3\tZc, events containing zero and two \Pqb-jets are also considered in order to have the largest possible signal acceptance and then work on the separation of signal from background, as described in \Cref{sec:separation}.
+	\caption{Overview of the requirements applied to select events in the Signal Region with SMT.}
+	\label{tab:sel:sr3_smt}
+\end{table} 
+
 \begin{table}[!h]
 	\centering
 	\footnotesize
 	\input{Chapters/CH6/tables/yield_sr3_withSMT.tex}
-	\caption{Event yield for each \Pqb-jet multiplicities and total event yield for the SR3\tZc selection.}
+	\caption{Event yields for each \Pqb-jet multiplicity and total event yields for the SR3\tZc selection.}
 	\label{tab:yields:sr3}
 \end{table}    
-\\~\Cref{fig:sr3_kin_lep,fig:sr3_kin_jet} show the distributions of kinematic variables for events selected in the SR3 region for the \tZc coupling extraction selection (SR3\tZc).
-As it can be noticed, the main background sources are \ttZ and \VVHF.
 
 \begin{figure}[!htbp]
 	\centering
@@ -150,7 +203,7 @@ As it can be noticed, the main background sources are \ttZ and \VVHF.
 	    \includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/nbJets}\\
 		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/q_pt} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/b_pt} \\
-		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/jet_pt} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/softmu_dRmin} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/SMTjet_Pt} \\
 	\end{tabular}
 	\caption{Pre-fit distributions of kinematic variables of jets for events selected in the SR3\tZc region. Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5. 
@@ -162,67 +215,40 @@ As it can be noticed, the main background sources are \ttZ and \VVHF.
 \newpage
 \subsection {Reconstruction of the soft muon decay chain}
 \label{sec:smt_compositions}
-In \ttbar events, the soft muon can be originated from various sources. In MC simulation, truth information are used to identify the origin of the soft muon and the truth flavour of the SMT-jet that contains the soft muon. Therefore it is possible to reconstruct the chain of ancestors which in the end produces the soft muon. 
+In \ttbar events, the soft muon can be originated by various sources. In MC simulation, truth information can be used to determine the origin of the soft muon and the truth flavour of the SMT-jet that contains the soft muon. Therefore it is possible to reconstruct the chain of ancestors which in the end produces the soft muon. 
 Four categories of events can be identified:
 \begin{itemize}
-	\item muons originating from the decay chain of a b-quark produced by a $t\rightarrow Wb$ decay if the hadron and the b-quark are spatially matched within $\Delta$ R <0.4. Events with muons from b$\rightarrow \mu$, b$\rightarrow$c$\rightarrow \mu$ and b$\rightarrow \tau \rightarrow \mu$, are included in this category;
+	\item muons originating from the decay chain of a b-quark produced by a $t\rightarrow bW$ decay if the hadron and the b-quark are spatially matched within $\Delta$ R <0.4. Events with muons from b$\rightarrow \mu$, b$\rightarrow$c$\rightarrow \mu$ and b$\rightarrow \tau \rightarrow \mu$, are included in this category;
 	\item muons originating from the decay chain of a c-quark produced by a $t\rightarrow cZ$ decay if the hadron and the c-quark are spatially matched within $\Delta$ R <0.4. Events with muons from c$\rightarrow \mu$ and c$\rightarrow \tau \rightarrow \mu$,   are included in this category;
 	\item muons which are either produced by light hadrons coming from a top-quark decay\\ ($t\rightarrow Wb$ or $t\rightarrow cZ$) or muons coming from the decay in flight of light hadrons, mostly pions and kaons. These muons can be also categorised as 'fake-SMT';
 	\item muons that are effectively prompt leptons from a \PW or \PZ boson decay, failing the prompt lepton selection cuts, being close to a jet and therefore entering the soft muon selection criteria, referred to as prompt$\rightarrow \mu$.
 \end{itemize}
-According to the categories described above, Table~\ref{tab:sig_comp} shows the composition for the signal sample FCNC $t\bar{t}$(cZ). It can be noted that soft muons mostly come from B-hadrons ($\sim$ 60\%)  and C-hadrons ($\sim$ 40\%) decays.
-Table~\ref{tab:ttZ_comp} and Table~\ref{tab:VV_comp} show the composition for the main backgrounds, \ttZ and \VVHF respectively. \\
+According to the categories described above, Table~\ref{tab:sig_comp} shows the composition for the FCNC $t\bar{t}$(cZ) signal. Soft muons mostly come from B-hadrons ($\sim$ 60\%)  and C-hadrons ($\sim$ 40\%) decays.\\
+Table~\ref{tab:ttZ_comp} and Table~\ref{tab:VV_comp} show the composition for the main backgrounds, \ttZ and \VVHF respectively. 
 For \ttZ the main contributions come from B-hadrons ($\sim$ 80\%) as expected by the \ttZ topology.
-For \VVHF the main contributions come from C-hadrons ($\sim$ 60\%), mostly  \WZ\texttt{+$c\bar{c}$}.
+For \VVHF the main contributions come from C-hadrons ($\sim$ 60\%), mostly  \WZ~\texttt{+$c\bar{c}$}.
 
 \begin{table}[!h]
 	\centering        
 	\footnotesize  
 	\input{Chapters/CH6/tables/sig_comp.tex}
-	\caption{Reconstructed chain of ancestors that produces the soft muon for the signal sample FCNC $t\bar{t}$(cZ).} %The soft muon is mostly coming from B-hadrons ($\sim$ 60\%)  and C-hadrons ($\sim$ 40\%). }
+	\caption{Reconstructed chain of ancestors that produces the soft muon for the FCNC $t\bar{t}$(cZ) signal.} %The soft muon is mostly coming from B-hadrons ($\sim$ 60\%)  and C-hadrons ($\sim$ 40\%). }
 	\label{tab:sig_comp}
 \end{table}    
 \begin{table}[!h]
 	\centering     
 	\footnotesize     
 	\input{Chapters/CH6/tables/ttZ_comp.tex}
-	\caption{Reconstructed chain of ancestors that produces the soft muon for the background sample \ttZ.}
+	\caption{Reconstructed chain of ancestors that produces the soft muon for the \ttZ background.}
 	\label{tab:ttZ_comp}
 \end{table}    
 \begin{table}[!h]
 	\centering    
 	\footnotesize      
 	\input{Chapters/CH6/tables/VV_comp.tex}
-	\caption{Reconstructed chain of ancestors that produces the soft muon for the background sample \VVHF }
+	\caption{Reconstructed chain of ancestors that produces the soft muon for the \VVHF background.}
 	\label{tab:VV_comp}
 \end{table}    
-
-\section{Background estimation}
-\label{sec:background}
-A variety of background sources are considered.
-These include SM processes with similar final states as the FCNC \tZc
-process (such as VV or the associated production of \ttbar with
-a \PZ boson), as well as events in which at least one of the leptons
-in the final state is \textit{fake} (either a jet misidentified as a
-lepton or a non-prompt lepton).
-The estimation for the various sources of background relies on MC
-simulations, for both the normalisation and the shape, while for the
-\ttbar fake-lepton background the shapes are taken from MC but the
-normalisation is extracted from data. \\
-The \ttZ enters the event selection because of the presence in the
-final state of a SM top quark and of a \PZ boson. The only difference
-to the signal topology, for the semi-leptonic \ttbar decay, is the
-presence of additional jets in the event. \\
-The diboson background (mainly \PW\PZ and \PZ\PZ) enters the selection because of the presence
-of a \PZ boson and of additional jets, that can come from heavy
-quarks. 
-The diboson background is split into \VVHF (heavy flavour) and \VVLF (light flavour) based on the types of jets associated:
-if one of the associated jets originated from \Pqb-quark or \Pqc-quark then it is considered as \VVHF, otherwise it is considered as \VVLF. % chktex 13
-The jet type is determined using the \texttt{jet\_truthflav} variable.
-This variable, provided by the flavour tagging group, defines a cone of $\Delta R < 0.3$ associated with each jet.
-If a \Pqb-hadron with ( \pT > \SI{5}{\GeV}) is found within this cone the jet is identified as a \bjet.
-If no \Pqb-hadrons are found, the algorithm searches for \Pqc-hadrons, then \Pgt leptons.
-If none of these identifiers are found the jet is labelled as a light jet.\\
 
 %\clearpage
 %\subsection {Fake composition}
@@ -255,22 +281,22 @@ If none of these identifiers are found the jet is labelled as a light jet.\\
 
 \section{Separation of signal from background events}
 \label{sec:separation}
-A multivariate analysis (MVA) technique is used to separate signal from background. 
-The Gradient Boosted Decision Trees (GBDT) method with TMVA software package 
-is exploited in this study~\cite{BDTG,TMVA}. The GBDT output score is in the range between -1 and 1.
+Given the event yields in Table~\ref{tab:yields:sr3}, a multivariate analysis (MVA) technique is used to have a better separation of the signal from the background and to increase the value of \ssplusb.\\ 
+Therefore, the Gradient Boosted Decision Trees (GBDT) method with TMVA software package~\cite{BDTG,TMVA} is exploited in this study. 
+The output of this algorithm (called GBDT score) is correlated with \ssplusb and it is in the range between -1 and 1.
 The most signal-like events have scores near 1 while the most background-like events have scores near -1. The GBDTs are trained separately in each signal regions as described below.
 The SR3\tZc is defined targeting the FCNC \tZc coupling in \ttbar decay events
-using the soft muon tagging, therefore the MVA discriminant for this coupling, \Dthree, is built using the GBDT trained with the FCNC \tZc \ttbar decay events against backgrounds.
+using the soft muon tagging, therefore the MVA discriminant, \Dthree, is built using a GBDT trained with FCNC \tZc \ttbar decay events against all backgrounds.
 
 \subsection {Input variables}
-A set of variables as the GBDT input is used to train and test the GBDT method on the events in
-SR3\tZc. Those variables are listed in \Cref{tab:D3input}, ordered by the separation value, defined by, as in~\cite{TMVA}:
+\label{sec:input_var}
+A set of variables as the GBDT input is used to train and test the GBDT method on the events in SR3\tZc. Those variables are listed in \Cref{tab:D3input}, ordered by the separation value, defined by, as in~\cite{TMVA}:
 \begin{equation*}
 \langle s^{2}\rangle = \frac{1}{2}\int \frac{[p_{s}(y)-p_{b}(y)]^{2}}{p_{s}(y)+p_{b}(y)}dy
 \end{equation*}
 where $p_{s}(y)$ and $p_{b}(y)$ are the signal and background PDFs of the classifier $y$. 
 The separation is 0 (1) for identical (non-overlapping) signal and background shapes.\\
-These sets of input variables are constructed based on separation values, correlations and impact on the BDT performance. The details are documented in Appendix~\ref{app:BDT}.  
+The set of input variables presented in this section has been constructed and optimized based on separation values, correlations and impact on the BDT performance. The details of the optimization procedure are documented in Appendix~\ref{app:BDT}.  
 The distributions of input variables in the Signal Region is presented in~\Cref{fig:separation:SR3}.
 
 \begin{table}[!htbp]
@@ -290,20 +316,38 @@ The distributions of input variables in the Signal Region is presented in~\Cref{
 		\bottomrule
 	\end{tabular}
 	\caption{
-	Set of variables used in the training of the GBDT in SR3\tZc to built the \Dthree discriminant. Variables are ordered by the separation $\langle s^{2}\rangle$ value. }
+	Set of variables used in the training of the GBDT in SR3\tZc to build the \Dthree discriminant. Variables are ordered by the separation $\langle s^{2}\rangle$ value. }
 	\label{tab:D3input}
 \end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/tFCNC} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/tSM} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/ttbar_dR} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/softmu_pt_id_SumPtTrkPt500} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/ttbar_dR} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/softmuZ_dR} \\
+	\end{tabular}
+	\caption{Pre-fit distributions of the input variables used in the training of the GBDT in SR3\tZc to build the \Dthree discriminant. Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5.  
+		\ErrStatOnly
+		\Blinded
+	}%
+	\label{fig:separation:SR3}
+\end{figure}
+
+\clearpage
 
 \subsection {GBDT training and evaluation}
 In order to train the GBDT algorithm and have a reliable model with a good performance, it is better to use as much statistics as possible from the available signal and background MC samples.
 On the other hand, to check the performance and validate the model, 
-the trained GBDT model must be applied on the test sample (events that are not used in the training phase) that has sufficiently large statistics. 
+the trained GBDT model must be applied on a test sample (events that are not used in the training phase) that has sufficiently large statistics. 
 Therefore, \SI{80}{\%} of available MC statistics is used for the training while \SI{20}{\%} 
 for the testing, as described below.
-All samples, including MC systematics samples and data (currently only in CRs), are divided into five approximately equal size groups using pseudo-random numbers%\footnote{A pseudo-random number is generated for each event using the \texttt{C++ srand} generator with the sum of the dataset \texttt{RunNumber}, \texttt{DSID} and \texttt{EventNumber} as seed.}
-, which 
-ensures that the same event in nominal samples %and systematics samples%\footnote{For example, the sample with varied jet energy resolution.} 
-is assigned in the same group.  
+All samples, including MC systematics samples and data (currently only in CRs), are divided into five approximately equal size groups using pseudo-random numbers. %\footnote{A pseudo-random number is generated for each event using the \texttt{C++ srand} generator with the sum of the dataset \texttt{RunNumber}, \texttt{DSID} and \texttt{EventNumber} as seed.}
+%, which ensures that the same event in nominal samples %and systematics samples%\footnote{For example, the sample with varied jet energy resolution.} 
+%is assigned in the same group.  
 All events in each group have assigned the same integer pseudo-random number from 1 to 5.
 Five equivalent GBDT models are trained using four groups of nominal MC samples. 
 Each training uses different combination of four groups out of five. 
@@ -331,35 +375,31 @@ They are chosen to counteract overtraining and have an optimal performance.
 		\bottomrule
 	\end{tabular}
 	\caption{
-	Used values for configuration options of the TMVA method Boosted Decision Trees~\cite{TMVA}. 
+	Used values for configuration options of the TMVA method BDT~\cite{TMVA}. 
 }%
 \label{tab:BDTparam}
 \end{table}
-\begin{figure}[!htbp]
-	\centering
-	\begin{tabular}{cc}
-		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/tFCNC} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/tSM} \\
-		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/ttbar_dR} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/softmu_pt_id_SumPtTrkPt500} \\
-		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/ttbar_dR} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/softmuZ_dR} \\
-	\end{tabular}
-	\caption{Pre-fit distributions of the input variables used in the training of the GBDT in SR3\tZc to built the \Dthree discriminant. Number of signal events are normalised to the current observed branching ratio limits and scaled by factor 5.  
-		\ErrStatOnly
-		\Blinded
-	}%
-	\label{fig:separation:SR3}
-\end{figure}
-\FloatBarrier
 
 \subsection {GBDT performance and overtraining checks }
-Overtraining  leads  to  a  seeming  increase  in  the  classification performance  over  the
-objectively  achievable  one,  if  measured  on  the  training  sample,  and  to  an  effective
-performance decrease when measured with an independent test sample.  A convenient way to detect overtraining and to measure its impact is therefore to compare the performance results between training and test samples. \Cref{fig:separation:SR3:ROC} present the Receiver Operating  Characteristic (ROC) curves for each GBDT output score in the signal region, while \Cref{fig:separation:SR3:GBDTbkg} show the GBDT output score distributions for signal and background samples, comparing results between training and test samples.
+An important step to validate the GBDT training is the \textit{overtraining} check, needed to 
+verify if there is disagreement between the training sample and the test sample and therefore to 
+verify its stability. In fact, overtraining  leads  to  a  seeming  increase  in  the  classification 
+performance  over  the objectively  achievable  one,  if  measured  on  the  training  sample, 
+ and  to  an  effective performance decrease when measured with an independent test sample.
+A convenient way to detect overtraining and to measure its impact is therefore to compare the
+performance results between training and test samples. \Cref{fig:separation:SR3:ROC}
+present the Receiver Operating  Characteristic (ROC) curves for each GBDT output score in
+the signal region, while \Cref{fig:separation:SR3:GBDTsig,fig:separation:SR3:GBDTbkg} show
+the GBDT output score distributions for signal and background samples, comparing results
+between training and test samples.
 No significant overtraining is detected. The five GBDT output scores used to
-built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The GBDTs suffer from low background MC statistics, however results seem to be fairly stable within the statistical uncertainties. 
+built discriminant variables are compared in~\Cref{fig:separation:GBDT}. 
+The results of the five GBDTs are in agreement within the statistical uncertainties indicating the 
+good stability of the trained GBDTs.
+ %The GBDTs suffer from low background MC statistics, however results seem to be fairly stable within the statistical uncertainties. 
 \\Input variables importance for each GBDT are presented in~\Cref{tab:D3importance}. The importance is evaluated as the total separation gain that this variable had in the decision trees (weighted by the number of events). It is normalized to all variables together, which have an importance of 1.
+For most of the variables, the spread of importance values across the five GBDTs is below 3\%, indicating again a good stability of the trained GBDTs.
+%\enlargethispage{5cm}
 \begin{table}[!htbp]
 	\small
 	\centering
@@ -377,7 +417,7 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 		\bottomrule
 	\end{tabular}
 	\caption{
-	Input variables importance in each GBDT used to built the \Dthree discriminant.
+	Input variables importance in each GBDT used to build the \Dthree discriminant.
 }%
 \label{tab:D3importance}
 \end{table}
@@ -392,7 +432,7 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 			\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/ROC_Fold4}
 			\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/ROC_Fold5}} \\
 	\end{tabular}
-	\caption{ The ROC curves for each of five GBDTs trained in SR3\tZc to built the \Dthree discriminant. 
+	\caption{ The ROC curves for each of five GBDTs trained in SR3\tZc to build the \Dthree discriminant. 
 		Comparing results between training and test samples.
 	}%
 	\label{fig:separation:SR3:ROC}
@@ -401,41 +441,41 @@ built discriminant variables are compared in~\Cref{fig:separation:GBDT}.  %The G
 \begin{figure}[htbp]
 	\centering
 	\begin{tabular}{ccc}
-		\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold1} &
-		\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold2} &
-		\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold3} \\ 
+		\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold1} &
+		\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold2} &
+		\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold3} \\ 
 		\multicolumn{3}{c}{
-			\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold4}
-			\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold5}} \\
+			\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold4}
+			\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal_Fold5}} \\
 	\end{tabular}
-	\caption{ The FCNC \tZc \ttbar decay signal GBDT output score distribution for each of five GBDTs trained in SR3\tZc to built the \Dthree discriminant. 
+	\caption{ The FCNC \tZc \ttbar decay signal GBDT output score distributions for each of the five GBDTs trained in SR3\tZc to build the \Dthree discriminant. 
 		Comparing results between training and test samples.
 	}%
 	\label{fig:separation:SR3:GBDTsig}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 	\centering
 	\begin{tabular}{ccc}
-		\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold1} &
-		\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold2} &
-		\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold3} \\ 
+		\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold1} &
+		\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold2} &
+		\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold3} \\ 
 		\multicolumn{3}{c}{
-		\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold4}
-		\includegraphics[width=.3\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold5}} \\
+		\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold4}
+		\includegraphics[width=.29\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background_Fold5}} \\
 	\end{tabular}
-	\caption{ The background GBDT output score distribution for each of five GBDTs trained in SR3\tZc to built the \Dthree discriminant. 
+	\caption{ The background GBDT output score distributions for each of the five GBDTs trained in SR3\tZc to build the \Dthree discriminant. 
 		Comparing results between training and test samples.
 	}%
 	\label{fig:separation:SR3:GBDTbkg}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 	\centering
 		\subfigure[]{\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_signal}\label{subfig:separation:GBDTsig}}\qquad
 		\subfigure[]{\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/SR3_UsingSMT/BDT/GBDT_background}\label{subfig:separation:GBDTbkg}}
 	\caption{ The GBDT output score distributions for \subref{subfig:separation:GBDTsig} signal events and \subref{subfig:separation:GBDTbkg} background events, in the test samples.
-		Trained five GBDTs are compared in each signal region. 
+		The five trained GBDTs are compared in the signal region. 
 	}%
 	\label{fig:separation:GBDT}
 \end{figure}
@@ -451,7 +491,7 @@ The requirements for this selection are the following:
 	\item At least one \Pqc-jets satisfying the requirements described in \Cref{sec:object:cjet}.
 	\item No requirements on the masses of both the FCNC and the SM top-quark candidates are applied. 
 \end{itemize}
-This selection is summarized in Table~\ref{tab:sel:sr3_dl1rc} together with the selection using SMT for comparison. Kinematic plots are presented in \Cref{app:SRs:SR3}.
+This selection is summarized in Table~\ref{tab:sel:sr3_dl1rc} together with the selection using SMT for comparison. Kinematic distributions are presented in \Cref{app:SRs:SR3}.
 \begin{table}[!h]
 	\centering
 	\small
@@ -472,20 +512,20 @@ This selection is summarized in Table~\ref{tab:sel:sr3_dl1rc} together with the 
 		--  									 & $\ge$ 1 \Pqc-tagged jet \\
 		\bottomrule
 	\end{tabular}
-	\caption{Overview of the requirements applied for selecting events in the Signal Region with \DLrc}
+	\caption{Overview of the requirements applied to select events in the Signal Region with \DLrc}
 	\label{tab:sel:sr3_dl1rc}
 \end{table}    
-\\The event yield for  for this selection is shown in Table~\ref{tab:yields:sr3_dl1rc}.
+\\The event yields for this selection are shown in Table~\ref{tab:yields:sr3_dl1rc}.
 \begin{table}[!h]
 	\centering
 	\small
 	\input{Chapters/CH6/tables/yield_sr3_withDL1r.tex}
-	\caption{Total event yield for the SR3\tZc selection using the \Pqc-tagger \DLrc.}
+	\caption{Total event yields for the SR3\tZc selection using the \Pqc-tagger \DLrc.}
 \label{tab:yields:sr3_dl1rc}
 \end{table}  
-\newline \noindent Comparing the two event yield in Table~\ref{tab:yields:sr3} with Table~\ref{tab:yields:sr3_dl1rc} is possible to see that using \DLrc the number of signal events is significantly larger than using SMT since the semi-leptonic decay of heavy hadrons is limited by the branching ratio ($\simeq$ 20\%).
+\newline \noindent Comparing the two event yields in Table~\ref{tab:yields:sr3} with Table~\ref{tab:yields:sr3_dl1rc} it is possible to see that using \DLrc the number of signal events is significantly larger than using SMT since the semi-leptonic decay of heavy hadrons is limited by the branching ratio (20\%).
 However, taking into account the SMT selection with only one b-jet, it is also possible to see that SMT has a better discrimination of backgrounds manly due to a better light-rejection.\\
-To choose the best selection for this analysis, one can compare the values of \ssplusb for each bin of the GBDT discriminant as can bee seen in Table~\ref{tab:yields:sr3_smt_bdt} for the SMT selection, in Table~\ref{tab:yields:sr3_dl1rc_bdt} for \DLrc selection, and Figure~\ref{fig:yields:sr3_bdt}.\\
+To choose the best c-tagger for this analysis, one can compare the values of \ssplusb for each bin of the GBDT discriminant, as it can be seen in Table~\ref{tab:yields:sr3_smt_bdt} for the SMT selection, in Table~\ref{tab:yields:sr3_dl1rc_bdt} for \DLrc selection, and Figure~\ref{fig:yields:sr3_bdt}. A new GBDT training has been performed for the \DLrc selection. The GBDT output for SMT was already presented in \Cref{sec:separation}, while for \DLrc it will be presented in \Cref{sec:separation_all} together with the discriminants for all the other Signal Regions defined.
 For the \DLrc selection, in the last three bins of the GBDT discriminant, there are
 12.3 events of signal and 9.3 events of background 
 which corresponds to more signal events and 10\% background events of the whole SR3\tZc with SMT.\\
@@ -500,7 +540,9 @@ The GBDT output for SMT was already presented in \Cref{sec:separation}, while fo
 	\subfigure[\DLrc selection]{
 		\includegraphics[width=.45\textwidth]{Chapters/CH6/figures/GBDT_dl1rc}
 		\label{fig:yields:sr3_dl1rc_bdt}} \\
-	\caption{Values of \ssplusb for each bin of the GBDT discriminant for~\subref{fig:yields:sr3_smt_bdt} SMT selection and~\subref{fig:yields:sr3_dl1rc_bdt} for \DLrc selection. 	}%
+	\caption{Values of \ssplusb for each bin of the GBDT 
+		discriminant~\subref{fig:yields:sr3_smt_bdt} for the SMT selection 
+		and~\subref{fig:yields:sr3_dl1rc_bdt} for the \DLrc selection. 	}%
 	\label{fig:yields:sr3_bdt}
 \end{figure}
 \FloatBarrier
@@ -528,7 +570,7 @@ The GBDT output for SMT was already presented in \Cref{sec:separation}, while fo
 	$S/\sqrt{S+B}$ & 0.35 & 0.47 & 0.63 & 0.83 & 1.12 \\ 
 	\hline 
 \end{tabular} 
-	\caption{Values of \ssplusb for each bin of the GBDT discriminant for the SMT selection.}%
+	\caption{Values of \ssplusb for the last five bins of the GBDT discriminant for the SMT selection.}%
 \label{tab:yields:sr3_smt_bdt}
 \end{table}
 
@@ -556,7 +598,7 @@ The GBDT output for SMT was already presented in \Cref{sec:separation}, while fo
 		$S/\sqrt{S+B}$         & 0.58             & 0.88            & 1.26            & 1.53            & 1.86       \\
 		\hline
 	\end{tabular} 
-	\caption{Values of \ssplusb for each bin of the GBDT discriminant for the \DLrc selection.}%
+	\caption{Values of \ssplusb for the last five bins of the GBDT discriminant for the \DLrc selection.}%
 	\label{tab:yields:sr3_dl1rc_bdt}
 \end{table}
 
