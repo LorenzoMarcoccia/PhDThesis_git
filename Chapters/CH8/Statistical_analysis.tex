@@ -3,7 +3,7 @@
 % content in this file will be fed into the main document
 
 % ----------------------- introduction file header -----------------------
-\chapter{Statistical analysis for \tZc coupling}
+\chapter{Extraction of the limit on the branching ratio $t \rightarrow Zc$ }
 \label{chapter:Statistical_analysis}
 
 % ----------------------- paths to graphics ------------------------
@@ -14,10 +14,10 @@
 % ----------------------------------------------------------------------
 % ----------------------- introduction content -------------------------
 % ----------------------------------------------------------------------
-In this section the statistical analysis is presented.
+In this section the statistical analysis for the extraction of the limit on the branching ratio $t \rightarrow Zc$ is presented.
 In \Cref{sec:systematic} a discussion on the systematic uncertainties included in this study is reported.
-In \Cref{sec:stat:strategy} the fit strategy for both the \tZc couplings is presented.
-In \Cref{sec:stat:summary} a summary of how the fits are performed is reported.  
+In \Cref{sec:stat:strategy} the fit strategy for the \tZc coupling is presented.
+In \Cref{sec:stat:summary} a summary of how the fit is performed is reported.  
 In \Cref{sec:stat:tzc} the results of the fit for the \tZc coupling extraction is described. 
 
 %%-------------------------  SYSTEMATICS %%
@@ -27,13 +27,12 @@ In \Cref{sec:stat:tzc} the results of the fit for the \tZc coupling extraction i
 \label{sec:systematic}
 Many sources of systematic uncertainties are considered in the search
 for FCNC $tZc$ interaction and all of them will be reported in this section. 
-Similarly, it will be reported also a set of systematic uncertainties that cause variations on the signal acceptance, the background rates, and the shape of the distributions that are fed to the fit.
-The systematic uncertainties are evaluated following the common prescriptions and the standard
+Systematic uncertainties that cause variations on the signal acceptance, the background rates, and the shape of the distributions that are fed to the fit are considered. They are evaluated following the common prescriptions and the standard
 ATLAS procedures.
 
 \subsection {Sources of systematic uncertainties}
 \label{sec:systematic:sources}
-Systematics uncertainties are considered for the normalisation of the individual backgrounds from various sources.\\
+Systematics uncertainties from various sources are considered for the normalisation and shape of the individual backgrounds .\\
 
 % ===========================================
 \subsubsection{Object energy scale/resolution and efficiencies} 
@@ -45,8 +44,8 @@ factors are propagated to the event yields and observables.
 
 \begin{itemize}
 	\item \textbf{Lepton reconstruction} \\ 
-	The mis-modelling of muon (electron) trigger, reconstruction and
-	identification efficiencies in simulation is corrected by introducing
+	The mis-modelling of muon (electron) trigger, reconstruction,
+	identification and isolation efficiencies in simulation is corrected by introducing
 	scale factors derived from measured efficiencies in data. The decays
 	of $Z \to \mu^+ \mu^-$ ($Z \to e^+ e^-$) are used to obtain scale
 	factors as functions of the lepton kinematics. The uncertainties are
@@ -55,7 +54,7 @@ factors are propagated to the event yields and observables.
 	For the SMT muons it was proved that the scale factors obtained for
 	isolated muons are valid also for muons inside jets~\cite{SMT-INT-13TeV}. 
 	\item \textbf{Lepton momentum scale and resolution} \\ 
-	The $Z \to ll$ processes are used to measure the lepton momentum scale
+	The $Z \to ll$ process is used to measure the lepton momentum scale
 	and resolution. Calibration factors and associated uncertainties are
 	derived to match the simulation to observed distributions in collision
 	data. The effect of momentum scale uncertainties is evaluated by
@@ -64,7 +63,7 @@ factors are propagated to the event yields and observables.
 	uncertainties, the event selection is repeated by smearing the lepton
 	momentum~\cite{PERF-2013-05}.
 	\item \textbf{Jet energy scale} \\ 
-	The JES was derived using information from test-beam data, LHC
+	The jet energy scale (JES) was derived using information from test-beam data, LHC
 	collision data and simulation. The JES calibration consists of several
 	steps that account for detector problems, jet reconstruction
 	algorithms, jet fragmentation models, dense data-taking environment
@@ -80,7 +79,7 @@ factors are propagated to the event yields and observables.
 	statistical, eta intercalibration, flavour composition, pile-up and
 	relative non-closure. 
 	\item \textbf{Jet energy resolution} \\ 
-	The impact of the uncertainty on the jet energy resolution is
+	The impact of the uncertainty on the jet energy resolution (JER) is
 	evaluated by smearing the jet energy in the MC samples. 
 	\item \textbf{Jet vertex tagger} \\ 
 	The uncertainty for the JVT requirement is also applied. 	
@@ -103,19 +102,19 @@ factors are propagated to the event yields and observables.
 % ===========================================
 \subsubsection{Monte Carlo modelling} 
 % ===========================================
-Systematic effects from MC modelling are estimated by comparing
+Systematic effects from MC modelling of various background sources are estimated by comparing
 different generators and varying parameters for the event generation.
 
 \begin{itemize}	
 	\item \textbf{Signal} \\ 
-	Scale uncertainties are included for the signal, following the
+	Renormalization and factorization scale uncertainties are included for the signal, following the
 	latest prescriptions. In particular, the $\mu_r$ and $\mu_f$
 	variations are included and the envelope of the variations is added 
 	(called \textit{Signal $\mu_r$ and $\mu_f$}). \\
 %	An additional uncertainty, comparing the left- and right-handed
 %	coupling samples, is included (called \textit{Signal RH couplings}). \\
 	\item \textbf{\ttbar} \\
-	The effect of changing the parton shower for \ttbar events is
+	The effect of changing the parton shower for the generation of \ttbar events is
 	included and the difference between \PythiaEight and \HERWIG7
 	prediction is added as \ttbar parton showering uncertainty (called
 	\textit{\ttbar PS}). \\
@@ -127,14 +126,14 @@ different generators and varying parameters for the event generation.
 	The systematic uncertainties related to the parton distribution
 	functions are taken into account for the \ttbar background (called
 	\textit{\ttbar PDF}). \\
-	Additionally, the uncertainty associated to the \hdamp\ parameter is evaluated (NP called \textit{\ttbar hdamp})
+	Additionally, the uncertainty associated to the \hdamp\footnote{The \hdamp\ factor is the model parameter that controls ME/Parton Shower matching and effectively regulates the high-$\mathrm{p_{T}}$ radiation.} parameter is evaluated (NP called \textit{\ttbar hdamp})
 	using the alternative sample with the \hdamp\ value increased to $3.0~\mtop$.\\
 	Last but not least, an uncertainty is added to take into account the differences in the
 	photon conversion and \Pqb-hadron fractions in the signal regions with
 	respect to the \ttbar control region where the \ttbar background is
 	controlled. 
 	This uncertainty is obtained by taking the maximum
-	difference in the fraction between the regions (\SI{13}{\%} for
+	difference in the fractions between the regions (\SI{13}{\%} for
 	\Pqb-hadron and \SI{50}{\%} for photon conversions) and it's applied
 	to the relevant fraction. 
 	The two uncertainties are called
@@ -153,12 +152,12 @@ different generators and varying parameters for the event generation.
 	sample are also taken into account through samples for different A14
 	tune variations (called \textit{\ttZ QCD}).\\
 	\item \textbf{\tWZ} \\
-	The effect of changing the diagram removal used for \tWZ events was
-	investigated and the difference between the two diagram removals
-	prediction is included as \tWZ generator systematic uncertainty
+	The effect of changing the diagram removal scheme used for the generation of \tWZ events was
+	investigated and the difference between the two diagram removal
+	predictions is included as \tWZ generator systematic uncertainty
 	(called \textit{\tWZ DR}).\\
 	\item \textbf{\tZq} \\
-	Also for SM \tZq background, the differences by using different A14
+	Also for SM \tZq background, the differences of using different A14
 	tune variations are accounted and considered in the fit (called
 	\textit{$tZ$ QCD}).\\
 	\item \textbf{Diboson} \\
@@ -180,23 +179,23 @@ different generators and varying parameters for the event generation.
 % ===========================================
 \subsubsection{Background rate uncertainty} 
 % ===========================================
-The uncertainties used on the background rate uncertainties are summarised in
-\cref{tab:syst-crosssections}.
+The uncertainties on the background rate uncertainties are summarised in
+\cref{tab:syst-crosssections} and described in the following.
 \begin{itemize}
 	\item \textbf{\ttbar} \\
-	For the $t\bar{t}$ process, an uncertainty of \SI{5.5}{\%} on the normalisation is applied. Since this is one of the main backgrounds of this analysis, a normalisation factor for this background is added to the fit as a free-floating parameter.
+	For the $t\bar{t}$ process, an uncertainty of \SI{5.5}{\%} on the normalisation is applied. Since this is a fake background in this analysis, a normalisation factor for this background is added to the fit as a free-floating parameter to better control the event rate.
 	\item \textbf{\ttV} \\
 	For $t\bar{t}Z$ and $t\bar{t}W$ backgrounds, the uncertainty on the normalisation is taken from~\cite{ATL-COM-PHYS-2018-140}, where a \SI{12}{\%} theory uncertainty is quoted.
 	\item \textbf{\tWZ} \\
-	For the $tWZ$ background, an uncertainty of \SI{30}{\%} is applied on the normalisation.
+	For the $tWZ$ background, an uncertainty of \SI{30}{\%} is applied on the normalisation~\cite{Bylund:2016qau}.
 	\item \textbf{\tZq} \\
-	For the $tZq$ process, an uncertainty of \SI{14}{\%} on the normalisation is applied in agreement with the recent results from the $tZq$ observation.
+	For the $tZq$ process, an uncertainty of \SI{14}{\%} on the normalisation is applied in agreement with the recent results from the $tZq$ observation~\cite{Aad:2020wog}.
 	\item \textbf{Diboson} \\
-	For diboson background, the normalization uncertainty is taken from ATLAS results~\cite{STDM-2018-03}. The uncertainties applied are \SI{20}{\%} for the light diboson component and \SI{30}{\%} for the heavy diboson component. On top of that, modelling uncertainties are also used in the fit.
+	For diboson background, the normalization uncertainty is taken from ATLAS results~\cite{STDM-2018-03}. The uncertainties applied are \SI{20}{\%} for the light diboson component and \SI{30}{\%} for the heavy diboson component. 
 	\item \textbf{\Zjets} \\
 	Concerning the \Zjets processes, an uncertainty on the normalisation is applied with a value of \SI{100}{\%} allowing the constraint of this value by the fit.
 	\item \textbf{\ttH} \\
-	Normalisation uncertainty of \SI{15}{\%} is applied on the \ttH background. 
+	Normalisation uncertainty of \SI{15}{\%} is applied on the \ttH background~\cite{Demartin:2016axk}. 
 	\item \textbf{Other background processes} 
 	A conservative overall normalization uncertainty of \SI{50}{\%} is applied
 	on the remaining minor backgrounds (\ttt,\tttt,\VVV,\VH and \ttWW). 
@@ -243,8 +242,6 @@ that are fed to the fit.
 We denote the relative variation of the acceptance of process $j$
 due to a systematic source $i$ $\alpha_{ij+}$ and $\alpha_{ij-}$ for a
 positive or negative variation of the systematic uncertainty.		\\
-The only systematic uncertainty that has acceptance uncertainty
-without a shape is luminosity.\\
 The MC statistics is related to the statistical uncertainty in each
 bin of the of the distributions that are used in the fit,
 so it can change the shape of the distributions. 
@@ -273,10 +270,10 @@ and normalisation. A value of \prunenorm and \pruneshape were used for
 normalisation and shape, respectively. 
 
 
-\section {Strategy}
+\section {Fit strategy}
 \label{sec:stat:strategy}
 
-In order to extract the \tZc couplings, a binned maximum
+In order to extract the \tZc coupling, a binned maximum
 likelihood $L(\mu,\theta)$ fit is performed using the MC templates for both signal and
 background predictions.The $L(\mu,\theta)$ is constructed as a product of Poisson
 probability terms over all bins in each considered distribution, and Gaussian constraint terms
@@ -300,19 +297,19 @@ backgrounds.
 \begin{table}[htbp]
 	\small
 	\centering
-	\begin{tabular}{ccc}
+	\begin{tabular}{cc}
 		\toprule
-		\multicolumn{3}{c}{\tZc coupling extraction} \\
+		\multicolumn{2}{c}{\tZc coupling extraction} \\
 		\midrule
-		Region & Distribution & Additional info \\
+		Region & Distribution \\
 		\midrule
-		SR1 \tZc & \Done & \\
-		SR2 \tZc & \DtwoC & \\
-		SR3 \tZc & \Dthree & \\
-		Side-band CR1 \tZc & \Done & \\
-		Side-band CR2 & \DtwoC & \\
-		\ttZ CR & Leading lepton \pt & \\
-		\ttbar CR & Leading lepton \pt & \\
+		SR1 \tZc & \Done  \\
+		SR2 \tZc & \DtwoC  \\
+		SR3 \tZc & \Dthree  \\
+		Side-band CR1 \tZc & \Done  \\
+		Side-band CR2 & \DtwoC  \\
+		\ttZ CR & Leading lepton \pt  \\
+		\ttbar CR & Leading lepton \pt  \\
 		\bottomrule
 	\end{tabular}
 	\caption{
@@ -321,7 +318,7 @@ backgrounds.
 \end{table}
 
 \paragraph{Inputs} The inputs to the fit consist of binned
-distributions, including the signal and all background channels.
+distributions, including the signal and all background sources.
 Additionally, for each MC sample, separate templates that take into
 account the systematic variations discussed in \Cref{sec:systematic}
 are created and included in the fit. 
@@ -343,7 +340,7 @@ The relationship between $\mu$ and the corresponding $\BR(t\rightarrow cZ)$ is
 \paragraph{Systematic uncertainty NPs} The impact of the systematic
 uncertainties on the extracted $\mu$ is estimated as follows. \\
 A nuisance parameter (NP) is associated to each systematic uncertainty.
-These NPs have a central value and an associated uncertainty pre-fit.
+These NPs have a central value and an associated pre-fit uncertainty.
 The fit is able to change the central value of the NPs (called \textit{pull})
 and the uncertainty on the NP can change (this is called \textit{constraint}
 if the uncertainty becomes smaller), to better describe the data.
@@ -364,10 +361,10 @@ standard fit, $\Delta\mu$, is the pre-fit (post-fit) impact on $\mu$.
 The values of $\Delta\mu$ are shown in the so called ranking plot that 
 helps to understand the size of the effect that
 the uncertainty has on the signal strength. \\
-To prevent statistical fluctuations increasing the systematic uncertainties
-and wasted computation time on fitting insignificant NPs,
-systematic uncertainties are pruned from the fit. 
-A value of \prunenorm and \pruneshape are used for normalisation and shape, respectively. 
+%To prevent statistical fluctuations increasing the systematic uncertainties
+%and wasted computation time on fitting insignificant NPs,
+%systematic uncertainties are pruned from the fit. 
+%A value of \prunenorm and \pruneshape are used for normalisation and shape, respectively. 
 
 \paragraph{Statistical uncertainty NPs} The same procedure is applied
 to the so called $\gamma$ parameters, which represent the background
@@ -380,16 +377,21 @@ Separate templates are used for the remaining background sources.
 The normalisation of \ttbar+\Wt background is free floating in the fit meaning that an unconstrained NP is associated to the corresponding template, namely $\mu_{\ttbar+\Wt}$.
 All other backgrounds have pre-fit normalizations with uncertainties (see \Cref{sec:systematic:sources}).
 
+\clearpage
+\FloatBarrier
+
 \section{Summary of fits}
 \label{sec:stat:summary}
 For the extraction of the \tZc coupling, the following fits
 are presented:
 \begin{description}
 	\item[B-only fit in CRs] in this fit only CRs are used. Real data are
-	used. The signal templates are not included in the fit. 
+	used. The signal templates are not included in the fit. This fit is used to estimate
+	the preliminary background.
 	\item[S+B fit in SR+CRs with realistic Asimov] in this fit both SRs and CRs are used. Real
 	data is used in the CRs. In the SRs an Asimov dataset is constructed
-	using post-fit background normalisations from the B-only fit in CRs.  
+	using post-fit background normalisations from the B-only fit in CRs.  This fit is used to extract
+	the \tZc coupling, therefore the expected upper limit .
 \end{description}
 These are summarised in the following table:
 
@@ -415,7 +417,7 @@ These are summarised in the following table:
 To extract the expected sensitivity, an SRs+CRs S+B fit is performed. 
 Real data in used in CRs while in SRs an Asimov dataset is used,
 constructed using the background normalisations found in Appendix \ref{app:stat:tzc:bonly:cr}.\\
-A summary of plots and tables shown in this section are the following:
+Plots and tables shown in this section are the following:
 \begin{itemize}
 \item The value of the post-fit normalisation parameters of the free floating background is shown in \Cref{fig:stat:tzc:splusb:crsr:norm}.
 \item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \cref{fig:stat:tzc:splusb:crsr:pruning}.
@@ -429,17 +431,18 @@ A summary of plots and tables shown in this section are the following:
 \end{itemize}
 As expected, the behaviour of the fit with the realistic Asimov dataset
 is almost identical to the results of the B-only fit in the CRs
-(\Cref{app:stat:tzc:bonly:cr}). 
-Normalisation factors (\cref{fig:stat:tzc:splusb:crsr:norm}) and NP
+(Appendix \ref{app:stat:tzc:bonly:cr}). 
+Normalisation factors (\Cref{fig:stat:tzc:splusb:crsr:norm}) and NP
 pulls and constrains 
 (\Cref{fig:stat:tzc:splusb:crsr:np:instr,fig:stat:tzc:splusb:crsr:np:model}) 
-are very similar. \\
-%The most pulled NPs (e.g. \ttbar FSR, \VVHF 
-%normalisation, and \VVHF Berends scaling for events with 1 jet) are
-%not among the highest ranked NPs
-%(\Cref{fig:stat:tzc:splusb:crsr:ranking}). 
-%Slightly pulled NPs (e.g. Other fakes norm. and \ttZ norm.) have a small impact on the signal strength, around 2\%.\\
-None of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 3\% as can be seen in \Cref{fig:stat:tzc:splusb:crsr:ranking}.\\
+are very similar since in the CRs the expected signal is negligible
+and in the SRs the Asimov data are used. 
+The signal strength of $\mu$ is expected to be zero for the same reason.
+The fake normalization factor $\mu_{\ttbar+\Wt}$ is compatible to one within the uncertainties and
+this is a good indication of the good fit stability.\\
+The most pulled NPs (e.g. \ttbar FSR and \VVHF Berends scaling for events with 1 jet) are
+not among the highest ranked NPs (\Cref{fig:stat:tzc:splusb:crsr:ranking}). 
+Slightly pulled NPs (e.g. \ttZ normalization, Other fakes norm. and \VVHF generator) have a small post-fit impact on the signal strength, around 2\%, as can be seen again in \Cref{fig:stat:tzc:splusb:crsr:ranking}. Moreover, none of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 3\%.\\
 Concerning the correlations between NPs
 (\Cref{fig:stat:tzc:splusb:crsr:corrmatrix}), some strong correlations
 between diboson related NPs are present, as expected. This is also
@@ -574,19 +577,24 @@ true for the \ttbar normalisation and some \ttbar modeling NPs.
 \clearpage
 \section{Results}
 \label{sec:stat:tzc}
-From the likelihood fits described in this chapter, namely the
-signal+background fits in SRs+CRs with the realistic Asimov datasets in \Cref{sec:stat:tzc:splusb:crsr},
+From the likelihood fit described in this chapter, namely the
+signal+background fit in SRs+CRs with the realistic Asimov datasets in \Cref{sec:stat:tzc:splusb:crsr},
 expected upper limits can be extracted. In the absence of
 FCNC signal, upper limit can be computed with the CLs method~\cite{Junk:1999kv,Read:2002hq} with the expected 95\% confidence level (CL) limit on the branching ratio BR($\Pqt\rightarrow\PZ\Pqc$).\\ 
-In Table \ref{tab:limits:comparison} is possible to estimate the impact of the \Pqc-tagging using \DLrc or SMT (presented in \Cref{app:stat_smt:tzc:splusb:crsr}) on the analysis comparing the results without using none of these techniques (called 'Baseline').
+Table \ref{tab:limits:comparison} shows the expected limits on BR($t \rightarrow Zc$) extracted for various selections: 
+\begin{itemize}
+\item without the use of any c-tagger ('Baseline'),
+\item using SMT, presented in \Cref{app:stat_smt:tzc:splusb:crsr},
+\item using \DLrc.
+\end{itemize}
 The improvement obtained using SMT is around 2\%, while using \DLrc is around 10\%.
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{c|c|c}
 		\toprule
-		\multicolumn{3}{c}{Expected limits on BR $\Pqt\rightarrow\PZ\Pqc$ }\\
+		\multicolumn{3}{c}{Expected limits on BR($\Pqt\rightarrow\PZ\Pqc$) [$ \times 10^{-5}$] }\\
 		\toprule
-		 \textbf{Baseline [$ \times 10^{-5}$]}          & \textbf{Using SMT [$ \times 10^{-5}$]}			& \textbf{Using \DLrc} \\
+		 \textbf{Baseline}          & \textbf{Using SMT}			& \textbf{Using \DLrc} \\
 		 \midrule
 		 $10.67 $ 	& $ 10.4 $   & $  9.55 $\\
 		\bottomrule
@@ -595,7 +603,7 @@ The improvement obtained using SMT is around 2\%, while using \DLrc is around 10
 					Results using \DLrc, SMT and none of them are reported to estimate the impact of these techniques on the analysis.  }%
 	\label{tab:limits:comparison}
 \end{table}
-\\The expected limits, together
+\\The expected limits, using \DLrc, together
 with statistical only limits and the expected limits from the previous ATLAS
 analysis~\cite{TOPQ-2017-06}, are reported in
 \Cref{tab:results:limits}.\\
