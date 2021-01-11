@@ -5,7 +5,7 @@
 % ----------------------- introduction file header -----------------------
 \chapter{Search for FCNC $t\rightarrow Zc$ using a charm-tagger}
 \label{chapter:charm_tag}
-This chapter presents an important fraction of my work. It is dedicated to the event selection using the SMT technique, the charm-tagger \DLrc and the comparison between these two techniques.
+This chapter presents an important fraction of my work. It is dedicated to the search for FCNC $t\rightarrow Zc$ using the SMT technique, the charm-tagger \DLrc and the comparison between these two techniques.
 The design and optimization of the multivariate analysis is part of my work as well, and it is presented in this chapter.
 
 % ----------------------- paths to graphics ------------------------
@@ -30,7 +30,7 @@ The final states where either the \PZ or the \PW bosons decay
 hadronically are not considered because of the higher backgrounds.\\
 The pre-selection criteria, common to all the Signal Regions used in this work, are the following:
 \begin{itemize}
-	\item    Exactly three leptons (electrons or muons) are required. 
+	\item    Exactly three isolated leptons (electrons or muons) are required. 
 				These leptons must satisfy the requirements described in
 				\Cref{sec:object:el,sec:object:mu}. 
 				At least one lepton must have $\pt > \SI{27}{\GeV}$ to be above the trigger threshold.
@@ -39,15 +39,15 @@ The pre-selection criteria, common to all the Signal Regions used in this work, 
 	\item   There should be at least one opposite-sign same-flavour lepton pair
 				(OSSF) with an invariant mass in the range 
 				$|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$. 
-				These two leptons are considered as the ones coming from the \PZ boson.\\ 	
+				These two leptons are considered to be the ones coming from the \PZ boson.\\ 	
 				If more than one lepton pair satisfies these selections, the pair
 				with the invariant mass closest to the mass of the \PZ boson is
-				considered. 
+				considered to be from the \PZ decay. 
 \end{itemize}	
 
 \subsection {Top quarks reconstruction}
 \label{sec:sel:topmassrec}
-Given the topology of the FCNC \tZc decay, the next step is the reconstruction of the two top quarks.
+The next step is the reconstruction of the two top quarks.
 The signal event has at least two jets with one of them being \Pqb-tagged, two top quark (FCNC and SM tops) candidates are reconstructed under the FCNC \ttbar decay signal hypothesis.
 The kinematics of the top-quark candidates can be reconstructed from
 the corresponding decay particles.\\
@@ -71,8 +71,9 @@ For each jet combination, where any jet can be assigned to $j_a$, while $j_b$ mu
 %This procedure assigns the SMT-jet to the \Pqc-quark from FCNC top decay or to the \Pqb-quark 
 %from SM top decay (depending on the number of \Pqb-tagged jet) and determines the $p^{\nu}_z$ value, completing all ingredients to reconstruct four-momenta of the 
 %top-quark candidates.
+Since a semi-leptonic decay can be originated from a C-hadron decay but also from a B-hadrons decay (see \Cref{sec:smt_compositions}), the SMT-jet can be associated to the FCNC top decay or to the SM top decay, depending on the minimum $\chi^2$.
 \\ In~\Cref{eq:chi2tt}, the central value for the masses and the widths of the top quarks and \PW boson are taken from reconstructed simulated FCNC \ttbar decay signal events. This is done by matching the true \Pqc- and \Pqb-quarks in the simulated events to the reconstructed ones, setting the longitudinal momentum of the neutrino to the $p_z$ of the true simulated neutrino and then performing Bukin fits\footnote{These fits use a piecewise function with  a Gaussian function in the centre and two 		
-	asymmetric tails. Five parameters determine the overall normalization, the peak position, the width of the core, the asymmetry, the size of the lower tail, and the size of the higher tail. From these parameters, only the peak position and the width enter the $\chi^2$.}~\cite{Bukin} 
+	asymmetric tails. Five parameters determine the overall normalization, the peak position, the width of the core, the asymmetry, the size of the lower tail, and the size of the higher tail. Of these parameters, only the peak position and the width enter the $\chi^2$.}~\cite{Bukin} 
 to the masses of the reconstructed top quarks and \PW boson (more details are in Appendix~\ref{appendix:mass_resolution}). 
 The extracted values are: 
 \begin{itemize}
@@ -97,7 +98,7 @@ production signal hypothesis is the same as the one reconstructed under the FCNC
 Moreover, the first term (the FCNC top) in~\Cref{eq:chi2tt} is a constant term in the minimisation of $\chi^{2}$, therefore it does not affect the extraction of the longitudinal component of the neutrino momentum.
 
 
-\section{Background estimation}
+\subsection{Background estimation}
 \label{sec:background}
 A variety of background sources are considered.
 These include SM processes with three leptons in the final state as the FCNC \ttbar (Zc)
@@ -107,7 +108,7 @@ in the final state is \textit{fake} (either a jet misidentified as a
 lepton or a non-prompt lepton).
 The estimation of the various sources of background relies on MC
 simulations while for the
-\ttbar fake-lepton background the shapes are taken from MC but the
+\ttbar fake-lepton background the shapes are taken from MC events but the
 normalisation is extracted from data. \\
 The \ttZ process enters the event selection because of the presence in the
 final state of a SM top quark and of a \PZ boson. The only difference
@@ -118,7 +119,7 @@ of three leptons and of additional jets emitted, that can come from heavy
 quarks. 
 The diboson background is split into \VVHF (heavy flavour) and \VVLF (light flavour) based on the type of jets associated:
 if one of the associated jets originated from a \Pqb-quark or a \Pqc-quark then it is considered as \VVHF, otherwise it is considered as \VVLF. % chktex 13
-The jet type is determined using the \texttt{jet\_truthflav} variable.
+The jet type is determined in simulations using the \texttt{jet\_truthflav} variable.
 This variable, provided by the flavour tagging group, defines a cone of $\Delta R < 0.3$ associated with each jet.
 If a \Pqb-hadron with \pT > \SI{5}{\GeV} is found within this cone the jet is identified as a \bjet.
 If no \Pqb-hadrons are found, the algorithm searches for \Pqc-hadrons, then \Pgt leptons.
@@ -132,7 +133,7 @@ In the following sections, some other backgrounds are grouped as follows:
 	\item \textit{Other} which contains minor backgrounds (\ttt, \VVV,  \ttWW etc.).
 \end {itemize}
 
-\subsection {Signal Region with SMT requirement}
+\section {Signal Region with SMT requirement}
 \label{sec:sel:sr3}
 The Signal region considered in this chapter is called SR3\tZc and it has the following requirements in addition to the cuts described previously:
 \begin{itemize}
@@ -146,7 +147,7 @@ The Signal region considered in this chapter is called SR3\tZc and it has the fo
 \end{itemize}
 These selections are summarized in Table~\ref{tab:sel:sr3_smt}.\\
 The event yields for each \Pqb-jet multiplicity and the total event yields are shown in Table~\ref{tab:yields:sr3}. 
-Even though the selection with exactly one \Pqb-jet is the purest events containing zero and two \Pqb-jets are also considered in order to have the largest possible signal acceptance and then work on the separation of signal from background, as described in \Cref{sec:separation}.\\
+Even though the selection with exactly one \Pqb-jet is the purest, events containing zero and two \Pqb-jets are also considered in order to have the largest possible signal acceptance and then work on the separation of signal from background, as described in \Cref{sec:separation}.\\
 ~\Cref{fig:sr3_kin_lep,fig:sr3_kin_jet} show the distributions of some kinematic variables for events selected in the SR3 region for the \tZc coupling extraction selection (SR3\tZc). 
 As it can be noticed, the main background sources are \ttZ and \VVHF. In the next section these
 two backgrounds will be investigated more in detail exploiting the information carried by the soft muon
@@ -215,7 +216,7 @@ decay chain.
 \newpage
 \subsection {Reconstruction of the soft muon decay chain}
 \label{sec:smt_compositions}
-In \ttbar events, the soft muon can be originated by various sources. In MC simulation, truth information can be used to determine the origin of the soft muon and the truth flavour of the SMT-jet that contains the soft muon. Therefore it is possible to reconstruct the chain of ancestors which in the end produces the soft muon. 
+In \ttbar events, a soft muon in jets can be originated by various sources. In MC simulation, truth information can be used to determine the origin of the soft muon and the truth flavour of the SMT-jet that contains the soft muon. Therefore it is possible to reconstruct the chain of ancestors which in the end produces the soft muon. 
 Four categories of events can be identified:
 \begin{itemize}
 	\item muons originating from the decay chain of a b-quark produced by a $t\rightarrow bW$ decay if the hadron and the b-quark are spatially matched within $\Delta$ R <0.4. Events with muons from b$\rightarrow \mu$, b$\rightarrow$c$\rightarrow \mu$ and b$\rightarrow \tau \rightarrow \mu$, are included in this category;
@@ -281,8 +282,8 @@ For \VVHF the main contributions come from C-hadrons ($\sim$ 60\%), mostly  \WZ~
 
 \section{Separation of signal from background events}
 \label{sec:separation}
-Given the event yields in Table~\ref{tab:yields:sr3}, a multivariate analysis (MVA) technique is used to have a better separation of the signal from the background and to increase the value of \ssplusb.\\ 
-Therefore, the Gradient Boosted Decision Trees (GBDT) method with TMVA software package~\cite{BDTG,TMVA} is exploited in this study. 
+Given the selection requirements in Table~\ref{tab:sel:sr3_smt}, a multivariate analysis (MVA) technique is used to have a better separation of the signal from the background and to increase the value of \ssplusb.\\ 
+The Gradient Boosted Decision Trees (GBDT) method with TMVA software package~\cite{BDTG,TMVA} is exploited in this study. 
 The output of this algorithm (called GBDT score) is correlated with \ssplusb and it is in the range between -1 and 1.
 The most signal-like events have scores near 1 while the most background-like events have scores near -1. The GBDTs are trained separately in each signal regions as described below.
 The SR3\tZc is defined targeting the FCNC \tZc coupling in \ttbar decay events
@@ -297,7 +298,7 @@ A set of variables as the GBDT input is used to train and test the GBDT method o
 where $p_{s}(y)$ and $p_{b}(y)$ are the signal and background PDFs of the classifier $y$. 
 The separation is 0 (1) for identical (non-overlapping) signal and background shapes.\\
 The set of input variables presented in this section has been constructed and optimized based on separation values, correlations and impact on the BDT performance. The details of the optimization procedure are documented in Appendix~\ref{app:BDT}.  
-The distributions of input variables in the Signal Region is presented in~\Cref{fig:separation:SR3}.
+The distributions of input variables in the Signal Region are presented in~\Cref{fig:separation:SR3}.
 
 \begin{table}[!htbp]
 	\small
@@ -343,13 +344,13 @@ The distributions of input variables in the Signal Region is presented in~\Cref{
 In order to train the GBDT algorithm and have a reliable model with a good performance, it is better to use as much statistics as possible from the available signal and background MC samples.
 On the other hand, to check the performance and validate the model, 
 the trained GBDT model must be applied on a test sample (events that are not used in the training phase) that has sufficiently large statistics. 
-Therefore, \SI{80}{\%} of available MC statistics is used for the training while \SI{20}{\%} 
-for the testing, as described below.
+Therefore, a \textit{k-Fold Cross-Validation} method is exploited, where k=5, so that the \SI{80}{\%} of available MC statistics is used for the training while 
+\SI{20}{\%} for the testing, as described below.
 All samples, including MC systematics samples and data (currently only in CRs), are divided into five approximately equal size groups using pseudo-random numbers. %\footnote{A pseudo-random number is generated for each event using the \texttt{C++ srand} generator with the sum of the dataset \texttt{RunNumber}, \texttt{DSID} and \texttt{EventNumber} as seed.}
 %, which ensures that the same event in nominal samples %and systematics samples%\footnote{For example, the sample with varied jet energy resolution.} 
 %is assigned in the same group.  
-All events in each group have assigned the same integer pseudo-random number from 1 to 5.
-Five equivalent GBDT models are trained using four groups of nominal MC samples. 
+All events in each group have assigned the same integer pseudo-random number from 1 to 5 so that
+five equivalent GBDT models are trained using four groups of nominal MC samples to test the stability of the training. 
 Each training uses different combination of four groups out of five. 
 The remaining one group is used as a test sample.
 Each of five GBDTs is evaluated on events with the assigned pseudo-random number
@@ -382,7 +383,7 @@ They are chosen to counteract overtraining and have an optimal performance.
 
 \subsection {GBDT performance and overtraining checks }
 An important step to validate the GBDT training is the \textit{overtraining} check, needed to 
-verify if there is disagreement between the training sample and the test sample and therefore to 
+verify if there is disagreement between the output from the training sample and the test sample and therefore to 
 verify its stability. In fact, overtraining  leads  to  a  seeming  increase  in  the  classification 
 performance  over  the objectively  achievable  one,  if  measured  on  the  training  sample, 
  and  to  an  effective performance decrease when measured with an independent test sample.
@@ -491,7 +492,7 @@ The requirements for this selection are the following:
 	\item At least one \Pqc-jets satisfying the requirements described in \Cref{sec:object:cjet}.
 	\item No requirements on the masses of both the FCNC and the SM top-quark candidates are applied. 
 \end{itemize}
-This selection is summarized in Table~\ref{tab:sel:sr3_dl1rc} together with the selection using SMT for comparison. Kinematic distributions are presented in \Cref{app:SRs:SR3}.
+This selection is summarized in Table~\ref{tab:sel:sr3_dl1rc} together with the selection using SMT for comparison. Kinematic distributions are presented in \Cref{app:SRs:SR3}.     
 \begin{table}[!h]
 	\centering
 	\small
@@ -523,8 +524,9 @@ This selection is summarized in Table~\ref{tab:sel:sr3_dl1rc} together with the 
 	\caption{Total event yields for the SR3\tZc selection using the \Pqc-tagger \DLrc.}
 \label{tab:yields:sr3_dl1rc}
 \end{table}  
-\newline \noindent Comparing the two event yields in Table~\ref{tab:yields:sr3} with Table~\ref{tab:yields:sr3_dl1rc} it is possible to see that using \DLrc the number of signal events is significantly larger than using SMT since the semi-leptonic decay of heavy hadrons is limited by the branching ratio (20\%).
-However, taking into account the SMT selection with only one b-jet, it is also possible to see that SMT has a better discrimination of backgrounds manly due to a better light-rejection.\\
+\newline \noindent Comparing the two event yields in Table~\ref{tab:yields:sr3} with Table~\ref{tab:yields:sr3_dl1rc} it is possible to see that using \DLrc the number of signal events is significantly larger than using SMT since the semi-leptonic decay of heavy hadrons is limited by the branching ratio (20\%). 
+To increase the signal acceptance in the SMT selection, not only events containing exactly one \Pqb-jet, but also events containing zero or two \Pqb-jets have been considered.
+However, taking into account the SMT selection with only one b-jet, it is also possible to see that SMT has a better discrimination of backgrounds manly due to a better light-jet rejection.\\
 To choose the best c-tagger for this analysis, one can compare the values of \ssplusb for each bin of the GBDT discriminant, as it can be seen in Table~\ref{tab:yields:sr3_smt_bdt} for the SMT selection, in Table~\ref{tab:yields:sr3_dl1rc_bdt} for \DLrc selection, and Figure~\ref{fig:yields:sr3_bdt}. A new GBDT training has been performed for the \DLrc selection. The GBDT output for SMT was already presented in \Cref{sec:separation}, while for \DLrc it will be presented in \Cref{sec:separation_all} together with the discriminants for all the other Signal Regions defined.
 For the \DLrc selection, in the last three bins of the GBDT discriminant, there are
 12.3 events of signal and 9.3 events of background 

@@ -18,14 +18,14 @@ Background sources are also described, as well as the definitions of several Con
 
 \section{Event selections and reconstruction}
 \label{sec:selection_all}
-\Cref{chapter:charm_tag} described the event selection targeting the FCNC \ttbar decay process using a charm-tagger. To extract limits on the FCNC \tZc coupling, two addition channels can be investigated: FCNC \ttbar decays without the use of a charm-tagger and FCNC single top production.\\
+\Cref{chapter:charm_tag} described the event selection targeting the FCNC \ttbar decay process using a charm-tagger. To extract limits on the FCNC \tZc coupling, two addition selections can be investigated: FCNC \ttbar decays without the use of a charm-tagger and FCNC single top production.\\
 The pre-selection criteria, common to all the Signal Regions used in this work have already been discussed in \Cref{sec:selection}.
 In this section, the topology of the final states of the signal in the Signal Regions are described. 
 For SR3\tZc, the selection presented in \Cref{sec:other_selection}, using \DLrc, is using in the following.
 %The SR3\tZc selection using the \Pqc-tagger \DLrc is already presented in \Cref{sec:other_selection}.
 There are two more channels that remain to present.
 \vspace{\baselineskip}
-\\The first channel is \FCNCtZc in \ttbar decays, where one of the \Pqt-quarks decays following the SM into a \PW boson and a
+\\The first selection is \FCNCtZc in \ttbar decays, where one of the \Pqt-quarks decays following the SM into a \PW boson and a
 \Pqb-quark (called in the following \textit{SM top}), while the other
 \Pqt-quark (called in the following \textit{FCNC top}) decays into a \PZ
 boson and a \Pqc-quark. Only the
@@ -36,7 +36,7 @@ the presence of three leptons, a \Pqc-jet, a \Pqb-tagged jet and missing
 transverse momentum from the escaping neutrino.  
 The final state of this channel was already presented in \Cref{sec:selection}  with the exception that no SMT or \Pqc-tagged jet is required.
 \vspace{\baselineskip}
-\\The second channel is \FCNCtZc in single-top production, where the
+\\The second selection is \FCNCtZc in single-top production, where the
 production of a single top-quark proceeds through an FCNC
 interaction. The \Pqt-quark is produced in association with a \PZ
 boson. Also in this case, only the trileptonic channel is
@@ -153,15 +153,15 @@ The signal yield in SR3 is effected by the \DLrc  \Pqc-efficiency (20\%), as dis
 \section{Background estimation}
 \label{sec:background_all}
 A variety of background sources are considered and already discussed in \Cref{sec:background}.\\
-In order to study the modelling of the main background processes, Control Regions (CRs) are used in the fit to extract the normalisation of some relevant background sources.\\
+In order to improve the modelling of the main background processes, Control Regions (CRs) are used in the fit to extract the normalisation of some relevant background sources.\\
 Several CRs are defined:
 \begin{itemize}
 	\item \ttbar CR is designed to control the minor \ttbar
 	background. As previously mentioned, this background enters the
 	selection because of the presence of a mis-reconstructed lepton,
 	i.e. a fake lepton. Since this background is small, the decision was
-	taken to evaluate it using MC. Nevertheless, the normalisation is
-	taken from data. 
+	taken to evaluate it using MC simulations. Nevertheless, the normalisation is
+	taken from data because these events are considered fakes for this analysis.. 
 	\item \ttZ CR is designed to control the \ttZ
 	background. It is constructed by requiring the presence of more jets
 	with respect to the jet multiplicity required in the SRs.
@@ -208,18 +208,6 @@ Events are required to have $\mT(\ell_{\PW},\Pgn) > \SI{40}{\GeV}$.\\
 The mass of the SM top-quark candidate, \mtopsm, must be also outside $2\sigma^{SM}$
 from \mtopvalue. Kinematic plots are presented in Appendix~\ref{app:CRs:SB2}.
 
-\subsection{Event yields in the Control Regions}
-Event yields in the CRs are shown in \Cref{tab:bkg:yields:tzc}. 
-As it can be noticed, the signal contribution in the various CRs is small.
-Every Control Region is enriched of the correspondent background. 
-\begin{table}[htbp]
-	\footnotesize
-	\centering
-	\input{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/Tables/Yields_clean.tex}
-	\caption{Event yields in the CRs for the \tZc coupling extraction. \TabErrStatSys} 
-	\label{tab:bkg:yields:tzc}
-\end{table} 
-
 \clearpage
 \global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}
 \begin{sidewaystable}[!htbp]
@@ -253,6 +241,20 @@ Every Control Region is enriched of the correspondent background.
 \global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
 
 \clearpage
+
+
+\subsection{Event yields in the Control Regions}
+Event yields in the CRs are shown in \Cref{tab:bkg:yields:tzc}. 
+As it can be noticed, the signal contribution in the various CRs is small.
+Every Control Region is enriched of the correspondent background. 
+\begin{table}[htbp]
+	\footnotesize
+	\centering
+	\input{Chapters/CH7/figures/BONLY_CR_UsingDL1rcFullSys/Tables/Yields_clean.tex}
+	\caption{Event yields in the CRs for the \tZc coupling extraction. \TabErrStatSys} 
+	\label{tab:bkg:yields:tzc}
+\end{table} 
+
 \section{Separation of signal from background events}
 \label{sec:separation_all}
 Three different GBDTs are trained separately in each signal region.
