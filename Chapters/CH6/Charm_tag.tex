@@ -3,7 +3,8 @@
 % content in this file will be fed into the main document
 
 % ----------------------- introduction file header -----------------------
-\chapter{Search for FCNC $t\rightarrow Zc$ using a charm-tagger}
+%\chapter{Search for FCNC $t\rightarrow Zc$ using a charm-tagger}
+\chapter{Search for FCNC $t\rightarrow Zc$}
 \label{chapter:charm_tag}
 This chapter presents an important fraction of my work. It is dedicated to the search for FCNC $t\rightarrow Zc$ using the SMT technique, the charm-tagger \DLrc and the comparison between these two techniques.
 The design and optimization of the multivariate analysis is part of my work as well, and it is presented in this chapter.
@@ -71,7 +72,7 @@ For each jet combination, where any jet can be assigned to $j_a$, while $j_b$ mu
 %This procedure assigns the SMT-jet to the \Pqc-quark from FCNC top decay or to the \Pqb-quark 
 %from SM top decay (depending on the number of \Pqb-tagged jet) and determines the $p^{\nu}_z$ value, completing all ingredients to reconstruct four-momenta of the 
 %top-quark candidates.
-Since a semi-leptonic decay can be originated from a C-hadron decay but also from a B-hadrons decay (see \Cref{sec:smt_compositions}), the SMT-jet can be associated to the FCNC top decay or to the SM top decay, depending on the minimum $\chi^2$.
+Since a semi-leptonic decay can be originated from a C-hadron decay but also from a B-hadrons decay (see \Cref{sec:smt_compositions}), the SMT-jet can be associated to the FCNC top decay or to the SM top decay, depending on the minimum $\chi^2$. When the \DLrc charm tagger is used (see \Cref{sec:other_selection}), the c-tagged jet is assigned to $j_a$.
 \\ In~\Cref{eq:chi2tt}, the central value for the masses and the widths of the top quarks and \PW boson are taken from reconstructed simulated FCNC \ttbar decay signal events. This is done by matching the true \Pqc- and \Pqb-quarks in the simulated events to the reconstructed ones, setting the longitudinal momentum of the neutrino to the $p_z$ of the true simulated neutrino and then performing Bukin fits\footnote{These fits use a piecewise function with  a Gaussian function in the centre and two 		
 	asymmetric tails. Five parameters determine the overall normalization, the peak position, the width of the core, the asymmetry, the size of the lower tail, and the size of the higher tail. Of these parameters, only the peak position and the width enter the $\chi^2$.}~\cite{Bukin} 
 to the masses of the reconstructed top quarks and \PW boson (more details are in Appendix~\ref{appendix:mass_resolution}). 
@@ -98,7 +99,7 @@ production signal hypothesis is the same as the one reconstructed under the FCNC
 Moreover, the first term (the FCNC top) in~\Cref{eq:chi2tt} is a constant term in the minimisation of $\chi^{2}$, therefore it does not affect the extraction of the longitudinal component of the neutrino momentum.
 
 
-\subsection{Background estimation}
+\subsection{Main sources of background}
 \label{sec:background}
 A variety of background sources are considered.
 These include SM processes with three leptons in the final state as the FCNC \ttbar (Zc)
@@ -490,6 +491,7 @@ The requirements for this selection are the following:
 	\item At least two jets satisfying the requirements described in \Cref{sec:object:jet}. 
 	\item Exactly one \Pqb-jet satisfying the requirements in \Cref{sec:object:bjet}. 
 	\item At least one \Pqc-jets satisfying the requirements described in \Cref{sec:object:cjet}.
+	%\item The \Pqc-jet is associated to \mtopfcnc in the $\chi^2$ calculation in \Cref{eq:chi2tt}.  
 	\item No requirements on the masses of both the FCNC and the SM top-quark candidates are applied. 
 \end{itemize}
 This selection is summarized in Table~\ref{tab:sel:sr3_dl1rc} together with the selection using SMT for comparison. Kinematic distributions are presented in \Cref{app:SRs:SR3}.     

@@ -4,8 +4,8 @@
 
 % ----------------------- introduction file header -----------------------
 %\chapter{Search for the FCNC decay \pmb{$t\rightarrow c + Z$}}
-\chapter{Search for FCNC $t\rightarrow Zc$ without a charm-tagger}
-\label{chapter:regions}
+%\chapter{Search for FCNC $t\rightarrow Zc$ without a charm-tagger}
+%\label{chapter:regions}
 
 % the code below specifies where the figures are stored
 \graphicspath{Chapters/CH7/figures}
@@ -13,15 +13,16 @@
 % ----------------------------------------------------------------------
 % ----------------------- introduction content -------------------------
 % ----------------------------------------------------------------------
-This chapter presents the Signal Regions dedicated to the search for FCNC \tZc in \ttbar decays and single-top production without a charm tagger.
-Background sources are also described, as well as the definitions of several Control Regions.
+%This chapter presents the Signal Regions dedicated to the search for FCNC \tZc in \ttbar decays and single-top production without a charm tagger.
+%Background sources are also described, as well as the definitions of several Control Regions.
 
-\section{Event selections and reconstruction}
+\section{Additional Signal Regions}
 \label{sec:selection_all}
-\Cref{chapter:charm_tag} described the event selection targeting the FCNC \ttbar decay process using a charm-tagger. To extract limits on the FCNC \tZc coupling, two addition selections can be investigated: FCNC \ttbar decays without the use of a charm-tagger and FCNC single top production.\\
+The previous sections described the event selection targeting the FCNC \ttbar decay process using a charm-tagger. Without the use of a charm-tagger, two addition selections can be investigated: FCNC \ttbar decays and FCNC single top production.\\
+%This two Signal Regions allow the extraction of the FCNC \tzq (q=u,c) limit since they don't use an explicit \Pqc-tagging algorithm. However, performing a likelihood fit using 
 The pre-selection criteria, common to all the Signal Regions used in this work have already been discussed in \Cref{sec:selection}.
 In this section, the topology of the final states of the signal in the Signal Regions are described. 
-For SR3\tZc, the selection presented in \Cref{sec:other_selection}, using \DLrc, is using in the following.
+For SR3\tZc, the selection using \DLrc and presented in \Cref{sec:other_selection}, is using henceforth.
 %The SR3\tZc selection using the \Pqc-tagger \DLrc is already presented in \Cref{sec:other_selection}.
 There are two more channels that remain to present.
 \vspace{\baselineskip}
@@ -87,7 +88,7 @@ Kinematic plots are presented in Appendix~\ref{app:SRs:SR2}.
 
 \subsection{Orthogonality between Signal Regions}
 The SRs are orthogonal between each other. The orthogonality is assured by
-selecting events with different jet multiplicities and by selecting or vetoing the presence of c-tagged jet.\\
+selecting events with different jet multiplicities, by selecting or vetoing the presence of c-tagged jet and selecting different mass windows using the reference value for the top mass of \mtopvalue. The mass windows applied are much larger than the difference between \mtopvalue and the mass values extracted in Appendix \ref{appendix:mass_resolution} and used in the $\chi^{2}$ calculation (see \Cref{eq:chi2tt,eq:chi2tZ}). Therefore, changing the mass value would not have a significant effect on the number of events in the SRs. Moreover, it is better to keep the mass window larger as possible to have a high signal sensitivity.\\
 This can be verified in Table~\ref{tab:sel:srs} where an overview of the requirements applied to select 
 events in the Signal Regions is presented.
 
@@ -147,7 +148,7 @@ As it can be noticed, the main background sources are:
 	\label{tab:sel:yields:tzc}
 \end{table} 
 \noindent As expected, SR1 has the greater fraction of FCNC \ttbar(cZ) events because it is designed to target the decay signal topology, while SR2 has the greater fraction of FCNC (c)tZ events because it is designed to target the FCNC single top production.\\
-The signal yield in SR3 is effected by the \DLrc  \Pqc-efficiency (20\%), as discussed in~\Cref{sec:object:cjet} but it also has the best background rejection.
+The signal yield in SR3 is affected by the \DLrc  \Pqc-efficiency (20\%), as discussed in~\Cref{sec:object:cjet} but it also has the best background rejection. However, SR1 cannot distinguish between $t\rightarrow uZ$ and $t\rightarrow cZ$ as no c-tagger is not used in this region and the choice of the jet coming from the FCNC top decay is led by the $\chi^2$ minimization.
 
 \clearpage
 \section{Background estimation}
@@ -255,7 +256,8 @@ Every Control Region is enriched of the correspondent background.
 	\label{tab:bkg:yields:tzc}
 \end{table} 
 
-\section{Separation of signal from background events}
+
+\section{Separation of signal from background events using \DLrc}
 \label{sec:separation_all}
 Three different GBDTs are trained separately in each signal region.
 In this section only the GBDT for SR3\tZc will be presented because directly related to the work of this thesis.\\
