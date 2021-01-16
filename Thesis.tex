@@ -68,6 +68,8 @@
  \addtolength{\evensidemargin}{0.0cm}   % border size on the even pages (for bindings)
 %\newcommand{\Neq}{\ensuremath{\,\rm{n}_{\rm{eq}}/cm^2}}
 
+\newcommand\hidemath{$n$}
+
 \NewDocumentCommand{\bywhom}{m}{% the Bourbaki trick
 	{\nobreak\hfill\penalty50\hskip1em\null\nobreak
 		\hfill\mbox{\normalfont(#1)}%
@@ -93,8 +95,8 @@
 
 
 % ----------------------- FRONT PAGE ----------------------------------
+\pagenumbering{gobble}
 \fancyend
-%\pagenumbering{roman}
 % --------------------- FRONT MATTER ----------------------------------
 \input{frontmatter/title}
 \thispagestyle{empty}
@@ -103,18 +105,19 @@
 % --------------------- QUOTES----------------------------------
 \vspace*{3cm} 
 
-\begin{pquotation}{Karl Popper, The Logic of Scientific Discovery}
-	`The wrong view of science\\
-	 betrays itself in the craving to be right;\\ 
-	for it is not his possession of knowledge,\\ 
-	of irrefutable truth, that makes the man of science, \\
-	but his persistent and recklessly critical quest for truth.'\\
-	\newline
-\end{pquotation}
+%\begin{pquotation}{Karl Popper, The Logic of Scientific Discovery}
+%	`The wrong view of science\\
+%	 betrays itself in the craving to be right;\\ 
+%	for it is not his possession of knowledge,\\ 
+%	of irrefutable truth, that makes the man of science, \\
+%	but his persistent and recklessly critical quest for truth.'\\
+%	\newline
+%\end{pquotation}
 
 % --------------------- ACKNOWLEDGEMENT----------------------------------
 %\include{Frontmatter/dedication}
 \fancyend
+\pagenumbering{roman}
 \include{Frontmatter/acknowledgement}
 \fancyend
 %\setcounter{page}{1}

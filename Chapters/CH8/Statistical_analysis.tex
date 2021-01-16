@@ -27,16 +27,10 @@ In \Cref{sec:stat:tzc} the results of the fit for the \tZc coupling extraction i
 \label{sec:systematic}
 Many sources of systematic uncertainties are considered in the search
 for FCNC $tZc$ interaction and all of them will be reported in this section. 
-Systematic uncertainties that cause variations on the signal acceptance, the background rates, and the shape of the distributions that are fed to the fit are considered. They are evaluated following the common prescriptions and the standard
-ATLAS procedures.
+Systematic uncertainties that cause variations on the signal acceptance, the background rates, and the shape of the distributions that are fed to the fit are considered. They are evaluated following the common prescriptions and the standard ATLAS procedures. Systematics uncertainties from various sources are considered for the normalisation and shape of the individual backgrounds.
 
 \subsection {Sources of systematic uncertainties}
 \label{sec:systematic:sources}
-Systematics uncertainties from various sources are considered for the normalisation and shape of the individual backgrounds .\\
-
-% ===========================================
-\subsubsection{Object energy scale/resolution and efficiencies} 
-% ===========================================
 Systematic uncertainties due to residual differences between data and
 Monte Carlo simulations, for jet, electron and muon reconstruction
 after calibration, as well as uncertainties on the calibration scale
@@ -96,18 +90,18 @@ factors are propagated to the event yields and observables.
 	in~\cite{ATLAS-CONF-2014-046,ATLAS-CONF-2014-004}. The number of NP
 	used for the $b$-tagging data/MC scale factors is evaluated
 	separately for $b$, $c$ and light-flavour quark jets in the MC
-	samples.	
+	samples.\\	
 \end{itemize}
 
 % ===========================================
-\subsubsection{Monte Carlo modelling} 
+%\subsubsection{Monte Carlo modelling} 
 % ===========================================
-Systematic effects from MC modelling of various background sources are estimated by comparing
+\noindent Systematic uncertainties from MC modelling of various background sources are estimated by comparing
 different generators and varying parameters for the event generation.
 
 \begin{itemize}	
 	\item \textbf{Signal} \\ 
-	Renormalization and factorization scale uncertainties are included for the signal, following the
+	Renormalization and factorization scale uncertainties are considered for the signal, following the
 	latest prescriptions. In particular, the $\mu_r$ and $\mu_f$
 	variations are included and the envelope of the variations is added 
 	(called \textit{Signal $\mu_r$ and $\mu_f$}). \\
@@ -116,7 +110,7 @@ different generators and varying parameters for the event generation.
 	\item \textbf{\ttbar} \\
 	The effect of changing the parton shower for the generation of \ttbar events is
 	included and the difference between \PythiaEight and \HERWIG7
-	prediction is added as \ttbar parton showering uncertainty (called
+	parton shower is added as \ttbar parton showering uncertainty (called
 	\textit{\ttbar PS}). \\
 	Scale, radiation and tune systematics are also included, following the
 	latest prescriptions. In particular, the $\mu_r$ and $\mu_f$
@@ -157,7 +151,7 @@ different generators and varying parameters for the event generation.
 	predictions is included as \tWZ generator systematic uncertainty
 	(called \textit{\tWZ DR}).\\
 	\item \textbf{\tZq} \\
-	Also for SM \tZq background, the differences of using different A14
+	The differences of using different A14
 	tune variations are accounted and considered in the fit (called
 	\textit{$tZ$ QCD}).\\
 	\item \textbf{Diboson} \\
@@ -173,23 +167,24 @@ different generators and varying parameters for the event generation.
 	per jet in each jet multiplicity resulting into 
 	5 NP (= 1, = 2, = 3, = 4, $\geq$ 5 jets). This uncertainty is also known as \textit{Berends scaling} \\ 
 	\item \textbf{MC statistics} \\ 
-	The uncertainty due to the limited size of the MC samples is also included.
+	The uncertainty due to the limited size of the various MC samples is also included.\\
 \end{itemize}
 
 % ===========================================
-\subsubsection{Background rate uncertainty} 
+%\subsubsection{Background rate uncertainty} 
 % ===========================================
-The uncertainties on the background rate uncertainties are summarised in
-\cref{tab:syst-crosssections} and described in the following.
+\noindent The uncertainties on the background rate uncertainties are summarised in
+\cref{tab:syst-crosssections} and described in the following:
 \begin{itemize}
 	\item \textbf{\ttbar} \\
-	For the $t\bar{t}$ process, an uncertainty of \SI{5.5}{\%} on the normalisation is applied. Since this is a fake background in this analysis, a normalisation factor for this background is added to the fit as a free-floating parameter to better control the event rate.
+	For the $t\bar{t}$ process, an uncertainty of \SI{5.5}{\%} on the normalisation is applied. Since this analysis targets final states with three prompt leptons (see \Cref{tab:sel:srs}), the $t\bar{t}$ process is a fake background.
+	Therefore a normalisation factor is added to the fit as a free-floating parameter to better control the event rate.
 	\item \textbf{\ttV} \\
 	For $t\bar{t}Z$ and $t\bar{t}W$ backgrounds, the uncertainty on the normalisation is taken from~\cite{ATL-COM-PHYS-2018-140}, where a \SI{12}{\%} theory uncertainty is quoted.
 	\item \textbf{\tWZ} \\
-	For the $tWZ$ background, an uncertainty of \SI{30}{\%} is applied on the normalisation~\cite{Bylund:2016qau}.
+	For the $tWZ$ background, an uncertainty of \SI{30}{\%} is applied to the normalisation~\cite{Bylund:2016qau}.
 	\item \textbf{\tZq} \\
-	For the $tZq$ process, an uncertainty of \SI{14}{\%} on the normalisation is applied in agreement with the recent results from the $tZq$ observation~\cite{Aad:2020wog}.
+	For the $tZq$ process, an uncertainty of \SI{14}{\%} on the normalisation is applied following the recent results from the $tZq$ observation~\cite{Aad:2020wog}.
 	\item \textbf{Diboson} \\
 	For diboson background, the normalization uncertainty is taken from ATLAS results~\cite{STDM-2018-03}. The uncertainties applied are \SI{20}{\%} for the light diboson component and \SI{30}{\%} for the heavy diboson component. 
 	\item \textbf{\Zjets} \\
@@ -223,11 +218,9 @@ The uncertainties on the background rate uncertainties are summarised in
 	\caption{Uncertainties on the normalisation of all background processes.}
 	\label{tab:syst-crosssections}
 \end{table}
-
+\FloatBarrier
 % ===========================================
-\subsubsection{Luminosity and Pile-up reweighting} 
-% ===========================================
-The uncertainty in the combined 2015-2018 integrated luminosity is
+\noindent The uncertainty in the combined 2015-2018 integrated luminosity is
 \SI{1.7}{\%}. It is derived, following a methodology similar to that
 detailed in Ref.~\cite{DAPR-2013-01}, from the calibration of the
 luminosity scale using $x-y$ beam-separation scans.\\
@@ -246,8 +239,8 @@ The MC statistics is related to the statistical uncertainty in each
 bin of the of the distributions that are used in the fit,
 so it can change the shape of the distributions. 
 For all other systematics listed, rate and shape differences are taken
-into account. 
-\subsubsection{Symmetrization of shape uncertainties} 
+into account. \\
+%\subsubsection{Symmetrization of shape uncertainties} 
 For the shape uncertainties included in the fit, the templates are symmetrised by
 taking half the difference between the up and down variation around
 the nominal template. For the bins where both the initial up and down
@@ -257,9 +250,8 @@ Concerning all systematic uncertainties containing up and down
 systematic variations, these are symmetrised by 
 ($\alpha_{ij-}$ + $\alpha_{ij+}$)/2 = $\alpha_{ij-}$ = $\alpha_{ij+}$. 
 For the systematic uncertainties with one sided systematics, these
-are symmetrised by defining $\alpha_{ij-}$ = $\alpha_{ij+}$.
-
-\subsubsection{Smoothing and Pruning} 
+are symmetrised by defining $\alpha_{ij-}$ = $\alpha_{ij+}$.\\
+%\subsubsection{Smoothing and Pruning} 
 Some fluctuations in individual bins can be caused
 by the low statistics shape systematic uncertainties. A smoothing of
 systematic shape uncertainties is performed using the default
@@ -385,12 +377,12 @@ All other backgrounds have pre-fit normalizations with uncertainties (see \Cref{
 For the extraction of the \tZc coupling, the following fits
 are presented:
 \begin{description}
-	\item[B-only fit in CRs] in this fit only CRs are used. Real data are
+	\item[Background-only fit in CRs:] in this fit only CRs are used. Real data are
 	used. The signal templates are not included in the fit. This fit is used to estimate
 	the preliminary background.
-	\item[S+B fit in SR+CRs with realistic Asimov] in this fit both SRs and CRs are used. Real
-	data is used in the CRs. In the SRs an Asimov dataset is constructed
-	using post-fit background normalisations from the B-only fit in CRs.  This fit is used to extract
+	\item[Signal+Background fit in SR+CRs with pseudo-data:] in this fit both SRs and CRs are used. Real
+	data are used in the CRs. In the SRs, pseudo-data are constructed
+	using post-fit background normalisations from the B-only fit in CRs. In the following, this dataset is called 'realistic Asimov'. This fit is used to extract
 	the \tZc coupling, therefore the expected upper limit .
 \end{description}
 These are summarised in the following table:
@@ -430,16 +422,17 @@ Plots and tables shown in this section are the following:
 \item Pre-fit and post-fit distributions of the fitted distributions in the various regions are shown in \Cref{fig:stat:tzc:splusb:crsr:srplots:1,fig:stat:tzc:splusb:crsr:srplots:2,fig:stat:tzc:splusb:crsr:crplots:1,fig:stat:tzc:splusb:crsr:crplots:2}.
 \end{itemize}
 As expected, the behaviour of the fit with the realistic Asimov dataset
-is almost identical to the results of the B-only fit in the CRs
+provides similar results to those of the B-only fit in the CRs
 (Appendix \ref{app:stat:tzc:bonly:cr}). 
-Normalisation factors (\Cref{fig:stat:tzc:splusb:crsr:norm}) and NP
+In fact, normalisation factors (\Cref{fig:stat:tzc:splusb:crsr:norm}) and NPs
 pulls and constrains 
 (\Cref{fig:stat:tzc:splusb:crsr:np:instr,fig:stat:tzc:splusb:crsr:np:model}) 
 are very similar since in the CRs the expected signal is negligible
 and in the SRs the Asimov data are used. 
 The signal strength of $\mu$ is expected to be zero for the same reason.
 The fake normalization factor $\mu_{\ttbar+\Wt}$ is compatible to one within the uncertainties and
-this is a good indication of the good fit stability.\\
+this is a good indication of the good fit stability because it means that adding a normalization factor keeps
+a good agreement between data and MC predictions.\\
 The most pulled NPs (e.g. \ttbar FSR and \VVHF Berends scaling for events with 1 jet) are
 not among the highest ranked NPs (\Cref{fig:stat:tzc:splusb:crsr:ranking}). 
 Slightly pulled NPs (e.g. \ttZ normalization, Other fakes norm. and \VVHF generator) have a small post-fit impact on the signal strength, around 2\%, as can be seen again in \Cref{fig:stat:tzc:splusb:crsr:ranking}. Moreover, none of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 3\%.\\
@@ -587,7 +580,7 @@ Table \ref{tab:limits:comparison} shows the expected limits on BR($t \rightarrow
 \item using SMT, presented in \Cref{app:stat_smt:tzc:splusb:crsr},
 \item using \DLrc.
 \end{itemize}
-The improvement obtained using SMT is around 2\%, while using \DLrc is around 10\%.
+The improvement over baseline obtained using SMT is around 2\%, while using \DLrc is around 10\%.
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{c|c|c}
@@ -611,13 +604,13 @@ The overall impact of systematics on the expected limit is 22\%.\\
 The limit from the previous analysis is improved by a factor of 3.3 for the \tZc coupling.
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{lccc}
+	\begin{tabular}{lccc} 
 		\toprule
-		\textbf{Limits} & \textbf{$-1\sigma$} & \textbf{Expected} & \textbf{$+1\sigma$} \\
+		\textbf{Limits} & \textbf{-1$\sigma [\times 10^{-5}]$} & \textbf{Expected  $[\times 10^{-5}]$} & \ \textbf{+1$\sigma [\times 10^{-5}]$}  \\
 		\midrule
-		BR $\Pqt\rightarrow\PZ\Pqc$ \cite{TOPQ-2017-06} & \SI{2.2e-4}{} & \SI{3.2e-4}{} & \SI{4.6e-4}{} \\
-		BR $\Pqt\rightarrow\PZ\Pqc$  (stat. only)                 & \SI{5.3e-5}{} & \SI{7.4e-5}{} & \SI{10.5e-5}{} \\
-		BR $\Pqt\rightarrow\PZ\Pqc$                                    & \SI{6.9e-5}{} & \SI{9.6e-5}{} & \SI{13.8e-5}{} \\		
+		BR $\Pqt\rightarrow\PZ\Pqc$ \cite{TOPQ-2017-06} & 22 & 32& 46 \\
+		BR $\Pqt\rightarrow\PZ\Pqc$  (stat. only)                 & 5.3 & 7.4 & 10.5 \\
+		BR $\Pqt\rightarrow\PZ\Pqc$                                    & 6.9 & 9.6 & 13.8\\		
 		\bottomrule
 	\end{tabular}
 	\caption{
