@@ -1,0 +1,1 @@
+GlobalReduction_JET_RelativeNonClosure_AFII   3.47992e-06 +0.993348 -0.993348  1.28448e-05   -1.23462e-05  1.29315e-05   -1.24282e-05 

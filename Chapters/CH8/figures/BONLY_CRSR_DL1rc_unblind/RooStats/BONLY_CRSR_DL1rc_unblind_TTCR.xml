@@ -1,0 +1,323 @@
+<!--
+This xml file created automatically on: 
+2021-1-19
+-->
+<!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>  
+
+  <Channel Name="TTCR" InputFile="" >
+
+    <Data HistoName="TTCR_Data_regBin" InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root" HistoPath=""  /> 
+
+    <StatErrorConfig RelErrorThreshold="0" ConstraintType="Poisson" /> 
+
+    <Sample Name="ttZ_plus_tWZ"  HistoPath=""  HistoName="TTCR_ttZ_plus_tWZ_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01818"  Low="0.981821"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02165"  Low="0.978345"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01947"  Low="0.980526"   /> 
+      <OverallSys Name="ttZnorm"  High="1.10067"  Low="0.899329"   /> 
+      <OverallSys Name="ttZrad"  High="0.978697"  Low="1.0213"   /> 
+      <OverallSys Name="tWZnorm"  High="1.04832"  Low="0.951677"   /> 
+      <OverallSys Name="WtZmod"  High="1.03075"  Low="0.969248"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EG_SCALE_ALL"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_EG_SCALE_ALL_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_EG_SCALE_ALL_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttZnorm"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_ttZnorm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_ttZnorm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttZrad"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_ttZrad_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_ttZrad_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttZgen"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_ttZgen_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_ttZgen_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttZmuRmuF"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_ttZmuRmuF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_ttZmuRmuF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="tWZnorm"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_tWZnorm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_tWZnorm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="WtZmod"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttZ_plus_tWZ_WtZmod_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttZ_plus_tWZ_WtZmod_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ttbarW"  HistoPath=""  HistoName="TTCR_ttbarW_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.0164"  Low="0.983605"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02196"  Low="0.978042"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.0193"  Low="0.980695"   /> 
+      <OverallSys Name="ttWnorm"  High="1.15"  Low="0.85"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarW_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarW_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarW_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarW_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarW_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarW_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarW_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarW_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EG_SCALE_ALL"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarW_EG_SCALE_ALL_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarW_EG_SCALE_ALL_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_BJES_Response"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarW_GlobalReduction_JET_BJES_Response_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarW_GlobalReduction_JET_BJES_Response_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Pileup_RhoTopology"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarW_GlobalReduction_JET_Pileup_RhoTopology_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarW_GlobalReduction_JET_Pileup_RhoTopology_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ttbarH"  HistoPath=""  HistoName="TTCR_ttbarH_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01877"  Low="0.98123"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02056"  Low="0.97944"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01583"  Low="0.984168"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="1.01115"  Low="0.988852"   /> 
+      <OverallSys Name="ttHnorm"  High="1.15"  Low="0.85"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarH_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarH_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarH_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarH_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbarH_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbarH_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="VVLF"  HistoPath=""  HistoName="TTCR_VVLF_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="0.972773"  Low="1.02723"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.0212"  Low="0.978802"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02594"  Low="0.974058"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01878"  Low="0.981217"   /> 
+      <OverallSys Name="bTagSF_eigenvars_Light_0"  High="0.874827"  Low="1.12517"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.03743"  Low="0.962575"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.03861"  Low="0.961389"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_NonClosure_2018data"  High="1.03566"  Low="0.96434"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.09456"  Low="0.905435"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.919706"  Low="1.08029"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  High="1.06195"  Low="0.938047"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="1.12922"  Low="0.870778"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="1.13399"  Low="0.866011"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="1.12549"  Low="0.874514"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  High="1.04776"  Low="0.95224"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.01166"  Low="0.98834"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.08667"  Low="0.913326"   /> 
+      <OverallSys Name="VVLFnorm"  High="1.2"  Low="0.8"   /> 
+      <OverallSys Name="VVLFgen"  High="1.18615"  Low="0.813847"   /> 
+      <OverallSys Name="VVLF_1_Jet"  High="1.01822"  Low="0.981776"   /> 
+      <OverallSys Name="VVLF_2_Jet"  High="1.13756"  Low="0.862443"   /> 
+      <OverallSys Name="VVLF_3_Jet"  High="1.17032"  Low="0.829682"   /> 
+      <OverallSys Name="VVLF_4_Jet"  High="1.04048"  Low="0.95952"   /> 
+      <OverallSys Name="VVLF_5_Jet"  High="1.0357"  Low="0.964304"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_STAT"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_MU_SF_Isol_STAT_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_MU_SF_Isol_STAT_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_bTagSF_eigenvars_Light_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_bTagSF_eigenvars_Light_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_2"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_bTagSF_eigenvars_Light_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_bTagSF_eigenvars_Light_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_3"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_bTagSF_eigenvars_Light_3_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_bTagSF_eigenvars_Light_3_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVLF_1_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_VVLF_1_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_VVLF_1_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVLF_2_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_VVLF_2_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_VVLF_2_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVLF_3_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_VVLF_3_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_VVLF_3_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVLF_4_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_VVLF_4_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_VVLF_4_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVLF_5_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVLF_VVLF_5_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVLF_VVLF_5_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="VVHF"  HistoPath=""  HistoName="TTCR_VVHF_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="0.975443"  Low="1.02456"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.0262"  Low="0.973798"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02271"  Low="0.977288"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01852"  Low="0.981481"   /> 
+      <OverallSys Name="bTagSF_eigenvars_C_0"  High="0.965812"  Low="1.03419"   /> 
+      <OverallSys Name="GlobalReduction_JET_BJES_Response"  High="1.01305"  Low="0.986948"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.01246"  Low="0.987544"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.01385"  Low="0.986152"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  High="1.01543"  Low="0.98457"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="1.01334"  Low="0.986664"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="0.98051"  Low="1.01949"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  High="1.01541"  Low="0.984594"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_6"  High="0.987988"  Low="1.01201"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  High="0.987468"  Low="1.01253"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.01259"  Low="0.987414"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.03388"  Low="0.966118"   /> 
+      <OverallSys Name="VVHFnorm"  High="1.3"  Low="0.7"   /> 
+      <OverallSys Name="VVHFgen"  High="1.4925"  Low="0.507499"   /> 
+      <OverallSys Name="VVHF_1_Jet"  High="1.09116"  Low="0.908838"   /> 
+      <OverallSys Name="VVHF_2_Jet"  High="1.10295"  Low="0.897053"   /> 
+      <OverallSys Name="VVHF_3_Jet"  High="1.08342"  Low="0.916584"   /> 
+      <OverallSys Name="VVHF_4_Jet"  High="1.04473"  Low="0.955269"   /> 
+      <OverallSys Name="VVHF_5_Jet"  High="1.03476"  Low="0.96524"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_bTagSF_eigenvars_C_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_bTagSF_eigenvars_C_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVHF_1_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_VVHF_1_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_VVHF_1_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVHF_2_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_VVHF_2_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_VVHF_2_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVHF_3_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_VVHF_3_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_VVHF_3_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVHF_4_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_VVHF_4_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_VVHF_4_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVHF_5_Jet"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_VVHF_VVHF_5_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_VVHF_VVHF_5_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="tZ"  HistoPath=""  HistoName="TTCR_tZ_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="0.981711"  Low="1.01829"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.02767"  Low="0.972334"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02421"  Low="0.97579"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01773"  Low="0.982273"   /> 
+      <OverallSys Name="tZnorm"  High="1.14"  Low="0.86"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_tZ_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_tZ_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_tZ_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_tZ_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_tZ_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_tZ_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_tZ_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_tZ_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_tZ_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_tZ_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_tZ_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_tZ_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_tZ_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_tZ_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ttbar_plus_Wt"  HistoPath=""  HistoName="TTCR_ttbar_plus_Wt_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="0.988545"  Low="1.01146"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.02623"  Low="0.973769"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02076"  Low="0.979236"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.02391"  Low="0.976091"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.989301"  Low="1.0107"   /> 
+      <OverallSys Name="ttbarPS"  High="1.13021"  Low="0.86979"   /> 
+      <OverallSys Name="ttbarhdamp"  High="0.983368"  Low="1.01663"   /> 
+      <OverallSys Name="ttbarFSR"  High="1.06954"  Low="0.930463"   /> 
+      <OverallSys Name="ttbarPhotConv"  High="1.11173"  Low="0.888268"   /> 
+      <OverallSys Name="ttbarBottomMeson"  High="1.12759"  Low="0.872407"   /> 
+      <NormFactor Name="mu_ttbar_Wt"  Val="1"  High="20"  Low="-10"  Const="False"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EG_RESOLUTION_ALL"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_EG_RESOLUTION_ALL_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_EG_RESOLUTION_ALL_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_3_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_3_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_5_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_5_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_6"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_6_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_6_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MUON_SCALE"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_MUON_SCALE_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_MUON_SCALE_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarPS"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_ttbarPS_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_ttbarPS_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarhdamp"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_ttbarhdamp_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_ttbarhdamp_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarPDF"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_ttbarPDF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_ttbarPDF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarA14"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_ttbarA14_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_ttbarA14_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarFSR"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_ttbarFSR_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_ttbarFSR_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarPhotConv"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_ttbarPhotConv_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_ttbarPhotConv_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarBottomMeson"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ttbar_plus_Wt_ttbarBottomMeson_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ttbar_plus_Wt_ttbarBottomMeson_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="OtherFakes"  HistoPath=""  HistoName="TTCR_OtherFakes_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="1.07636"  Low="0.923639"   /> 
+      <OverallSys Name="jvt"  High="0.981818"  Low="1.01818"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.05361"  Low="0.946388"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01514"  Low="0.984857"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01381"  Low="0.986185"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.986018"  Low="1.01398"   /> 
+      <OverallSys Name="bTagSF_eigenvars_Light_0"  High="0.987638"  Low="1.01236"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.03315"  Low="0.966846"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.03264"  Low="0.967358"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.966945"  Low="1.03305"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="0.886386"  Low="1.11361"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="0.890327"  Low="1.10967"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.03262"  Low="0.967377"   /> 
+      <OverallSys Name="OtherFakesNorm"  High="2"  Low="0"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Reco"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_EL_SF_Reco_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_EL_SF_Reco_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_STAT"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_MU_SF_Isol_STAT_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_MU_SF_Isol_STAT_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_bTagSF_eigenvars_B_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_bTagSF_eigenvars_B_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_2"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_bTagSF_eigenvars_B_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_bTagSF_eigenvars_B_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_OtherFakes_bTagSF_eigenvars_C_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_OtherFakes_bTagSF_eigenvars_C_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="Other"  HistoPath=""  HistoName="TTCR_Other_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01726"  Low="0.982737"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02188"  Low="0.978118"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01644"  Low="0.983563"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="1.01256"  Low="0.987437"   /> 
+      <OverallSys Name="OtherNorm"  High="1.5"  Low="0.5"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_DataVsMC_MC16"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_GlobalReduction_JET_JER_DataVsMC_MC16_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_GlobalReduction_JET_JER_DataVsMC_MC16_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_GlobalReduction_JET_JER_EffectiveNP_3_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_GlobalReduction_JET_JER_EffectiveNP_3_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_Other_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_Other_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ctZprod"  HistoPath=""  HistoName="TTCR_ctZprod_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="1.01655"  Low="0.983451"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.02123"  Low="0.978769"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.0266"  Low="0.973402"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01534"  Low="0.984663"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  High="1.01498"  Low="0.985016"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="1.01542"  Low="0.984575"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="1.01505"  Low="0.984952"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="1.01495"  Low="0.985051"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  High="1.01499"  Low="0.985011"   /> 
+      <OverallSys Name="signalMuRMuF"  High="1.07545"  Low="0.924549"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <NormFactor Name="#mu"  Val="1"  High="40"  Low="-40"  Const="False"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_bTagSF_eigenvars_B_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_bTagSF_eigenvars_B_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="signalMuRMuF"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZprod_signalMuRMuF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZprod_signalMuRMuF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ctZdec"  HistoPath=""  HistoName="TTCR_ctZdec_regBin"  InputFile="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="0.986718"  Low="1.01328"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01812"  Low="0.981885"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02399"  Low="0.976008"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01616"  Low="0.983839"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.989923"  Low="1.01008"   /> 
+      <OverallSys Name="GlobalReduction_JET_BJES_Response"  High="1.01543"  Low="0.984567"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.01549"  Low="0.984511"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_DataVsMC_AFII"  High="1.0111"  Low="0.988901"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="1.01509"  Low="0.984912"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="1.01962"  Low="0.980377"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  High="1.02528"  Low="0.974717"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_6"  High="1.02529"  Low="0.974706"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  High="1.02532"  Low="0.974675"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.01516"  Low="0.984835"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.02903"  Low="0.970965"   /> 
+      <OverallSys Name="ttbarXsec"  High="1.055"  Low="0.945"   /> 
+      <OverallSys Name="signalMuRMuF"  High="1.07619"  Low="0.923813"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <NormFactor Name="#mu"  Val="1"  High="40"  Low="-40"  Const="False"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_bTagSF_eigenvars_B_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_bTagSF_eigenvars_B_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="signalMuRMuF"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameLow="TTCR_ctZdec_signalMuRMuF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_TTCR_histos.root"  HistoNameHigh="TTCR_ctZdec_signalMuRMuF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+
+  </Channel>  

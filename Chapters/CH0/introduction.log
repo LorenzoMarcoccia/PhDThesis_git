@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.5)  23 DEC 2020 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.5)  19 JAN 2021 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1152,6 +1152,39 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 28.
+! Undefined control sequence.
+<argument> \Pqt 
+                \rightarrow \Pqc \PZ 
+l.28 ... such as $\mathrm{\Pqt\rightarrow \Pqc\PZ}
+                                                  $, are forbidden at tree l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \Pqt \rightarrow \Pqc 
+                                 \PZ 
+l.28 ... such as $\mathrm{\Pqt\rightarrow \Pqc\PZ}
+                                                  $, are forbidden at tree l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \Pqt \rightarrow \Pqc \PZ 
+                                     
+l.28 ... such as $\mathrm{\Pqt\rightarrow \Pqc\PZ}
+                                                  $, are forbidden at tree l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no , in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -2713,7 +2746,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.49 ...r FCNC couplings between top-quark and \PZ
-                                                   boson. Two different tech...
+                                                   boson. \Cref{chapter:char...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2721,8 +2754,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.50 ...tification of heavy-flavored jets in \Cref
-                                                  {chapter:charm_tag}.  \Cre...
+l.49 ...ngs between top-quark and \PZ boson. \Cref
+                                                  {chapter:charm_tag} is dev...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2730,16 +2763,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.50 ...d jets in \Cref{chapter:charm_tag}.  \Cref
-                                                  {chapter:regions} is devot...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.50 ...he statistical analysis described in \Cref
+l.49 ...he statistical analysis described in \Cref
                                                   {chapter:Statistical_analy...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2748,7 +2772,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.50 ...\% confidence level (CL) for the FCNC \tZq
+l.49 ...\% confidence level (CL) for the FCNC \tZq
                                                    process.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2759,51 +2783,40 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.51 
+l.50 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 12--51
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--50
 []
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 12--51
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 12--50
 \OT1/cmr/m/n/10 ^^_
  []
 
 
-Overfull \hbox (16.38884pt too wide) in paragraph at lines 12--51
-\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 !
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 12--50
+[]$
  []
 
 
-Overfull \hbox (12.36458pt too wide) in paragraph at lines 12--51
-\OML/cmm/m/it/10 qZ$
- []
-
-
-Overfull \hbox (729.54318pt too wide) in paragraph at lines 12--51
+Overfull \hbox (729.54318pt too wide) in paragraph at lines 12--50
 []\OML/cmm/m/it/10 ecothedatamodellingandtheobjectreconstructionispresented:[]d
 escribestheanalysisstrategydevelopedforthesearchforFCNCcouplingsbetweentop \OMS
 /cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (372.72447pt too wide) in paragraph at lines 12--51
-\OML/cmm/m/it/10 quarkandboson:Twodifferenttechniquesareexploitedfortheidentifi
-cationofheavy \OMS/cmsy/m/n/10 ^^@
- []
-
-
-Overfull \hbox (1275.42117pt too wide) in paragraph at lines 12--51
-\OML/cmm/m/it/10 flavoredjetsin[]:[]isdevotedtothemainanalysis; withthedescript
-ionofSignalandControlRegionsusedforthestatisticalanalysisdescribedin[]inorderto
-extracttheexpectedupperlimitsat\OT1/cmr/m/n/10 95%\OML/cmm/m/it/10 confidencele
-vel\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 CL\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 forthe
-FCNCprocess:$ 
+Overfull \hbox (1202.25711pt too wide) in paragraph at lines 12--50
+\OML/cmm/m/it/10 quarkandboson:[]isdevotedtothemainanalysis; withthedescription
+ofSignalandControlRegionsusedforthestatisticalanalysisdescribedin[]inordertoext
+racttheexpectedupperlimitsat\OT1/cmr/m/n/10 95%\OML/cmm/m/it/10 confidencelevel
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 CL\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 fortheFCN
+Cprocess:$ 
  []
 
 )
@@ -2814,11 +2827,11 @@ FCNCprocess:$
 
  
 Here is how much of TeX's memory you used:
- 9 strings out of 492649
- 181 string characters out of 6129622
+ 12 strings out of 492649
+ 189 string characters out of 6129622
  60747 words of memory out of 5000000
- 3992 multiletter control sequences out of 15000+600000
+ 3995 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,2n,13p,387b,55s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,2n,13p,446b,55s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,409 @@
+<!--
+This xml file created automatically on: 
+2021-1-18
+-->
+<!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>  
+
+  <Channel Name="TTZCR" InputFile="" >
+
+    <Data HistoName="TTZCR_Data_regBin" InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root" HistoPath=""  /> 
+
+    <StatErrorConfig RelErrorThreshold="0" ConstraintType="Poisson" /> 
+
+    <Sample Name="ttZ_plus_tWZ"  HistoPath=""  HistoName="TTZCR_ttZ_plus_tWZ_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01424"  Low="0.98576"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01953"  Low="0.980467"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.02015"  Low="0.979852"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.975746"  Low="1.02425"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.0105"  Low="0.989502"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.02126"  Low="0.978736"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.989126"  Low="1.01087"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.02694"  Low="0.973065"   /> 
+      <OverallSys Name="ttZnorm"  High="1.11022"  Low="0.889776"   /> 
+      <OverallSys Name="ttZrad"  High="1.02532"  Low="0.974685"   /> 
+      <OverallSys Name="ttZmuRmuF"  High="1.01164"  Low="0.988363"   /> 
+      <OverallSys Name="tWZnorm"  High="1.02444"  Low="0.975561"   /> 
+      <OverallSys Name="WtZmod"  High="1.03505"  Low="0.964947"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Flavor_Composition"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_GlobalReduction_JET_Flavor_Composition_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_GlobalReduction_JET_Flavor_Composition_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Pileup_RhoTopology"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_GlobalReduction_JET_Pileup_RhoTopology_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_GlobalReduction_JET_Pileup_RhoTopology_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttZnorm"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_ttZnorm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_ttZnorm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttZrad"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_ttZrad_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_ttZrad_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttZgen"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_ttZgen_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_ttZgen_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttZmuRmuF"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_ttZmuRmuF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_ttZmuRmuF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="tWZnorm"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_tWZnorm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_tWZnorm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="WtZmod"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttZ_plus_tWZ_WtZmod_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttZ_plus_tWZ_WtZmod_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ttbarW"  HistoPath=""  HistoName="TTZCR_ttbarW_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01569"  Low="0.984312"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01825"  Low="0.981748"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.0233"  Low="0.976702"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.973732"  Low="1.02627"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_1"  High="0.989687"  Low="1.01031"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.01844"  Low="0.981558"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.01518"  Low="0.984825"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.05866"  Low="0.941345"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.970597"  Low="1.0294"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  High="0.987006"  Low="1.01299"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.024"  Low="0.976002"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.057"  Low="0.942999"   /> 
+      <OverallSys Name="ttWnorm"  High="1.15"  Low="0.85"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarW_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarW_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarW_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarW_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarW_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarW_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarW_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarW_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarW_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarW_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ttbarH"  HistoPath=""  HistoName="TTZCR_ttbarH_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01558"  Low="0.984424"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.0189"  Low="0.981099"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01634"  Low="0.983662"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.976688"  Low="1.02331"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.011"  Low="0.988998"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.024"  Low="0.975998"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.989273"  Low="1.01073"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.01101"  Low="0.988991"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.02894"  Low="0.971058"   /> 
+      <OverallSys Name="ttHnorm"  High="1.15"  Low="0.85"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarH_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarH_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarH_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarH_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarH_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarH_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EG_SCALE_ALL"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarH_EG_SCALE_ALL_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarH_EG_SCALE_ALL_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarH_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarH_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarH_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarH_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_6"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarH_GlobalReduction_JET_JER_EffectiveNP_6_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarH_GlobalReduction_JET_JER_EffectiveNP_6_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MUON_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbarH_MUON_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbarH_MUON_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="VVLF"  HistoPath=""  HistoName="TTZCR_VVLF_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="1.01691"  Low="0.98309"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.0142"  Low="0.985796"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01422"  Low="0.985779"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.0176"  Low="0.982403"   /> 
+      <OverallSys Name="bTagSF_eigenvars_Light_0"  High="0.727516"  Low="1.27248"   /> 
+      <OverallSys Name="bTagSF_eigenvars_Light_2"  High="0.985029"  Low="1.01497"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.06095"  Low="0.93905"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.03132"  Low="0.968684"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.14902"  Low="0.850983"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.929752"  Low="1.07025"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_DataVsMC_MC16"  High="0.896919"  Low="1.10308"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  High="1.05029"  Low="0.949705"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="1.0549"  Low="0.945104"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="1.03115"  Low="0.968848"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="1.0527"  Low="0.947303"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  High="1.0531"  Low="0.946902"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_6"  High="1.03052"  Low="0.969479"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  High="1.04351"  Low="0.956491"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetMu"  High="1.02115"  Low="0.978846"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.08287"  Low="0.917127"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.12005"  Low="0.87995"   /> 
+      <OverallSys Name="MET_SoftTrk_ResoPerp"  High="1.02805"  Low="0.97195"   /> 
+      <OverallSys Name="VVLFnorm"  High="1.2"  Low="0.8"   /> 
+      <OverallSys Name="VVLFgen"  High="1.88377"  Low="0.116227"   /> 
+      <OverallSys Name="VVLF_4_Jet"  High="1.28485"  Low="0.715145"   /> 
+      <OverallSys Name="VVLF_5_Jet"  High="1.24096"  Low="0.759038"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_STAT"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_MU_SF_Isol_STAT_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_MU_SF_Isol_STAT_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_bTagSF_eigenvars_Light_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_bTagSF_eigenvars_Light_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_2"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_bTagSF_eigenvars_Light_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_bTagSF_eigenvars_Light_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_3"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_bTagSF_eigenvars_Light_3_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_bTagSF_eigenvars_Light_3_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVLF_4_Jet"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_VVLF_4_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_VVLF_4_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVLF_5_Jet"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVLF_VVLF_5_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVLF_VVLF_5_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="VVHF"  HistoPath=""  HistoName="TTZCR_VVHF_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01424"  Low="0.985762"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01752"  Low="0.982479"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01924"  Low="0.980763"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.974054"  Low="1.02595"   /> 
+      <OverallSys Name="bTagSF_eigenvars_C_0"  High="0.980544"  Low="1.01946"   /> 
+      <OverallSys Name="bTagSF_eigenvars_Light_0"  High="0.985199"  Low="1.0148"   /> 
+      <OverallSys Name="GlobalReduction_JET_BJES_Response"  High="1.01449"  Low="0.98551"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.02275"  Low="0.977253"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.01982"  Low="0.980176"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.03945"  Low="0.960545"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.978453"  Low="1.02155"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  High="1.01721"  Low="0.982788"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="1.02339"  Low="0.976611"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="1.01918"  Low="0.980825"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="1.01843"  Low="0.981572"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  High="1.014"  Low="0.986003"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetMu"  High="1.0116"  Low="0.988403"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.02395"  Low="0.976051"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.0504"  Low="0.949604"   /> 
+      <OverallSys Name="VVHFnorm"  High="1.3"  Low="0.7"   /> 
+      <OverallSys Name="VVHFgen"  High="1.72353"  Low="0.276466"   /> 
+      <OverallSys Name="VVHF_4_Jet"  High="1.27854"  Low="0.721463"   /> 
+      <OverallSys Name="VVHF_5_Jet"  High="1.24804"  Low="0.751961"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EG_SCALE_ALL"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_EG_SCALE_ALL_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_EG_SCALE_ALL_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_EffectiveNP_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_EffectiveNP_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_EffectiveNP_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_EtaIntercalibration_Modelling_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_EtaIntercalibration_Modelling_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Flavor_Composition"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_Flavor_Composition_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_Flavor_Composition_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Flavor_Response"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_Flavor_Response_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_Flavor_Response_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_5_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_5_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_Pileup_OffsetNPV_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_Pileup_OffsetNPV_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Pileup_RhoTopology"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_GlobalReduction_JET_Pileup_RhoTopology_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_GlobalReduction_JET_Pileup_RhoTopology_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MET_SoftTrk_ResoPara"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_MET_SoftTrk_ResoPara_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_MET_SoftTrk_ResoPara_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MET_SoftTrk_ResoPerp"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_MET_SoftTrk_ResoPerp_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_MET_SoftTrk_ResoPerp_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVHFgen"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_VVHFgen_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_VVHFgen_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVHF_4_Jet"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_VVHF_4_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_VVHF_4_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="VVHF_5_Jet"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_VVHF_VVHF_5_Jet_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_VVHF_VVHF_5_Jet_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="tZ"  HistoPath=""  HistoName="TTZCR_tZ_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.014"  Low="0.986"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01813"  Low="0.981866"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01574"  Low="0.98426"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.970012"  Low="1.02999"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_1"  High="0.989727"  Low="1.01027"   /> 
+      <OverallSys Name="GlobalReduction_JET_BJES_Response"  High="1.01361"  Low="0.986391"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.01489"  Low="0.985105"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.0184"  Low="0.981603"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.0359"  Low="0.9641"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.982607"  Low="1.01739"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.0193"  Low="0.980696"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.04608"  Low="0.953916"   /> 
+      <OverallSys Name="tZnorm"  High="1.14"  Low="0.86"   /> 
+      <OverallSys Name="tZrad"  High="0.892916"  Low="1.10708"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_EtaIntercalibration_Modelling_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_EtaIntercalibration_Modelling_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Flavor_Composition"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_Flavor_Composition_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_Flavor_Composition_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Flavor_Response"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_Flavor_Response_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_Flavor_Response_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_DataVsMC_MC16"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_JER_DataVsMC_MC16_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_JER_DataVsMC_MC16_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_5_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_5_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_6"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_6_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_6_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Pileup_OffsetMu"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_Pileup_OffsetMu_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_Pileup_OffsetMu_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Pileup_RhoTopology"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_tZ_GlobalReduction_JET_Pileup_RhoTopology_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_tZ_GlobalReduction_JET_Pileup_RhoTopology_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ttbar_plus_Wt"  HistoPath=""  HistoName="TTZCR_ttbar_plus_Wt_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="1.02001"  Low="0.979987"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.02681"  Low="0.973192"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.02135"  Low="0.978648"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01963"  Low="0.980372"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.97131"  Low="1.02869"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_1"  High="0.988809"  Low="1.01119"   /> 
+      <OverallSys Name="EG_SCALE_ALL"  High="0.979551"  Low="1.02045"   /> 
+      <OverallSys Name="GlobalReduction_JET_BJES_Response"  High="1.01835"  Low="0.981654"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.02935"  Low="0.970648"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_2"  High="0.987638"  Low="1.01236"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.02903"  Low="0.970966"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_NonClosure_2018data"  High="1.02482"  Low="0.975182"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.06364"  Low="0.936364"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.953503"  Low="1.0465"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  High="0.984032"  Low="1.01597"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="1.03454"  Low="0.965462"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="1.02146"  Low="0.97854"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="1.02829"  Low="0.971712"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  High="0.978517"  Low="1.02148"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.07311"  Low="0.92689"   /> 
+      <OverallSys Name="MUON_ID"  High="0.987128"  Low="1.01287"   /> 
+      <OverallSys Name="MUON_MS"  High="1.0144"  Low="0.985604"   /> 
+      <OverallSys Name="ttbarPS"  High="1.06778"  Low="0.932217"   /> 
+      <OverallSys Name="ttbarhdamp"  High="0.940378"  Low="1.05962"   /> 
+      <OverallSys Name="ttbarA14"  High="1.0336"  Low="0.966397"   /> 
+      <OverallSys Name="ttbarFSR"  High="1.10671"  Low="0.920765"   /> 
+      <OverallSys Name="ttbarPhotConv"  High="1.31811"  Low="0.681887"   /> 
+      <OverallSys Name="ttbarBottomMeson"  High="1.03348"  Low="0.966521"   /> 
+      <NormFactor Name="mu_ttbar_Wt"  Val="1"  High="20"  Low="-10"  Const="False"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_B_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_B_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_C_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_C_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarPDF"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_ttbarPDF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_ttbarPDF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarA14"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_ttbarA14_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_ttbarA14_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarFSR"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_ttbarFSR_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_ttbarFSR_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarPhotConv"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_ttbarPhotConv_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_ttbarPhotConv_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ttbarBottomMeson"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ttbar_plus_Wt_ttbarBottomMeson_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ttbar_plus_Wt_ttbarBottomMeson_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="OtherFakes"  HistoPath=""  HistoName="TTZCR_OtherFakes_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="2.73126"  Low="0"   /> 
+      <OverallSys Name="EL_SF_Trigger"  High="0.988316"  Low="1.01168"   /> 
+      <OverallSys Name="EL_SF_Reco"  High="0.944735"  Low="1.05526"   /> 
+      <OverallSys Name="EL_SF_ID"  High="0.754174"  Low="1.24583"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="0.940027"  Low="1.05997"   /> 
+      <OverallSys Name="MU_SF_ID_SYST"  High="1.01604"  Low="0.983959"   /> 
+      <OverallSys Name="MU_SF_Isol_STAT"  High="1.06348"  Low="0.936522"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.14237"  Low="0.857628"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.811553"  Low="1.18845"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_1"  High="1.01257"  Low="0.987429"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_3"  High="0.972745"  Low="1.02726"   /> 
+      <OverallSys Name="bTagSF_eigenvars_C_0"  High="0.641721"  Low="1.35828"   /> 
+      <OverallSys Name="bTagSF_eigenvars_C_1"  High="0.886015"  Low="1.11399"   /> 
+      <OverallSys Name="bTagSF_eigenvars_C_2"  High="1.09346"  Low="0.906538"   /> 
+      <OverallSys Name="EG_RESOLUTION_ALL"  High="0.966786"  Low="1.03321"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.02244"  Low="0.977556"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.02592"  Low="0.974084"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.978044"  Low="1.02196"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_DataVsMC_MC16"  High="0.983029"  Low="1.01697"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  High="0.904961"  Low="1.09504"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="0.900292"  Low="1.09971"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="0.905886"  Low="1.09411"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="0.901671"  Low="1.09833"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  High="0.919971"  Low="1.08003"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.01463"  Low="0.985367"   /> 
+      <OverallSys Name="OtherFakesNorm"  High="2"  Low="0"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="jvt"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_STAT"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_MU_SF_Isol_STAT_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_MU_SF_Isol_STAT_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_bTagSF_eigenvars_B_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_bTagSF_eigenvars_B_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_bTagSF_eigenvars_C_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_bTagSF_eigenvars_C_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_2"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_OtherFakes_bTagSF_eigenvars_C_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_OtherFakes_bTagSF_eigenvars_C_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="Other"  HistoPath=""  HistoName="TTZCR_Other_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01501"  Low="0.98499"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01828"  Low="0.981716"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01929"  Low="0.980706"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.01691"  Low="0.983089"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.0115"  Low="0.988505"   /> 
+      <OverallSys Name="OtherNorm"  High="1.5"  Low="0.5"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_Other_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_Other_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_Other_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_Other_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_Other_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_Other_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_Other_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_Other_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_Other_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_Other_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_Other_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_Other_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_Other_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_Other_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_Other_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_Other_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ctZprod"  HistoPath=""  HistoName="TTZCR_ctZprod_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="pileup"  High="1.0109"  Low="0.989101"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01473"  Low="0.985268"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01899"  Low="0.981009"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01352"  Low="0.986479"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.983173"  Low="1.01683"   /> 
+      <OverallSys Name="bTagSF_eigenvars_C_0"  High="0.966301"  Low="1.0337"   /> 
+      <OverallSys Name="bTagSF_eigenvars_Light_0"  High="0.989384"  Low="1.01062"   /> 
+      <OverallSys Name="GlobalReduction_JET_BJES_Response"  High="1.01609"  Low="0.983914"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.01933"  Low="0.98067"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.0187"  Low="0.981296"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.05225"  Low="0.947748"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.975222"  Low="1.02478"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  High="0.986861"  Low="1.01314"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="0.965074"  Low="1.03493"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="0.98258"  Low="1.01742"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  High="0.978139"  Low="1.02186"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_6"  High="0.987247"  Low="1.01275"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.02151"  Low="0.978486"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.05653"  Low="0.943473"   /> 
+      <OverallSys Name="signalMuRMuF"  High="1.08788"  Low="0.912125"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <NormFactor Name="#mu"  Val="1"  High="40"  Low="-40"  Const="False"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="jvt"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Isol_SYST"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_MU_SF_Isol_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_MU_SF_Isol_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_bTagSF_eigenvars_C_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_bTagSF_eigenvars_C_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_Light_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_bTagSF_eigenvars_Light_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_bTagSF_eigenvars_Light_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="signalMuRMuF"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZprod_signalMuRMuF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZprod_signalMuRMuF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+    <Sample Name="ctZdec"  HistoPath=""  HistoName="TTZCR_ctZdec_regBin"  InputFile="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="EL_SF_ID"  High="1.01216"  Low="0.987845"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1.01888"  Low="0.981123"   /> 
+      <OverallSys Name="MU_SF_Isol_SYST"  High="1.01619"  Low="0.983814"   /> 
+      <OverallSys Name="bTagSF_eigenvars_B_0"  High="0.981956"  Low="1.01804"   /> 
+      <OverallSys Name="bTagSF_eigenvars_C_0"  High="0.958292"  Low="1.04171"   /> 
+      <OverallSys Name="GlobalReduction_JET_EffectiveNP_1"  High="1.01924"  Low="0.980764"   /> 
+      <OverallSys Name="GlobalReduction_JET_EtaIntercalibration_Modelling"  High="1.01545"  Low="0.984549"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Composition"  High="1.04353"  Low="0.95647"   /> 
+      <OverallSys Name="GlobalReduction_JET_Flavor_Response"  High="0.979665"  Low="1.02033"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  High="1.02408"  Low="0.97592"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  High="1.02052"  Low="0.979482"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="1.01659"  Low="0.983409"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_5"  High="1.016"  Low="0.984"   /> 
+      <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  High="1.01313"  Low="0.986873"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetMu"  High="1.01091"  Low="0.98909"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_OffsetNPV"  High="1.01712"  Low="0.98288"   /> 
+      <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.04198"  Low="0.958021"   /> 
+      <OverallSys Name="ttbarXsec"  High="1.055"  Low="0.945"   /> 
+      <OverallSys Name="signalMuRMuF"  High="1.0532"  Low="0.946799"   /> 
+      <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
+      <NormFactor Name="#mu"  Val="1"  High="40"  Low="-40"  Const="False"   /> 
+      <HistoSys Name="pileup"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_Flavor_Composition"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_GlobalReduction_JET_Flavor_Composition_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_GlobalReduction_JET_Flavor_Composition_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_1"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_2"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_2_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_3"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_3_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_3_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_4_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_6"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_6_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_6_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="GlobalReduction_JET_JER_EffectiveNP_7restTerm"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_GlobalReduction_JET_JER_EffectiveNP_7restTerm_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MET_SoftTrk_ResoPara"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_MET_SoftTrk_ResoPara_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_MET_SoftTrk_ResoPara_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MET_SoftTrk_ResoPerp"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_MET_SoftTrk_ResoPerp_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_MET_SoftTrk_ResoPerp_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MUON_ID"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_MUON_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_MUON_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="signalMuRMuF"  HistoFileLow="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameLow="TTZCR_ctZdec_signalMuRMuF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="SPLUSB_CRSR_DL1rc_unblind/Histograms/SPLUSB_CRSR_DL1rc_unblind_TTZCR_histos.root"  HistoNameHigh="TTZCR_ctZdec_signalMuRMuF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+
+  </Channel>  
