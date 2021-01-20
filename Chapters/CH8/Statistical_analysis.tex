@@ -90,9 +90,15 @@ factors are propagated to the event yields and observables.
 	in~\cite{ATLAS-CONF-2014-046,ATLAS-CONF-2014-004}. The number of NP
 	used for the $b$-tagging data/MC scale factors is evaluated
 	separately for $b$, $c$ and light-flavour quark jets in the MC
-	samples.\\	
+	samples.
+	\item \textbf{$c$-tagging efficiency} \\
+	Since an official calibration is not available yet, the $c$-tagging
+	efficiencies are not considered in this analysis. Nevertheless,
+	assuming a flat 20\% variation on the related scale factor, 
+	the final expected limit will be degraded by almost 5\%.	
 \end{itemize}
 
+\newpage
 % ===========================================
 %\subsubsection{Monte Carlo modelling} 
 % ===========================================
@@ -150,6 +156,7 @@ different generators and varying parameters for the event generation.
 	investigated and the difference between the two diagram removal
 	predictions is included as \tWZ generator systematic uncertainty
 	(called \textit{\tWZ DR}).\\
+	\vspace{\baselineskip}
 	\item \textbf{\tZq} \\
 	The differences of using different A14
 	tune variations are accounted and considered in the fit (called
@@ -240,7 +247,7 @@ bin of the of the distributions that are used in the fit,
 so it can change the shape of the distributions. 
 For all other systematics listed, rate and shape differences are taken
 into account. \\
-%\subsubsection{Symmetrization of shape uncertainties} 
+\subsubsection{Symmetrization of shape uncertainties} 
 For the shape uncertainties included in the fit, the templates are symmetrised by
 taking half the difference between the up and down variation around
 the nominal template. For the bins where both the initial up and down
@@ -251,7 +258,7 @@ systematic variations, these are symmetrised by
 ($\alpha_{ij-}$ + $\alpha_{ij+}$)/2 = $\alpha_{ij-}$ = $\alpha_{ij+}$. 
 For the systematic uncertainties with one sided systematics, these
 are symmetrised by defining $\alpha_{ij-}$ = $\alpha_{ij+}$.\\
-%\subsubsection{Smoothing and Pruning} 
+\subsubsection{Smoothing and Pruning} 
 Some fluctuations in individual bins can be caused
 by the low statistics shape systematic uncertainties. A smoothing of
 systematic shape uncertainties is performed using the default
@@ -734,7 +741,7 @@ Table \ref{tab:limits:comparison} shows the expected limits on BR($t \rightarrow
 	\item using SMT, presented in \Cref{app:stat_smt:tzc:splusb:crsr},
 	\item using \DLrc.
 \end{itemize}
-The improvement over baseline obtained using SMT is around 2\%, while using \DLrc is around 10\%.
+The improvement over baseline obtained using SMT is around 3\%, while using \DLrc is around 10\%.
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{c|c|c}
@@ -743,7 +750,7 @@ The improvement over baseline obtained using SMT is around 2\%, while using \DLr
 		\toprule
 		\textbf{Baseline}          & \textbf{Using SMT}			& \textbf{Using \DLrc} \\
 		\midrule
-		$10.67 $ 	& $ 10.4 $   & $  9.55 $\\
+		$10.7 $ 	& $ 10.4 $   & $  9.6 $\\
 		\bottomrule
 	\end{tabular}
 	\caption{ Expected limits on the branching ratios of $\Pqt\rightarrow\PZ\Pqc$. 
@@ -782,8 +789,8 @@ The expected upper limit from the previous analysis is improved by a factor of 3
 \paragraph {Unblinded data}
 From the likelihood fit described in \Cref{sec:stat:tzc:unb} under the Background-only hypothesis no evidence for the FCNC $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ signal is found but a good agreement between real data and Standard Model is observed.
 In the absence of signal, the 95\% CL upper limit is set on $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$.
-\Cref{fig:stat:tzc:splusb:crsr:CLsPlot} shows the observed and expected $\mathrm{CL_{s}}$ as a function of $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$. The observed limit is $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<1.3\times 10^{-4}$, inside the $\pm$1$\sigma$ band of the expected limit: $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<1.0\times 10^{-4}$.
-The observed upper limit is improved by a factor of 1.9, while the expected upper limit is improved by a factor of 3.2 compared to the previous analysis.
+\Cref{fig:stat:tzc:splusb:crsr:CLsPlot} shows the observed and expected $\mathrm{CL_{s}}$ as a function of $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$. The observed limit is $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<11.8\times 10^{-5}$, inside the $\pm$1$\sigma$ band of the expected limit: $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<9.5\times 10^{-5}$.
+The observed upper limit is improved by a factor of 2, while the expected upper limit is improved by a factor of 3.4 compared to the previous analysis.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.8\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/CLsPlot}
@@ -798,13 +805,13 @@ which the hypothesis is excluded at 95\% CL.}
 	\centering
 	\begin{tabular}{lc} 
 		\toprule
-		 								& BR ($\Pqt\rightarrow\PZ\Pqc) [\times 10^{-4}]$  \\
+		 								& BR ($\Pqt\rightarrow\PZ\Pqc) [\times 10^{-5}]$  \\
 		\midrule
-		Observed \cite{TOPQ-2017-06} 	 & 2.4 \\
-		Observed  				   					& 1.3  \\
-		Expected -1$\sigma$   				  &   0.7 \\
-		Expected                    				&  1.0 \\
-	    Expected +1$\sigma$  				 &  1.5 \\		
+		Observed \cite{TOPQ-2017-06} 	 & 24 \\
+		Observed  				   					& 11.8  \\
+		Expected -1$\sigma$   				  &   6.9 \\
+		Expected                    				&  9.5 \\
+	    Expected +1$\sigma$  				 &  13.8 \\		
 		\bottomrule
 	\end{tabular}
 	\caption{

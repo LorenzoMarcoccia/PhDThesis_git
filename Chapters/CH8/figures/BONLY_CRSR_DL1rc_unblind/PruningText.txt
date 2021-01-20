@@ -123,9 +123,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ttbarW
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -247,9 +244,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ttbarH
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -371,9 +365,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : VVLF
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -495,9 +486,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : VVHF
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -619,9 +607,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : tZ
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -743,9 +728,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ttbar_plus_Wt
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -867,9 +849,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is not present
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : OtherFakes
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -991,9 +970,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : Other
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -1115,9 +1091,6 @@ In Region : SR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ctZprod
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -1239,9 +1212,6 @@ In Region : SR1
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ctZdec
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -1363,9 +1333,6 @@ In Region : SR1
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
 In Region : SR2
  -> In Sample : ttZ_plus_tWZ
  --->>  pileup      is kept
@@ -1488,9 +1455,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : ttbarW
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -1612,9 +1576,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : ttbarH
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -1736,9 +1697,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : VVLF
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -1860,9 +1818,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : VVHF
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -1984,9 +1939,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : tZ
  --->>  pileup      is norm only
  --->>  jvt      is dropped
@@ -2108,9 +2060,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : ttbar_plus_Wt
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -2232,9 +2181,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is not present
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : OtherFakes
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -2356,9 +2302,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : Other
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -2480,9 +2423,6 @@ In Region : SR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : ctZprod
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -2604,9 +2544,6 @@ In Region : SR2
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
  -> In Sample : ctZdec
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -2728,9 +2665,6 @@ In Region : SR2
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
- --->>  cTagSF      is dropped
 In Region : SR3
  -> In Sample : ttZ_plus_tWZ
  --->>  pileup      is kept
@@ -2853,9 +2787,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ttbarW
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -2977,9 +2908,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ttbarH
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -3101,9 +3029,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : VVLF
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -3225,9 +3150,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : VVHF
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -3349,9 +3271,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : tZ
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -3473,9 +3392,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ttbar_plus_Wt
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -3597,9 +3513,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is not present
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : OtherFakes
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -3721,9 +3634,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : Other
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -3845,9 +3755,6 @@ In Region : SR3
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ctZprod
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -3969,9 +3876,6 @@ In Region : SR3
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
  -> In Sample : ctZdec
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -4093,9 +3997,6 @@ In Region : SR3
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
- --->>  cTagSF      is norm only
 In Region : SBCR1
  -> In Sample : ttZ_plus_tWZ
  --->>  pileup      is shape only
@@ -4218,9 +4119,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbarW
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -4342,9 +4240,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbarH
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -4466,9 +4361,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : VVLF
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -4590,9 +4482,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : VVHF
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -4714,9 +4603,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : tZ
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -4838,9 +4724,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbar_plus_Wt
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -4962,9 +4845,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : OtherFakes
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -5086,9 +4966,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : Other
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -5210,9 +5087,6 @@ In Region : SBCR1
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ctZprod
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -5334,9 +5208,6 @@ In Region : SBCR1
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ctZdec
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -5458,9 +5329,6 @@ In Region : SBCR1
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
 In Region : SBCR2
  -> In Sample : ttZ_plus_tWZ
  --->>  pileup      is kept
@@ -5583,9 +5451,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbarW
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -5707,9 +5572,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbarH
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -5831,9 +5693,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : VVLF
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -5955,9 +5814,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : VVHF
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -6079,9 +5935,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : tZ
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -6203,9 +6056,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbar_plus_Wt
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -6327,9 +6177,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : OtherFakes
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -6451,9 +6298,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : Other
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -6575,9 +6419,6 @@ In Region : SBCR2
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ctZprod
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -6699,9 +6540,6 @@ In Region : SBCR2
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ctZdec
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -6823,9 +6661,6 @@ In Region : SBCR2
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
 In Region : TTZCR
  -> In Sample : ttZ_plus_tWZ
  --->>  pileup      is shape only
@@ -6948,9 +6783,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbarW
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -7072,9 +6904,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbarH
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -7196,9 +7025,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : VVLF
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -7320,9 +7146,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : VVHF
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -7444,9 +7267,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : tZ
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -7568,9 +7388,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbar_plus_Wt
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -7692,9 +7509,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : OtherFakes
  --->>  pileup      is norm only
  --->>  jvt      is shape only
@@ -7816,9 +7630,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : Other
  --->>  pileup      is shape only
  --->>  jvt      is shape only
@@ -7940,9 +7751,6 @@ In Region : TTZCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ctZprod
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -8064,9 +7872,6 @@ In Region : TTZCR
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ctZdec
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -8188,9 +7993,6 @@ In Region : TTZCR
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
 In Region : TTCR
  -> In Sample : ttZ_plus_tWZ
  --->>  pileup      is shape only
@@ -8313,9 +8115,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbarW
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -8437,9 +8236,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbarH
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -8561,9 +8357,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : VVLF
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -8685,9 +8478,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : VVHF
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -8809,9 +8599,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : tZ
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -8933,9 +8720,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ttbar_plus_Wt
  --->>  pileup      is kept
  --->>  jvt      is dropped
@@ -9057,9 +8841,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : OtherFakes
  --->>  pileup      is kept
  --->>  jvt      is kept
@@ -9181,9 +8962,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : Other
  --->>  pileup      is shape only
  --->>  jvt      is dropped
@@ -9305,9 +9083,6 @@ In Region : TTCR
  --->>  signalMuR      is not present
  --->>  signalMuF      is not present
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ctZprod
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -9429,9 +9204,6 @@ In Region : TTCR
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
  -> In Sample : ctZdec
  --->>  pileup      is kept
  --->>  jvt      is shape only
@@ -9553,6 +9325,3 @@ In Region : TTCR
  --->>  signalMuR      is dropped
  --->>  signalMuF      is dropped
  --->>  lumi      is norm only
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present
- --->>  cTagSF      is not present

@@ -1,6 +1,6 @@
 <!--
 This xml file created automatically on: 
-2021-1-19
+2021-1-20
 -->
 <!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>  
 
@@ -22,7 +22,6 @@ This xml file created automatically on:
       <OverallSys Name="tWZnorm"  High="1.04538"  Low="0.954621"   /> 
       <OverallSys Name="WtZmod"  High="1.04438"  Low="0.955621"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttZ_plus_tWZ_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttZ_plus_tWZ_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttZ_plus_tWZ_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttZ_plus_tWZ_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="GlobalReduction_JET_BJES_Response"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttZ_plus_tWZ_GlobalReduction_JET_BJES_Response_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttZ_plus_tWZ_GlobalReduction_JET_BJES_Response_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -61,7 +60,6 @@ This xml file created automatically on:
       <OverallSys Name="GlobalReduction_JET_JER_EffectiveNP_4"  High="1.01874"  Low="0.981262"   /> 
       <OverallSys Name="ttWnorm"  High="1.15"  Low="0.85"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttbarW_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttbarW_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttbarW_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttbarW_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttbarW_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttbarW_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -82,7 +80,6 @@ This xml file created automatically on:
       <OverallSys Name="bTagSF_eigenvars_B_1"  High="1.01146"  Low="0.988543"   /> 
       <OverallSys Name="ttHnorm"  High="1.15"  Low="0.85"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttbarH_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttbarH_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttbarH_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttbarH_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="bTagSF_eigenvars_B_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttbarH_bTagSF_eigenvars_B_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttbarH_bTagSF_eigenvars_B_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -125,7 +122,6 @@ This xml file created automatically on:
       <OverallSys Name="VVLF_4_Jet"  High="1.11534"  Low="0.884664"   /> 
       <OverallSys Name="VVLF_5_Jet"  High="1.08138"  Low="0.918617"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_VVLF_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_VVLF_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_VVLF_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_VVLF_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="EL_SF_Isol"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_VVLF_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_VVLF_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -163,7 +159,6 @@ This xml file created automatically on:
       <OverallSys Name="VVHF_4_Jet"  High="1.10252"  Low="0.897484"   /> 
       <OverallSys Name="VVHF_5_Jet"  High="1.0975"  Low="0.902495"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_VVHF_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_VVHF_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_VVHF_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_VVHF_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="bTagSF_eigenvars_C_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_VVHF_bTagSF_eigenvars_C_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_VVHF_bTagSF_eigenvars_C_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -196,7 +191,6 @@ This xml file created automatically on:
       <OverallSys Name="tZnorm"  High="1.14"  Low="0.86"   /> 
       <OverallSys Name="tZrad"  High="0.919866"  Low="1.08013"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_tZ_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_tZ_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="bTagSF_eigenvars_B_0"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_tZ_bTagSF_eigenvars_B_0_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_tZ_bTagSF_eigenvars_B_0_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="GlobalReduction_JET_EffectiveNP_1"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_tZ_GlobalReduction_JET_EffectiveNP_1_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_tZ_GlobalReduction_JET_EffectiveNP_1_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -236,7 +230,6 @@ This xml file created automatically on:
       <OverallSys Name="ttbarFSR"  High="1.0328"  Low="0.967199"   /> 
       <OverallSys Name="ttbarPhotConv"  High="1.22317"  Low="0.776827"   /> 
       <OverallSys Name="ttbarBottomMeson"  High="1.08384"  Low="0.916157"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <NormFactor Name="mu_ttbar_Wt"  Val="1"  High="20"  Low="-10"  Const="False"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttbar_plus_Wt_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttbar_plus_Wt_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ttbar_plus_Wt_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ttbar_plus_Wt_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -270,7 +263,6 @@ This xml file created automatically on:
       <OverallSys Name="GlobalReduction_JET_Pileup_OffsetMu"  High="1.07595"  Low="0.924048"   /> 
       <OverallSys Name="OtherFakesNorm"  High="2"  Low="0"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_OtherFakes_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_OtherFakes_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_OtherFakes_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_OtherFakes_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="EL_SF_Reco"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_OtherFakes_EL_SF_Reco_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_OtherFakes_EL_SF_Reco_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -306,7 +298,6 @@ This xml file created automatically on:
       <OverallSys Name="GlobalReduction_JET_Pileup_RhoTopology"  High="1.01233"  Low="0.98767"   /> 
       <OverallSys Name="OtherNorm"  High="1.5"  Low="0.5"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_Other_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_Other_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_Other_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_Other_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="EL_SF_ID"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_Other_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_Other_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -341,7 +332,6 @@ This xml file created automatically on:
       <OverallSys Name="MET_SoftTrk_ResoPerp"  High="1.06501"  Low="0.934993"   /> 
       <OverallSys Name="signalMuRMuF"  High="1.04759"  Low="0.952412"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <NormFactor Name="#mu"  Val="1"  High="40"  Low="-40"  Const="False"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ctZprod_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ctZprod_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ctZprod_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ctZprod_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
@@ -397,7 +387,6 @@ This xml file created automatically on:
       <OverallSys Name="ttbarXsec"  High="1.055"  Low="0.945"   /> 
       <OverallSys Name="signalMuRMuF"  High="1.01916"  Low="0.980844"   /> 
       <OverallSys Name="lumi"  High="1.017"  Low="0.983"   /> 
-      <OverallSys Name="cTagSF"  High="1.2"  Low="0.8"   /> 
       <NormFactor Name="#mu"  Val="1"  High="40"  Low="-40"  Const="False"   /> 
       <HistoSys Name="pileup"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ctZdec_pileup_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ctZdec_pileup_Shape_Up_regBin"  HistoPathHigh=""   /> 
       <HistoSys Name="jvt"  HistoFileLow="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameLow="SR3_ctZdec_jvt_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="BONLY_CRSR_DL1rc_unblind/Histograms/BONLY_CRSR_DL1rc_unblind_SR3_histos.root"  HistoNameHigh="SR3_ctZdec_jvt_Shape_Up_regBin"  HistoPathHigh=""   /> 
