@@ -3,7 +3,7 @@
 % content in this file will be fed into the main document
 
 % ----------------------- introduction file header -----------------------
-\chapter{The theory framework}
+\chapter{Motivation and theory framework}
 \label{chapter:SM}
 % ----------------------- paths to graphics ------------------------
 
@@ -14,7 +14,7 @@
 The construction of the Standard Model is the result of a long series of experiments
 and brilliant ideas in both theoretical and experimental fields.
 Towards the end of the 1960s, knowledge of what we consider to be the constituent
-elements of nature and the fundamental interactions among them, was organized
+elements of nature and the fundamental interactions among them, was organised
 in the so-called Standard Model (SM).\\
 More recently, a missing piece towards the completion of the SM, the Higgs boson,
 was discovered by the ATLAS and CMS collaborations.\\
@@ -325,6 +325,48 @@ At hadron colliders, the dominant hadronic mode is the most difficult to isolate
 \end{figure}
 
 \newpage
+\section{Physics motivation}
+The heaviest particle in the Standard Model (SM), the top quark, decays almost exclusively to a \PW-boson and a bottom quark~\cite{pdg2}. In proton--proton ($pp$) collisions, top quarks are produced dominantly in pairs, via the strong interaction, but also singly, via the electroweak interaction. \\%involving a $Wtb$ vertex. %Therefore single-top quark production provides a powerful probe of the electroweak couplings of the top quark. 
+Within the SM, "flavour-changing neutral-current" (FCNC) processes are forbidden at tree level due to the Glashow-Iliopoulos-Maiani mechanism \cite{gim} (see Section~\ref{sec:gim}) and the approximate diagonality of the Cabibbo-Kobayashi-Maskawa matrix~\cite{pdg2} causes the suppression of such processes at higher orders (see Section~\ref{sec:ckm}).\\
+Nonetheless, there are several scenarios beyond the Standard Model (BSM) that can significantly enhance the FCNC processes in the top quark sector, opening a door for its detection at the Large Hadron Collider (LHC)~\cite{aguilar,barger,h2dm_limit,mssm_limit,RPV_limit, extra_limit} and some of them will be discussed in Section~\ref{sec:bsm}. \\
+The analysis presented in the following details a search for FCNC $\Pqt\rightarrow \PZ\Pqc$ decay. 
+%A comparison between SM and BSM predictions for the branching ratios of top quark decays to an up or a charm quark and a \PZ boson is shown in Table \ref{tab:intro-fcnc-br-th}.\\
+%
+%\begin{table}[h]
+%	\begin{adjustbox}{max width=1.\textwidth,center}
+%		\begin{tabular}{ccccccccc}
+%			\hline 
+%			Model:&  			                         SM&  				   QS&  			   2HDM&  				FC 2HDM				& MSSM 			&  RPV SUSY			&  			RS				& EMF \\ 
+%			\hline 
+%			$\mathcal{B}(t\rightarrow qZ)$ & $10^{-14}$     & $10^{-4}$ &  $10^{-6}$          & $10^{-10}$  & $10^{-7}$      &$10^{-6}$            & $10^{-5}$           & $10^{-6}$  \\ 
+%			\hline 
+%		\end{tabular} 
+%	\end{adjustbox}
+%	\caption{Maximum allowed FCNC $t\rightarrow qZ$, ($q$ = $u$, $c$) branching ratios predicted by several models\cite{tcZ_sm,qs_limit,h2dm_limit,mssm_limit,RPV_limit,extra_limit,rs_limit,report_limit}.}
+%	\label{tab:intro-fcnc-br-th}
+%\end{table} 
+
+\noindent In a model independent way, the anomalous couplings can be described by the so called effective field theory (EFT).
+This theory considers an extension of the SM Lagrangian $\mathcal{L}_{SM}$ by operators in higher-dimensions of the mass, suppressed by the scale of new physics $\Lambda$ as shown in \Cref{eq:lagrangian}.
+Dimension-5 operators are not considered in this analysis due to the introduction of lepton-flavour violating processes. 
+Therefore, the anomalous couplings can be approximated with dimension-6 operators $O_{i}^{(6)}$ whose strength  is given by the Wilson coefficients $C_{i}^{(6)}$.\\
+
+\begin{equation}
+\mathcal{L} = \mathcal{L}_{SM} + \frac{1}{\Lambda^2}\sum_{i} C_{i}^{(6)} O_{i}^{(6)}  
+\label{eq:lagrangian}
+\end{equation}
+
+\noindent Experimental limit on the branching ratio of FCNC $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ decays was previously established by experiments at the Large Electron-Positron Collider (LEP)~\cite{ALEPH,DELPHI,OPAL,L3}, the Hadron-Electron Ring Accelerator (HERA)~\cite{ZEUS}, the Tevatron\ \cite{CDF,DZero} and the Large Hadron Collider (LHC)~\cite{TOPQ-2017-06,Chatrchyan:2013nwa,CMS-TOP-12-039}. The ATLAS and the CMS collaborations obtained limits at the \SI{95}{\percent} confidence level (CL) for this process using data collected at $\sqrt{s}$ = \SI{13}{\TeV} and $\sqrt{s}$ = \SI{8}{\TeV}, focusing on FCNC top-quark decays~\cite{TOPQ-2017-06,Chatrchyan:2013nwa}, or both production and decay modes combined~\cite{CMS-TOP-12-039}. 
+A summary of the ATLAS and CMS results on the limits on FCNC couplings is shown in \Cref{fig:intro:limits}. The actual observed limits on the FCNC \tZc coupling from ATLAS is $\mathrm{BR(t\to cZ) < \SI{2.4e-4}{}}$~\cite{TOPQ-2017-06}.\\
+Recent studies were done on the interference effects on the FCNC \textit{tZq} and $t\gamma q$ couplings in single-top production and $\mathrm{t\bar{t}}$ decay, concluding that these effects are smaller than the variations of the systematics uncertainties considered~\cite{Interference}. Therefore, both decay and production modes are taken into account in this analysis to improve the results on the limit for \tZc anomalous coupling.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.15]{Chapters/CH5/figures/fcnc_summarybsm}
+	\caption{Summary of the current 95\% confidence level observed limits on the branching ratios of the top quark decays via flavour changing neutral currents to a quark and a neutral boson $t\rightarrow Xq$ ($X = g, Z, \gamma,$ or $H$; $q = u$ or $c$) by the ATLAS and CMS Collaborations compared to several new physics models. The ATLAS limits on $t \rightarrow q$ are valid for the case of a purely left-handed coupling. Status of figure: September 2019 (Top2019)}
+	\label{fig:intro:limits}
+\end{figure}
+
 \section{Theories for physics beyond the Standard Model}
 \label{sec:bsm}
 The previous sections described the core components of what we call \textit{Standard Model} and report few major successes of many. 

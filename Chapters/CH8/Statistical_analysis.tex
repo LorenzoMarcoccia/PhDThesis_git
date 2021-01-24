@@ -102,8 +102,8 @@ factors are propagated to the event yields and observables.
 % ===========================================
 %\subsubsection{Monte Carlo modelling} 
 % ===========================================
-\noindent Systematic uncertainties from MC modelling of various background sources are estimated by comparing
-different generators and varying parameters for the event generation.
+\noindent Systematic uncertainties on template shapes from MC modelling of various background sources are 
+estimated by comparing different generators and varying parameters for the event generation.
 
 \begin{itemize}	
 	\item \textbf{Signal} \\ 
@@ -371,9 +371,9 @@ statistical uncertainty in each bin of the input distributions.
 There is therefore one gamma parameter per bin of each input distribution. 
 
 \paragraph{Background treatment in the fit} The \ttZ and \tWZ backgrounds are merged in one template as well as
-\ttbar and \Wt. Two templates are included in the fit for diboson process that correspond to the heavy and light components (\VVHF and \VVLF).
+\ttbar and $\mathrm{Wt}$. Two templates are included in the fit for diboson process that correspond to the heavy and light components (\VVHF and \VVLF).
 Separate templates are used for the remaining background sources.
-The normalisation of \ttbar+\Wt background is free floating in the fit meaning that an unconstrained NP is associated to the corresponding template, namely $\mu_{\ttbar+\Wt}$.
+Since this analysis targets final states with three prompt leptons (see \Cref{tab:sel:srs}), the \ttbar and the $\mathrm{Wt}$ processes are a fake background. Therefore the normalisation of \ttbar+$\mathrm{Wt}$ background is free floating in the fit meaning that an unconstrained NP is associated to the corresponding template, namely $\mu_{\ttbar+\Wt}$.
 All other backgrounds have pre-fit normalizations with uncertainties (see \Cref{sec:systematic:sources}).
 
 \clearpage
@@ -384,15 +384,16 @@ All other backgrounds have pre-fit normalizations with uncertainties (see \Cref{
 For the extraction of the \tZc coupling, the following fits
 are presented:
 \begin{description}
-	\item[Background-only fit in CRs:] in this fit only CRs are used. Real data are
+	\item[Background-only fit in CRs:] in this fit only CRs are used. Data are
 	used. The signal templates are not included in the fit. This fit is used to estimate
 	the preliminary background.
-	\item[Signal+Background fit in SR+CRs with pseudo-data:] in this fit both SRs and CRs are used. Real
-	data are used in the CRs. In the SRs, pseudo-data are constructed
-	using post-fit background normalisations from the B-only fit in CRs. In the following, this dataset is called 'realistic Asimov'. This fit is used to extract
-	the \tZc coupling, therefore the expected upper limit .
+	\item[Signal+Background fit in SR+CRs with pseudo-data:] in this fit both SRs and CRs are used.
+	Data are used in the CRs. In the SRs, pseudo-data are constructed
+	using post-fit background normalisations from the B-only fit in CRs. In the following, this dataset is called 'realistic Asimov'. This fit is used to extract the expected upper limit.
+	\item[Background-only fit in SR+CRs with data:] in this fit both SRs and CRs are used. Data are used in both 
+	SRs and CRs. This fit is used to extract the \tZc coupling, therefore the observed and the expected upper limit.
 \end{description}
-These are summarised in the following table:
+These fits are summarised in the following table:
 
 \begin{table}[htbp]
 	\small
@@ -401,12 +402,18 @@ These are summarised in the following table:
 		\toprule
 		Setup & Fit & SRs & CRs & Template & Reference \\
 		\midrule
-		1 & B-only in CRs & -- & real data & B  & Appendix \ref{app:stat:tzc:bonly:cr} \\
+		1 & B-only in CRs & -- & data & B  & Appendix \ref{app:stat:tzc:bonly:cr} \\
 		\midrule
-		2 & S+B in SRs+CRs & realistic Asimov & real data & S+B  & \Cref{sec:stat:tzc:splusb:crsr} \\
+		2 & S+B in SRs+CRs & realistic Asimov & data & S+B  & \Cref{sec:stat:tzc:splusb:crsr} \\
 		& with realistic Asimov & from Setup 1 & & & \\
+		\midrule
+		3 & B-only in SRs+CRs & data & data & B  & \Cref{sec:stat:tzc:unb} \\
+		& with data & & & & \\
 		\bottomrule
 	\end{tabular}
+	\caption{
+	Overview of the fits for the extraction of the \tZc coupling.}%
+\label{tab:summary_fits}
 \end{table}
 
 %% ----------------------------------------------------------------------------
@@ -414,7 +421,7 @@ These are summarised in the following table:
 \section{Signal + Background fit in SRs+CRs with realistic Asimov data}
 \label{sec:stat:tzc:splusb:crsr}
 To extract the expected sensitivity, an SRs+CRs S+B fit is performed. 
-Real data in used in CRs while in SRs an Asimov dataset is used,
+Data in used in CRs while in SRs an Asimov dataset is used,
 constructed using the background normalisations found in Appendix \ref{app:stat:tzc:bonly:cr}.\\
 Plots and tables shown in this section are the following:
 \begin{itemize}
@@ -437,9 +444,7 @@ pulls and constrains
 are very similar since in the CRs the expected signal is negligible
 and in the SRs the Asimov data are used. 
 The signal strength of $\mu$ is expected to be zero for the same reason.
-The fake normalization factor $\mu_{\ttbar+\Wt}$ is compatible to one within the uncertainties and
-this is a good indication of the good fit stability because it means that adding a normalization factor keeps
-a good agreement between data and MC predictions.\\
+The fake normalization factor $\mu_{\ttbar+\Wt}$ is compatible with unity.\\
 The most pulled NPs (e.g. \ttbar FSR and \VVHF Berends scaling for events with 1 jet) are
 not among the highest ranked NPs (\Cref{fig:stat:tzc:splusb:crsr:ranking}). 
 Slightly pulled NPs (e.g. \ttZ normalization, Other fakes norm. and \VVHF generator) have a small post-fit impact on the signal strength, around 2\%, as can be seen again in \Cref{fig:stat:tzc:splusb:crsr:ranking}. Moreover, none of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 3\%.\\
@@ -578,7 +583,9 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 \section{Background-only fit in SRs+CRs with unblinded data}
 \label{sec:stat:tzc:unb}
 In this section, results with unblinded data are presented. The combined fit has been performed in the background 
-control and signal regions with real data under the Background-only hypothesis.\\
+control and signal regions with data under the Background-only hypothesis.\\
+This test statistic is used to measure the compatibility of the observed data with the background-only hypothesis 
+(i.e. for $\mathrm{\mu}$ = 0), and to make statistical inferences about $\mathrm{\mu}$, such as upper limits using the $\mathrm{CL_{s}}$ method~\cite{Junk:1999kv,Read:2002hq}.
 Plots and tables shown in this section are the following:
 \begin{itemize}
 	\item The value of the post-fit normalisation parameter of the free floating background is shown in \Cref{fig:stat:tzc:splusb:crsr:norm_unb}.
@@ -591,9 +598,7 @@ Plots and tables shown in this section are the following:
 	\item Event yields pre- and post-fit are shown in \Cref{tab:stat:tzc:splusb:crsr:yields:prefit_unb,tab:stat:tzc:splusb:crsr:yields:postfit_unb}. 
 	\item Pre-fit and post-fit distributions of the fitted distributions in the various regions are shown in \Cref{fig:stat:tzc:splusb:crsr:srplots:1_unb,fig:stat:tzc:splusb:crsr:srplots:2_unb,fig:stat:tzc:splusb:crsr:crplots:1_unb,fig:stat:tzc:splusb:crsr:crplots:2_unb}.
 \end{itemize}
-The fake normalization factor $\mu_{\ttbar+\Wt}$ (\Cref{fig:stat:tzc:splusb:crsr:norm_unb} is compatible to one within the uncertainties and
-this is a good indication of the good fit stability because it means that adding a normalization factor keeps
-a good agreement between data and MC predictions.\\
+The fake normalization factor $\mu_{\ttbar+\Wt}$ (\Cref{fig:stat:tzc:splusb:crsr:norm_unb}) is compatible with unity.\\
 The value of the fitted nuisance parameters (\Cref{fig:stat:tzc:splusb:crsr:np:instr_unb,fig:stat:tzc:splusb:crsr:np:model_unb}) are within their prior uncertainties,
 meaning that the data are well modelled with the MC predictions within the uncertainties.
 Concerning the correlations between NPs
@@ -605,49 +610,49 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.5\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/NormFactors}
-	\caption{Normalisation factors for the B-only \tZc fit in SRs+CRs with real data.}%
+	\caption{Normalisation factors for the B-only \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:norm_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Pruning}
-	\caption{Pruning of the nuisance parameters for the B-only fit in SRs+CRs with real data.}%
+	\caption{Pruning of the nuisance parameters for the B-only fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:pruning_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.8\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/NuisPar_Instrumental}
-	\caption{Pulls and constraints of the instrumental nuisance parameters for the B-only \tZc fit in SRs+CRs with real data.}%
+	\caption{Pulls and constraints of the instrumental nuisance parameters for the B-only \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:np:instr_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/NuisPar_Theoretical_&_Modelling}
-	\caption{Pulls and constraints of the theoretical and modeling nuisance parameters for the B-only \tZc fit in SRs+CRs with real data.}%
+	\caption{Pulls and constraints of the theoretical and modeling nuisance parameters for the B-only \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:np:model_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Gammas}
-	\caption{Gamma parameters for the B-only \tZc fit in SRs+CRs with real data.}%
+	\caption{Gamma parameters for the B-only \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:gamma_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.95\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/CorrMatrix}
-	\caption{Correlation matrix of the nuisance paramenters for the B-only \tZc fit in SRs+CRs with real data.}%
+	\caption{Correlation matrix of the nuisance paramenters for the B-only \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:corrmatrix_unb}
 \end{figure}
 
 %\begin{figure}[htbp]
 %	\centering
 %	\includegraphics[width=.9\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Ranking}
-%	\caption{Ranking of the nuisance parameters for the B-only \tZc fit in SRs+CRs with real data.}%
+%	\caption{Ranking of the nuisance parameters for the B-only \tZc fit in SRs+CRs with data.}%
 %	\label{fig:stat:tzc:splusb:crsr:ranking_unb}
 %\end{figure}
 
@@ -658,7 +663,7 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 	\centering
 	\tiny
 	\input{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Tables/Yields_clean}
-	\caption{Pre-fit event yields in the B-only \tZc fit in SRs+CRs with real data. \TabErrStatSys} 
+	\caption{Pre-fit event yields in the B-only \tZc fit in SRs+CRs with data. \TabErrStatSys} 
 	\label{tab:stat:tzc:splusb:crsr:yields:prefit_unb}
 \end{table} 
 
@@ -666,7 +671,7 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 	\centering
 	\tiny
 	\input{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Tables/Yields_postFit}
-	\caption{Post-fit event yields in the B-only\tZc fit in SRs+CRs with real data. \TabErrStatSys} 
+	\caption{Post-fit event yields in the B-only\tZc fit in SRs+CRs with data. \TabErrStatSys} 
 	\label{tab:stat:tzc:splusb:crsr:yields:postfit_unb}
 \end{table} 
 \clearpage
@@ -682,7 +687,7 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR2} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR2_postFit} \\
 	\end{tabular}
-	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in SR1 and SR2 for the B-only \tZc fit in SRs+CRs with real data.
+	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in SR1 and SR2 for the B-only \tZc fit in SRs+CRs with data.
 		\ErrStatSys
 	}%
 	\label{fig:stat:tzc:splusb:crsr:srplots:1_unb}
@@ -694,7 +699,7 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR3} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR3_postFit} \\
 	\end{tabular}
-	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in SR3 for the B-only \tZc fit in SRs+CRs with real data.
+	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in SR3 for the B-only \tZc fit in SRs+CRs with data.
 		\ErrStatSys
 	}%
 	\label{fig:stat:tzc:splusb:crsr:srplots:2_unb}
@@ -708,7 +713,7 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SBCR2} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SBCR2_postFit} \\
 	\end{tabular}
-	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in the side-band CRs for the B-only \tZc fit in SRs+CRs with real data.
+	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in the side-band CRs for the B-only \tZc fit in SRs+CRs with data.
 		\ErrStatSys
 	}%
 	\label{fig:stat:tzc:splusb:crsr:crplots:1_unb}
@@ -722,7 +727,7 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/TTZCR} &
 		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/TTZCR_postFit} \\
 	\end{tabular}
-	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in the \ttbar and \ttZ CRs for the B-only \tZc fit in SRs+CRs with real data.
+	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in the \ttbar and \ttZ CRs for the B-only \tZc fit in SRs+CRs with data.
 		\ErrStatSys
 	}%
 	\label{fig:stat:tzc:splusb:crsr:crplots:2_unb}
@@ -733,8 +738,9 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 \label{sec:stat:tzc}
 \paragraph {Blinded data} From the likelihood fit described in this chapter, namely the
 signal+background fit in SRs+CRs with the realistic Asimov datasets in \Cref{sec:stat:tzc:splusb:crsr},
-expected upper limits can be extracted. In the absence of
-FCNC signal, upper limit can be computed with the CLs method~\cite{Junk:1999kv,Read:2002hq} with the expected 95\% confidence level (CL) limit on the branching ratio BR($\Pqt\rightarrow\PZ\Pqc$).\\ 
+expected upper limits can be computed with the $\mathrm{CL_{s}}$ method~\cite{Junk:1999kv,Read:2002hq} with the expected 95\% confidence level (CL) limit on the branching ratio BR($\Pqt\rightarrow\PZ\Pqc$).\\
+%The expected upper limit on $\mathrm{\mu}$ is the one which would be obtained if the data events
+%were perfectly described by the expected background.
 Table \ref{tab:limits:comparison} shows the expected limits on BR($t \rightarrow Zc$) extracted for various selections: 
 \begin{itemize}
 	\item without the use of any c-tagger ('Baseline'),
@@ -787,7 +793,7 @@ The expected upper limit from the previous analysis is improved by a factor of 3
 % 6% improvement using dl1r wrt baseline
 
 \paragraph {Unblinded data}
-From the likelihood fit described in \Cref{sec:stat:tzc:unb} under the Background-only hypothesis no evidence for the FCNC $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ signal is found but a good agreement between real data and Standard Model is observed.
+From the likelihood fit described in \Cref{sec:stat:tzc:unb} under the Background-only hypothesis no evidence for the FCNC $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ signal is found but a good agreement between data and Standard Model is observed.
 In the absence of signal, the 95\% CL upper limit is set on $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$.
 \Cref{fig:stat:tzc:splusb:crsr:CLsPlot} shows the observed and expected $\mathrm{CL_{s}}$ as a function of $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$. The observed limit is $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<11.8\times 10^{-5}$, inside the $\pm$1$\sigma$ band of the expected limit: $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<9.5\times 10^{-5}$.
 The observed upper limit is improved by a factor of 2, while the expected upper limit is improved by a factor of 3.4 compared to the previous analysis.
