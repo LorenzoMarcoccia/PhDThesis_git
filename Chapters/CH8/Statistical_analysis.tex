@@ -390,7 +390,7 @@ are presented:
 	\item[Signal+Background fit in SR+CRs with pseudo-data:] in this fit both SRs and CRs are used.
 	Data are used in the CRs. In the SRs, pseudo-data are constructed
 	using post-fit background normalisations from the B-only fit in CRs. In the following, this dataset is called 'realistic Asimov'. This fit is used to extract the expected upper limit.
-	\item[Background-only fit in SR+CRs with data:] in this fit both SRs and CRs are used. Data are used in both 
+	\item[Signal+Background fit in SR+CRs with data:] in this fit both SRs and CRs are used. Data are used in both 
 	SRs and CRs. This fit is used to extract the \tZc coupling, therefore the observed and the expected upper limit.
 \end{description}
 These fits are summarised in the following table:
@@ -407,7 +407,7 @@ These fits are summarised in the following table:
 		2 & S+B in SRs+CRs & realistic Asimov & data & S+B  & \Cref{sec:stat:tzc:splusb:crsr} \\
 		& with realistic Asimov & from Setup 1 & & & \\
 		\midrule
-		3 & B-only in SRs+CRs & data & data & B  & \Cref{sec:stat:tzc:unb} \\
+		3 & S+B in SRs+CRs & data & data & S+B  & \Cref{sec:stat:tzc:splusb:unb} \\
 		& with data & & & & \\
 		\bottomrule
 	\end{tabular}
@@ -443,7 +443,7 @@ pulls and constrains
 (\Cref{fig:stat:tzc:splusb:crsr:np:instr,fig:stat:tzc:splusb:crsr:np:model}) 
 are very similar since in the CRs the expected signal is negligible
 and in the SRs the Asimov data are used. 
-The signal strength of $\mu$ is expected to be zero for the same reason.
+The signal strength $\mu$ is expected to be zero for the same reason.
 The fake normalization factor $\mu_{\ttbar+\Wt}$ is compatible with unity.\\
 The most pulled NPs (e.g. \ttbar FSR and \VVHF Berends scaling for events with 1 jet) are
 not among the highest ranked NPs (\Cref{fig:stat:tzc:splusb:crsr:ranking}). 
@@ -580,79 +580,84 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 	\label{fig:stat:tzc:splusb:crsr:crplots:2}
 \end{figure}
 
-\section{Background-only fit in SRs+CRs with unblinded data}
-\label{sec:stat:tzc:unb}
+\section{S+B fit in SRs+CRs with unblinded data}
+\label{sec:stat:tzc:splusb:unb}
 In this section, results with unblinded data are presented. The combined fit has been performed in the background 
-control and signal regions with data under the Background-only hypothesis.\\
-This test statistic is used to measure the compatibility of the observed data with the background-only hypothesis 
-(i.e. for $\mathrm{\mu}$ = 0), and to make statistical inferences about $\mathrm{\mu}$, such as upper limits using the $\mathrm{CL_{s}}$ method~\cite{Junk:1999kv,Read:2002hq}.
+control and signal regions with data under the signal+background hypothesis.\\
+This test statistic is used to measure the compatibility of the observed data with the signal+background hypothesis 
+and to make statistical inferences about $\mathrm{\mu}$, such as upper limits using the $\mathrm{CL_{s}}$ method~\cite{Junk:1999kv,Read:2002hq}.
 Plots and tables shown in this section are the following:
 \begin{itemize}
 	\item The value of the post-fit normalisation parameter of the free floating background is shown in \Cref{fig:stat:tzc:splusb:crsr:norm_unb}.
 	\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \cref{fig:stat:tzc:splusb:crsr:pruning_unb}.
-	\item The pull distributions of the all nuisance parameters can be seen in \Cref{fig:stat:tzc:splusb:crsr:np:instr_unb,fig:stat:tzc:splusb:crsr:np:model_unb} and \Cref{fig:stat:tzc:splusb:crsr:gamma_unb}. 
-	\item The correlation matrix of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:corrmatrix_unb}. 
-%	\item The ranking of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:ranking_unb}. 
+	\item The pull distributions of the all nuisance parameters can be seen in \Cref{fig:stat:tzc:splusb:crsr:np:instr_unb,fig:stat:tzc:splusb:crsr:np:model_unb} and \Cref{fig:stat:tzc:splusb:crsr:gamma_unb}.  
+	\item The correlation matrix of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:corrmatrix_unb}.
 	%Red and blue plots for the top five ranked NPs are shown in a
 	%dedicated appendix (\Cref{sec:app:fit:redblue:tzc:splusb:crsr}).
+	\item The ranking of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:ranking_unb}. 
 	\item Event yields pre- and post-fit are shown in \Cref{tab:stat:tzc:splusb:crsr:yields:prefit_unb,tab:stat:tzc:splusb:crsr:yields:postfit_unb}. 
 	\item Pre-fit and post-fit distributions of the fitted distributions in the various regions are shown in \Cref{fig:stat:tzc:splusb:crsr:srplots:1_unb,fig:stat:tzc:splusb:crsr:srplots:2_unb,fig:stat:tzc:splusb:crsr:crplots:1_unb,fig:stat:tzc:splusb:crsr:crplots:2_unb}.
 \end{itemize}
-The fake normalization factor $\mu_{\ttbar+\Wt}$ (\Cref{fig:stat:tzc:splusb:crsr:norm_unb}) is compatible with unity.\\
+The fake normalization factor $\mu_{\ttbar+\Wt}$ (\Cref{fig:stat:tzc:splusb:crsr:norm_unb}) is compatible with unity and the signal strength $\mu$ is compatible with zero within the uncertainties.\\
+Results are similar to what was found with blinded Signal Regions (\Cref{sec:stat:tzc:splusb:crsr}).\\
 The value of the fitted nuisance parameters (\Cref{fig:stat:tzc:splusb:crsr:np:instr_unb,fig:stat:tzc:splusb:crsr:np:model_unb}) are within their prior uncertainties,
-meaning that the data are well modelled with the MC predictions within the uncertainties.
+meaning that the data are well modelled with the MC predictions within the uncertainties.\\
+%The most pulled NPs (e.g. \ttbar FSR and \VVHF Berends scaling for events with 1 jet) are
+%not among the highest ranked NPs (\Cref{fig:stat:tzc:splusb:crsr:ranking}). 
+%Slightly pulled NPs (e.g. \ttZ normalization, Other fakes norm. and \VVHF generator) have a small post-fit impact on the signal strength, around 2\%, as can be seen again in \Cref{fig:stat:tzc:splusb:crsr:ranking}. Moreover, 
 Concerning the correlations between NPs
 (\Cref{fig:stat:tzc:splusb:crsr:corrmatrix_unb}), some strong correlations
 between diboson related NPs are present, as expected. This is also
 true for the \ttbar normalisation and some \ttbar modeling NPs. 
+None of the systematic uncertainties has a post-fit impact on the signal strength parameter greater than 4\% as can be seen again in \Cref{fig:stat:tzc:splusb:crsr:ranking}.\\
 Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:prefit_unb,tab:stat:tzc:splusb:crsr:yields:postfit_unb} and distributions in \Cref{fig:stat:tzc:splusb:crsr:srplots:1_unb,fig:stat:tzc:splusb:crsr:srplots:2_unb,fig:stat:tzc:splusb:crsr:crplots:1_unb,fig:stat:tzc:splusb:crsr:crplots:2_unb} show a good agreement between the observed data and MC predictions in Control and Signal Regions. No evidence for the FCNC $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ signal is found.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.5\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/NormFactors}
-	\caption{Normalisation factors for the B-only \tZc fit in SRs+CRs with data.}%
+	\includegraphics[width=.5\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/NormFactors}
+	\caption{Normalisation factors for the S+B \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:norm_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Pruning}
-	\caption{Pruning of the nuisance parameters for the B-only fit in SRs+CRs with data.}%
+	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Pruning}
+	\caption{Pruning of the nuisance parameters for the S+B \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:pruning_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.8\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/NuisPar_Instrumental}
-	\caption{Pulls and constraints of the instrumental nuisance parameters for the B-only \tZc fit in SRs+CRs with data.}%
+	\includegraphics[width=.8\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/NuisPar_Instrumental}
+	\caption{Pulls and constraints of the instrumental nuisance parameters for the S+B \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:np:instr_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/NuisPar_Theoretical_&_Modelling}
-	\caption{Pulls and constraints of the theoretical and modeling nuisance parameters for the B-only \tZc fit in SRs+CRs with data.}%
+	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/NuisPar_Theoretical_&_Modelling}
+	\caption{Pulls and constraints of the theoretical and modeling nuisance parameters for the S+B \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:np:model_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Gammas}
-	\caption{Gamma parameters for the B-only \tZc fit in SRs+CRs with data.}%
+	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Gammas}
+	\caption{Gamma parameters for the S+B \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:gamma_unb}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.95\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/CorrMatrix}
-	\caption{Correlation matrix of the nuisance paramenters for the B-only \tZc fit in SRs+CRs with data.}%
+	\includegraphics[width=.95\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/CorrMatrix}
+	\caption{Correlation matrix of the nuisance paramenters for the S+B \tZc fit in SRs+CRs with data.}%
 	\label{fig:stat:tzc:splusb:crsr:corrmatrix_unb}
 \end{figure}
 
 %\begin{figure}[htbp]
 %	\centering
-%	\includegraphics[width=.9\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Ranking}
-%	\caption{Ranking of the nuisance parameters for the B-only \tZc fit in SRs+CRs with data.}%
+%	\includegraphics[width=.9\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Ranking}
+%	\caption{Ranking of the nuisance parameters for the S+B \tZc fit in SRs+CRs with data.}%
 %	\label{fig:stat:tzc:splusb:crsr:ranking_unb}
 %\end{figure}
 
@@ -662,16 +667,16 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 \begin{table}[]
 	\centering
 	\tiny
-	\input{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Tables/Yields_clean}
-	\caption{Pre-fit event yields in the B-only \tZc fit in SRs+CRs with data. \TabErrStatSys} 
+	\input{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Tables/Yields_clean}
+	\caption{Pre-fit event yields in the S+B \tZc fit in SRs+CRs with data. \TabErrStatSys} 
 	\label{tab:stat:tzc:splusb:crsr:yields:prefit_unb}
 \end{table} 
 
 \begin{table}[]
 	\centering
 	\tiny
-	\input{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Tables/Yields_postFit}
-	\caption{Post-fit event yields in the B-only\tZc fit in SRs+CRs with data. \TabErrStatSys} 
+	\input{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Tables/Yields_postFit}
+	\caption{Post-fit event yields in the S+B\tZc fit in SRs+CRs with data. \TabErrStatSys} 
 	\label{tab:stat:tzc:splusb:crsr:yields:postfit_unb}
 \end{table} 
 \clearpage
@@ -682,12 +687,12 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 \begin{figure}[htbp]
 	\centering
 	\begin{tabular}{cc}
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR1} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR1_postFit} \\
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR2} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR2_postFit} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SR1} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SR1_postFit} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SR2} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SR2_postFit} \\
 	\end{tabular}
-	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in SR1 and SR2 for the B-only \tZc fit in SRs+CRs with data.
+	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in SR1 and SR2 for the S+B \tZc fit in SRs+CRs with data.
 		\ErrStatSys
 	}%
 	\label{fig:stat:tzc:splusb:crsr:srplots:1_unb}
@@ -696,10 +701,10 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 \begin{figure}[htbp]
 	\centering
 	\begin{tabular}{cc}
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR3} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SR3_postFit} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SR3} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SR3_postFit} \\
 	\end{tabular}
-	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in SR3 for the B-only \tZc fit in SRs+CRs with data.
+	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in SR3 for the S+B \tZc fit in SRs+CRs with data.
 		\ErrStatSys
 	}%
 	\label{fig:stat:tzc:splusb:crsr:srplots:2_unb}
@@ -708,12 +713,12 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 \begin{figure}[htbp]
 	\centering
 	\begin{tabular}{cc}
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SBCR1} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SBCR1_postFit} \\
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SBCR2} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/SBCR2_postFit} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SBCR1} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SBCR1_postFit} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SBCR2} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/SBCR2_postFit} \\
 	\end{tabular}
-	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in the side-band CRs for the B-only \tZc fit in SRs+CRs with data.
+	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in the side-band CRs for the S+B \tZc fit in SRs+CRs with data.
 		\ErrStatSys
 	}%
 	\label{fig:stat:tzc:splusb:crsr:crplots:1_unb}
@@ -722,12 +727,12 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 \begin{figure}[htbp]
 	\centering
 	\begin{tabular}{cc}
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/TTCR} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/TTCR_postFit} \\
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/TTZCR} &
-		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/Plots/TTZCR_postFit} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/TTCR} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/TTCR_postFit} \\
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/TTZCR} &
+		\includegraphics[width=.45\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Plots/TTZCR_postFit} \\
 	\end{tabular}
-	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in the \ttbar and \ttZ CRs for the B-only \tZc fit in SRs+CRs with data.
+	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in the \ttbar and \ttZ CRs for the S+B \tZc fit in SRs+CRs with data.
 		\ErrStatSys
 	}%
 	\label{fig:stat:tzc:splusb:crsr:crplots:2_unb}
@@ -793,14 +798,14 @@ The expected upper limit from the previous analysis is improved by a factor of 3
 % 6% improvement using dl1r wrt baseline
 
 \paragraph {Unblinded data}
-From the likelihood fit described in \Cref{sec:stat:tzc:unb} under the Background-only hypothesis no evidence for the FCNC $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ signal is found but a good agreement between data and Standard Model is observed.
+From the likelihood fit described in \Cref{sec:stat:tzc:splusb:unb} under the Signal+Background hypothesis, no evidence for the FCNC $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ signal is found but a good agreement between data and Standard Model is observed. The results obtained under the Background-only hypothesis shows similar results (see Appendix \ref{app:stat:tzc:bonly:unb}).
 In the absence of signal, the 95\% CL upper limit is set on $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$.
 \Cref{fig:stat:tzc:splusb:crsr:CLsPlot} shows the observed and expected $\mathrm{CL_{s}}$ as a function of $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$. The observed limit is $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<11.8\times 10^{-5}$, inside the $\pm$1$\sigma$ band of the expected limit: $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<9.5\times 10^{-5}$.
 The observed upper limit is improved by a factor of 2, while the expected upper limit is improved by a factor of 3.4 compared to the previous analysis.
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.8\textwidth]{Chapters/CH8/figures/BONLY_CRSR_DL1rc_unblind/CLsPlot}
-	\caption{$\mathrm{CL_{s}}$ vs $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$ plot. The median expected $\mathrm{CL_{s}}$ under the Background-only hypothesis
+	\includegraphics[width=.8\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/CLsPlot}
+	\caption{$\mathrm{CL_{s}}$ vs $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$ plot. The median expected $\mathrm{CL_{s}}$ under the Signal+Background hypothesis
 (black dashed line) is displayed along with the $\pm$1 and $\pm$2 standard deviations bands
 (green and yellow, respectively). The solid red line at $\mathrm{CL_{s}= 0.05}$ denotes the threshold below
 which the hypothesis is excluded at 95\% CL.}
@@ -825,6 +830,6 @@ which the hypothesis is excluded at 95\% CL.}
 		The expected central value is shown together with the $\pm$1$\sigma$ bands.
 		Observed upper limit from \cite{TOPQ-2017-06} is also included for reference.
 	}%
-	\label{tab:results:limits}
+	\label{tab:results:limits_unb}
 \end{table}
 

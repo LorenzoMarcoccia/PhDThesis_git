@@ -1,0 +1,1 @@
+GlobalReduction_JET_Flavor_Composition   -0.828585 +0.94157 -0.94157  0.0106595   -0.0101996  0.0115855   -0.010795 

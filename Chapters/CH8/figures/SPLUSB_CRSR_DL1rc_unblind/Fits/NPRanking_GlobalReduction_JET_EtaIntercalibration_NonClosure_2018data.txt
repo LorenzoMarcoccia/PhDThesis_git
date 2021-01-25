@@ -1,0 +1,1 @@
+GlobalReduction_JET_EtaIntercalibration_NonClosure_2018data   0.0806208 +0.986648 -0.986648  -0.00103938   0.00030879  -0.0010492   0.000313829 

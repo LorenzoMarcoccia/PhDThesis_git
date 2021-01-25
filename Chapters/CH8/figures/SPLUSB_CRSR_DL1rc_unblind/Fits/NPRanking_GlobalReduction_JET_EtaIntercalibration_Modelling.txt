@@ -1,0 +1,1 @@
+GlobalReduction_JET_EtaIntercalibration_Modelling   -0.142507 +0.985935 -0.985935  0.0103879   -0.0101132  0.0105382   -0.0102557 
