@@ -188,7 +188,7 @@ Results show that after the selection of some variables, the BDT performance is 
 \section{Hyper-parameters optimisation}
 Once the final set of input variables are defined, the BDT hyper-parameters optimisation is performed.
 The following BDT paremeters~\cite{TMVA} and values are considered with total of 144 combination:
-NTrees=[400,600,800,1000], minNodSize=[2.0,4.0,6.0], shrinkage=[0.025,0.05,0.1], maxDepth=[1,2,3,4].
+NTrees=[400,600,800,1000], minNodSize=[2.0,4.0,6.0], shrinkage=[0.025,0.05,0.1],\\ maxDepth=[1,2,3,4].
 ~\Cref{app:BDT:fig:SR3:HPO} presents the maximum value of $S_{\text{eff}}/\sqrt{B_{\text{eff}}}$ by cutting the BDT output score, and the ROC integral,
 averaged over the validation folds, as a function of BDT hyper-parameters combination.\\
 The difference between highest and lowest values of ROC integral
