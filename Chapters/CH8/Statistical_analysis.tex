@@ -376,6 +376,15 @@ Separate templates are used for the remaining background sources.
 Since this analysis targets final states with three prompt leptons (see \Cref{tab:sel:srs}), the \ttbar and the $\mathrm{Wt}$ processes are a fake background. Therefore the normalisation of \ttbar+$\mathrm{Wt}$ background is free floating in the fit meaning that an unconstrained NP is associated to the corresponding template, namely $\mu_{\ttbar+\Wt}$.
 All other backgrounds have pre-fit normalizations with uncertainties (see \Cref{sec:systematic:sources}).
 
+\paragraph{Test Statistic} The test statistic $q_{\mu}$ is defined as the profile likelihood ratio:\\
+$q_{\mu}=-2\ln(L(\mu,\hat{\hat{\theta}}_{\mu})/L(\hat{\mu},\hat{\theta}))$, 
+where $\hat{\mu}$ and $\hat{\theta}$ are the values of the parameters that maximise the likelihood function 
+(with the constraints $0\leq \hat{\mu}\leq \mu$), and $\hat{\hat{\theta}}_{\mu}$ are the values of the nuisance parameters that maximise the likelihood function for a given value of $\mu$.
+This test statistic is used to measure the compatibility of the observed data with the background-only hypothesis (i.e. for $\mu=0$), 
+and to make statistical inferences about $\mu$, such as upper limits using the $\mathrm{CL_{s}}$ method~\cite{Junk:1999kv,Read:2002hq}. 
+The $\CL_s$ is calculated using the asymptotic properties of $q_{\mu}$~\cite{Verkerke:2003ir, Moneta:2010pm}.
+
+
 \clearpage
 \FloatBarrier
 
