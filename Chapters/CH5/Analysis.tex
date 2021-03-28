@@ -151,8 +151,8 @@ The partial integrated luminosities and the Good Run Lists\footnote{The Good Run
 
 \noindent Events are considered only if they are accepted by at least one of the single-muon or single-electron triggers
 described in Refs.~\cite{TRIG-2016-01,ATL-DAQ-PUB-2016-001,ATL-DAQ-PUB-2017-001,ATL-DAQ-PUB-2018-002} and listed in Table~\ref{tab:samples:trig}. 
-The ATLAS trigger system is composed by two levels: the first level (\texttt{L1}) is a hardware trigger implemented
-in custom-built electronics, while the second level, referred to as high level trigger (\texttt{HLT}), is software based.
+%The ATLAS trigger system is composed by two levels: the first level (\texttt{L1}) is a hardware trigger implemented
+%in custom-built electronics, while the second level, referred to as high level trigger (\texttt{HLT}), is software based.
 
 \begin{table}[htbp]
 	\centering
@@ -272,13 +272,10 @@ The impact of the parton shower and hadronisation model is evaluated
 by comparing the nominal generator setup with a sample produced with
 the
 \powhegbox~\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}~v2
-generator using the \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} parton
-distribution function~(PDF). The events are interfaced with
+generator using the \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} PDF. The events are interfaced with
 \herwigseven.04~\cite{Bahr:2008pv,Bellm:2015jjp}, using the H7UE set
 of tuned parameters~\cite{Bellm:2015jjp} and the MMHT2014LO PDF set
 \cite{Harland-Lang:2014zoa}.
-The decays of bottom and charm hadrons
-are simulated using the \evtgen\ v1.6.0 program~\cite{EvtGen}. 
 The Var3c A14 tune variation~\cite{ATL-PHYS-PUB-2014-021}, that largely corresponds to the variation of
 $\alpha_{\textrm{s}}$ for initial state radiation (ISR) in the A14
 tune, is considered as an uncertainty. The impact of final-state-radiation (FSR) is evaluated using PS
@@ -297,10 +294,11 @@ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
 hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{EvtGen}.\\
 The uncertainty due to initial-state-radiation (ISR) is estimated by
 comparing the nominal \ttV\ sample with two additional samples, which
-have the same setting as the nominal one, but with the Var3 up or down
-variation of the A14 tune.  The Var3c A14 tune variation corresponds
-to the variation of $\alpha_{\textrm{s}}$ for initial state radiation
-(ISR) in the A14 tune.\\
+have the same setting as the nominal one, but with the Var3c up or down
+variation of the A14 tune.  
+%The Var3c A14 tune variation corresponds
+%to the variation of $\alpha_{\textrm{s}}$ for initial state radiation
+%(ISR) in the A14 tune.\\
 Additional \ttV\ samples are produced with the
 \sherpa~2.2.0~\cite{Bothmann:2019yzt} generator at LO accuracy, using
 the MEPS@LO setup~\cite{Catani:2001cc,Hoeche:2009rj} with up to one
@@ -316,7 +314,7 @@ The production of \tZq\ events is modelled using the\\ \mgamc~v2.3.3 \cite{Alwal
 generator at NLO with \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} parton distribution function~(PDF).
 The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea} using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the \textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set.\\
 The uncertainty due to initial-state-radiation (ISR) is estimated by comparing the nominal \tZq\ sample with two additional samples,
-which have the same setting as the nominal one, but with the Var3 up and down variations of the A14 tune. 
+which have the same setting as the nominal one, but with the Var3c up and down variations of the A14 tune. 
 The predicted cross-section was calculated with \MGMCatNLOV{2.6.0}, using the five-flavour scheme with the \textsc{NNPDF30NLO} PDF set and with the renormalization and factorisation scales, \muR\ and \muF, set to\\ \mbox{$\muR = \muF = (\mtop + \mZ)/4 = \SI{66}{\GeV}$.} The SM \tZq cross-section at NLO in QCD, including non-resonant contributions with $m_{\ell^+\ell^-} > 30\,\GeV$, is \SI{102}{fb}.
 
 \paragraph{tW production} 
@@ -340,9 +338,9 @@ In the samples used, it is required that both \PW bosons in the event decay lept
 The production of \tWZ\ events is modelled using the \\ \mgamc~v2.3.3~\cite{Alwall:2014hca}
 generator at NLO with \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} parton distribution function~(PDF).
 The events are interfaced with \pythia.212~\cite{Sjostrand:2014zea}~ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the \textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set.
-The decays of bottom and charm hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{EvtGen}. 
+%The decays of bottom and charm hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{EvtGen}. 
 In the sample used, it is required that the \PZ boson decays leptonically. \\
-An additional \tWZ sample is used to estimate the uncertainty connected with the description of the interference between \ttZ and \tWZ. The nominal samples is generated with the DR1 scheme, while the alternative sample is generated using the DR2 scheme.
+An additional \tWZ sample is used to estimate the uncertainty connected with the description of the interference between \ttZ and \tWZ. The nominal sample is generated with the DR1 scheme, while the alternative sample is generated using the DR2 scheme.
 
 \paragraph{Diboson production} 
 The samples simulating \PW{}\PW, \PW{}\PZ and \PZ{}\PZ events with at least two charged leptons are all considered.
@@ -399,8 +397,7 @@ tune~\cite{STDM-2012-23}. The CT10 PDF set~\cite{Lai:2010vv} is used
 for the hard-scattering processes, whereas the CTEQ6L1 PDF
 set~\cite{Pumplin:2002vw} is used for the parton shower. The effect of
 QED final-state radiation is simulated with Photos++
-(v3.52)~\cite{Golonka:2005pn,Davidson:2010ew}. The \evtgen~v1.2.0
-program~\cite{Lange:2001uf} is used to decay bottom and charm hadrons.
+(v3.52)~\cite{Golonka:2005pn,Davidson:2010ew}.
 
 \paragraph{$t\bar{t}H$ production}
 The production of \ttH\ events is modelled using the
@@ -411,7 +408,7 @@ The functional form of the renormalisation and factorisation scale is
 set to $\sqrt[3]{m_\text{T}(t)\cdot m_\text{T}(\bar{t}) \cdot m_\text{T}(H)}$.
 The events are interfaced to \pythia.230~\cite{Sjostrand:2014zea}~
 using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
-\\ \textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set. The decays of bottom and charm hadrons
+\\ \textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set. For all the samples, except those simulated with \sherpa, the decays of bottom and charm hadrons
 are performed by\\ \evtgen~v1.6.0~\cite{Lange:2001uf}.
 
 \paragraph{Other rare backgrounds}
@@ -429,5 +426,4 @@ The production of \tttt\ is modelled using the \mgamc~v2.3.3~\cite{Alwall:2014hc
 generator at NLO with the \textsc{NNPDF3.1NLO}~\cite{Ball:2014uwa} parton distribution function~(PDF).
 The events are interfaced with \pythia.230~\cite{Sjostrand:2014zea}~ using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
 \textsc{NNPDF2.3LO}~\cite{Ball:2014uwa} PDF set.\\
-The decays of bottom and charm hadrons are simulated using the \evtgen\ v1.6.0 program~\cite{Lange:2001uf}. \\
 The other rare top quark processes namely the production of \ttWW and \ttt are all modeled using the \mgamc generator at LO interfaced with \pythia using the A14 tune.

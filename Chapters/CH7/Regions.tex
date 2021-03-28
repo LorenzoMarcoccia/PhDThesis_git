@@ -22,19 +22,19 @@ The previous sections described the event selection targeting the FCNC \ttbar de
 %This two Signal Regions allow the extraction of the FCNC \tzq (q=u,c) limit since they don't use an explicit \Pqc-tagging algorithm. However, performing a likelihood fit using 
 The pre-selection criteria, common to all the Signal Regions used in this work have already been discussed in \Cref{sec:selection}.
 In this section, the topology of the final states of the signal in the Signal Regions are described. 
-For SR3\tZc, the selection using \DLrc and presented in \Cref{sec:other_selection}, is using henceforth.
+For SR3\tZc, the selection using \DLrc and presented in \Cref{sec:other_selection}, is used henceforth.
 %The SR3\tZc selection using the \Pqc-tagger \DLrc is already presented in \Cref{sec:other_selection}.
-There are two more channels that remain to present.
+There are two more channels that remain to be presented.
 \vspace{\baselineskip}
 \\The first selection is \FCNCtZc in \ttbar decays, where one of the \Pqt-quarks decays following the SM into a \PW boson and a
-\Pqb-quark (called in the following \textit{SM top}), while the other
-\Pqt-quark (called in the following \textit{FCNC top}) decays into a \PZ
-boson and a \Pqc-quark. Only the
-trileptonic channel is considered, i.e. when the \PZ boson from the
-FCNC top decays leptonically and the \PW boson from the SM top
-decays leptonically. Therefore the final state is characterised by
-the presence of three leptons, a \Pqc-jet, a \Pqb-tagged jet and missing
-transverse momentum from the escaping neutrino.  
+\Pqb-quark %(called in the following \textit{SM top}), while the other
+%\Pqt-quark (called in the following \textit{FCNC top}) decays into a \PZ
+%boson and a \Pqc-quark. Only the
+%trileptonic channel is considered, i.e. when the \PZ boson from the
+%FCNC top decays leptonically and the \PW boson from the SM top
+%decays leptonically. Therefore the final state is characterised by
+%the presence of three leptons, a \Pqc-jet, a \Pqb-tagged jet and missing
+%transverse momentum from the escaping neutrino.  
 The final state of this channel was already presented in \Cref{sec:selection}  with the exception that no SMT or \Pqc-tagged jet is required.
 \vspace{\baselineskip}
 \\The second selection is \FCNCtZc in single-top production, where the
@@ -148,7 +148,7 @@ As it can be noticed, the main background sources are:
 	\label{tab:sel:yields:tzc}
 \end{table} 
 \noindent As expected, SR1 has the greater fraction of FCNC \ttbar(cZ) events because it is designed to target the decay signal topology, while SR2 has the greater fraction of FCNC (c)tZ events because it is designed to target the FCNC single top production.\\
-The signal yield in SR3 is affected by the \DLrc  \Pqc-efficiency (20\%), as discussed in~\Cref{sec:object:cjet} but it also has the best background rejection. However, SR1 cannot distinguish between $\mathrm{\Pqt\rightarrow\PZ\Pqu}$ and $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ as no c-tagger is not used in this region and the choice of the jet coming from the FCNC top decay is led by the $\chi^2$ minimization.
+The signal yield in SR3 is affected by the \DLrc  \Pqc-efficiency (20\%), as discussed in~\Cref{sec:object:cjet} but it also has the best background rejection. However, SR1 cannot distinguish between $\mathrm{\Pqt\rightarrow\PZ\Pqu}$ and $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ as no c-tagger is used in this region and the choice of the jet coming from the FCNC top decay is defined by the $\chi^2$ minimization.
 
 \clearpage
 \section{Background estimation}
@@ -260,10 +260,10 @@ Every Control Region is enriched of the correspondent background.
 \section{Separation of signal from background events using \DLrc}
 \label{sec:separation_all}
 Three different GBDTs are trained separately in each signal region.
-In this section only the GBDT for SR3\tZc will be presented because directly related to the work of this thesis.\\
+In this section only the GBDT for SR3\tZc will be presented because it is directly related to the work of this thesis.\\
 The SR3\tZc is defined targeting the FCNC \tZc coupling in \ttbar decay events using the charm tagger \DLrc, therefore the MVA discriminant for this coupling, \Dthree, is built using the GBDT trained with the FCNC \tZc \ttbar decay events against backgrounds.\\
 The procedure is not different from that described in \Cref{sec:separation} and only the final results will be presented.
-The final set of variables used to train and test the GBDT method on the events in
+The final set of variables used to train and test the GBDT on the events in
 SR3\tZc is in \Cref{tab:D3input_dl1rc}, ordered by the separation value.\\
 The five GBDT output scores used to built discriminant variables are compared in~\Cref{fig:separation:GBDT_dl1rc}.\\
 \begin{table}[!htbp]

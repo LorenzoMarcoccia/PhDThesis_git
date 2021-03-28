@@ -72,11 +72,11 @@ A summary of the object selections is reported in~\Cref{tab:objects} and acronym
 		\toprule
 		& $p_{T}$ & $|\eta|$ & ID & Isolation & Additional cuts \\
 		\midrule
-		Electrons & $>$ \SI{15}{\GeV} & $<$ 2.47 & \texttt{MediumLH} & \texttt{PLVTight}  & $|d_0^\mathrm{BL}~\mathrm{significance} | < 5$ \\
-		& & & & & $|\Delta z_0^\mathrm{BL} \sin\theta| < \SI{0.5}{mm}$ \\
+		Electrons & $>$ \SI{15}{\GeV} & $<$ 2.47 & \texttt{MediumLH} & \texttt{PLVTight}  & $|d_0~\mathrm{significance} | < 5$ \\
+		& & & & & $|\Delta z_0\sin\theta| < \SI{0.5}{mm}$ \\
 		\midrule
-		Muons & $>$ \SI{15}{\GeV} & $<$ 2.5 & \texttt{Medium} & \texttt{PLVTight}  & $|d_0^\mathrm{BL}~\mathrm{significance} | < 5$ \\
-		& & & & & $|\Delta z_0^\mathrm{BL} \sin\theta| < \SI{0.5}{mm}$ \\
+		Muons & $>$ \SI{15}{\GeV} & $<$ 2.5 & \texttt{Medium} & \texttt{PLVTight}  & $|d_0~\mathrm{significance} | < 5$ \\
+		& & & & & $|\Delta z_0 \sin\theta| < \SI{0.5}{mm}$ \\
 		\midrule
 		Soft Muons & $>$ \SI{4}{\GeV} & $<$ 2.5 & \texttt{Tight} & -- & $|d_0| < \SI{3}{\milli\metre}$ \\
 		& & & & & $|z_0 \sin\theta| < \SI{3}{\milli\metre}$ \\
@@ -111,14 +111,14 @@ strong background rejection. All electron candidates in this analysis
 must pass the \texttt{MediumLH} selection.\\
 Electron tracks are also required to be consistent with the primary vertex of the 
 collision, applying the requirements: 
-$|d_0^\mathrm{BL}~\mathrm{significance} | < 5$ and 
-$|\Delta z_0^\mathrm{BL} \sin\theta| < \SI{0.5}{mm}$. \\
+$|d_0~\mathrm{significance} | < 5$ and 
+$|\Delta z_0 \sin\theta| < \SI{0.5}{mm}$. \\
 Electrons are further required to be isolated, to reject
 candidates coming from sources other than prompt $W$ or
 $Z$ boson decays (hadrons faking an electron signature,
 heavy-flavour decays or photon conversions). \\
 The isolation working point used in this analysis is \texttt{PLVTight}. 
-Correction factors are applied to simulated performance functions to take into account the small differences in
+Correction factors are applied to simulated events to take into account the small differences in
 reconstruction, identification and isolation efficiencies between data and MC simulation.
 
 % -------------------------------------------------------------------------------
@@ -177,12 +177,12 @@ and have at least three hits in three MS stations. This selection maximises the 
 resolution for muons with pT > 100 GeV
 \end{itemize}
 The muon candidates in this analysis must pass the \texttt{Medium}
-identification definition, already described above. Muon tracks are also required to be consistent with the primary vertex
+identification definition, described above. Muon tracks are also required to be consistent with the primary vertex
 applying the requirements: 
-$|d_0^\mathrm{BL}~\mathrm{significance} | < 3$ and 
-$|\Delta z_0^\mathrm{BL} \sin\theta| < \SI{0.5}{mm}$. \\
+$|d_0~\mathrm{significance} | < 3$ and 
+$|\Delta z_0 \sin\theta| < \SI{0.5}{mm}$. \\
 Muons are further required to be isolated and the isolation working point used in this analysis is \texttt{PLVTight}.\\
-Like for electrons, correction factors are applied to simulated performance functions
+Like for electrons, correction factors are applied to simulated events
 to account for residual small differences between data and simulation. 
 
 \FloatBarrier
@@ -207,7 +207,6 @@ It exploits the $b \rightarrow \mu + X$,
 $b \rightarrow c \rightarrow \mu + X$ and $c \rightarrow \mu + X$ decay chains (with a total BR~$\approx$~20\%), by identifying muons reconstructed inside jets. Those muons are referred to as soft muons.
 Different requirements are applied to select and distinguish muons 
 from leptonic decays of the Z and W bosons 
-(referred to as`prompt' or `isolated' muons in the following) 
 and muons from semi-leptonic heavy-hadron decays 
 (called `soft' or `SMT' muons in the following). \\
 Reconstructed muons with $p_{T} > 4 $ GeV not passing 
@@ -226,14 +225,14 @@ More details on the soft muon tagging are in Ref.~\cite{SMT-INT-13TeV}.
 
 \subsection{Recurrent Deep-Learning DL1r}
 In this analysis the \texttt{DL1r} algorithm is used~\cite{ATL-PHYS-PUB-2017-013,Aad:2019aic}.
-It is based on a deep feed-forward neural network (NN) trained using Keras~\cite{keras} with the Theano~\cite{theano} backend and the Adam optimiser~\cite{adam}. The DL1 NN has a multidimensional output corresponding to the probabilities for a jet to be a b-jet, a c-jet or a light-flavour jet. The topology of the output consists of a mixture of fully connected hidden and Maxout layers~\cite{goodfellow2013maxout}. The input variables to DL1 consist of those used for the previous official algorithm MV2, with the addition of the \textsc{JetFitter} c-tagging variables described in Ref.~\cite{Aad:2019aic}.
+It is based on a deep feed-forward neural network (NN) trained using Keras~\cite{keras} with the Theano~\cite{theano} backend and the Adam optimiser~\cite{adam}. The DL1 NN has a multidimensional output corresponding to the probabilities for a jet to be a b-jet, a c-jet or a light-flavour jet. The topology of the output consists of a mixture of fully connected hidden and Maxout layers~\cite{goodfellow2013maxout}. The input variables to \texttt{DL1r} consist of those used for the previous official algorithm MV2, with the addition of the \textsc{JetFitter} c-tagging variables described in Ref.~\cite{Aad:2019aic}.
 \subsubsection {\textit{b}-tagged jets}
 \label{sec:object:bjet}
 Jets originating from bottom quarks (called $b$-tagged jets) are
 identified by reconstructing secondary vertices from the tracks
 associated to the jets and by combining their spatial parameters with
 life-time related information.
-In the current analysis the \texttt{DL1r} algorithm with the \SI{77}{\%} of b-quark-tag efficiency operation point is used.\\
+In the current analysis the \texttt{DL1r} algorithm with the \SI{77}{\%} of b-quark-tag efficiency operation point is used. It is measured as the fraction of b-jets correctly tagged and calibrated as a function of the jet transverse momentum and absolute pseudo-rapidity.\\
 Finally, all $b$-tagged jets considered in this analysis should have a transverse
 momentum\\ $\pT >\SI{25}{\GeV}$ and a pseudo-rapidity of
 $|\eta|\!<\!2.5$.  
@@ -244,7 +243,7 @@ They are reconstructed jets satisfying $\pT > \SI{25}{\GeV}$ and $|\eta| < 2.5$ 
 and failing the $b$-tagging requirement.
 This search uses the cut operation point giving the $c$-efficiency of 20\% studied and being calibrated
 in the $tc$+MET SUSY analysis~\cite{ANA-SUSY-2019-23}.\\
-More details of charm-tagging are given in~\Cref{appendix:DL1rc}.
+More details of charm-tagging are given in~Appendix \ref{appendix:DL1rc}.
 
 \subsection{Missing transverse momentum}
 \label{sec:object:met}
@@ -256,7 +255,7 @@ To account for the soft hadronic activity, a soft term is added, built from
 tracks that are associated to the hard-scatter vertex but are not
 associated to any of the reconstructed objects. The soft term is
 included in order to account for low-momentum particles that are not
-identified among the final state objects~\cite{PERF-2011-07,PERF-2014-04,ATL-PHYS-PUB-2015-027}.\\
+identified among the final state objects~\cite{PERF-2011-07,PERF-2014-04,ATL-PHYS-PUB-2015-027}.
 It also includes an extra term to account for energy losses due to the detector inefficiencies 
 and resolution leading to the mis-measurement of the true transverse energy of the final 
 interacting objects.

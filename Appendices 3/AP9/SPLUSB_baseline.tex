@@ -1,0 +1,170 @@
+  % this file is called up by thesis.tex
+% content in this file will be fed into the main document
+% ----------------------- name of chapter  -------------------------
+\newgeometry{top=-0.9cm, left=1.2cm, right=1.5cm, bottom=1.45cm}
+\chapter{Signal + Background fit in SRs+CRs fit without using any \texorpdfstring{\MakeLowercase c}{c}-tagger}
+\label{app:stat:tzc:splusb:base}
+% ----------------------- paths to graphics ------------------------
+
+% change according to folder and file names
+\ifpdf
+\graphicspath{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys}
+\else
+\graphicspath{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys}
+\fi
+%\vspace{-1.25cm}
+To extract the expected sensitivity, an SRs+CRs S+B fit is performed. 
+Real data in used in CRs while in SRs an Asimov dataset is used,
+constructed using the background normalisations as done in Appendix \ref{app:stat:tzc:bonly:cr} . The SRs are constructed without using any c-tagger.\\
+Plots and tables shown in this section are the following:
+\begin{itemize}
+	\item The value of the post-fit normalisation parameter of the free floating background is shown in \Cref{fig:stat:tzc:splusb:crsr:norm_base}.
+	\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \cref{fig:stat:tzc:splusb:crsr:pruning_base}.
+	\item The pull distributions of the all nuisance parameters can be seen in \Cref{fig:stat:tzc:splusb:crsr:np:instr_base,fig:stat:tzc:splusb:crsr:np:model_base} and \Cref{fig:stat:tzc:splusb:crsr:gamma_base}. 
+	\item The correlation matrix of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:corrmatrix_base}. 
+	%	\item The ranking of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:ranking_base}. 
+	%Red and blue plots for the top five ranked NPs are shown in a
+	%dedicated appendix (\Cref{sec:app:fit:redblue:tzc:splusb:crsr}).
+	\item Event yields pre- and post-fit are shown in \Cref{tab:stat:tzc:splusb:crsr:yields:prefit_base,tab:stat:tzc:splusb:crsr:yields:postfit_base}. 
+	\item Pre-fit and post-fit distributions of the fitted distributions in the various regions are shown in \Cref{fig:stat:tzc:splusb:crsr:srplots:1_base,fig:stat:tzc:splusb:crsr:crplots:1_base,fig:stat:tzc:splusb:crsr:crplots:2_base}.
+\end{itemize}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=.4\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/NormFactors}
+	\caption{Normalisation factors for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:norm_base}
+\end{figure}
+\restoregeometry
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.85\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Pruning}
+	\caption{Pruning of the nuisance parameters for the S+B fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning_base}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.8\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/NuisPar_Instrumental}
+	\caption{Pulls and constraints of the instrumental nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:np:instr_base}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.85\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/NuisPar_Theoretical_&_Modelling}
+	\caption{Pulls and constraints of the theoretical and modeling nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:np:model_base}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.85\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Gammas}
+	\caption{Gamma parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:gamma_base}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.95\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/CorrMatrix}
+	\caption{Correlation matrix of the nuisance paramenters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:corrmatrix_base}
+\end{figure}
+
+%\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[width=.9\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Ranking}
+%	\caption{Ranking of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+%	\label{fig:stat:tzc:splusb:crsr:ranking_base}
+%\end{figure}
+
+\FloatBarrier
+\clearpage
+%\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}
+\begin{table}[]
+	\centering
+	\tiny
+	\input{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Tables/Yields_clean}
+	\caption{Pre-fit event yields in the S+B \tZc fit in SRs+CRs with realistic Asimov. \TabErrStatSys} 
+	\label{tab:stat:tzc:splusb:crsr:yields:prefit_base}
+\end{table} 
+
+\begin{table}[]
+	\centering
+	\tiny
+	\input{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Tables/Yields_postFit}
+	\caption{Post-fit event yields in the S+B\tZc fit in SRs+CRs with realistic Asimov. \TabErrStatSys} 
+	\label{tab:stat:tzc:splusb:crsr:yields:postfit_base}
+\end{table} 
+\clearpage
+\FloatBarrier
+%\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
+
+\clearpage
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/SR1} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/SR1_postFit} \\
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/SR2} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/SR2_postFit} \\
+	\end{tabular}
+	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in SR1 and SR2 for the S+B \tZc fit in SRs+CRs with realistic Asimov.
+		\ErrStatSys
+	}%
+	\label{fig:stat:tzc:splusb:crsr:srplots:1_base}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/SBCR1} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/SBCR1_postFit} \\
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/SBCR2} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/SBCR2_postFit} \\
+	\end{tabular}
+	\caption{Pre-fit (left) and post-fit (right) BDTG output distributions in the side-band CRs for the S+B \tZc fit in SRs+CRs with realistic Asimov.
+		\ErrStatSys
+	}%
+	\label{fig:stat:tzc:splusb:crsr:crplots:1_base}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/TTCR} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/TTCR_postFit} \\
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/TTZCR} &
+		\includegraphics[width=.45\textwidth]{Appendices/AP9/figures/SPLUSB_CRSR_UsingBaseFullSys/Plots/TTZCR_postFit} \\
+	\end{tabular}
+	\caption{Pre-fit (left) and post-fit (right) leading lepton \pt distributions in the \ttbar and \ttZ CRs for the S+B \tZc fit in SRs+CRs with realistic Asimov.
+		\ErrStatSys
+	}%
+	\label{fig:stat:tzc:splusb:crsr:crplots:2_base}
+\end{figure}
+
+\FloatBarrier
+\noindent The expected upper limit, together
+with the expected limit from the previous ATLAS
+analysis~\cite{TOPQ-2017-06}, are reported in \Cref{tab:results:limits_base}.\\ 10.7 7.7 13.6
+The limit from the previous analysis is improved by a factor of 3.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{lccc}
+		\toprule
+		\textbf{Limits} & \textbf{$-1\sigma$} & \textbf{Expected} & \textbf{$+1\sigma$} \\
+		\midrule
+		BR ($\Pqt\rightarrow\PZ\Pqc$) \cite{TOPQ-2017-06} & 22 & 32& 46 \\
+		BR $\Pqt\rightarrow\PZ\Pqc$                                   & \SI{7.7e-5}{} & \SI{10.7e-5}{} & \SI{13.6e-5}{} \\
+		\bottomrule
+	\end{tabular}
+	\caption{
+		Expected limit on the branching ratios of $\Pqt\rightarrow\PZ\Pqc$ without using any c-tagger.
+		Expected limit from \cite{TOPQ-2017-06} is also included for reference.
+	}%
+	\label{tab:results:limits_base}
+\end{table}
+
+
+

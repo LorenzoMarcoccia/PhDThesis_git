@@ -13,8 +13,8 @@
 \end{figure}
 \noindent The main focus of this chapter is the experimental setup, thus the ATLAS detector, one of the four large experiments at CERN (\textit{Conseil Européen pour la Recherche Nucléaire}) and whose location is shown in Figure~\ref{fig:CERN}.\\\
 Established in 1954, CERN is the largest particle physics laboratory in the world and the organization is based in a north-west suburb of Geneva on the Franco–Swiss border.
-The analysis presented in this thesis is based on the data collected in Run2 (2015-2018).
-Since December 2018, LHC has been shut-down (LS2, 2019-2020) to undergo a major upgrade (Phase \MakeUppercase{\romannumeral 1} Upgrade) which may enable to collect up to 300~$\mathrm{fb^{-1}}$ at a c.o.m. energy of 14~TeV by 2023. 
+The analysis presented in this thesis is based on the data collected in the Run2 period (2015-2018).
+Since December 2018, LHC has been shut-down (LS2, 2019-2020) to undergo a major upgrade (Phase \MakeUppercase{\romannumeral 1} Upgrade) which may enable to collect up to 300~$\mathrm{fb^{-1}}$ at a c.o.m. energy of 14~TeV by 2021. 
 After that, a second major upgrade  (Phase \MakeUppercase{\romannumeral 2} Upgrade) is planned to the LHC (LS3, 2024-2025) which will increase the interaction rate by a factor of 10; this upgrade 
 will lead LHC to High-Luminosity LHC (HL-LHC). 
 % ----------------------- paths to graphics ------------------------
@@ -37,11 +37,11 @@ The overall accelerator complex is shown in Figure~\ref{fig:CERN_complex}.
 	\caption{The overall CERN accelerator complex~\cite{CERN_complex}.}
 	\label{fig:CERN_complex}
 \end{figure}
-\\CERN's choice to replace the LEP leptonic collider with an hadronic one, such as LHC, has brought two fundamental advantages: the first is that for the same infrastructural size it is possible to reach a higher energy in the center of mass, since the energy lost by radiation of synchrotron from a particle in circular motion is $\frac{dE}{dt}\propto\frac{E^4}{m^4R}$, where $R$ is the bending radius and $m$ is the mass of the accelerated particle travelling at an energy $E$, hence protons are better than electrons.
+\\CERN's choice to replace the LEP leptonic collider with an hadronic one, such as LHC, has brought two fundamental advantages: the first is that for the same infrastructural size it is possible to reach a higher energy in the center of mass, since the energy lost by synchrotron radiation from a particle in circular motion is $\frac{dE}{dt}\propto\frac{E^4}{m^4R}$, where $R$ is the bending radius and $m$ is the mass of the accelerated particle travelling at an energy $E$, hence protons are better than electrons.
 %\newpage
 \noindent The second advantage is that the composite structure of the protons allows access to a wider energy spectrum that can be explored simultaneously without having to change the beam parameters. On the other hand, the number of background events also increases.
 In addition to proton-proton (p--p) collisions, the LHC can also collide heavy lead ions (Pb-Pb). \\
-Before reaching the the target energy, protons undergo subsequent acceleration steps. \\
+Before reaching the target energy, protons undergo subsequent acceleration steps. \\
 The first step is the proton production from hydrogen gas, after which protons are accelerated up to 50 MeV at the LINear ACcelerator 2 (LINAC 2). These protons are then injected into the 
 Proton Synchrotron Booster (PSB) where their energy reaches 1.8~GeV.  The acceleration chain continues into the Proton Synchrotron (PS) which pushes the beam
 to 25~GeV. After that, the beam is injected into the Super Proton Synchrotron (SPS) where the protons are accelerated up to 450~GeV. Finally, the bunches of protons are injected in the LHC.
@@ -86,12 +86,12 @@ $\sigma_{x}$ and $\sigma_{y}$ are the horizontal and vertical beam size,
 $F$ is a geometrical correction factor from the crossing-angle of the two beams at the interaction point (IP). 
 \\Given a period of time T, one can define the \textit{integrated luminosity} as L= $\int^{T}_{0}{dt \mathcal{L}}$ 
 which is typically expressed in $\mathrm{fb^{-1}}$ (1 $\mathrm{b = 10^{-28} m^{2}}$).
-\\Figure~\ref{fig:lum} shows the total integrated luminosity over the full LHC data taking period at $\mathrm{\sqrt{13}}$ TeV and Table~\ref{tab:lum} summarizes the main design parameters of the LHC.
+\\Figure~\ref{fig:lum} shows the total integrated luminosity over the full LHC data taking period at\\ $\mathrm{\sqrt{s}=13}$~TeV and Table~\ref{tab:lum} summarizes the main design parameters of the LHC.
 \begin{figure}[!ht]
 	\centering
 	\subfigure[]{\includegraphics[width=.8\textwidth]{Chapters/CH2/figures/intlumivsyear}\label{fig:intlumivsyear}}
 	\subfigure[]{\includegraphics[width=.8\textwidth]{Chapters/CH2/figures/intlumivstimeRun2}\label{fig:intlumivstimeRun2}}
-	\caption{Cumulative luminosity versus~\subref{fig:intlumivsyear} day delivered to ATLAS during stable beams;~\subref{fig:intlumivstimeRun2} time delivered to ATLAS (green) and recorded by ATLAS (yellow) during stable beams for pp collisions at $\mathrm{\sqrt{13}}$~\cite{lumi}.}
+	\caption{Cumulative luminosity versus~\subref{fig:intlumivsyear} day delivered to ATLAS during stable beams;~\subref{fig:intlumivstimeRun2} time delivered to ATLAS (green) and recorded by ATLAS (yellow) during stable beams for pp collisions at $\mathrm{\sqrt{s}=13}$~Tev~\cite{lumi}.}
 	\label{fig:lum}
 \end{figure}
 \begin{table}[!h]
@@ -116,7 +116,7 @@ which is typically expressed in $\mathrm{fb^{-1}}$ (1 $\mathrm{b = 10^{-28} m^{2
 \section{The ATLAS detector}
 ATLAS (A Toroidal LHC ApparatuS)~\cite{ATLAS} is a multi-purpose apparatus whose primary goal is to identify and measure the properties of particles produced in p--p collision.\\
 The overall ATLAS detector layout is shown in Figure~\ref{fig:ATLAS}.
-The ATLAS detector consist of a concentric cylinder shape (4$\pi$ coverage), therefore nominally forward-backward symmetric with respect to the interaction point (IP) where the proton beams collide in it.
+The ATLAS detector consists of a concentric cylinder shape (4$\pi$ coverage), therefore nominally forward-backward symmetric with respect to the interaction point (IP) where the proton beams collide in it.
 It can be divided into five main parts:
 \begin{itemize}
 	\item Magnet System (section~\ref{sec:MagSys});
@@ -157,7 +157,7 @@ The magnet configuration comprises a thin superconducting solenoid surrounding t
 The inner detector is immersed in a 2 T solenoidal field provided by the central solenoid with inner radius of 1.23 m and a total length of 5.8 m.\\
 It is designed to minimize the amount of material in front of the calorimeter to have a small impact on the energy measurement. This is achieved by hosting the solenoid and
 the cryostat in the same vacuum vessel of the electromagnetic calorimeter.\\
-The overall dimensions of the magnet system is 26 m long and 20 m diameter and provide and average magnetic field intensity of 0.5 T in the barrel and 1 T in the end-caps regions~\cite{MagSys}.
+The overall dimensions of the solenoid system is 26 m long and 20 m diameter and provide and average magnetic field intensity of 0.5 T in the barrel and 1 T in the end-caps regions~\cite{MagSys}.
 %\clearpage
 \subsection{Inner Detector}
 \label{sec:ID}
@@ -171,10 +171,12 @@ Its overall layout is depicted in Figure~\ref{fig:ID}.
 	\caption{Schematic view of the barrel of the ATLAS inner tracking system~\cite{ATLAS}.}
 	\label{fig:ID}
 \end{figure}
-\\The ID is contained in a cylinder, 7 m long and 1.15 m in radius, placed in a 2 T solenoid magnetic field and it is designed to trace charged particles with a minimum moment of 0.1 GeV/c, it allows the measurement of the moment through the track curvature radius and the reconstruction of the main interaction and decay vertices (both primary and secondary).\\
-The innermost part of the ID, which has a radius of about 15 cm, consists of silicon pixels to maximize the precision in the reconstruction of the tracks and the resistance to radiation.
-The pixel detector records on average three points for each track, which allows a reconstruction of the secondary decay vertices. This detector has a total of approximately 80 million sensitive elements.\\
-
+\\The ID is contained in a cylinder, 7 m long and 1.15 m in radius, placed in a 2 T solenoid magnetic field and it is designed to trace charged particles with a minimum momentum of 0.1 GeV/c, it allows the measurement of the momentum through the track curvature radius and the reconstruction of the main interaction and decay vertices (both primary and secondary).\\
+The pixel sub-system is composed of 4 cylindrical layers and 4 layer of disks to ensure coverage of the high-$\mathrm{\eta}$ region. The innermost layer, named the IBL, is made of two families of hybrid sensors: planar and 3D sensors, both of which are coupled with a dedicated front-end chip via a metallic bump. In hybrid assemblies the charge is generated on a dedicated silicon sensor and the signal is further processes and read-out by a separated chip.\\
+Planar sensors are a well-known technology for large tracking systems since they
+ensure robustness against radiation damage and provide a fast read-out. 3D sensors
+are installed at high-$\mathrm{\eta}$ region of the IBL stave. They feature electrodes which extend
+into the silicon bulk, hence the name 3D. Both types of IBL pixel sensors have a pixel size of 250 $\times$ 50 $\mathrm{\mu}$m with the shorter pixel direction in the $\mathrm{r-\phi}$ plane to optimize the impact parameter resolution in the transverse plane.
 
 \noindent The intermediate part, which covers a radius ranging from 30 to 60 cm, uses a microstrip detector (Semi-Conductor Tracker), to provide good spatial resolution.
 The detection technique of the SCT relies on the same principle as for the pixel detector, however long strips are used compared to the rectangular pixels due to 
@@ -232,7 +234,7 @@ The dominant source of uncertainty is linked, at low energy, with the high pile-
 \label{sec:MuonSpec}
 The calorimeter is surrounded by the Muon Spectrometer (MS) depicted in Figure~\ref{fig:MS}, which is placed at the outermost part of the ATLAS detector.\\
 The outer layers are reached by a few types of particles, mainly muons and neutrinos.\\
-These muons ionize  in the material passed through, but the energy, lost in the electromagnetic interaction
+These muons ionize the material passed through, but the energy, lost in the electromagnetic interaction
 with other nuclei of the calorimeter, is not sufficient to stop them. 
 The MS  identifies muons and measures their momentum.
 \begin{figure}[h]
@@ -244,7 +246,7 @@ The MS  identifies muons and measures their momentum.
 \\A series of magnets arranged externally to the calorimeter creates a toroidal-shaped magnetic field that modifies the charged particles direction allowing the measurement of the momentum.
 For muons with $\mathrm{p_T}$ > 30 GeV the measurement is much more precise than the measurement obtained by the inner detectors. 
 For lower $\mathrm{p_T}$, on the other hand, the measurement is less accurate, due to the 
-energy loss in the previous layers of the detector and taken in to account to handle \textit{soft muons}, presented in Section~\ref{sec:object:soft_muons}.\\
+energy loss in the previous layers of the detector and is taken into account to handle \textit{soft muons}, presented in Section~\ref{sec:object:soft_muons}.\\
 For both the central part and the end-caps,  there are two types of muon detectors:
 \begin{itemize}
 	\item a trigger system based on cameras with fast response, such as the \textit{Resistive Plate Chamber} (RPC) and the \textit{Thin Gap Chamber} (TGC), 
@@ -271,7 +273,7 @@ and its upgrade for the HL-LHC.
 \FloatBarrier
 \subsection{Trigger and Data Acquisition}
 \label{sec:TrigSys}
-Once fully operational, with the high frequency of collisions typical at LHC, an impressive amount of data is produced (40 MHz of p-p bunch collision frequency), 
+An impressive amount of data is produced (40 MHz of p-p bunch collision frequency), 
 which would be impossible to manage without the application of filters.
 The \textit{Trigger and Data Acquisition system} (TDAQ) is able to recognize the interesting events for further study.\\
 In Run2 the trigger system consists of two levels of event selection: the \textit{Level-1 trigger} (L1), is an hardware trigger that reduces the rate to 100 kHz, while the 
@@ -282,7 +284,7 @@ the second is the L1 muon trigger (L1Muon), which primarily uses TGC and RPC inf
 the third is the L1 topological trigger (L1Topo) that combines information from L1Calo and L1Muon into the Central Trigger Processor (CTP) which makes the final decision.\\
 At this point, L1 identifies the \textit{Region of Interest} (RoI) with an event rate reduced  below 100 kHz.
 The RoI are then used by the HLT, which has access to the information of all the sub-detectors, targeting the maximum rate of 1 kHz.\\
-Finally, the events are assembled into an event record passes to the offline storage facilities for a complete off-line reconstruction~\cite{TrigSys}.
+Finally, the events are assembled into an event record and are passed to the offline storage facilities for a complete off-line reconstruction~\cite{TrigSys}.
 
 
 

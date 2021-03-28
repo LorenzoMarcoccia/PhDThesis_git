@@ -92,9 +92,9 @@ factors are propagated to the event yields and observables.
 	separately for $b$, $c$ and light-flavour quark jets in the MC
 	samples.
 	\item \textbf{$c$-tagging efficiency} \\
-	Since an official calibration is not available yet, the $c$-tagging
+	Since an official calibration is not available yet, the uncertainties on $c$-tagging
 	efficiencies are not considered in this analysis. Nevertheless,
-	assuming a flat 20\% variation on the related scale factor, 
+	assuming a flat 20\% variation on the corresponding scale factor, 
 	the final expected limit will be degraded by almost 5\%.	
 \end{itemize}
 
@@ -394,11 +394,10 @@ For the extraction of the \tZc coupling, the following fits
 are presented:
 \begin{description}
 	\item[Background-only fit in CRs:] in this fit only CRs are used. Data are
-	used. The signal templates are not included in the fit. This fit is used to estimate
-	the preliminary background.
+	used. The signal templates are not included in the fit. This fit is used to make a preliminary estimate of the background.
 	\item[Signal+Background fit in SR+CRs with pseudo-data:] in this fit both SRs and CRs are used.
 	Data are used in the CRs. In the SRs, pseudo-data are constructed
-	using post-fit background normalisations from the B-only fit in CRs. In the following, this dataset is called 'realistic Asimov'. This fit is used to extract the expected upper limit.
+	using post-fit background normalisations from the B-only fit in CRs. In the following, this dataset is called 'realistic Asimov'. This fit is used to extract a preliminary expected upper limit.
 	\item[Signal+Background fit in SR+CRs with data:] in this fit both SRs and CRs are used. Data are used in both 
 	SRs and CRs. This fit is used to extract the \tZc coupling, therefore the observed and the expected upper limit.
 \end{description}
@@ -435,7 +434,7 @@ constructed using the background normalisations found in Appendix \ref{app:stat:
 Plots and tables shown in this section are the following:
 \begin{itemize}
 \item The value of the post-fit normalisation parameters of the free floating background is shown in \Cref{fig:stat:tzc:splusb:crsr:norm}.
-\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \cref{fig:stat:tzc:splusb:crsr:pruning}.
+\item The list of the systematic shapes that are dropped from the fit for each sample and for each region are shown in \Cref{fig:stat:tzc:splusb:crsr:pruning1,fig:stat:tzc:splusb:crsr:pruning2,fig:stat:tzc:splusb:crsr:pruning3,fig:stat:tzc:splusb:crsr:pruning4}.
 \item The pull distributions of the all nuisance parameters can be seen in \Cref{fig:stat:tzc:splusb:crsr:np:instr,fig:stat:tzc:splusb:crsr:np:model} and \Cref{fig:stat:tzc:splusb:crsr:gamma}. 
 \item The correlation matrix of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:corrmatrix}. 
 \item The ranking of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:ranking}. 
@@ -472,9 +471,27 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/Pruning}
-	\caption{Pruning of the nuisance parameters for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
-	\label{fig:stat:tzc:splusb:crsr:pruning}
+	\includegraphics[width=.9\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/pruning_split1}
+	\caption{Pruning of the instrumental nuisance parameters, in the SRs, for for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning1}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.9\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/pruning_split2}
+	\caption{Pruning of the instrumental nuisance parameters, in the CRs, for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning2}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.65\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/pruning_split3}
+	\caption{Pruning of the theoretical and modeling nuisance parameters, in the SRs, for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning3}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.65\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_UsingDL1rcFullSys/pruning_split4}
+	\caption{Pruning of the theoretical and modeling nuisance parameters, in the CRs, for the S+B \tZc fit in SRs+CRs with realistic Asimov.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning4}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -598,7 +615,7 @@ and to make statistical inferences about $\mathrm{\mu}$, such as upper limits us
 Plots and tables shown in this section are the following:
 \begin{itemize}
 	\item The value of the post-fit normalisation parameter of the free floating background is shown in \Cref{fig:stat:tzc:splusb:crsr:norm_unb}.
-	\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \cref{fig:stat:tzc:splusb:crsr:pruning_unb}.
+	\item The list of the systematic shapes that are dropped from the fit for each sample and for each region is shown in \Cref{fig:stat:tzc:splusb:crsr:pruning_unb1,fig:stat:tzc:splusb:crsr:pruning_unb2,fig:stat:tzc:splusb:crsr:pruning_unb3,fig:stat:tzc:splusb:crsr:pruning_unb4}.
 	\item The pull distributions of the all nuisance parameters can be seen in \Cref{fig:stat:tzc:splusb:crsr:np:instr_unb,fig:stat:tzc:splusb:crsr:np:model_unb} and \Cref{fig:stat:tzc:splusb:crsr:gamma_unb}.  
 	\item The correlation matrix of the nuisance parameters is shown in \Cref{fig:stat:tzc:splusb:crsr:corrmatrix_unb}.
 	%Red and blue plots for the top five ranked NPs are shown in a
@@ -608,7 +625,7 @@ Plots and tables shown in this section are the following:
 	\item Pre-fit and post-fit distributions of the fitted distributions in the various regions are shown in \Cref{fig:stat:tzc:splusb:crsr:srplots:1_unb,fig:stat:tzc:splusb:crsr:srplots:2_unb,fig:stat:tzc:splusb:crsr:crplots:1_unb,fig:stat:tzc:splusb:crsr:crplots:2_unb}.
 \end{itemize}
 The fake normalization factor $\mu_{\ttbar+\Wt}$ (\Cref{fig:stat:tzc:splusb:crsr:norm_unb}) is compatible with unity and the signal strength $\mu$ is compatible with zero within the uncertainties.\\
-Results are similar to what was found with blinded Signal Regions (\Cref{sec:stat:tzc:splusb:crsr}).\\
+The background estimate is similar to what was found with blinded Signal Regions (\Cref{sec:stat:tzc:splusb:crsr}).\\
 The value of the fitted nuisance parameters (\Cref{fig:stat:tzc:splusb:crsr:np:instr_unb,fig:stat:tzc:splusb:crsr:np:model_unb}) are within their prior uncertainties,
 meaning that the data are well modelled with the MC predictions within the uncertainties.\\
 %The most pulled NPs (e.g. \ttbar FSR and \VVHF Berends scaling for events with 1 jet) are
@@ -630,10 +647,30 @@ Event yields pre- and post-fit, shown in \Cref{tab:stat:tzc:splusb:crsr:yields:p
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.85\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Pruning}
-	\caption{Pruning of the nuisance parameters for the S+B \tZc fit in SRs+CRs with data.}%
-	\label{fig:stat:tzc:splusb:crsr:pruning_unb}
+	\includegraphics[width=.9\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Pruning_split1}
+	\caption{Pruning of the instrumental nuisance parameters, in the SRs, for the S+B \tZc fit in SRs+CRs with data.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning_unb1}
 \end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.9\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Pruning_split2}
+	\caption{Pruning of the instrumental nuisance parameters, in the CRs, for the S+B \tZc fit in SRs+CRs with data.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning_unb2}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.65\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Pruning_split3}
+	\caption{Pruning of the theoretical and modeling nuisance parameters, in the SRs, for the S+B \tZc fit in SRs+CRs with data.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning_unb3}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.65\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/Pruning_split4}
+	\caption{Pruning of the theoretical and modeling nuisance parameters, in the CRs, for the S+B \tZc fit in SRs+CRs with data.}%
+	\label{fig:stat:tzc:splusb:crsr:pruning_unb4}
+\end{figure}
+
+
 
 \begin{figure}[htbp]
 	\centering
@@ -757,8 +794,8 @@ expected upper limits can be computed with the $\mathrm{CL_{s}}$ method~\cite{Ju
 %were perfectly described by the expected background.
 Table \ref{tab:limits:comparison} shows the expected limits on BR($t \rightarrow Zc$) extracted for various selections: 
 \begin{itemize}
-	\item without the use of any c-tagger ('Baseline'),
-	\item using SMT, presented in \Cref{app:stat_smt:tzc:splusb:crsr},
+	\item without the use of any c-tagger, called 'Baseline' and presented in Appendix \ref{app:stat:tzc:splusb:base},
+	\item using SMT, presented in Appendix \ref{app:stat_smt:tzc:splusb:crsr},
 	\item using \DLrc.
 \end{itemize}
 The improvement over baseline obtained using SMT is around 3\%, while using \DLrc is around 10\%.
@@ -782,7 +819,7 @@ with statistical only limits and the expected limits from the previous ATLAS
 analysis~\cite{TOPQ-2017-06}, are reported in
 \Cref{tab:results:limits}.\\
 The overall impact of systematics on the expected limit is 22\%.\\
-The expected upper limit from the previous analysis is improved by a factor of 3.3 for the \tZc coupling.
+The expected upper limit for the \tZc coupling is improved by a factor of 3.3 with respect to the expectation in the previous analysis.
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{lccc} 
@@ -805,22 +842,24 @@ The expected upper limit from the previous analysis is improved by a factor of 3
 %root -l -q -b macros/getBR.C\(0.00024,0.415899\) 9.9801765e-05
 %root -l -q -b macros/getBR.C\(0.00024,0.603668\) 0.00014486654
 % 6% improvement using dl1r wrt baseline
-
+\newpage
 \paragraph {Unblinded data}
 From the likelihood fit described in \Cref{sec:stat:tzc:splusb:unb} under the Signal+Background hypothesis, no evidence for the FCNC $\mathrm{\Pqt\rightarrow\PZ\Pqc}$ signal is found but a good agreement between data and Standard Model is observed. The results obtained under the Background-only hypothesis shows similar results (see Appendix \ref{app:stat:tzc:bonly:unb}).
 In the absence of signal, the 95\% CL upper limit is set on $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$.
-\Cref{fig:stat:tzc:splusb:crsr:CLsPlot} shows the observed and expected $\mathrm{CL_{s}}$ as a function of $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$. The observed limit is $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<11.8\times 10^{-5}$, inside the $\pm$1$\sigma$ band of the expected limit: $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<9.5\times 10^{-5}$.
-The observed upper limit is improved by a factor of 2, while the expected upper limit is improved by a factor of 2.5 compared to the previous analysis.
+\Cref{fig:stat:tzc:splusb:crsr:CLsPlot} shows the observed and expected $\mathrm{CL_{s}}$ as a function of $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$. The observed limit is $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}<11.8\times 10^{-5}$, inside the $\pm$1$\sigma$ band of the expected limit.
+%Compared to the observed upper limit extracted in the previous analysis, the  observed upper limit extracted in this thesis is improved by a factor of 2, while the expected upper limit is improved by a factor of 2.5
+The observed upper limit is improved by a factor of 2.
+%, while the expected upper limit is improved by a factor of 2.5, both compared to the observed upper limit extracted by the previous analysis.
+
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=.8\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/CLsPlot}
+	\includegraphics[width=.585\textwidth]{Chapters/CH8/figures/SPLUSB_CRSR_DL1rc_unblind/CLsPlot}
 	\caption{$\mathrm{CL_{s}}$ vs $\mathrm{BR (\Pqt\rightarrow\PZ\Pqc)}$ plot. The median expected $\mathrm{CL_{s}}$ under the Signal+Background hypothesis
 (black dashed line) is displayed along with the $\pm$1 and $\pm$2 standard deviations bands
 (green and yellow, respectively). The solid red line at $\mathrm{CL_{s}= 0.05}$ denotes the threshold below
 which the hypothesis is excluded at 95\% CL.}
 	\label{fig:stat:tzc:splusb:crsr:CLsPlot}
 \end{figure}
-
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{lc} 
