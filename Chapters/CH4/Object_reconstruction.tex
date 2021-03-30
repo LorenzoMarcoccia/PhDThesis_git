@@ -58,8 +58,7 @@ to simulate the particle showers. To speed this up, an approximate simulation,
 \texttt{ATLASFAST-II} (AFII)~\cite{afii}, is often used. This approximate model simulates the 
 particle showers in the calorimeters using parametrised functions applied to particle energy, 
 rather than carrying out the full shower simulation.
-
-\newpage
+\FloatBarrier
 \section{Object reconstruction}
 This section describes the main reconstruction and identification criteria applied for each physics
 objects considered in this analysis (electrons, muons, jets, $b$-tagged jets and missing transverse momentum). 
@@ -204,7 +203,7 @@ and $|\eta|\!<\!2.4$, corresponding to an efficiency of 92\%.
 \label{sec:object:smt}
 The Soft Muon Tagging (SMT) is a tagging technique for heavy-flavour jets.\\
 It exploits the $b \rightarrow \mu + X$,
-$b \rightarrow c \rightarrow \mu + X$ and $c \rightarrow \mu + X$ decay chains (with a total BR~$\approx$~20\%), by identifying muons reconstructed inside jets. Those muons are referred to as soft muons.
+$b \rightarrow c \rightarrow \mu + X$ and $c \rightarrow \mu + X$ decay chains (with a total BR~$\approx$~20\%), by identifying muons reconstructed inside jets. Those muons are referred to as soft muons. 
 Different requirements are applied to select and distinguish muons 
 from leptonic decays of the Z and W bosons 
 and muons from semi-leptonic heavy-hadron decays 
@@ -221,7 +220,11 @@ This value has been optimized looking at the kinematic distributions of $\Delta 
 Very loose requirements are applied on the impact parameters to remove
 pathological cases: 
 $|d_0| < 3$ mm and $|z_0 \sin\theta| < 3$  mm.\\
-More details on the soft muon tagging are in Ref.~\cite{SMT-INT-13TeV}.
+The reconstruction efficiency is measured using the \textit{Tag\&Probe} method.
+The basic idea is to select a relatively pure sample of $J/\Psi \rightarrow \mu\mu$  decays by employing a tight selection on one muon (\textit{tag}),  and then select the second muon (\textit{probe}) with a loose selection. 
+The efficiency of a given selection can be evaluated with respect to the loose selection as the fraction of probes satisfying that selection. 
+Relatively pure $J/\Psi \rightarrow \mu\mu$ can be obtained even with loose cuts on the second muon by exploiting the invariant mass peak of the dimuon candidate.\\
+The measurement of the mistag rate is ongoing using a W+jets sample, evaluating the data-driven correction factors. More details on the soft muon tagging are in Ref.~\cite{SMT-INT-13TeV}.
 
 \subsection{Recurrent Deep-Learning DL1r}
 In this analysis the \texttt{DL1r} algorithm is used~\cite{ATL-PHYS-PUB-2017-013,Aad:2019aic}.

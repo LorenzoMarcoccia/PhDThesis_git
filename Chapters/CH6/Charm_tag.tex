@@ -40,8 +40,9 @@ The pre-selection criteria, common to all the Signal Regions used in this work, 
 				Events with a fourth lepton with $\pt > \SI{15}{\GeV}$ are vetoed. 
 	\item   There should be at least one opposite-sign same-flavour lepton pair
 				(OSSF) with an invariant mass in the range 
-				$|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$. 
-				These two leptons are considered to be the ones coming from the \PZ boson.\\ 	
+				$|\mll - \SI{91.2}{\GeV}| < \SI{15}{\GeV}$.
+				This mass window allows to discriminate against those backgrounds which do not contain a \PZ boson. Lowering this cut to 10 GeV decreases the signal efficiency which we would like to keep as high as possible.\\			 
+				The two leptons are considered to be the ones coming from the \PZ boson.\\ 	
 				If more than one lepton pair satisfies these selections, the pair
 				with the invariant mass closest to the mass of the \PZ boson is
 				considered to be from the \PZ decay. 
@@ -83,7 +84,7 @@ The extracted values are:
 	\item $m_{t_{\mathrm{SM}}}=168.0$~\GeV,  $\sigma_{t_{\mathrm{SM}}}=23.9$~\GeV;
 	\item $m_W=82.6$~\GeV,  $\sigma_W=16.6$~\GeV.
 \end{itemize}	
-The SM top quark candidate is reconstructed under the FCNC single-top quark production hypothesis in the events having one or two jets with exactly one being $b$-tagged, which is assumed to come from the top-quark decay ($t\to bW$). 
+The SM top quark candidate is reconstructed under the FCNC tZc single-top production hypothesis in the events having one or two jets with exactly one being $b$-tagged, which is assumed to come from the top-quark decay ($t\to bW$). 
 The most probable value for the longitudinal component of the neutrino momentum for the FCNC single-top quark production is determined using the minimisation of the following expression:
 \begin{equation}
 \chi^2_{\tZ}  = 
@@ -285,7 +286,7 @@ For \VVHF the main contributions come from C-hadrons ($\sim$ 60\%), mostly  \WZ~
 \section{Separation of signal from background events}
 \label{sec:separation}
 Given the selection requirements in Table~\ref{tab:sel:sr3_smt}, a multivariate analysis (MVA) technique is used to have a better separation of the signal from the background and to increase the value of \ssplusb.\\ 
-The Gradient Boosted Decision Trees (GBDT) method with TMVA software package~\cite{BDTG,TMVA} is exploited in this study. 
+A method referred to as Gradient Boosted Decision Trees (GBDT) with TMVA software package~\cite{BDTG,TMVA} is exploited in this study. 
 The output of this algorithm (called GBDT score) is correlated with \ssplusb and it is in the range between -1 and 1.
 The most signal-like events have scores near 1 while the most background-like events have scores near -1. The GBDTs are trained separately in each signal regions as described below.
 The SR3\tZc is defined targeting the FCNC \tZc coupling in \ttbar decay events

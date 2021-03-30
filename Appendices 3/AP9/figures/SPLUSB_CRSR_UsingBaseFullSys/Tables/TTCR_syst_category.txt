@@ -1,3 +1,0 @@
- |       | t#bar{t}Z+tWZ      | t#bar{t}W      | t#bar{t}H      | VV+LF      | VV+HF      | tZ      | t#bar{t}+Wt      | Other fakes      | Other      | FCNC (c)tZ      | FCNC t#bar{t}(cZ) |
- | Instrumental | 0.0442 | 0.0445 | 0.0402 | 0.326 | 0.0864 | 0.0583 | 0.0506 | 0.241 | 0.0483 | 0.0763 | 0.0903 |
- | Theoretical & Modelling | 0.123 | 0.15 | 0.15 | 0.379 | 0.607 | 0.14 | 0.235 | 1 | 0.5 | 0.0755 | 0.0971 |

@@ -1,6 +1,0 @@
-The computed upper limit is: 0.000130361 +/- 0
- expected limit (median) 0.000100728
- expected limit (-1 sig) 6.88011e-05
- expected limit (+1 sig) 0.000150541
- expected limit (-2 sig) -0.00950731
- expected limit (+2 sig) 0.00969162
